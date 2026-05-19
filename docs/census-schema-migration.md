@@ -887,12 +887,12 @@ New:
 ```json
 {
     "in": [
-        { 
-            "identifier": "confirm-age-answer", 
-            "source": "answers" 
+        {
+            "identifier": "confirm-age-answer",
+            "source": "answers"
         },
         [
-            "No, I need to correct their date of birth", 
+            "No, I need to correct their date of birth",
             "No, I need to correct my date of birth"
         ]
     ]
