@@ -4,9 +4,9 @@ Since the Census in 2021 the EQ questionnaire schema has moved on. This document
 
 ## `Summary` blocks
 
-- Summary blocks have been removed 
-- Runner change: https://github.com/ONSdigital/eq-questionnaire-runner/pull/606
-- Documentation: https://github.com/ONSdigital/eq-questionnaire-validator/pull/90
+- Summary blocks have been removed
+- Runner change: <https://github.com/ONSdigital/eq-questionnaire-runner/pull/606>
+- Documentation: <https://github.com/ONSdigital/eq-questionnaire-validator/pull/90>
 - The old census schemas finish with a section (and group) containing a `Summary` block
 - **Action:** Remove the summary section
 
@@ -31,10 +31,11 @@ Since the Census in 2021 the EQ questionnaire schema has moved on. This document
 
 ### `questionnaire_flow`
 
-- As part of the `Summary` block removal, a new `questionnaire_flow` element has been added at top level. 
+- As part of the `Summary` block removal, a new `questionnaire_flow` element has been added at top level.
 - **Action:** Add the `questionnaire_flow` element as follows
 
 For individual:
+
 ```json
 "questionnaire_flow": {
     "type": "Linear",
@@ -47,6 +48,7 @@ For individual:
 ```
 
 For household:
+
 ```json
 "questionnaire_flow": {
     "type": "Hub",
@@ -66,6 +68,7 @@ For household:
 - **Action:** Remove the properties from the `submission` object and create a new `post_submission` object with them in
 
 Old:
+
 ```json
 "submission": {
     "feedback": true,
@@ -74,6 +77,7 @@ Old:
 ```
 
 New:
+
 ```json
 "post_submission": {
     "feedback": true,
@@ -83,7 +87,7 @@ New:
 
 ## `survey`
 
-- The `survey` property has been removed 
+- The `survey` property has been removed
 - **Action:** Delete the `survey` property from the schema.
 
 ## `theme`
@@ -94,16 +98,17 @@ New:
 ## `<em></em>` strings
 
 - The text highlighting (use for highlighting placeholders) has been updated to use `<strong>` in place of `<em>`
-- Runner change: https://github.com/ONSdigital/eq-questionnaire-runner/pull/1327
+- Runner change: <https://github.com/ONSdigital/eq-questionnaire-runner/pull/1327>
 - **Action:** Replace all occurrences of `<em></em>` in schema strings with `<strong></strong>`
 
-## `id_selector` 
+## `id_selector`
 
 - Used in `contains`, `list_has_items` and `concatenate_list` transforms, and some `when` rules
 - Has been renamed to `selector`
 - **Action:** Rename `id_selector` to `selector` throughout the schemas
 
 Old:
+
 ```json
 {
     "arguments": {
@@ -122,6 +127,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "arguments": {
@@ -147,6 +153,7 @@ New:
 - **Action:** Rename `id_selector` to `selector` throughout the schemas
 
 Old (location source):
+
 ```json
 {
     "first_name": {
@@ -161,6 +168,7 @@ Old (location source):
 ```
 
 New (location source):
+
 ```json
 {
     "first_name": {
@@ -175,6 +183,7 @@ New (location source):
 ```
 
 Old (list source):
+
 ```json
 {
     "first_name": {
@@ -190,6 +199,7 @@ Old (list source):
 ```
 
 New (list source):
+
 ```json
 {
     "first_name": {
@@ -209,10 +219,11 @@ New (list source):
 - Used in the `concatenate_list` transform
 - Across all schemas, this is only used to concatenate first name and last name
 - Value is now a list of answer sources
-- Runner change: https://github.com/ONSdigital/eq-questionnaire-runner/pull/617
+- Runner change: <https://github.com/ONSdigital/eq-questionnaire-runner/pull/617>
 - **Action:** Update `list_to_concatenate` to be a list of answer sources
 
 Old:
+
 ```json
 {
     "arguments": {
@@ -230,6 +241,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "arguments": {
@@ -250,6 +262,7 @@ New:
 ```
 
 Old (with list):
+
 ```json
 {
     "arguments": {
@@ -272,6 +285,7 @@ Old (with list):
 ```
 
 New (with list):
+
 ```json
 {
     "arguments": {
@@ -307,6 +321,7 @@ New (with list):
 - **Action:** Remove `goto` property and collapse contents into it's parent
 
 Old:
+
 ```json
 "routing_rules": [
     {
@@ -335,6 +350,7 @@ Old:
 ```
 
 New:
+
 ```json
 "routing_rules": [
     {
@@ -361,7 +377,7 @@ New:
 ## When rules
 
 - This is where the biggest change has happened
-- Runner change (useful to see mapping from old to new): https://github.com/ONSdigital/eq-questionnaire-runner/pull/1016
+- Runner change (useful to see mapping from old to new): <https://github.com/ONSdigital/eq-questionnaire-runner/pull/1016>
 - The top level of a `when` rule is now an object rather than an array. The change required differs depending on whether it is a single or multiple when rule.
 
 ### Single when rule
@@ -369,6 +385,7 @@ New:
 - **Action:** Replace the array syntax with the object syntax (the rule migration is covered following this)
 
 Old:
+
 ```json
 "when": [
     {
@@ -380,6 +397,7 @@ Old:
 ```
 
 New:
+
 ```json
 "when": {
     "condition": "equals",
@@ -395,6 +413,7 @@ New:
 - **Action:** Add a new `and` property within the `when` rule that has an array wrapping the rules  (the rule migration is covered following this)
 
 Old:
+
 ```json
 "when": [
     {
@@ -414,6 +433,7 @@ Old:
 ```
 
 New:
+
 ```json
 "when": {
     "and": [
@@ -437,6 +457,7 @@ New:
 ### The rules
 
 The following `when` rules are used in the census schemas:
+
 - set
 - not set
 - equals
@@ -452,6 +473,7 @@ The rest of this document covers the changes required for each of these (includi
 #### `set`
 
 Old:
+
 ```json
 {
     "condition": "set",
@@ -460,6 +482,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "!=": [
@@ -475,6 +498,7 @@ New:
 #### `not set`
 
 Old:
+
 ```json
 {
     "condition": "not set",
@@ -483,6 +507,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "==": [
@@ -498,6 +523,7 @@ New:
 #### `equals` with value
 
 Old:
+
 ```json
 {
     "condition": "equals",
@@ -507,6 +533,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "==": [
@@ -519,10 +546,10 @@ New:
 }
 ```
 
-
 #### `equals` with list
 
 Old:
+
 ```json
 {
     "comparison": {
@@ -537,6 +564,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "==": [
@@ -556,6 +584,7 @@ New:
 #### `equals` with list count
 
 Old:
+
 ```json
 {
     "condition": "equals",
@@ -565,6 +594,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "==": [
@@ -584,6 +614,7 @@ New:
 #### `equals` with date
 
 Old:
+
 ```json
 {
     "condition": "equals",
@@ -598,6 +629,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "==": [
@@ -619,6 +651,7 @@ New:
 #### `not equals` with value
 
 Old:
+
 ```json
 {
     "condition": "not equals",
@@ -628,6 +661,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "!=": [
@@ -643,6 +677,7 @@ New:
 #### `not equals` with list
 
 Old:
+
 ```json
 {
     "comparison": {
@@ -656,6 +691,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "!=": [
@@ -675,6 +711,7 @@ New:
 #### `greater than` with value (list count)
 
 Old:
+
 ```json
 {
     "condition": "greater than",
@@ -684,6 +721,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     ">": [
@@ -703,6 +741,7 @@ New:
 #### `greater than` with date
 
 Old:
+
 ```json
 {
     "condition": "greater than",
@@ -717,6 +756,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     ">": [
@@ -735,10 +775,10 @@ New:
 }
 ```
 
-
 #### `less than or equal to` with date
 
 Old:
+
 ```json
 {
     "condition": "less than or equal to",
@@ -753,6 +793,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "<=": [
@@ -774,6 +815,7 @@ New:
 #### `contains`
 
 Old:
+
 ```json
 {
     "condition": "contains",
@@ -783,6 +825,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "in": [
@@ -798,6 +841,7 @@ New:
 #### `contains any`
 
 Old:
+
 ```json
 {
     "condition": "contains any",
@@ -810,6 +854,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "any-in": [
@@ -825,6 +870,7 @@ New:
 #### `equals any`
 
 Old:
+
 ```json
 {
     "condition": "equals any",
@@ -837,6 +883,7 @@ Old:
 ```
 
 New:
+
 ```json
 {
     "in": [
