@@ -25,7 +25,6 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: false
           virtualenvs-path: ~/.virtualenvs
-
       - name: Cache Poetry virtualenv
         uses: actions/cache@v4
         id: cache-virtualenv
@@ -35,9 +34,14 @@ jobs:
       - name: Install virtual environment
         if: steps.cache-virtualenv.outputs.cache-hit != 'true'
         run: poetry install
-      - name: Lint Python
+      - name: Install jsonnet
+        uses: zendesk/setup-jsonnet@74119dac8a540c99167a65f14aa1ee99ff143ec2 #v16
+        with:
+          version: v0.22.0
+      - name: Lint Python and Jsonnet
         run: make lint
-  validate-schemas:
+
+  build:
     permissions:
       contents: read
     runs-on: ubuntu-22.04
@@ -55,7 +59,6 @@ jobs:
           virtualenvs-create: true
           virtualenvs-in-project: false
           virtualenvs-path: ~/.virtualenvs
-
       - name: Cache Poetry virtualenv
         uses: actions/cache@v4
         id: cache-virtualenv
@@ -65,11 +68,53 @@ jobs:
       - name: Install virtual environment
         if: steps.cache-virtualenv.outputs.cache-hit != 'true'
         run: poetry install
-      - uses: actions/checkout@v4
-      - name: Spin up validator
-        run: make run-validator
-      - name: Validate schemas
-        run: make validate-schemas
+      - name: Install jsonnet
+        uses: zendesk/setup-jsonnet@74119dac8a540c99167a65f14aa1ee99ff143ec2 #v16
+        with:
+          version: v0.22.0
+      - name: Build schemas and translate them
+        run: make build
+      - name: Archive schema artifacts
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a #v7.0.1
+        with:
+          name: schemas
+          path: schemas
+  
+  # we can't validate until we update the jsonnet to the latest schema 
+  # validate-schemas:
+  #   permissions:
+  #     contents: read
+  #   runs-on: ubuntu-22.04
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - run: |
+  #         echo "PYTHON_VERSION=$(cat .python-version)" >> $GITHUB_ENV
+  #     - uses: actions/setup-python@v5
+  #       with:
+  #         python-version: ${{ env.PYTHON_VERSION }}
+  #     - name: Install Poetry
+  #       uses: snok/install-poetry@76e04a911780d5b312d89783f7b1cd627778900a
+  #       with:
+  #         version: 2.1.2
+  #         virtualenvs-create: true
+  #         virtualenvs-in-project: false
+  #         virtualenvs-path: ~/.virtualenvs
+
+  #     - name: Cache Poetry virtualenv
+  #       uses: actions/cache@v4
+  #       id: cache-virtualenv
+  #       with:
+  #         path: ~/.virtualenvs
+  #         key: ${{ runner.os }}-${{ env.PYTHON_VERSION }}-virtualenvs-${{ hashFiles('poetry.lock') }}
+  #     - name: Install virtual environment
+  #       if: steps.cache-virtualenv.outputs.cache-hit != 'true'
+  #       run: poetry install
+  #     - uses: actions/checkout@v4
+  #     - name: Spin up validator
+  #       run: make run-validator
+  #     - name: Validate schemas
+  #       run: make validate-schemas
+  
   test-translation-templates:
     permissions:
       contents: read

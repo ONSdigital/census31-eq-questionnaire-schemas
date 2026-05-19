@@ -1,10 +1,20 @@
+clean:
+	rm -rf schemas
+
+build-schemas:
+	./scripts/build_schemas.sh
+
+build: build-schemas translate-schemas 
+
 run-validator: validator-check
 	./scripts/run_validator.sh
 
 lint:
 	poetry run ./scripts/run_lint_python.sh
+	./scripts/lint_jsonnet.sh
 
 format:
+	./scripts/format_jsonnet.sh
 	poetry run isort .
 	poetry run black .
 
@@ -25,3 +35,6 @@ test-translation-templates: translations-check
 
 translate-schemas: translations-check
 	poetry run python -m scripts.translate_schemas
+
+resolve-suggestions-urls:
+	poetry run python -m scripts.resolve_suggestions_urls
