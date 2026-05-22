@@ -14,6 +14,8 @@ black = "*"
 isort = "*"
 pylint = "*"
 flake8-quotes = "*"
+jsonpointer = "*"
+jsonpath-rw = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
