@@ -25,7 +25,7 @@ The Census schemas that we generate can be broken down as:
 | Household              | England | en       |
 |                        | Wales   | en, cy   |
 | Communal Establishment | England | en       |
-|                        | Wales   |          |  
+|                        | Wales   | en. cy   |
 
 The `en` language schemas are generated using the `make build-schemas` command. Once these are generated `make translation-templates` will generate the `.pot` files for the Welsh region schemas. Once these templates are translated, `make translate-schemas` will generate the `cy` language schemas.
 
