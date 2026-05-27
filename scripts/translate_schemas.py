@@ -12,7 +12,11 @@ logger.setLevel(logging.DEBUG)
 logger.addHandler(logging.StreamHandler(sys.stdout))
 
 TRANSLATION_MAP = {
-    "cy": ["schemas/health/en/phm*", "schemas/health/en/cris*"],
+    "cy": [
+        "schemas/en/census_individual_gb_wls.json",
+        "schemas/en/census_household_gb_wls.json",
+        "schemas/en/census_communal_establishment_gb_wls.json",
+    ],
 }
 
 
