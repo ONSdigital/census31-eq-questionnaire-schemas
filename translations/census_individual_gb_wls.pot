@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-05-19 15:21+0100\n"
+"POT-Creation-Date: 2026-05-29 14:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,11 +42,6 @@ msgstr ""
 
 #. Section title
 msgid "Individual Section"
-msgstr ""
-
-#. Section title
-#. Group title
-msgid "Submit answers"
 msgstr ""
 
 #. Page title
@@ -456,8 +451,8 @@ msgstr ""
 msgctxt "Qualifications"
 msgid ""
 "The next set of questions is about any qualifications "
-"<em>{person_name}</em> has ever achieved in Wales, England or worldwide, "
-"including equivalents, even if they are not using them now."
+"<strong>{person_name}</strong> has ever achieved in Wales, England or "
+"worldwide, including equivalents, even if they are not using them now."
 msgstr ""
 
 #. Content page description
@@ -477,8 +472,9 @@ msgstr ""
 #. Content page description
 msgctxt "Main job"
 msgid ""
-"The next set of questions is about <em>{person_name_possessive}</em> main"
-" job. Their main job is the job in which they work the most hours."
+"The next set of questions is about "
+"<strong>{person_name_possessive}</strong> main job. Their main job is the"
+" job in which they work the most hours."
 msgstr ""
 
 #. Content page description
@@ -499,14 +495,15 @@ msgstr ""
 msgctxt "Last main job"
 msgid ""
 "If you had more than one job at the same time, answer for the job in "
-"which you usually worked the most hours. "
+"which you usually worked the most hours."
 msgstr ""
 
 #. Content page description
 msgctxt "Last main job"
 msgid ""
-"The next set of questions is about <em>{person_name_possessive}</em> last"
-" main job. This is the most recent job they had."
+"The next set of questions is about "
+"<strong>{person_name_possessive}</strong> last main job. This is the most"
+" recent job they had."
 msgstr ""
 
 #. Content page description
@@ -532,7 +529,7 @@ msgid "Last main job"
 msgstr ""
 
 #. Question text
-msgid "What type of accommodation is <em>{household_address}</em>?"
+msgid "What type of accommodation is <strong>{household_address}</strong>?"
 msgstr ""
 
 #. Question text
@@ -552,7 +549,9 @@ msgid "What is your position in this establishment?"
 msgstr ""
 
 #. Question text
-msgid "What is <em>{person_name_possessive}</em> position in this establishment?"
+msgid ""
+"What is <strong>{person_name_possessive}</strong> position in this "
+"establishment?"
 msgstr ""
 
 #. Question text
@@ -560,7 +559,7 @@ msgid "What is your date of birth?"
 msgstr ""
 
 #. Question text
-msgid "What is <em>{person_name_possessive}</em> date of birth?"
+msgid "What is <strong>{person_name_possessive}</strong> date of birth?"
 msgstr ""
 
 #. Question text
@@ -568,7 +567,7 @@ msgid "You are {age} old. Is this correct?"
 msgstr ""
 
 #. Question text
-msgid "<em>{person_name}</em> is {age} old. Is this correct?"
+msgid "<strong>{person_name}</strong> is {age} old. Is this correct?"
 msgstr ""
 
 #. Question text
@@ -576,7 +575,7 @@ msgid "What is your sex?"
 msgstr ""
 
 #. Question text
-msgid "What is <em>{person_name_possessive}</em> sex?"
+msgid "What is <strong>{person_name_possessive}</strong> sex?"
 msgstr ""
 
 #. Question text
@@ -587,8 +586,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgstr ""
 
 #. Question text
@@ -596,7 +595,7 @@ msgid "Who is your legal marriage to?"
 msgstr ""
 
 #. Question text
-msgid "Who is <em>{person_name_possessive}</em> legal marriage to?"
+msgid "Who is <strong>{person_name_possessive}</strong> legal marriage to?"
 msgstr ""
 
 #. Question text
@@ -604,7 +603,7 @@ msgid "Who was your legal marriage to?"
 msgstr ""
 
 #. Question text
-msgid "Who was <em>{person_name_possessive}</em> legal marriage to?"
+msgid "Who was <strong>{person_name_possessive}</strong> legal marriage to?"
 msgstr ""
 
 #. Question text
@@ -612,7 +611,9 @@ msgid "Who is your registered civil partnership to?"
 msgstr ""
 
 #. Question text
-msgid "Who is <em>{person_name_possessive}</em> registered civil partnership to?"
+msgid ""
+"Who is <strong>{person_name_possessive}</strong> registered civil "
+"partnership to?"
 msgstr ""
 
 #. Question text
@@ -620,7 +621,9 @@ msgid "Who was your registered civil partnership to?"
 msgstr ""
 
 #. Question text
-msgid "Who was <em>{person_name_possessive}</em> registered civil partnership to?"
+msgid ""
+"Who was <strong>{person_name_possessive}</strong> registered civil "
+"partnership to?"
 msgstr ""
 
 #. Question text
@@ -629,8 +632,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Does <em>{person_name}</em> stay at another address for more than 30 days"
-" a year?"
+"Does <strong>{person_name}</strong> stay at another address for more than"
+" 30 days a year?"
 msgstr ""
 
 #. Question text
@@ -639,8 +642,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"In which country outside the UK does <em>{person_name}</em> stay for more"
-" than 30 days a year?"
+"In which country outside the UK does <strong>{person_name}</strong> stay "
+"for more than 30 days a year?"
 msgstr ""
 
 #. Question text
@@ -649,22 +652,22 @@ msgstr ""
 
 #. Question text
 msgid ""
-"What is the other UK address where <em>{person_name}</em> stays for more "
-"than 30 days a year?"
+"What is the other UK address where <strong>{person_name}</strong> stays "
+"for more than 30 days a year?"
 msgstr ""
 
 #. Question text
-msgid "What type of address is <em>{household_address}</em>?"
+msgid "What type of address is <strong>{household_address}</strong>?"
 msgstr ""
 
 #. Question text
-msgid "What type of address is your address in <em>{country}</em>?"
+msgid "What type of address is your address in <strong>{country}</strong>?"
 msgstr ""
 
 #. Question text
 msgid ""
-"What type of address is <em>{person_name_possessive}</em> address in "
-"{country}?"
+"What type of address is <strong>{person_name_possessive}</strong> address"
+" in {country}?"
 msgstr ""
 
 #. Question text
@@ -672,7 +675,7 @@ msgid "Are you a student in full-time education?"
 msgstr ""
 
 #. Question text
-msgid "Is <em>{person_name}</em> a student in full-time education?"
+msgid "Is <strong>{person_name}</strong> a student in full-time education?"
 msgstr ""
 
 #. Question text
@@ -680,7 +683,9 @@ msgid "Are you a schoolchild or student in full-time education?"
 msgstr ""
 
 #. Question text
-msgid "Is <em>{person_name}</em> a schoolchild or student in full-time education?"
+msgid ""
+"Is <strong>{person_name}</strong> a schoolchild or student in full-time "
+"education?"
 msgstr ""
 
 #. Question text
@@ -688,7 +693,7 @@ msgid "During term time, where do you usually live?"
 msgstr ""
 
 #. Question text
-msgid "During term time, where does <em>{person_name}</em> usually live?"
+msgid "During term time, where does <strong>{person_name}</strong> usually live?"
 msgstr ""
 
 #. Question text
@@ -702,7 +707,7 @@ msgstr ""
 #. Question text
 msgid ""
 "During term time, in which country outside the UK does "
-"<em>{person_name}</em> usually live?"
+"<strong>{person_name}</strong> usually live?"
 msgstr ""
 
 #. Question text
@@ -711,8 +716,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"What is the UK address where <em>{person_name}</em> usually stays during "
-"term time?"
+"What is the UK address where <strong>{person_name}</strong> usually stays"
+" during term time?"
 msgstr ""
 
 #. Question text
@@ -720,7 +725,7 @@ msgid "What is your country of birth?"
 msgstr ""
 
 #. Question text
-msgid "What is <em>{person_name_possessive}</em> country of birth?"
+msgid "What is <strong>{person_name_possessive}</strong> country of birth?"
 msgstr ""
 
 #. Question text
@@ -729,8 +734,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"You selected “Elsewhere”. What is <em>{person_name_possessive}</em> "
-"country of birth?"
+"You selected “Elsewhere”. What is "
+"<strong>{person_name_possessive}</strong> country of birth?"
 msgstr ""
 
 #. Question text
@@ -739,8 +744,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"When did <em>{person_name}</em> most recently arrive to live in the "
-"United Kingdom?"
+"When did <strong>{person_name}</strong> most recently arrive to live in "
+"the United Kingdom?"
 msgstr ""
 
 #. Question text
@@ -749,7 +754,7 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Did <em>{person_name}</em> arrive in the UK on or after "
+"Did <strong>{person_name}</strong> arrive in the UK on or after "
 "{year_before_census_date}?"
 msgstr ""
 
@@ -762,7 +767,7 @@ msgstr ""
 #. Question text
 msgid ""
 "Including the time already spent here, how long does "
-"<em>{person_name}</em> intend to stay in the United Kingdom?"
+"<strong>{person_name}</strong> intend to stay in the United Kingdom?"
 msgstr ""
 
 #. Question text
@@ -770,7 +775,9 @@ msgid "One year ago, what was your usual address?"
 msgstr ""
 
 #. Question text
-msgid "One year ago, what was <em>{person_name_possessive}</em> usual address?"
+msgid ""
+"One year ago, what was <strong>{person_name_possessive}</strong> usual "
+"address?"
 msgstr ""
 
 #. Question text
@@ -779,8 +786,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"In which country outside the UK was <em>{person_name_possessive}</em> "
-"usual address one year ago?"
+"In which country outside the UK was "
+"<strong>{person_name_possessive}</strong> usual address one year ago?"
 msgstr ""
 
 #. Question text
@@ -788,7 +795,7 @@ msgid "What was your address one year ago?"
 msgstr ""
 
 #. Question text
-msgid "What was <em>{person_name_possessive}</em> address one year ago?"
+msgid "What was <strong>{person_name_possessive}</strong> address one year ago?"
 msgstr ""
 
 #. Question text
@@ -796,7 +803,7 @@ msgid "How would you describe your national identity?"
 msgstr ""
 
 #. Question text
-msgid "How would <em>{person_name}</em> describe their national identity?"
+msgid "How would <strong>{person_name}</strong> describe their national identity?"
 msgstr ""
 
 #. Question text
@@ -805,8 +812,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"You selected “Other”. How would <em>{person_name}</em> describe their "
-"national identity?"
+"You selected “Other”. How would <strong>{person_name}</strong> describe "
+"their national identity?"
 msgstr ""
 
 #. Question text
@@ -815,8 +822,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"You selected “Other”. How would <em>{person_name}</em> describe their "
-"other national identity?"
+"You selected “Other”. How would <strong>{person_name}</strong> describe "
+"their other national identity?"
 msgstr ""
 
 #. Question text
@@ -824,7 +831,7 @@ msgid "What is your ethnic group?"
 msgstr ""
 
 #. Question text
-msgid "What is <em>{person_name_possessive}</em> ethnic group?"
+msgid "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgstr ""
 
 #. Question text
@@ -833,8 +840,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgstr ""
 
 #. Question text
@@ -846,7 +853,8 @@ msgstr ""
 #. Question text
 msgid ""
 "You selected “Any other White background”. How would "
-"<em>{person_name}</em> describe their White ethnic group or background?"
+"<strong>{person_name}</strong> describe their White ethnic group or "
+"background?"
 msgstr ""
 
 #. Question text
@@ -857,8 +865,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgstr ""
 
 #. Question text
@@ -870,8 +878,8 @@ msgstr ""
 #. Question text
 msgid ""
 "You selected “Any other Mixed or Multiple background”. How would "
-"<em>{person_name}</em> describe their Mixed or Multiple ethnic group or "
-"background?"
+"<strong>{person_name}</strong> describe their Mixed or Multiple ethnic "
+"group or background?"
 msgstr ""
 
 #. Question text
@@ -882,8 +890,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgstr ""
 
 #. Question text
@@ -895,7 +903,8 @@ msgstr ""
 #. Question text
 msgid ""
 "You selected “Any other Asian background”. How would "
-"<em>{person_name}</em> describe their Asian ethnic group or background?"
+"<strong>{person_name}</strong> describe their Asian ethnic group or "
+"background?"
 msgstr ""
 
 #. Question text
@@ -906,8 +915,9 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Which one best describes <em>{person_name_possessive}</em> Black, Black "
-"Welsh, Black British, Caribbean or African ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Black,"
+" Black Welsh, Black British, Caribbean or African ethnic group or "
+"background?"
 msgstr ""
 
 #. Question text
@@ -918,8 +928,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"You selected “African”. How would <em>{person_name}</em> describe their "
-"African ethnic group or background?"
+"You selected “African”. How would <strong>{person_name}</strong> describe"
+" their African ethnic group or background?"
 msgstr ""
 
 #. Question text
@@ -932,8 +942,8 @@ msgstr ""
 #. Question text
 msgid ""
 "You selected “Any other Black, Black British or Caribbean background”. "
-"How would <em>{person_name}</em> describe their Black, Black British or "
-"Caribbean ethnic group or background?"
+"How would <strong>{person_name}</strong> describe their Black, Black "
+"British or Caribbean ethnic group or background?"
 msgstr ""
 
 #. Question text
@@ -942,8 +952,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Which one best describes <em>{person_name_possessive}</em> other ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> other "
+"ethnic group or background?"
 msgstr ""
 
 #. Question text
@@ -954,8 +964,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"You selected “Any other ethnic group”. How would <em>{person_name}</em> "
-"describe their ethnic group or background?"
+"You selected “Any other ethnic group”. How would "
+"<strong>{person_name}</strong> describe their ethnic group or background?"
 msgstr ""
 
 #. Question text
@@ -963,7 +973,7 @@ msgid "What is your religion?"
 msgstr ""
 
 #. Question text
-msgid "What is <em>{person_name_possessive}</em> religion?"
+msgid "What is <strong>{person_name_possessive}</strong> religion?"
 msgstr ""
 
 #. Question text
@@ -973,7 +983,7 @@ msgstr ""
 #. Question text
 msgid ""
 "You selected “Any other religion”. What is "
-"<em>{person_name_possessive}</em> religion?"
+"<strong>{person_name_possessive}</strong> religion?"
 msgstr ""
 
 #. Question text
@@ -981,7 +991,7 @@ msgid "Can you understand, speak, read or write Welsh?"
 msgstr ""
 
 #. Question text
-msgid "Can <em>{person_name}</em> understand, speak, read or write Welsh?"
+msgid "Can <strong>{person_name}</strong> understand, speak, read or write Welsh?"
 msgstr ""
 
 #. Question text
@@ -989,7 +999,7 @@ msgid "What is your main language?"
 msgstr ""
 
 #. Question text
-msgid "What is <em>{person_name_possessive}</em> main language?"
+msgid "What is <strong>{person_name_possessive}</strong> main language?"
 msgstr ""
 
 #. Question text
@@ -1001,7 +1011,7 @@ msgstr ""
 #. Question text
 msgid ""
 "You selected “Other, including British Sign Language”. What is "
-"<em>{person_name_possessive}</em> main language?"
+"<strong>{person_name_possessive}</strong> main language?"
 msgstr ""
 
 #. Question text
@@ -1009,7 +1019,7 @@ msgid "How well can you speak English?"
 msgstr ""
 
 #. Question text
-msgid "How well can <em>{person_name}</em> speak English?"
+msgid "How well can <strong>{person_name}</strong> speak English?"
 msgstr ""
 
 #. Question text
@@ -1017,7 +1027,7 @@ msgid "What passports do you hold?"
 msgstr ""
 
 #. Question text
-msgid "What passports does <em>{person_name}</em> hold?"
+msgid "What passports does <strong>{person_name}</strong> hold?"
 msgstr ""
 
 #. Question text
@@ -1025,7 +1035,9 @@ msgid "You selected “Other”. What passports do you hold?"
 msgstr ""
 
 #. Question text
-msgid "You selected “Other”. What passports does <em>{person_name}</em> hold?"
+msgid ""
+"You selected “Other”. What passports does <strong>{person_name}</strong> "
+"hold?"
 msgstr ""
 
 #. Question text
@@ -1034,8 +1046,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"You selected “Other”. What other passports does <em>{person_name}</em> "
-"hold?"
+"You selected “Other”. What other passports does "
+"<strong>{person_name}</strong> hold?"
 msgstr ""
 
 #. Question text
@@ -1043,7 +1055,7 @@ msgid "How is your health in general?"
 msgstr ""
 
 #. Question text
-msgid "How is <em>{person_name_possessive}</em> health in general?"
+msgid "How is <strong>{person_name_possessive}</strong> health in general?"
 msgstr ""
 
 #. Question text
@@ -1054,8 +1066,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Does <em>{person_name}</em> have any physical or mental health conditions"
-" or illnesses lasting or expected to last 12 months or more?"
+"Does <strong>{person_name}</strong> have any physical or mental health "
+"conditions or illnesses lasting or expected to last 12 months or more?"
 msgstr ""
 
 #. Question text
@@ -1066,8 +1078,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Do any of <em>{person_name_possessive}</em> conditions or illnesses "
-"reduce their ability to carry out day-to-day activities?"
+"Do any of <strong>{person_name_possessive}</strong> conditions or "
+"illnesses reduce their ability to carry out day-to-day activities?"
 msgstr ""
 
 #. Question text
@@ -1079,9 +1091,9 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Does <em>{person_name}</em> look after, or give any help or support to, "
-"anyone because they have long-term physical or mental health conditions "
-"or illnesses, or problems related to old age?"
+"Does <strong>{person_name}</strong> look after, or give any help or "
+"support to, anyone because they have long-term physical or mental health "
+"conditions or illnesses, or problems related to old age?"
 msgstr ""
 
 #. Question text
@@ -1090,8 +1102,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgstr ""
 
 #. Question text
@@ -1100,8 +1112,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Is the gender <em>{person_name}</em> identifies with the same as their "
-"sex registered at birth?"
+"Is the gender <strong>{person_name}</strong> identifies with the same as "
+"their sex registered at birth?"
 msgstr ""
 
 #. Question text
@@ -1109,7 +1121,7 @@ msgid "Have you completed an apprenticeship?"
 msgstr ""
 
 #. Question text
-msgid "Has <em>{person_name}</em> completed an apprenticeship?"
+msgid "Has <strong>{person_name}</strong> completed an apprenticeship?"
 msgstr ""
 
 #. Question text
@@ -1118,8 +1130,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgstr ""
 
 #. Question text
@@ -1127,7 +1139,9 @@ msgid "Have you achieved an NVQ or equivalent qualification?"
 msgstr ""
 
 #. Question text
-msgid "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgid ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgstr ""
 
 #. Question text
@@ -1136,7 +1150,7 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgstr ""
 
@@ -1145,7 +1159,9 @@ msgid "Have you achieved a GCSE or equivalent qualification?"
 msgstr ""
 
 #. Question text
-msgid "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgid ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgstr ""
 
 #. Question text
@@ -1153,7 +1169,7 @@ msgid "Have you achieved any other qualifications?"
 msgstr ""
 
 #. Question text
-msgid "Has <em>{person_name}</em> achieved any other qualifications?"
+msgid "Has <strong>{person_name}</strong> achieved any other qualifications?"
 msgstr ""
 
 #. Question text
@@ -1161,7 +1177,9 @@ msgid "Have you previously served in the UK Armed Forces?"
 msgstr ""
 
 #. Question text
-msgid "Has <em>{person_name}</em> previously served in the UK Armed Forces?"
+msgid ""
+"Has <strong>{person_name}</strong> previously served in the UK Armed "
+"Forces?"
 msgstr ""
 
 #. Question text
@@ -1170,8 +1188,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgstr ""
 
 #. Question text
@@ -1182,8 +1200,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Which of the following describes what <em>{person_name}</em> was doing in"
-" the last seven days?"
+"Which of the following describes what <strong>{person_name}</strong> was "
+"doing in the last seven days?"
 msgstr ""
 
 #. Question text
@@ -1194,8 +1212,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"In the last four weeks, was <em>{person_name}</em> actively looking for "
-"any kind of paid work?"
+"In the last four weeks, was <strong>{person_name}</strong> actively "
+"looking for any kind of paid work?"
 msgstr ""
 
 #. Question text
@@ -1203,7 +1221,9 @@ msgid "Are you available to start work in the next two weeks?"
 msgstr ""
 
 #. Question text
-msgid "Is <em>{person_name}</em> available to start work in the next two weeks?"
+msgid ""
+"Is <strong>{person_name}</strong> available to start work in the next two"
+" weeks?"
 msgstr ""
 
 #. Question text
@@ -1212,8 +1232,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"In the last seven days, was <em>{person_name}</em> waiting to start a job"
-" already accepted?"
+"In the last seven days, was <strong>{person_name}</strong> waiting to "
+"start a job already accepted?"
 msgstr ""
 
 #. Question text
@@ -1221,7 +1241,7 @@ msgid "Have you ever done any paid work?"
 msgstr ""
 
 #. Question text
-msgid "Has <em>{person_name}</em> ever done any paid work?"
+msgid "Has <strong>{person_name}</strong> ever done any paid work?"
 msgstr ""
 
 #. Question text
@@ -1230,8 +1250,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"In their main job, what is <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what is <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgstr ""
 
 #. Question text
@@ -1240,8 +1260,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"In their main job, what was <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what was <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgstr ""
 
 #. Question text
@@ -1250,8 +1270,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"What is the name of the organisation or business <em>{person_name}</em> "
-"works for?"
+"What is the name of the organisation or business "
+"<strong>{person_name}</strong> works for?"
 msgstr ""
 
 #. Question text
@@ -1260,8 +1280,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"What was the name of the organisation or business <em>{person_name}</em> "
-"worked for?"
+"What was the name of the organisation or business "
+"<strong>{person_name}</strong> worked for?"
 msgstr ""
 
 #. Question text
@@ -1269,7 +1289,7 @@ msgid "What is your full job title?"
 msgstr ""
 
 #. Question text
-msgid "What is <em>{person_name_possessive}</em> full job title?"
+msgid "What is <strong>{person_name_possessive}</strong> full job title?"
 msgstr ""
 
 #. Question text
@@ -1277,7 +1297,7 @@ msgid "What was your full job title?"
 msgstr ""
 
 #. Question text
-msgid "What was <em>{person_name_possessive}</em> full job title?"
+msgid "What was <strong>{person_name_possessive}</strong> full job title?"
 msgstr ""
 
 #. Question text
@@ -1285,7 +1305,9 @@ msgid "Briefly describe what you do in your main job"
 msgstr ""
 
 #. Question text
-msgid "Briefly describe what <em>{person_name}</em> does in their main job"
+msgid ""
+"Briefly describe what <strong>{person_name}</strong> does in their main "
+"job"
 msgstr ""
 
 #. Question text
@@ -1293,7 +1315,7 @@ msgid "Briefly describe what you did in your main job"
 msgstr ""
 
 #. Question text
-msgid "Briefly describe what <em>{person_name}</em> did in their main job"
+msgid "Briefly describe what <strong>{person_name}</strong> did in their main job"
 msgstr ""
 
 #. Question text
@@ -1304,7 +1326,7 @@ msgstr ""
 
 #. Question text
 msgid ""
-"What is the main activity of <em>{person_name_possessive}</em> "
+"What is the main activity of <strong>{person_name_possessive}</strong> "
 "organisation, business or freelance work?"
 msgstr ""
 
@@ -1316,7 +1338,7 @@ msgstr ""
 
 #. Question text
 msgid ""
-"What was the main activity of <em>{person_name_possessive}</em> "
+"What was the main activity of <strong>{person_name_possessive}</strong> "
 "organisation, business or freelance work?"
 msgstr ""
 
@@ -1328,8 +1350,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Does <em>{person_name}</em> supervise or oversee the work of other "
-"employees on a day-to-day basis?"
+"Does <strong>{person_name}</strong> supervise or oversee the work of "
+"other employees on a day-to-day basis?"
 msgstr ""
 
 #. Question text
@@ -1340,8 +1362,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"Did <em>{person_name}</em> supervise or oversee the work of other "
-"employees on a day-to-day basis?"
+"Did <strong>{person_name}</strong> supervise or oversee the work of other"
+" employees on a day-to-day basis?"
 msgstr ""
 
 #. Question text
@@ -1350,8 +1372,8 @@ msgstr ""
 
 #. Question text
 msgid ""
-"In <em>{person_name_possessive}</em> main job, how many hours a week do "
-"they usually work?"
+"In <strong>{person_name_possessive}</strong> main job, how many hours a "
+"week do they usually work?"
 msgstr ""
 
 #. Question text
@@ -1359,7 +1381,7 @@ msgid "How do you usually travel to work?"
 msgstr ""
 
 #. Question text
-msgid "How does <em>{person_name}</em> usually travel to work?"
+msgid "How does <strong>{person_name}</strong> usually travel to work?"
 msgstr ""
 
 #. Question text
@@ -1367,7 +1389,7 @@ msgid "Where do you mainly work?"
 msgstr ""
 
 #. Question text
-msgid "Where does <em>{person_name}</em> mainly work?"
+msgid "Where does <strong>{person_name}</strong> mainly work?"
 msgstr ""
 
 #. Question text
@@ -1375,7 +1397,7 @@ msgid "Do you mainly work in the UK?"
 msgstr ""
 
 #. Question text
-msgid "Does <em>{person_name}</em> mainly work in the UK?"
+msgid "Does <strong>{person_name}</strong> mainly work in the UK?"
 msgstr ""
 
 #. Question text
@@ -1383,7 +1405,9 @@ msgid "What is the address of your workplace?"
 msgstr ""
 
 #. Question text
-msgid "What is the address of <em>{person_name_possessive}</em> workplace?"
+msgid ""
+"What is the address of <strong>{person_name_possessive}</strong> "
+"workplace?"
 msgstr ""
 
 #. Question text
@@ -1391,7 +1415,7 @@ msgid "What is the address of your depot?"
 msgstr ""
 
 #. Question text
-msgid "What is the address of <em>{person_name_possessive}</em> depot?"
+msgid "What is the address of <strong>{person_name_possessive}</strong> depot?"
 msgstr ""
 
 #. Question text
@@ -1399,7 +1423,9 @@ msgid "In which country outside the UK do you mainly work?"
 msgstr ""
 
 #. Question text
-msgid "In which country outside the UK does <em>{person_name}</em> mainly work?"
+msgid ""
+"In which country outside the UK does <strong>{person_name}</strong> "
+"mainly work?"
 msgstr ""
 
 #. Question description
@@ -1408,7 +1434,7 @@ msgid "For example, 31 3 1980"
 msgstr ""
 
 #. Question description
-msgctxt "What is <em>{person_name_possessive}</em> date of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> date of birth?"
 msgid "For example, 31 3 1980"
 msgstr ""
 
@@ -1421,8 +1447,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"Does <em>{person_name}</em> stay at another address for more than 30 days"
-" a year?"
+"Does <strong>{person_name}</strong> stay at another address for more than"
+" 30 days a year?"
 msgid ""
 "This should be a single address and could be more than 30 days in a row "
 "or divided across the year"
@@ -1435,8 +1461,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"When did <em>{person_name}</em> most recently arrive to live in the "
-"United Kingdom?"
+"When did <strong>{person_name}</strong> most recently arrive to live in "
+"the United Kingdom?"
 msgid "Do not count short visits away from the UK"
 msgstr ""
 
@@ -1456,14 +1482,18 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "One year ago, what was <em>{person_name_possessive}</em> usual address?"
+msgctxt ""
+"One year ago, what was <strong>{person_name_possessive}</strong> usual "
+"address?"
 msgid ""
 "If they had no usual address one year ago, select the address where they "
 "were staying."
 msgstr ""
 
 #. Question description
-msgctxt "One year ago, what was <em>{person_name_possessive}</em> usual address?"
+msgctxt ""
+"One year ago, what was <strong>{person_name_possessive}</strong> usual "
+"address?"
 msgid ""
 "If the <strong>coronavirus</strong> pandemic affected their usual address"
 " one year ago, select where they were living <strong>before their "
@@ -1474,15 +1504,15 @@ msgstr ""
 msgctxt "How would you describe your national identity?"
 msgid ""
 "This relates to where you feel you belong, such as the country or "
-"countries you think of as home.<p>This could be different from your "
+"countries you think of as home.<br/>This could be different from your "
 "citizenship or ethnic group."
 msgstr ""
 
 #. Question description
-msgctxt "How would <em>{person_name}</em> describe their national identity?"
+msgctxt "How would <strong>{person_name}</strong> describe their national identity?"
 msgid ""
 "This relates to where they feel they belong, such as the country or "
-"countries they think of as home.<p>This could be different from their "
+"countries they think of as home.<br/>This could be different from their "
 "citizenship or ethnic group."
 msgstr ""
 
@@ -1494,7 +1524,7 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "Has <em>{person_name}</em> completed an apprenticeship?"
+msgctxt "Has <strong>{person_name}</strong> completed an apprenticeship?"
 msgid ""
 "This could be equivalent apprenticeships completed anywhere outside Wales"
 " and England"
@@ -1509,8 +1539,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgid ""
 "This could be equivalent qualifications achieved anywhere outside Wales "
 "and England"
@@ -1524,7 +1554,9 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid ""
 "This could be equivalent qualifications achieved anywhere outside Wales "
 "and England"
@@ -1539,7 +1571,7 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid ""
 "This could be equivalent qualifications achieved anywhere outside Wales "
@@ -1554,7 +1586,9 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid ""
 "This could be equivalent qualifications achieved anywhere outside Wales "
 "and England"
@@ -1568,7 +1602,7 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "Has <em>{person_name}</em> achieved any other qualifications?"
+msgctxt "Has <strong>{person_name}</strong> achieved any other qualifications?"
 msgid ""
 "This could be any qualifications they have ever achieved, even if they "
 "are not using them now"
@@ -1584,8 +1618,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgid ""
 "If they have a job but have been off work on <strong>furlough</strong>, "
 "in <strong>quarantine</strong> or <strong>self-isolating</strong>, select"
@@ -1598,7 +1632,7 @@ msgid "<strong>Furlough</strong> is considered paid work"
 msgstr ""
 
 #. Question description
-msgctxt "Has <em>{person_name}</em> ever done any paid work?"
+msgctxt "Has <strong>{person_name}</strong> ever done any paid work?"
 msgid "<strong>Furlough</strong> is considered paid work"
 msgstr ""
 
@@ -1609,8 +1643,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"In their main job, what is <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what is <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid "Their main job is the job in which they usually work the most hours"
 msgstr ""
 
@@ -1623,8 +1657,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"In their main job, what was <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what was <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid ""
 "This is the most recent job they had. If they had more than one job at "
 "the same time, answer for the job in which they usually worked the most "
@@ -1638,8 +1672,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"What is the name of the organisation or business <em>{person_name}</em> "
-"works for?"
+"What is the name of the organisation or business "
+"<strong>{person_name}</strong> works for?"
 msgid "If they are self-employed in their own business, give the business name"
 msgstr ""
 
@@ -1650,8 +1684,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"What was the name of the organisation or business <em>{person_name}</em> "
-"worked for?"
+"What was the name of the organisation or business "
+"<strong>{person_name}</strong> worked for?"
 msgid "If they were self-employed in their own business, give the business name"
 msgstr ""
 
@@ -1663,7 +1697,7 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "What is <em>{person_name_possessive}</em> full job title?"
+msgctxt "What is <strong>{person_name_possessive}</strong> full job title?"
 msgid ""
 "For example, retail assistant, office cleaner, district nurse, primary "
 "school teacher. Do not state their grade or pay band."
@@ -1677,7 +1711,7 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "What was <em>{person_name_possessive}</em> full job title?"
+msgctxt "What was <strong>{person_name_possessive}</strong> full job title?"
 msgid ""
 "For example, retail assistant, office cleaner, district nurse, primary "
 "school teacher. Do not state their grade or pay band."
@@ -1694,7 +1728,7 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"What is the main activity of <em>{person_name_possessive}</em> "
+"What is the main activity of <strong>{person_name_possessive}</strong> "
 "organisation, business or freelance work?"
 msgid ""
 "For example, clothing retail, general hospital, primary education, food "
@@ -1712,7 +1746,7 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"What was the main activity of <em>{person_name_possessive}</em> "
+"What was the main activity of <strong>{person_name_possessive}</strong> "
 "organisation, business or freelance work?"
 msgid ""
 "For example, clothing retail, general hospital, primary education, food "
@@ -1728,8 +1762,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"Does <em>{person_name}</em> supervise or oversee the work of other "
-"employees on a day-to-day basis?"
+"Does <strong>{person_name}</strong> supervise or oversee the work of "
+"other employees on a day-to-day basis?"
 msgid "This could be remotely or in person"
 msgstr ""
 
@@ -1742,8 +1776,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"Did <em>{person_name}</em> supervise or oversee the work of other "
-"employees on a day-to-day basis?"
+"Did <strong>{person_name}</strong> supervise or oversee the work of other"
+" employees on a day-to-day basis?"
 msgid "This could be remotely or in person"
 msgstr ""
 
@@ -1757,8 +1791,8 @@ msgstr ""
 
 #. Question description
 msgctxt ""
-"In <em>{person_name_possessive}</em> main job, how many hours a week do "
-"they usually work?"
+"In <strong>{person_name_possessive}</strong> main job, how many hours a "
+"week do they usually work?"
 msgid ""
 "If the <strong>coronavirus</strong> pandemic has affected their working "
 "hours, select the answer that best describes their <strong>current "
@@ -1781,14 +1815,14 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid ""
 "Answer for the longest part, <strong>by distance</strong>, of their "
 "current journey to work."
 msgstr ""
 
 #. Question description
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid ""
 "If the <strong>coronavirus</strong> pandemic has affected how they travel"
 " to work, select the answer that best describes their <strong>current "
@@ -1804,7 +1838,7 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid ""
 "If the <strong>coronavirus</strong> pandemic has affected where they "
 "mainly work, select the answer that best describes their <strong>current "
@@ -1820,7 +1854,7 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "Does <em>{person_name}</em> mainly work in the UK?"
+msgctxt "Does <strong>{person_name}</strong> mainly work in the UK?"
 msgid ""
 "If the <strong>coronavirus</strong> pandemic has affected where they "
 "mainly work, select the answer that best describes their <strong>current "
@@ -1828,7 +1862,7 @@ msgid ""
 msgstr ""
 
 #. Question definition link
-msgctxt "What type of accommodation is <em>{household_address}</em>?"
+msgctxt "What type of accommodation is <strong>{household_address}</strong>?"
 msgid "What we mean by “communal establishment”"
 msgstr ""
 
@@ -1839,8 +1873,8 @@ msgstr ""
 
 #. Question definition link
 msgctxt ""
-"Does <em>{person_name}</em> stay at another address for more than 30 days"
-" a year?"
+"Does <strong>{person_name}</strong> stay at another address for more than"
+" 30 days a year?"
 msgid "What we mean by “another address”"
 msgstr ""
 
@@ -1850,7 +1884,7 @@ msgid "What we mean by “main language”"
 msgstr ""
 
 #. Question definition link
-msgctxt "What is <em>{person_name_possessive}</em> main language?"
+msgctxt "What is <strong>{person_name_possessive}</strong> main language?"
 msgid "What we mean by “main language”"
 msgstr ""
 
@@ -1863,8 +1897,8 @@ msgstr ""
 
 #. Question definition link
 msgctxt ""
-"Does <em>{person_name}</em> have any physical or mental health conditions"
-" or illnesses lasting or expected to last 12 months or more?"
+"Does <strong>{person_name}</strong> have any physical or mental health "
+"conditions or illnesses lasting or expected to last 12 months or more?"
 msgid "What we mean by “physical and mental health conditions or illnesses”"
 msgstr ""
 
@@ -1877,8 +1911,8 @@ msgstr ""
 
 #. Question definition link
 msgctxt ""
-"Do any of <em>{person_name_possessive}</em> conditions or illnesses "
-"reduce their ability to carry out day-to-day activities?"
+"Do any of <strong>{person_name_possessive}</strong> conditions or "
+"illnesses reduce their ability to carry out day-to-day activities?"
 msgid "What we mean by “reduce their ability”"
 msgstr ""
 
@@ -1889,8 +1923,8 @@ msgstr ""
 
 #. Question definition link
 msgctxt ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgid "What we mean by “degree level or above”"
 msgstr ""
 
@@ -1900,7 +1934,9 @@ msgid "What we mean by “NVQ”"
 msgstr ""
 
 #. Question definition link
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid "What we mean by “NVQ”"
 msgstr ""
 
@@ -1911,7 +1947,7 @@ msgstr ""
 
 #. Question definition link
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "What we mean by “AS and A level”"
 msgstr ""
@@ -1922,7 +1958,9 @@ msgid "What we mean by “GCSE”"
 msgstr ""
 
 #. Question definition link
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "What we mean by “GCSE”"
 msgstr ""
 
@@ -1932,12 +1970,12 @@ msgid "What we mean by “mainly work”"
 msgstr ""
 
 #. Question definition link
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid "What we mean by “mainly work”"
 msgstr ""
 
 #. Question definition description
-msgctxt "What type of accommodation is <em>{household_address}</em>?"
+msgctxt "What type of accommodation is <strong>{household_address}</strong>?"
 msgid ""
 "This is a place providing managed residential accommodation. “Managed” "
 "here means full-time or part-time supervision of the accommodation."
@@ -1953,8 +1991,8 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Does <em>{person_name}</em> stay at another address for more than 30 days"
-" a year?"
+"Does <strong>{person_name}</strong> stay at another address for more than"
+" 30 days a year?"
 msgid ""
 "This is a single address that is different to the one at the start of "
 "this questionnaire. This might be another parent or guardian’s address, a"
@@ -1969,7 +2007,7 @@ msgid ""
 msgstr ""
 
 #. Question definition description
-msgctxt "What is <em>{person_name_possessive}</em> main language?"
+msgctxt "What is <strong>{person_name_possessive}</strong> main language?"
 msgid ""
 "This is the language they use most naturally. For example, it could be "
 "the language they use at home."
@@ -1994,15 +2032,15 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Does <em>{person_name}</em> have any physical or mental health conditions"
-" or illnesses lasting or expected to last 12 months or more?"
+"Does <strong>{person_name}</strong> have any physical or mental health "
+"conditions or illnesses lasting or expected to last 12 months or more?"
 msgid "This is about health conditions, illnesses or impairments they may have."
 msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Does <em>{person_name}</em> have any physical or mental health conditions"
-" or illnesses lasting or expected to last 12 months or more?"
+"Does <strong>{person_name}</strong> have any physical or mental health "
+"conditions or illnesses lasting or expected to last 12 months or more?"
 msgid ""
 "Consider conditions that always affect them and those that flare up from "
 "time to time. These may include, for example, sensory conditions, "
@@ -2041,8 +2079,8 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Do any of <em>{person_name_possessive}</em> conditions or illnesses "
-"reduce their ability to carry out day-to-day activities?"
+"Do any of <strong>{person_name_possessive}</strong> conditions or "
+"illnesses reduce their ability to carry out day-to-day activities?"
 msgid ""
 "This is about whether their health condition or illness currently affects"
 " their ability to carry out day-to-day activities."
@@ -2050,8 +2088,8 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Do any of <em>{person_name_possessive}</em> conditions or illnesses "
-"reduce their ability to carry out day-to-day activities?"
+"Do any of <strong>{person_name_possessive}</strong> conditions or "
+"illnesses reduce their ability to carry out day-to-day activities?"
 msgid ""
 "Consider whether they are still affected while receiving any treatment, "
 "medication or using any devices for their condition or illness. For "
@@ -2061,8 +2099,8 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Do any of <em>{person_name_possessive}</em> conditions or illnesses "
-"reduce their ability to carry out day-to-day activities?"
+"Do any of <strong>{person_name_possessive}</strong> conditions or "
+"illnesses reduce their ability to carry out day-to-day activities?"
 msgid ""
 "You should select “Yes, a lot” if they usually need some level of support"
 " from family members, friends or personal social services for most normal"
@@ -2093,8 +2131,8 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgid ""
 "This is any higher education qualification, achieved in the UK or another"
 " country, at level 4 or above."
@@ -2102,8 +2140,8 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgid ""
 "Students are usually aged 18 years or over when they begin these "
 "qualifications through a college or university."
@@ -2111,8 +2149,8 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgid ""
 "Examples include level 4 and 5 qualifications, bachelor’s degrees with or"
 " without honours, master’s degrees, PhD or other doctorates and "
@@ -2136,7 +2174,9 @@ msgid ""
 msgstr ""
 
 #. Question definition description
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid ""
 "This is a National Vocational Qualification. NVQs are competency and "
 "skills-based qualifications that can be achieved in school, college or at"
@@ -2144,7 +2184,9 @@ msgid ""
 msgstr ""
 
 #. Question definition description
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid ""
 "If they have achieved similar qualifications, such as Scottish Vocational"
 " Qualifications or other vocational qualifications outside of the UK, "
@@ -2174,7 +2216,7 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid ""
 "These are advanced-level, subject-based qualifications that are often "
@@ -2185,7 +2227,7 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid ""
 "If they have achieved similar qualifications outside of Wales and "
@@ -2194,7 +2236,7 @@ msgstr ""
 
 #. Question definition description
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "An International Baccalaureate diploma is equivalent to three A levels."
 msgstr ""
@@ -2212,11 +2254,13 @@ msgctxt "Have you achieved a GCSE or equivalent qualification?"
 msgid ""
 "If you have achieved CSEs, O levels or other similar qualifications "
 "outside of Wales and England, choose the options you think are the "
-"closest match. "
+"closest match."
 msgstr ""
 
 #. Question definition description
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid ""
 "This is a General Certificate of Secondary Education. GCSEs are subject "
 "based. Students in Wales and England usually complete GCSEs at school by "
@@ -2224,7 +2268,9 @@ msgid ""
 msgstr ""
 
 #. Question definition description
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid ""
 "If they have achieved CSEs, O levels or other similar qualifications "
 "outside of Wales and England, choose the options they think are the "
@@ -2244,15 +2290,15 @@ msgid ""
 msgstr ""
 
 #. Question definition description
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid "This is where they work most of the time in their main job."
 msgstr ""
 
 #. Question definition description
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid ""
 "For example, if they work from home three days a week and go to another "
-"place of work two days, select  “At or from home”."
+"place of work two days, select “At or from home”."
 msgstr ""
 
 #. Question guidance heading
@@ -2261,7 +2307,7 @@ msgid "Include"
 msgstr ""
 
 #. Question guidance heading
-msgctxt "What passports does <em>{person_name}</em> hold?"
+msgctxt "What passports does <strong>{person_name}</strong> hold?"
 msgid "Include"
 msgstr ""
 
@@ -2271,7 +2317,7 @@ msgid "A question about gender identity will follow later on in the questionnair
 msgstr ""
 
 #. Question guidance description
-msgctxt "What is <em>{person_name_possessive}</em> sex?"
+msgctxt "What is <strong>{person_name_possessive}</strong> sex?"
 msgid "A question about gender identity will follow later on in the questionnaire"
 msgstr ""
 
@@ -2284,8 +2330,8 @@ msgstr ""
 
 #. Question guidance description
 msgctxt ""
-"You selected “Other”. How would <em>{person_name}</em> describe their "
-"national identity?"
+"You selected “Other”. How would <strong>{person_name}</strong> describe "
+"their national identity?"
 msgid ""
 "Include all national identities. If they have more than one, enter them "
 "all separated by commas."
@@ -2300,8 +2346,8 @@ msgstr ""
 
 #. Question guidance description
 msgctxt ""
-"You selected “Other”. How would <em>{person_name}</em> describe their "
-"other national identity?"
+"You selected “Other”. How would <strong>{person_name}</strong> describe "
+"their other national identity?"
 msgid ""
 "Include all other national identities. If they have more than one, enter "
 "them all separated by commas."
@@ -2313,7 +2359,7 @@ msgid "This question is <strong>voluntary</strong>"
 msgstr ""
 
 #. Question guidance description
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "This question is <strong>voluntary</strong>"
 msgstr ""
 
@@ -2325,7 +2371,7 @@ msgstr ""
 #. Question guidance description
 msgctxt ""
 "You selected “Any other religion”. What is "
-"<em>{person_name_possessive}</em> religion?"
+"<strong>{person_name_possessive}</strong> religion?"
 msgid "This question is <strong>voluntary</strong>"
 msgstr ""
 
@@ -2337,7 +2383,9 @@ msgid ""
 msgstr ""
 
 #. Question guidance description
-msgctxt "You selected “Other”. What passports does <em>{person_name}</em> hold?"
+msgctxt ""
+"You selected “Other”. What passports does <strong>{person_name}</strong> "
+"hold?"
 msgid ""
 "Include all passports. If they have more than one, enter them all "
 "separated by commas."
@@ -2352,8 +2400,8 @@ msgstr ""
 
 #. Question guidance description
 msgctxt ""
-"You selected “Other”. What other passports does <em>{person_name}</em> "
-"hold?"
+"You selected “Other”. What other passports does "
+"<strong>{person_name}</strong> hold?"
 msgid ""
 "Include all other passports. If they have more than one, enter them all "
 "separated by commas."
@@ -2369,9 +2417,9 @@ msgstr ""
 
 #. Question guidance description
 msgctxt ""
-"Does <em>{person_name}</em> look after, or give any help or support to, "
-"anyone because they have long-term physical or mental health conditions "
-"or illnesses, or problems related to old age?"
+"Does <strong>{person_name}</strong> look after, or give any help or "
+"support to, anyone because they have long-term physical or mental health "
+"conditions or illnesses, or problems related to old age?"
 msgid "Exclude anything they do as part of their paid employment"
 msgstr ""
 
@@ -2382,8 +2430,8 @@ msgstr ""
 
 #. Question guidance description
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "This question is <strong>voluntary</strong>"
 msgstr ""
 
@@ -2394,19 +2442,21 @@ msgstr ""
 
 #. Question guidance description
 msgctxt ""
-"Is the gender <em>{person_name}</em> identifies with the same as their "
-"sex registered at birth?"
+"Is the gender <strong>{person_name}</strong> identifies with the same as "
+"their sex registered at birth?"
 msgid "This question is <strong>voluntary</strong>"
 msgstr ""
 
 #. Question guidance description
 msgctxt "Have you previously served in the UK Armed Forces?"
-msgid "<em>Current serving members</em> should only select “No”"
+msgid "<strong>Current serving members</strong> should only select “No”"
 msgstr ""
 
 #. Question guidance description
-msgctxt "Has <em>{person_name}</em> previously served in the UK Armed Forces?"
-msgid "<em>Current serving members</em> should only select “No”"
+msgctxt ""
+"Has <strong>{person_name}</strong> previously served in the UK Armed "
+"Forces?"
+msgid "<strong>Current serving members</strong> should only select “No”"
 msgstr ""
 
 #. Question guidance description
@@ -2416,8 +2466,8 @@ msgstr ""
 
 #. Question guidance description
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgid "Include casual or temporary work, even if only for one hour"
 msgstr ""
 
@@ -2428,8 +2478,8 @@ msgstr ""
 
 #. Question guidance description
 msgctxt ""
-"In <em>{person_name_possessive}</em> main job, how many hours a week do "
-"they usually work?"
+"In <strong>{person_name_possessive}</strong> main job, how many hours a "
+"week do they usually work?"
 msgid "Include paid and unpaid overtime"
 msgstr ""
 
@@ -2451,7 +2501,7 @@ msgstr ""
 
 #. Question guidance list item
 #. For heading: Include
-msgctxt "What passports does <em>{person_name}</em> hold?"
+msgctxt "What passports does <strong>{person_name}</strong> hold?"
 msgid ""
 "current passports and any other travel documents, such as ID cards, that "
 "show citizenship of a particular country or countries"
@@ -2459,7 +2509,7 @@ msgstr ""
 
 #. Question guidance list item
 #. For heading: Include
-msgctxt "What passports does <em>{person_name}</em> hold?"
+msgctxt "What passports does <strong>{person_name}</strong> hold?"
 msgid ""
 "passports and travel documents that have expired, if they are entitled to"
 " renew them"
@@ -2508,24 +2558,24 @@ msgid "Enter a date of birth before %(max)s"
 msgstr ""
 
 #. Answer error message
-msgctxt "What is <em>{person_name_possessive}</em> date of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> date of birth?"
 msgid "Enter a valid date of birth"
 msgstr ""
 
 #. Answer error message
-msgctxt "What is <em>{person_name_possessive}</em> date of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> date of birth?"
 msgid "Enter a date of birth"
 msgstr ""
 
 #. Answer error message
 #, python-format
-msgctxt "What is <em>{person_name_possessive}</em> date of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> date of birth?"
 msgid "Enter a date of birth after %(min)s"
 msgstr ""
 
 #. Answer error message
 #, python-format
-msgctxt "What is <em>{person_name_possessive}</em> date of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> date of birth?"
 msgid "Enter a date of birth before %(max)s"
 msgstr ""
 
@@ -2536,8 +2586,8 @@ msgstr ""
 
 #. Answer error message
 msgctxt ""
-"In which country outside the UK does <em>{person_name}</em> stay for more"
-" than 30 days a year?"
+"In which country outside the UK does <strong>{person_name}</strong> stay "
+"for more than 30 days a year?"
 msgid "Enter a country"
 msgstr ""
 
@@ -2558,22 +2608,22 @@ msgstr ""
 
 #. Answer error message
 msgctxt ""
-"When did <em>{person_name}</em> most recently arrive to live in the "
-"United Kingdom?"
+"When did <strong>{person_name}</strong> most recently arrive to live in "
+"the United Kingdom?"
 msgid "Enter a valid date of arrival"
 msgstr ""
 
 #. Answer error message
 msgctxt ""
-"When did <em>{person_name}</em> most recently arrive to live in the "
-"United Kingdom?"
+"When did <strong>{person_name}</strong> most recently arrive to live in "
+"the United Kingdom?"
 msgid "Enter a date of arrival that is after their date of birth"
 msgstr ""
 
 #. Answer error message
 msgctxt ""
-"When did <em>{person_name}</em> most recently arrive to live in the "
-"United Kingdom?"
+"When did <strong>{person_name}</strong> most recently arrive to live in "
+"the United Kingdom?"
 msgid "Enter a date of arrival that is in the past"
 msgstr ""
 
@@ -2614,8 +2664,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"In which country outside the UK does <em>{person_name}</em> stay for more"
-" than 30 days a year?"
+"In which country outside the UK does <strong>{person_name}</strong> stay "
+"for more than 30 days a year?"
 msgid "Current name of country"
 msgstr ""
 
@@ -2627,7 +2677,7 @@ msgstr ""
 #. Answer
 msgctxt ""
 "During term time, in which country outside the UK does "
-"<em>{person_name}</em> usually live?"
+"<strong>{person_name}</strong> usually live?"
 msgid "Current name of country"
 msgstr ""
 
@@ -2638,8 +2688,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"You selected “Elsewhere”. What is <em>{person_name_possessive}</em> "
-"country of birth?"
+"You selected “Elsewhere”. What is "
+"<strong>{person_name_possessive}</strong> country of birth?"
 msgid "Current name of country"
 msgstr ""
 
@@ -2650,8 +2700,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"In which country outside the UK was <em>{person_name_possessive}</em> "
-"usual address one year ago?"
+"In which country outside the UK was "
+"<strong>{person_name_possessive}</strong> usual address one year ago?"
 msgid "Current name of country"
 msgstr ""
 
@@ -2662,8 +2712,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"You selected “Other”. How would <em>{person_name}</em> describe their "
-"national identity?"
+"You selected “Other”. How would <strong>{person_name}</strong> describe "
+"their national identity?"
 msgid "National identity"
 msgstr ""
 
@@ -2674,8 +2724,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"You selected “Other”. How would <em>{person_name}</em> describe their "
-"other national identity?"
+"You selected “Other”. How would <strong>{person_name}</strong> describe "
+"their other national identity?"
 msgid "National identity"
 msgstr ""
 
@@ -2689,7 +2739,8 @@ msgstr ""
 #. Answer
 msgctxt ""
 "You selected “Any other White background”. How would "
-"<em>{person_name}</em> describe their White ethnic group or background?"
+"<strong>{person_name}</strong> describe their White ethnic group or "
+"background?"
 msgid "White ethnic group or background"
 msgstr ""
 
@@ -2703,8 +2754,8 @@ msgstr ""
 #. Answer
 msgctxt ""
 "You selected “Any other Mixed or Multiple background”. How would "
-"<em>{person_name}</em> describe their Mixed or Multiple ethnic group or "
-"background?"
+"<strong>{person_name}</strong> describe their Mixed or Multiple ethnic "
+"group or background?"
 msgid "Mixed or Multiple ethnic group or background"
 msgstr ""
 
@@ -2718,7 +2769,8 @@ msgstr ""
 #. Answer
 msgctxt ""
 "You selected “Any other Asian background”. How would "
-"<em>{person_name}</em> describe their Asian ethnic group or background?"
+"<strong>{person_name}</strong> describe their Asian ethnic group or "
+"background?"
 msgid "Asian ethnic group or background"
 msgstr ""
 
@@ -2731,8 +2783,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"You selected “African”. How would <em>{person_name}</em> describe their "
-"African ethnic group or background?"
+"You selected “African”. How would <strong>{person_name}</strong> describe"
+" their African ethnic group or background?"
 msgid "African ethnic group or background"
 msgstr ""
 
@@ -2747,8 +2799,8 @@ msgstr ""
 #. Answer
 msgctxt ""
 "You selected “Any other Black, Black British or Caribbean background”. "
-"How would <em>{person_name}</em> describe their Black, Black British or "
-"Caribbean ethnic group or background?"
+"How would <strong>{person_name}</strong> describe their Black, Black "
+"British or Caribbean ethnic group or background?"
 msgid "Black, Black British or Caribbean ethnic group or background"
 msgstr ""
 
@@ -2761,8 +2813,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"You selected “Any other ethnic group”. How would <em>{person_name}</em> "
-"describe their ethnic group or background?"
+"You selected “Any other ethnic group”. How would "
+"<strong>{person_name}</strong> describe their ethnic group or background?"
 msgid "Ethnic group or background"
 msgstr ""
 
@@ -2774,7 +2826,7 @@ msgstr ""
 #. Answer
 msgctxt ""
 "You selected “Any other religion”. What is "
-"<em>{person_name_possessive}</em> religion?"
+"<strong>{person_name_possessive}</strong> religion?"
 msgid "Religion"
 msgstr ""
 
@@ -2788,7 +2840,7 @@ msgstr ""
 #. Answer
 msgctxt ""
 "You selected “Other, including British Sign Language”. What is "
-"<em>{person_name_possessive}</em> main language?"
+"<strong>{person_name_possessive}</strong> main language?"
 msgid "Main language"
 msgstr ""
 
@@ -2798,7 +2850,9 @@ msgid "Passports"
 msgstr ""
 
 #. Answer
-msgctxt "You selected “Other”. What passports does <em>{person_name}</em> hold?"
+msgctxt ""
+"You selected “Other”. What passports does <strong>{person_name}</strong> "
+"hold?"
 msgid "Passports"
 msgstr ""
 
@@ -2809,8 +2863,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"You selected “Other”. What other passports does <em>{person_name}</em> "
-"hold?"
+"You selected “Other”. What other passports does "
+"<strong>{person_name}</strong> hold?"
 msgid "Passports"
 msgstr ""
 
@@ -2821,8 +2875,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"What is the name of the organisation or business <em>{person_name}</em> "
-"works for?"
+"What is the name of the organisation or business "
+"<strong>{person_name}</strong> works for?"
 msgid "Organisation or business name"
 msgstr ""
 
@@ -2833,8 +2887,8 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"What was the name of the organisation or business <em>{person_name}</em> "
-"worked for?"
+"What was the name of the organisation or business "
+"<strong>{person_name}</strong> worked for?"
 msgid "Organisation or business name"
 msgstr ""
 
@@ -2844,7 +2898,7 @@ msgid "Job title"
 msgstr ""
 
 #. Answer
-msgctxt "What is <em>{person_name_possessive}</em> full job title?"
+msgctxt "What is <strong>{person_name_possessive}</strong> full job title?"
 msgid "Job title"
 msgstr ""
 
@@ -2854,7 +2908,7 @@ msgid "Job title"
 msgstr ""
 
 #. Answer
-msgctxt "What was <em>{person_name_possessive}</em> full job title?"
+msgctxt "What was <strong>{person_name_possessive}</strong> full job title?"
 msgid "Job title"
 msgstr ""
 
@@ -2864,7 +2918,9 @@ msgid "Job description"
 msgstr ""
 
 #. Answer
-msgctxt "Briefly describe what <em>{person_name}</em> does in their main job"
+msgctxt ""
+"Briefly describe what <strong>{person_name}</strong> does in their main "
+"job"
 msgid "Job description"
 msgstr ""
 
@@ -2874,7 +2930,7 @@ msgid "Job description"
 msgstr ""
 
 #. Answer
-msgctxt "Briefly describe what <em>{person_name}</em> did in their main job"
+msgctxt "Briefly describe what <strong>{person_name}</strong> did in their main job"
 msgid "Job description"
 msgstr ""
 
@@ -2887,7 +2943,7 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"What is the main activity of <em>{person_name_possessive}</em> "
+"What is the main activity of <strong>{person_name_possessive}</strong> "
 "organisation, business or freelance work?"
 msgid "Main activity"
 msgstr ""
@@ -2901,7 +2957,7 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"What was the main activity of <em>{person_name_possessive}</em> "
+"What was the main activity of <strong>{person_name_possessive}</strong> "
 "organisation, business or freelance work?"
 msgid "Main activity"
 msgstr ""
@@ -2912,7 +2968,9 @@ msgid "Current name of country"
 msgstr ""
 
 #. Answer
-msgctxt "In which country outside the UK does <em>{person_name}</em> mainly work?"
+msgctxt ""
+"In which country outside the UK does <strong>{person_name}</strong> "
+"mainly work?"
 msgid "Current name of country"
 msgstr ""
 
@@ -2925,8 +2983,8 @@ msgstr ""
 #. Answer description
 #. For answer: Current name of country
 msgctxt ""
-"In which country outside the UK does <em>{person_name}</em> stay for more"
-" than 30 days a year?"
+"In which country outside the UK does <strong>{person_name}</strong> stay "
+"for more than 30 days a year?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -2940,7 +2998,7 @@ msgstr ""
 #. For answer: Current name of country
 msgctxt ""
 "During term time, in which country outside the UK does "
-"<em>{person_name}</em> usually live?"
+"<strong>{person_name}</strong> usually live?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -2953,8 +3011,8 @@ msgstr ""
 #. Answer description
 #. For answer: Current name of country
 msgctxt ""
-"You selected “Elsewhere”. What is <em>{person_name_possessive}</em> "
-"country of birth?"
+"You selected “Elsewhere”. What is "
+"<strong>{person_name_possessive}</strong> country of birth?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -2967,8 +3025,8 @@ msgstr ""
 #. Answer description
 #. For answer: Current name of country
 msgctxt ""
-"In which country outside the UK was <em>{person_name_possessive}</em> "
-"usual address one year ago?"
+"In which country outside the UK was "
+"<strong>{person_name_possessive}</strong> usual address one year ago?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -2981,8 +3039,8 @@ msgstr ""
 #. Answer description
 #. For answer: National identity
 msgctxt ""
-"You selected “Other”. How would <em>{person_name}</em> describe their "
-"national identity?"
+"You selected “Other”. How would <strong>{person_name}</strong> describe "
+"their national identity?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -2995,8 +3053,8 @@ msgstr ""
 #. Answer description
 #. For answer: National identity
 msgctxt ""
-"You selected “Other”. How would <em>{person_name}</em> describe their "
-"other national identity?"
+"You selected “Other”. How would <strong>{person_name}</strong> describe "
+"their other national identity?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3012,7 +3070,8 @@ msgstr ""
 #. For answer: White ethnic group or background
 msgctxt ""
 "You selected “Any other White background”. How would "
-"<em>{person_name}</em> describe their White ethnic group or background?"
+"<strong>{person_name}</strong> describe their White ethnic group or "
+"background?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3028,7 +3087,8 @@ msgstr ""
 #. For answer: Asian ethnic group or background
 msgctxt ""
 "You selected “Any other Asian background”. How would "
-"<em>{person_name}</em> describe their Asian ethnic group or background?"
+"<strong>{person_name}</strong> describe their Asian ethnic group or "
+"background?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3043,8 +3103,8 @@ msgstr ""
 #. Answer description
 #. For answer: African ethnic group or background
 msgctxt ""
-"You selected “African”. How would <em>{person_name}</em> describe their "
-"African ethnic group or background?"
+"You selected “African”. How would <strong>{person_name}</strong> describe"
+" their African ethnic group or background?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3061,8 +3121,8 @@ msgstr ""
 #. For answer: Black, Black British or Caribbean ethnic group or background
 msgctxt ""
 "You selected “Any other Black, Black British or Caribbean background”. "
-"How would <em>{person_name}</em> describe their Black, Black British or "
-"Caribbean ethnic group or background?"
+"How would <strong>{person_name}</strong> describe their Black, Black "
+"British or Caribbean ethnic group or background?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3077,8 +3137,8 @@ msgstr ""
 #. Answer description
 #. For answer: Ethnic group or background
 msgctxt ""
-"You selected “Any other ethnic group”. How would <em>{person_name}</em> "
-"describe their ethnic group or background?"
+"You selected “Any other ethnic group”. How would "
+"<strong>{person_name}</strong> describe their ethnic group or background?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3092,7 +3152,7 @@ msgstr ""
 #. For answer: Religion
 msgctxt ""
 "You selected “Any other religion”. What is "
-"<em>{person_name_possessive}</em> religion?"
+"<strong>{person_name_possessive}</strong> religion?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3108,7 +3168,7 @@ msgstr ""
 #. For answer: Main language
 msgctxt ""
 "You selected “Other, including British Sign Language”. What is "
-"<em>{person_name_possessive}</em> main language?"
+"<strong>{person_name_possessive}</strong> main language?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3120,7 +3180,9 @@ msgstr ""
 
 #. Answer description
 #. For answer: Passports
-msgctxt "You selected “Other”. What passports does <em>{person_name}</em> hold?"
+msgctxt ""
+"You selected “Other”. What passports does <strong>{person_name}</strong> "
+"hold?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3133,8 +3195,8 @@ msgstr ""
 #. Answer description
 #. For answer: Passports
 msgctxt ""
-"You selected “Other”. What other passports does <em>{person_name}</em> "
-"hold?"
+"You selected “Other”. What other passports does "
+"<strong>{person_name}</strong> hold?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -3146,17 +3208,19 @@ msgstr ""
 
 #. Answer description
 #. For answer: Current name of country
-msgctxt "In which country outside the UK does <em>{person_name}</em> mainly work?"
+msgctxt ""
+"In which country outside the UK does <strong>{person_name}</strong> "
+"mainly work?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of accommodation is <em>{household_address}</em>?"
+msgctxt "What type of accommodation is <strong>{household_address}</strong>?"
 msgid "A communal establishment"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of accommodation is <em>{household_address}</em>?"
+msgctxt "What type of accommodation is <strong>{household_address}</strong>?"
 msgid "A private or family household"
 msgstr ""
 
@@ -3191,22 +3255,30 @@ msgid "Staying temporarily"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> position in this establishment?"
+msgctxt ""
+"What is <strong>{person_name_possessive}</strong> position in this "
+"establishment?"
 msgid "Resident"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> position in this establishment?"
+msgctxt ""
+"What is <strong>{person_name_possessive}</strong> position in this "
+"establishment?"
 msgid "Staff or owner"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> position in this establishment?"
+msgctxt ""
+"What is <strong>{person_name_possessive}</strong> position in this "
+"establishment?"
 msgid "Family member or partner of staff or owner"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> position in this establishment?"
+msgctxt ""
+"What is <strong>{person_name_possessive}</strong> position in this "
+"establishment?"
 msgid "Staying temporarily"
 msgstr ""
 
@@ -3221,12 +3293,12 @@ msgid "No, I need to correct my date of birth"
 msgstr ""
 
 #. Answer option
-msgctxt "<em>{person_name}</em> is {age} old. Is this correct?"
+msgctxt "<strong>{person_name}</strong> is {age} old. Is this correct?"
 msgid "Yes, {person_name} is {age} old"
 msgstr ""
 
 #. Answer option
-msgctxt "<em>{person_name}</em> is {age} old. Is this correct?"
+msgctxt "<strong>{person_name}</strong> is {age} old. Is this correct?"
 msgid "No, I need to correct their date of birth"
 msgstr ""
 
@@ -3241,12 +3313,12 @@ msgid "Male"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> sex?"
+msgctxt "What is <strong>{person_name_possessive}</strong> sex?"
 msgid "Female"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> sex?"
+msgctxt "What is <strong>{person_name_possessive}</strong> sex?"
 msgid "Male"
 msgstr ""
 
@@ -3315,64 +3387,64 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgid "Never married and never registered a civil partnership"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgid "Married"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgid "In a registered civil partnership"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgid "Separated, but still legally married"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgid "Separated, but still legally in a civil partnership"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgid "Divorced"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgid "Formerly in a civil partnership which is now legally dissolved"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgid "Widowed"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"On {census_date}, what is <em>{person_name_possessive}</em> legal marital"
-" or registered civil partnership status?"
+"On {census_date}, what is <strong>{person_name_possessive}</strong> legal"
+" marital or registered civil partnership status?"
 msgid "Surviving partner from a registered civil partnership"
 msgstr ""
 
@@ -3387,12 +3459,12 @@ msgid "Someone of the same sex"
 msgstr ""
 
 #. Answer option
-msgctxt "Who is <em>{person_name_possessive}</em> legal marriage to?"
+msgctxt "Who is <strong>{person_name_possessive}</strong> legal marriage to?"
 msgid "Someone of the opposite sex"
 msgstr ""
 
 #. Answer option
-msgctxt "Who is <em>{person_name_possessive}</em> legal marriage to?"
+msgctxt "Who is <strong>{person_name_possessive}</strong> legal marriage to?"
 msgid "Someone of the same sex"
 msgstr ""
 
@@ -3407,12 +3479,12 @@ msgid "Someone of the same sex"
 msgstr ""
 
 #. Answer option
-msgctxt "Who was <em>{person_name_possessive}</em> legal marriage to?"
+msgctxt "Who was <strong>{person_name_possessive}</strong> legal marriage to?"
 msgid "Someone of the opposite sex"
 msgstr ""
 
 #. Answer option
-msgctxt "Who was <em>{person_name_possessive}</em> legal marriage to?"
+msgctxt "Who was <strong>{person_name_possessive}</strong> legal marriage to?"
 msgid "Someone of the same sex"
 msgstr ""
 
@@ -3427,12 +3499,16 @@ msgid "Someone of the same sex"
 msgstr ""
 
 #. Answer option
-msgctxt "Who is <em>{person_name_possessive}</em> registered civil partnership to?"
+msgctxt ""
+"Who is <strong>{person_name_possessive}</strong> registered civil "
+"partnership to?"
 msgid "Someone of the opposite sex"
 msgstr ""
 
 #. Answer option
-msgctxt "Who is <em>{person_name_possessive}</em> registered civil partnership to?"
+msgctxt ""
+"Who is <strong>{person_name_possessive}</strong> registered civil "
+"partnership to?"
 msgid "Someone of the same sex"
 msgstr ""
 
@@ -3447,12 +3523,16 @@ msgid "Someone of the same sex"
 msgstr ""
 
 #. Answer option
-msgctxt "Who was <em>{person_name_possessive}</em> registered civil partnership to?"
+msgctxt ""
+"Who was <strong>{person_name_possessive}</strong> registered civil "
+"partnership to?"
 msgid "Someone of the opposite sex"
 msgstr ""
 
 #. Answer option
-msgctxt "Who was <em>{person_name_possessive}</em> registered civil partnership to?"
+msgctxt ""
+"Who was <strong>{person_name_possessive}</strong> registered civil "
+"partnership to?"
 msgid "Someone of the same sex"
 msgstr ""
 
@@ -3473,158 +3553,158 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> stay at another address for more than 30 days"
-" a year?"
+"Does <strong>{person_name}</strong> stay at another address for more than"
+" 30 days a year?"
 msgid "No"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> stay at another address for more than 30 days"
-" a year?"
+"Does <strong>{person_name}</strong> stay at another address for more than"
+" 30 days a year?"
 msgid "Yes, an address within the UK"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> stay at another address for more than 30 days"
-" a year?"
+"Does <strong>{person_name}</strong> stay at another address for more than"
+" 30 days a year?"
 msgid "Yes, an address outside the UK"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is <em>{household_address}</em>?"
+msgctxt "What type of address is <strong>{household_address}</strong>?"
 msgid "Armed forces base address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is <em>{household_address}</em>?"
+msgctxt "What type of address is <strong>{household_address}</strong>?"
 msgid "Another address when working away from home"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is <em>{household_address}</em>?"
+msgctxt "What type of address is <strong>{household_address}</strong>?"
 msgid "Student’s home address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is <em>{household_address}</em>?"
+msgctxt "What type of address is <strong>{household_address}</strong>?"
 msgid "Student’s term-time address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is <em>{household_address}</em>?"
+msgctxt "What type of address is <strong>{household_address}</strong>?"
 msgid "Another parent or guardian’s address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is <em>{household_address}</em>?"
+msgctxt "What type of address is <strong>{household_address}</strong>?"
 msgid "Partner’s address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is <em>{household_address}</em>?"
+msgctxt "What type of address is <strong>{household_address}</strong>?"
 msgid "Holiday home"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is <em>{household_address}</em>?"
+msgctxt "What type of address is <strong>{household_address}</strong>?"
 msgid "Other"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is your address in <em>{country}</em>?"
+msgctxt "What type of address is your address in <strong>{country}</strong>?"
 msgid "Armed forces base address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is your address in <em>{country}</em>?"
+msgctxt "What type of address is your address in <strong>{country}</strong>?"
 msgid "Another address when working away from home"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is your address in <em>{country}</em>?"
+msgctxt "What type of address is your address in <strong>{country}</strong>?"
 msgid "Student’s home address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is your address in <em>{country}</em>?"
+msgctxt "What type of address is your address in <strong>{country}</strong>?"
 msgid "Student’s term-time address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is your address in <em>{country}</em>?"
+msgctxt "What type of address is your address in <strong>{country}</strong>?"
 msgid "Another parent or guardian’s address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is your address in <em>{country}</em>?"
+msgctxt "What type of address is your address in <strong>{country}</strong>?"
 msgid "Partner’s address"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is your address in <em>{country}</em>?"
+msgctxt "What type of address is your address in <strong>{country}</strong>?"
 msgid "Holiday home"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of address is your address in <em>{country}</em>?"
+msgctxt "What type of address is your address in <strong>{country}</strong>?"
 msgid "Other"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"What type of address is <em>{person_name_possessive}</em> address in "
-"{country}?"
+"What type of address is <strong>{person_name_possessive}</strong> address"
+" in {country}?"
 msgid "Armed forces base address"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"What type of address is <em>{person_name_possessive}</em> address in "
-"{country}?"
+"What type of address is <strong>{person_name_possessive}</strong> address"
+" in {country}?"
 msgid "Another address when working away from home"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"What type of address is <em>{person_name_possessive}</em> address in "
-"{country}?"
+"What type of address is <strong>{person_name_possessive}</strong> address"
+" in {country}?"
 msgid "Student’s home address"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"What type of address is <em>{person_name_possessive}</em> address in "
-"{country}?"
+"What type of address is <strong>{person_name_possessive}</strong> address"
+" in {country}?"
 msgid "Student’s term-time address"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"What type of address is <em>{person_name_possessive}</em> address in "
-"{country}?"
+"What type of address is <strong>{person_name_possessive}</strong> address"
+" in {country}?"
 msgid "Another parent or guardian’s address"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"What type of address is <em>{person_name_possessive}</em> address in "
-"{country}?"
+"What type of address is <strong>{person_name_possessive}</strong> address"
+" in {country}?"
 msgid "Partner’s address"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"What type of address is <em>{person_name_possessive}</em> address in "
-"{country}?"
+"What type of address is <strong>{person_name_possessive}</strong> address"
+" in {country}?"
 msgid "Holiday home"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"What type of address is <em>{person_name_possessive}</em> address in "
-"{country}?"
+"What type of address is <strong>{person_name_possessive}</strong> address"
+" in {country}?"
 msgid "Other"
 msgstr ""
 
@@ -3639,12 +3719,12 @@ msgid "No"
 msgstr ""
 
 #. Answer option
-msgctxt "Is <em>{person_name}</em> a student in full-time education?"
+msgctxt "Is <strong>{person_name}</strong> a student in full-time education?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
-msgctxt "Is <em>{person_name}</em> a student in full-time education?"
+msgctxt "Is <strong>{person_name}</strong> a student in full-time education?"
 msgid "No"
 msgstr ""
 
@@ -3659,12 +3739,16 @@ msgid "No"
 msgstr ""
 
 #. Answer option
-msgctxt "Is <em>{person_name}</em> a schoolchild or student in full-time education?"
+msgctxt ""
+"Is <strong>{person_name}</strong> a schoolchild or student in full-time "
+"education?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
-msgctxt "Is <em>{person_name}</em> a schoolchild or student in full-time education?"
+msgctxt ""
+"Is <strong>{person_name}</strong> a schoolchild or student in full-time "
+"education?"
 msgid "No"
 msgstr ""
 
@@ -3684,17 +3768,17 @@ msgid "Another address"
 msgstr ""
 
 #. Answer option
-msgctxt "During term time, where does <em>{person_name}</em> usually live?"
+msgctxt "During term time, where does <strong>{person_name}</strong> usually live?"
 msgid "{household_address}"
 msgstr ""
 
 #. Answer option
-msgctxt "During term time, where does <em>{person_name}</em> usually live?"
+msgctxt "During term time, where does <strong>{person_name}</strong> usually live?"
 msgid "The address in {thirty_day_address_country}"
 msgstr ""
 
 #. Answer option
-msgctxt "During term time, where does <em>{person_name}</em> usually live?"
+msgctxt "During term time, where does <strong>{person_name}</strong> usually live?"
 msgid "Another address"
 msgstr ""
 
@@ -3704,7 +3788,7 @@ msgid "{thirty_day_address}"
 msgstr ""
 
 #. Answer option
-msgctxt "During term time, where does <em>{person_name}</em> usually live?"
+msgctxt "During term time, where does <strong>{person_name}</strong> usually live?"
 msgid "{thirty_day_address}"
 msgstr ""
 
@@ -3749,32 +3833,32 @@ msgid "Elsewhere"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> country of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> country of birth?"
 msgid "Wales"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> country of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> country of birth?"
 msgid "England"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> country of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> country of birth?"
 msgid "Scotland"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> country of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> country of birth?"
 msgid "Northern Ireland"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> country of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> country of birth?"
 msgid "Republic of Ireland"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> country of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> country of birth?"
 msgid "Elsewhere"
 msgstr ""
 
@@ -3790,14 +3874,14 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Did <em>{person_name}</em> arrive in the UK on or after "
+"Did <strong>{person_name}</strong> arrive in the UK on or after "
 "{year_before_census_date}?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Did <em>{person_name}</em> arrive in the UK on or after "
+"Did <strong>{person_name}</strong> arrive in the UK on or after "
 "{year_before_census_date}?"
 msgid "No"
 msgstr ""
@@ -3819,14 +3903,14 @@ msgstr ""
 #. Answer option
 msgctxt ""
 "Including the time already spent here, how long does "
-"<em>{person_name}</em> intend to stay in the United Kingdom?"
+"<strong>{person_name}</strong> intend to stay in the United Kingdom?"
 msgid "Less than 12 months"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "Including the time already spent here, how long does "
-"<em>{person_name}</em> intend to stay in the United Kingdom?"
+"<strong>{person_name}</strong> intend to stay in the United Kingdom?"
 msgid "12 months or more"
 msgstr ""
 
@@ -3851,22 +3935,30 @@ msgid "Another address outside the UK"
 msgstr ""
 
 #. Answer option
-msgctxt "One year ago, what was <em>{person_name_possessive}</em> usual address?"
+msgctxt ""
+"One year ago, what was <strong>{person_name_possessive}</strong> usual "
+"address?"
 msgid "{household_address}"
 msgstr ""
 
 #. Answer option
-msgctxt "One year ago, what was <em>{person_name_possessive}</em> usual address?"
+msgctxt ""
+"One year ago, what was <strong>{person_name_possessive}</strong> usual "
+"address?"
 msgid "Student term-time or boarding school address in the UK"
 msgstr ""
 
 #. Answer option
-msgctxt "One year ago, what was <em>{person_name_possessive}</em> usual address?"
+msgctxt ""
+"One year ago, what was <strong>{person_name_possessive}</strong> usual "
+"address?"
 msgid "Another address in the UK"
 msgstr ""
 
 #. Answer option
-msgctxt "One year ago, what was <em>{person_name_possessive}</em> usual address?"
+msgctxt ""
+"One year ago, what was <strong>{person_name_possessive}</strong> usual "
+"address?"
 msgid "Another address outside the UK"
 msgstr ""
 
@@ -3901,32 +3993,32 @@ msgid "Other"
 msgstr ""
 
 #. Answer option
-msgctxt "How would <em>{person_name}</em> describe their national identity?"
+msgctxt "How would <strong>{person_name}</strong> describe their national identity?"
 msgid "Welsh"
 msgstr ""
 
 #. Answer option
-msgctxt "How would <em>{person_name}</em> describe their national identity?"
+msgctxt "How would <strong>{person_name}</strong> describe their national identity?"
 msgid "English"
 msgstr ""
 
 #. Answer option
-msgctxt "How would <em>{person_name}</em> describe their national identity?"
+msgctxt "How would <strong>{person_name}</strong> describe their national identity?"
 msgid "Scottish"
 msgstr ""
 
 #. Answer option
-msgctxt "How would <em>{person_name}</em> describe their national identity?"
+msgctxt "How would <strong>{person_name}</strong> describe their national identity?"
 msgid "Northern Irish"
 msgstr ""
 
 #. Answer option
-msgctxt "How would <em>{person_name}</em> describe their national identity?"
+msgctxt "How would <strong>{person_name}</strong> describe their national identity?"
 msgid "British"
 msgstr ""
 
 #. Answer option
-msgctxt "How would <em>{person_name}</em> describe their national identity?"
+msgctxt "How would <strong>{person_name}</strong> describe their national identity?"
 msgid "Other"
 msgstr ""
 
@@ -3956,27 +4048,27 @@ msgid "Other ethnic group"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "White"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "Mixed or Multiple ethnic groups"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "Asian, Asian Welsh or Asian British"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "Black, Black Welsh, Black British, Caribbean or African"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "Other ethnic group"
 msgstr ""
 
@@ -4007,36 +4099,36 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid "Welsh, English, Scottish, Northern Irish or British"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid "Irish"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid "Gypsy or Irish Traveller"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid "Roma"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid "Any other White background"
 msgstr ""
 
@@ -4070,29 +4162,29 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgid "White and Black Caribbean"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgid "White and Black African"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgid "White and Asian"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgid "Any other Mixed or Multiple background"
 msgstr ""
 
@@ -4133,36 +4225,36 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid "Indian"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid "Pakistani"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid "Bangladeshi"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid "Chinese"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid "Any other Asian background"
 msgstr ""
 
@@ -4189,22 +4281,25 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Black, Black "
-"Welsh, Black British, Caribbean or African ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Black,"
+" Black Welsh, Black British, Caribbean or African ethnic group or "
+"background?"
 msgid "Caribbean"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Black, Black "
-"Welsh, Black British, Caribbean or African ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Black,"
+" Black Welsh, Black British, Caribbean or African ethnic group or "
+"background?"
 msgid "African"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Black, Black "
-"Welsh, Black British, Caribbean or African ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Black,"
+" Black Welsh, Black British, Caribbean or African ethnic group or "
+"background?"
 msgid "Any other Black, Black British or Caribbean background"
 msgstr ""
 
@@ -4220,15 +4315,15 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> other ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> other "
+"ethnic group or background?"
 msgid "Arab"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> other ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> other "
+"ethnic group or background?"
 msgid "Any other ethnic group"
 msgstr ""
 
@@ -4273,42 +4368,42 @@ msgid "Any other religion"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "No religion"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "Christian"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "Buddhist"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "Hindu"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "Jewish"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "Muslim"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "Sikh"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "Any other religion"
 msgstr ""
 
@@ -4338,27 +4433,27 @@ msgid "None of these apply"
 msgstr ""
 
 #. Answer option
-msgctxt "Can <em>{person_name}</em> understand, speak, read or write Welsh?"
+msgctxt "Can <strong>{person_name}</strong> understand, speak, read or write Welsh?"
 msgid "Understand spoken Welsh"
 msgstr ""
 
 #. Answer option
-msgctxt "Can <em>{person_name}</em> understand, speak, read or write Welsh?"
+msgctxt "Can <strong>{person_name}</strong> understand, speak, read or write Welsh?"
 msgid "Speak Welsh"
 msgstr ""
 
 #. Answer option
-msgctxt "Can <em>{person_name}</em> understand, speak, read or write Welsh?"
+msgctxt "Can <strong>{person_name}</strong> understand, speak, read or write Welsh?"
 msgid "Read Welsh"
 msgstr ""
 
 #. Answer option
-msgctxt "Can <em>{person_name}</em> understand, speak, read or write Welsh?"
+msgctxt "Can <strong>{person_name}</strong> understand, speak, read or write Welsh?"
 msgid "Write Welsh"
 msgstr ""
 
 #. Answer option
-msgctxt "Can <em>{person_name}</em> understand, speak, read or write Welsh?"
+msgctxt "Can <strong>{person_name}</strong> understand, speak, read or write Welsh?"
 msgid "None of these apply"
 msgstr ""
 
@@ -4373,12 +4468,12 @@ msgid "Other, including British Sign Language"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> main language?"
+msgctxt "What is <strong>{person_name_possessive}</strong> main language?"
 msgid "English or Welsh"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <em>{person_name_possessive}</em> main language?"
+msgctxt "What is <strong>{person_name_possessive}</strong> main language?"
 msgid "Other, including British Sign Language"
 msgstr ""
 
@@ -4403,22 +4498,22 @@ msgid "Not at all"
 msgstr ""
 
 #. Answer option
-msgctxt "How well can <em>{person_name}</em> speak English?"
+msgctxt "How well can <strong>{person_name}</strong> speak English?"
 msgid "Very well"
 msgstr ""
 
 #. Answer option
-msgctxt "How well can <em>{person_name}</em> speak English?"
+msgctxt "How well can <strong>{person_name}</strong> speak English?"
 msgid "Well"
 msgstr ""
 
 #. Answer option
-msgctxt "How well can <em>{person_name}</em> speak English?"
+msgctxt "How well can <strong>{person_name}</strong> speak English?"
 msgid "Not well"
 msgstr ""
 
 #. Answer option
-msgctxt "How well can <em>{person_name}</em> speak English?"
+msgctxt "How well can <strong>{person_name}</strong> speak English?"
 msgid "Not at all"
 msgstr ""
 
@@ -4443,22 +4538,22 @@ msgid "None"
 msgstr ""
 
 #. Answer option
-msgctxt "What passports does <em>{person_name}</em> hold?"
+msgctxt "What passports does <strong>{person_name}</strong> hold?"
 msgid "United Kingdom"
 msgstr ""
 
 #. Answer option
-msgctxt "What passports does <em>{person_name}</em> hold?"
+msgctxt "What passports does <strong>{person_name}</strong> hold?"
 msgid "Ireland"
 msgstr ""
 
 #. Answer option
-msgctxt "What passports does <em>{person_name}</em> hold?"
+msgctxt "What passports does <strong>{person_name}</strong> hold?"
 msgid "Other"
 msgstr ""
 
 #. Answer option
-msgctxt "What passports does <em>{person_name}</em> hold?"
+msgctxt "What passports does <strong>{person_name}</strong> hold?"
 msgid "None"
 msgstr ""
 
@@ -4488,27 +4583,27 @@ msgid "Very bad"
 msgstr ""
 
 #. Answer option
-msgctxt "How is <em>{person_name_possessive}</em> health in general?"
+msgctxt "How is <strong>{person_name_possessive}</strong> health in general?"
 msgid "Very good"
 msgstr ""
 
 #. Answer option
-msgctxt "How is <em>{person_name_possessive}</em> health in general?"
+msgctxt "How is <strong>{person_name_possessive}</strong> health in general?"
 msgid "Good"
 msgstr ""
 
 #. Answer option
-msgctxt "How is <em>{person_name_possessive}</em> health in general?"
+msgctxt "How is <strong>{person_name_possessive}</strong> health in general?"
 msgid "Fair"
 msgstr ""
 
 #. Answer option
-msgctxt "How is <em>{person_name_possessive}</em> health in general?"
+msgctxt "How is <strong>{person_name_possessive}</strong> health in general?"
 msgid "Bad"
 msgstr ""
 
 #. Answer option
-msgctxt "How is <em>{person_name_possessive}</em> health in general?"
+msgctxt "How is <strong>{person_name_possessive}</strong> health in general?"
 msgid "Very bad"
 msgstr ""
 
@@ -4528,15 +4623,15 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> have any physical or mental health conditions"
-" or illnesses lasting or expected to last 12 months or more?"
+"Does <strong>{person_name}</strong> have any physical or mental health "
+"conditions or illnesses lasting or expected to last 12 months or more?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> have any physical or mental health conditions"
-" or illnesses lasting or expected to last 12 months or more?"
+"Does <strong>{person_name}</strong> have any physical or mental health "
+"conditions or illnesses lasting or expected to last 12 months or more?"
 msgid "No"
 msgstr ""
 
@@ -4563,22 +4658,22 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Do any of <em>{person_name_possessive}</em> conditions or illnesses "
-"reduce their ability to carry out day-to-day activities?"
+"Do any of <strong>{person_name_possessive}</strong> conditions or "
+"illnesses reduce their ability to carry out day-to-day activities?"
 msgid "Yes, a lot"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Do any of <em>{person_name_possessive}</em> conditions or illnesses "
-"reduce their ability to carry out day-to-day activities?"
+"Do any of <strong>{person_name_possessive}</strong> conditions or "
+"illnesses reduce their ability to carry out day-to-day activities?"
 msgid "Yes, a little"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Do any of <em>{person_name_possessive}</em> conditions or illnesses "
-"reduce their ability to carry out day-to-day activities?"
+"Do any of <strong>{person_name_possessive}</strong> conditions or "
+"illnesses reduce their ability to carry out day-to-day activities?"
 msgid "Not at all"
 msgstr ""
 
@@ -4632,49 +4727,49 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> look after, or give any help or support to, "
-"anyone because they have long-term physical or mental health conditions "
-"or illnesses, or problems related to old age?"
+"Does <strong>{person_name}</strong> look after, or give any help or "
+"support to, anyone because they have long-term physical or mental health "
+"conditions or illnesses, or problems related to old age?"
 msgid "No"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> look after, or give any help or support to, "
-"anyone because they have long-term physical or mental health conditions "
-"or illnesses, or problems related to old age?"
+"Does <strong>{person_name}</strong> look after, or give any help or "
+"support to, anyone because they have long-term physical or mental health "
+"conditions or illnesses, or problems related to old age?"
 msgid "Yes, 9 hours a week or less"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> look after, or give any help or support to, "
-"anyone because they have long-term physical or mental health conditions "
-"or illnesses, or problems related to old age?"
+"Does <strong>{person_name}</strong> look after, or give any help or "
+"support to, anyone because they have long-term physical or mental health "
+"conditions or illnesses, or problems related to old age?"
 msgid "Yes, 10 to 19 hours a week"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> look after, or give any help or support to, "
-"anyone because they have long-term physical or mental health conditions "
-"or illnesses, or problems related to old age?"
+"Does <strong>{person_name}</strong> look after, or give any help or "
+"support to, anyone because they have long-term physical or mental health "
+"conditions or illnesses, or problems related to old age?"
 msgid "Yes, 20 to 34 hours a week"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> look after, or give any help or support to, "
-"anyone because they have long-term physical or mental health conditions "
-"or illnesses, or problems related to old age?"
+"Does <strong>{person_name}</strong> look after, or give any help or "
+"support to, anyone because they have long-term physical or mental health "
+"conditions or illnesses, or problems related to old age?"
 msgid "Yes, 35 to 49 hours a week"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> look after, or give any help or support to, "
-"anyone because they have long-term physical or mental health conditions "
-"or illnesses, or problems related to old age?"
+"Does <strong>{person_name}</strong> look after, or give any help or "
+"support to, anyone because they have long-term physical or mental health "
+"conditions or illnesses, or problems related to old age?"
 msgid "Yes, 50 or more hours a week"
 msgstr ""
 
@@ -4700,29 +4795,29 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Straight or Heterosexual"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Gay or Lesbian"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Bisexual"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Other sexual orientation"
 msgstr ""
 
@@ -4738,15 +4833,15 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Is the gender <em>{person_name}</em> identifies with the same as their "
-"sex registered at birth?"
+"Is the gender <strong>{person_name}</strong> identifies with the same as "
+"their sex registered at birth?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Is the gender <em>{person_name}</em> identifies with the same as their "
-"sex registered at birth?"
+"Is the gender <strong>{person_name}</strong> identifies with the same as "
+"their sex registered at birth?"
 msgid "No"
 msgstr ""
 
@@ -4761,12 +4856,12 @@ msgid "No"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> completed an apprenticeship?"
+msgctxt "Has <strong>{person_name}</strong> completed an apprenticeship?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> completed an apprenticeship?"
+msgctxt "Has <strong>{person_name}</strong> completed an apprenticeship?"
 msgid "No"
 msgstr ""
 
@@ -4782,15 +4877,15 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgid "No"
 msgstr ""
 
@@ -4815,22 +4910,30 @@ msgid "None of these apply"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid "NVQ level 3 or equivalent"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid "NVQ level 2 or equivalent"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid "NVQ level 1 or equivalent"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid "None of these apply"
 msgstr ""
 
@@ -4861,35 +4964,35 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "2 or more A levels"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "1 A level"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "1 AS level"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "Advanced Welsh Baccalaureate"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "None of these apply"
 msgstr ""
@@ -4925,32 +5028,44 @@ msgid "None of these apply"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "5 or more GCSEs grade A* to C or 9 to 4"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "Any other GCSEs"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "Basic Skills course"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "Intermediate or National Welsh Baccalaureate"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "Foundation Welsh Baccalaureate"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "None of these apply"
 msgstr ""
 
@@ -4970,17 +5085,17 @@ msgid "No qualifications"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved any other qualifications?"
+msgctxt "Has <strong>{person_name}</strong> achieved any other qualifications?"
 msgid "Yes, in Wales or England"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved any other qualifications?"
+msgctxt "Has <strong>{person_name}</strong> achieved any other qualifications?"
 msgid "Yes, anywhere outside of Wales and England"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> achieved any other qualifications?"
+msgctxt "Has <strong>{person_name}</strong> achieved any other qualifications?"
 msgid "No qualifications"
 msgstr ""
 
@@ -5000,17 +5115,23 @@ msgid "No"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> previously served in the UK Armed Forces?"
+msgctxt ""
+"Has <strong>{person_name}</strong> previously served in the UK Armed "
+"Forces?"
 msgid "Yes, previously served in Regular Armed Forces"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> previously served in the UK Armed Forces?"
+msgctxt ""
+"Has <strong>{person_name}</strong> previously served in the UK Armed "
+"Forces?"
 msgid "Yes, previously served in Reserve Armed Forces"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> previously served in the UK Armed Forces?"
+msgctxt ""
+"Has <strong>{person_name}</strong> previously served in the UK Armed "
+"Forces?"
 msgid "No"
 msgstr ""
 
@@ -5046,43 +5167,43 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgid "Working as an employee"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgid "Self-employed or freelance"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgid "Temporarily away from work ill, on holiday or temporarily laid off"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgid "On maternity or paternity leave"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgid "Doing any other kind of paid work"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgid "None of these apply"
 msgstr ""
 
@@ -5123,36 +5244,36 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which of the following describes what <em>{person_name}</em> was doing in"
-" the last seven days?"
+"Which of the following describes what <strong>{person_name}</strong> was "
+"doing in the last seven days?"
 msgid "Retired"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which of the following describes what <em>{person_name}</em> was doing in"
-" the last seven days?"
+"Which of the following describes what <strong>{person_name}</strong> was "
+"doing in the last seven days?"
 msgid "Studying"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which of the following describes what <em>{person_name}</em> was doing in"
-" the last seven days?"
+"Which of the following describes what <strong>{person_name}</strong> was "
+"doing in the last seven days?"
 msgid "Looking after home or family"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which of the following describes what <em>{person_name}</em> was doing in"
-" the last seven days?"
+"Which of the following describes what <strong>{person_name}</strong> was "
+"doing in the last seven days?"
 msgid "Long-term sick or disabled"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which of the following describes what <em>{person_name}</em> was doing in"
-" the last seven days?"
+"Which of the following describes what <strong>{person_name}</strong> was "
+"doing in the last seven days?"
 msgid "Other"
 msgstr ""
 
@@ -5172,15 +5293,15 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last four weeks, was <em>{person_name}</em> actively looking for "
-"any kind of paid work?"
+"In the last four weeks, was <strong>{person_name}</strong> actively "
+"looking for any kind of paid work?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last four weeks, was <em>{person_name}</em> actively looking for "
-"any kind of paid work?"
+"In the last four weeks, was <strong>{person_name}</strong> actively "
+"looking for any kind of paid work?"
 msgid "No"
 msgstr ""
 
@@ -5195,12 +5316,16 @@ msgid "No"
 msgstr ""
 
 #. Answer option
-msgctxt "Is <em>{person_name}</em> available to start work in the next two weeks?"
+msgctxt ""
+"Is <strong>{person_name}</strong> available to start work in the next two"
+" weeks?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
-msgctxt "Is <em>{person_name}</em> available to start work in the next two weeks?"
+msgctxt ""
+"Is <strong>{person_name}</strong> available to start work in the next two"
+" weeks?"
 msgid "No"
 msgstr ""
 
@@ -5216,15 +5341,15 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> waiting to start a job"
-" already accepted?"
+"In the last seven days, was <strong>{person_name}</strong> waiting to "
+"start a job already accepted?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> waiting to start a job"
-" already accepted?"
+"In the last seven days, was <strong>{person_name}</strong> waiting to "
+"start a job already accepted?"
 msgid "No"
 msgstr ""
 
@@ -5244,17 +5369,17 @@ msgid "No, have never worked"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> ever done any paid work?"
+msgctxt "Has <strong>{person_name}</strong> ever done any paid work?"
 msgid "Yes, in the last 12 months"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> ever done any paid work?"
+msgctxt "Has <strong>{person_name}</strong> ever done any paid work?"
 msgid "Yes, but not in the last 12 months"
 msgstr ""
 
 #. Answer option
-msgctxt "Has <em>{person_name}</em> ever done any paid work?"
+msgctxt "Has <strong>{person_name}</strong> ever done any paid work?"
 msgid "No, has never worked"
 msgstr ""
 
@@ -5275,22 +5400,22 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"In their main job, what is <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what is <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid "Employee"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In their main job, what is <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what is <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid "Self-employed or freelance without employees"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In their main job, what is <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what is <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid "Self-employed with employees"
 msgstr ""
 
@@ -5311,22 +5436,22 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"In their main job, what was <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what was <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid "Employee"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In their main job, what was <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what was <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid "Self-employed or freelance without employees"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In their main job, what was <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what was <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid "Self-employed with employees"
 msgstr ""
 
@@ -5337,8 +5462,8 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"What is the name of the organisation or business <em>{person_name}</em> "
-"works for?"
+"What is the name of the organisation or business "
+"<strong>{person_name}</strong> works for?"
 msgid "No organisation or works for a private individual"
 msgstr ""
 
@@ -5349,8 +5474,8 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"What was the name of the organisation or business <em>{person_name}</em> "
-"worked for?"
+"What was the name of the organisation or business "
+"<strong>{person_name}</strong> worked for?"
 msgid "No organisation or worked for a private individual"
 msgstr ""
 
@@ -5370,15 +5495,15 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> supervise or oversee the work of other "
-"employees on a day-to-day basis?"
+"Does <strong>{person_name}</strong> supervise or oversee the work of "
+"other employees on a day-to-day basis?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Does <em>{person_name}</em> supervise or oversee the work of other "
-"employees on a day-to-day basis?"
+"Does <strong>{person_name}</strong> supervise or oversee the work of "
+"other employees on a day-to-day basis?"
 msgid "No"
 msgstr ""
 
@@ -5398,15 +5523,15 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"Did <em>{person_name}</em> supervise or oversee the work of other "
-"employees on a day-to-day basis?"
+"Did <strong>{person_name}</strong> supervise or oversee the work of other"
+" employees on a day-to-day basis?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Did <em>{person_name}</em> supervise or oversee the work of other "
-"employees on a day-to-day basis?"
+"Did <strong>{person_name}</strong> supervise or oversee the work of other"
+" employees on a day-to-day basis?"
 msgid "No"
 msgstr ""
 
@@ -5432,29 +5557,29 @@ msgstr ""
 
 #. Answer option
 msgctxt ""
-"In <em>{person_name_possessive}</em> main job, how many hours a week do "
-"they usually work?"
+"In <strong>{person_name_possessive}</strong> main job, how many hours a "
+"week do they usually work?"
 msgid "0 to 15 hours"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In <em>{person_name_possessive}</em> main job, how many hours a week do "
-"they usually work?"
+"In <strong>{person_name_possessive}</strong> main job, how many hours a "
+"week do they usually work?"
 msgid "16 to 30 hours"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In <em>{person_name_possessive}</em> main job, how many hours a week do "
-"they usually work?"
+"In <strong>{person_name_possessive}</strong> main job, how many hours a "
+"week do they usually work?"
 msgid "31 to 48 hours"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"In <em>{person_name_possessive}</em> main job, how many hours a week do "
-"they usually work?"
+"In <strong>{person_name_possessive}</strong> main job, how many hours a "
+"week do they usually work?"
 msgid "49 hours or more"
 msgstr ""
 
@@ -5514,57 +5639,57 @@ msgid "Other"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Work mainly at or from home"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Underground, metro, light rail or tram"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Train"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Bus, minibus or coach"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Taxi"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Motorcycle, scooter or moped"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Driving a car or van"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Passenger in a car or van"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Bicycle"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "On foot"
 msgstr ""
 
 #. Answer option
-msgctxt "How does <em>{person_name}</em> usually travel to work?"
+msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Other"
 msgstr ""
 
@@ -5594,27 +5719,27 @@ msgid "No fixed place"
 msgstr ""
 
 #. Answer option
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid "At a workplace"
 msgstr ""
 
 #. Answer option
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid "Report to a depot"
 msgstr ""
 
 #. Answer option
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid "At or from home"
 msgstr ""
 
 #. Answer option
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid "An offshore installation"
 msgstr ""
 
 #. Answer option
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid "No fixed place"
 msgstr ""
 
@@ -5629,18 +5754,18 @@ msgid "No"
 msgstr ""
 
 #. Answer option
-msgctxt "Does <em>{person_name}</em> mainly work in the UK?"
+msgctxt "Does <strong>{person_name}</strong> mainly work in the UK?"
 msgid "Yes"
 msgstr ""
 
 #. Answer option
-msgctxt "Does <em>{person_name}</em> mainly work in the UK?"
+msgctxt "Does <strong>{person_name}</strong> mainly work in the UK?"
 msgid "No"
 msgstr ""
 
 #. Answer option description
 #. For answer option: A communal establishment
-msgctxt "What type of accommodation is <em>{household_address}</em>?"
+msgctxt "What type of accommodation is <strong>{household_address}</strong>?"
 msgid ""
 "For example, student hall of residence, boarding school, armed forces "
 "base, hospital, care home, prison"
@@ -5660,13 +5785,17 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Resident
-msgctxt "What is <em>{person_name_possessive}</em> position in this establishment?"
+msgctxt ""
+"What is <strong>{person_name_possessive}</strong> position in this "
+"establishment?"
 msgid "For example, student, member of armed forces, patient, detainee"
 msgstr ""
 
 #. Answer option description
 #. For answer option: Staying temporarily
-msgctxt "What is <em>{person_name_possessive}</em> position in this establishment?"
+msgctxt ""
+"What is <strong>{person_name_possessive}</strong> position in this "
+"establishment?"
 msgid "No usual UK address"
 msgstr ""
 
@@ -5678,7 +5807,7 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Elsewhere
-msgctxt "What is <em>{person_name_possessive}</em> country of birth?"
+msgctxt "What is <strong>{person_name_possessive}</strong> country of birth?"
 msgid "You can enter their country of birth on the next question"
 msgstr ""
 
@@ -5690,7 +5819,7 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Other
-msgctxt "How would <em>{person_name}</em> describe their national identity?"
+msgctxt "How would <strong>{person_name}</strong> describe their national identity?"
 msgid "You can describe their national identity on the next question"
 msgstr ""
 
@@ -5732,7 +5861,7 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: White
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid ""
 "Includes Welsh, British, Northern Irish, Irish, Gypsy, Irish Traveller, "
 "Roma or any other White background"
@@ -5740,7 +5869,7 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Mixed or Multiple ethnic groups
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid ""
 "Includes White and Black Caribbean, White and Black African, White and "
 "Asian or any other Mixed or Multiple background"
@@ -5748,7 +5877,7 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Asian, Asian Welsh or Asian British
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid ""
 "Includes Indian, Pakistani, Bangladeshi, Chinese or any other Asian "
 "background"
@@ -5756,13 +5885,13 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Black, Black Welsh, Black British, Caribbean or African
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "Includes Black British, Caribbean, African or any other Black background"
 msgstr ""
 
 #. Answer option description
 #. For answer option: Other ethnic group
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "Includes Arab or any other ethnic group"
 msgstr ""
 
@@ -5775,8 +5904,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: Any other White background
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid "You can enter their ethnic group or background on the next question"
 msgstr ""
 
@@ -5791,8 +5920,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: Any other Mixed or Multiple background
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgid "You can enter their ethnic group or background on the next question"
 msgstr ""
 
@@ -5807,8 +5936,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: Any other Asian background
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid "You can enter their ethnic group or background on the next question"
 msgstr ""
 
@@ -5825,8 +5954,9 @@ msgstr ""
 #. For answer option: African
 #. For answer option: Any other Black, Black British or Caribbean background
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Black, Black "
-"Welsh, Black British, Caribbean or African ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Black,"
+" Black Welsh, Black British, Caribbean or African ethnic group or "
+"background?"
 msgid "You can enter their ethnic group or background on the next question"
 msgstr ""
 
@@ -5839,8 +5969,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: Any other ethnic group
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> other ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> other "
+"ethnic group or background?"
 msgid "You can enter their ethnic group or background on the next question"
 msgstr ""
 
@@ -5858,13 +5988,13 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Christian
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "All denominations"
 msgstr ""
 
 #. Answer option description
 #. For answer option: Any other religion
-msgctxt "What is <em>{person_name_possessive}</em> religion?"
+msgctxt "What is <strong>{person_name_possessive}</strong> religion?"
 msgid "You can enter their religion on the next question"
 msgstr ""
 
@@ -5876,7 +6006,7 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Other, including British Sign Language
-msgctxt "What is <em>{person_name_possessive}</em> main language?"
+msgctxt "What is <strong>{person_name_possessive}</strong> main language?"
 msgid "You can enter their main language on the next question"
 msgstr ""
 
@@ -5888,7 +6018,7 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Other
-msgctxt "What passports does <em>{person_name}</em> hold?"
+msgctxt "What passports does <strong>{person_name}</strong> hold?"
 msgid "You can enter these passports on the next question"
 msgstr ""
 
@@ -5900,7 +6030,7 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: Yes
-msgctxt "Has <em>{person_name}</em> completed an apprenticeship?"
+msgctxt "Has <strong>{person_name}</strong> completed an apprenticeship?"
 msgid "For example, trade, higher, foundation or modern"
 msgstr ""
 
@@ -5921,8 +6051,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: Yes
 msgctxt ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgid ""
 "For example, degree, foundation degree, HND or HNC, NVQ level 4 and "
 "above, teaching or nursing"
@@ -5931,8 +6061,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: No
 msgctxt ""
-"Has <em>{person_name}</em> achieved a qualification at degree level or "
-"above?"
+"Has <strong>{person_name}</strong> achieved a qualification at degree "
+"level or above?"
 msgid "Questions on other NVQs, A levels, GCSEs and equivalents will follow"
 msgstr ""
 
@@ -5956,19 +6086,25 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: NVQ level 3 or equivalent
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid "For example, BTEC National, OND or ONC, City and Guilds Advanced Craft"
 msgstr ""
 
 #. Answer option description
 #. For answer option: NVQ level 2 or equivalent
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid "For example, BTEC General, City and Guilds Craft"
 msgstr ""
 
 #. Answer option description
 #. For answer option: None of these apply
-msgctxt "Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved an NVQ or equivalent "
+"qualification?"
 msgid "Questions on A levels, GCSEs and equivalents will follow"
 msgstr ""
 
@@ -5993,7 +6129,7 @@ msgstr ""
 #. Answer option description
 #. For answer option: 2 or more A levels
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "Include 4 or more AS levels"
 msgstr ""
@@ -6001,7 +6137,7 @@ msgstr ""
 #. Answer option description
 #. For answer option: 1 A level
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "Include 2 to 3 AS levels"
 msgstr ""
@@ -6009,7 +6145,7 @@ msgstr ""
 #. Answer option description
 #. For answer option: None of these apply
 msgctxt ""
-"Has <em>{person_name}</em> achieved an AS, A level or equivalent "
+"Has <strong>{person_name}</strong> achieved an AS, A level or equivalent "
 "qualification?"
 msgid "Questions on GCSEs and equivalents will follow"
 msgstr ""
@@ -6034,19 +6170,25 @@ msgstr ""
 
 #. Answer option description
 #. For answer option: 5 or more GCSEs grade A* to C or 9 to 4
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "Include 5 or more O level passes or CSEs grades 1"
 msgstr ""
 
 #. Answer option description
 #. For answer option: Any other GCSEs
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "Include any other O levels or CSEs at any grades"
 msgstr ""
 
 #. Answer option description
 #. For answer option: Basic Skills course
-msgctxt "Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?"
+msgctxt ""
+"Has <strong>{person_name}</strong> achieved a GCSE or equivalent "
+"qualification?"
 msgid "Skills for life, literacy, numeracy and language"
 msgstr ""
 
@@ -6061,8 +6203,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: Self-employed or freelance
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> doing any of the "
-"following?"
+"In the last seven days, was <strong>{person_name}</strong> doing any of "
+"the following?"
 msgid ""
 "Freelance means that they are self-employed and work for different "
 "companies or people on particular pieces of work"
@@ -6079,8 +6221,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: Retired
 msgctxt ""
-"Which of the following describes what <em>{person_name}</em> was doing in"
-" the last seven days?"
+"Which of the following describes what <strong>{person_name}</strong> was "
+"doing in the last seven days?"
 msgid "Whether receiving a pension or not"
 msgstr ""
 
@@ -6095,8 +6237,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: Self-employed or freelance without employees
 msgctxt ""
-"In their main job, what is <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what is <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid ""
 "Freelance means that they are self-employed and work for different "
 "companies or people on particular pieces of work"
@@ -6113,8 +6255,8 @@ msgstr ""
 #. Answer option description
 #. For answer option: Self-employed or freelance without employees
 msgctxt ""
-"In their main job, what was <em>{person_name_possessive}</em> employment "
-"status?"
+"In their main job, what was <strong>{person_name_possessive}</strong> "
+"employment status?"
 msgid ""
 "Freelance means that they were self-employed and worked for different "
 "companies or people on particular pieces of work"
@@ -6129,8 +6271,8 @@ msgstr ""
 #. Detail answer label
 #. For answer option: Other sexual orientation
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Enter sexual orientation"
 msgstr ""
 
@@ -6143,8 +6285,8 @@ msgstr ""
 #. Detail answer label
 #. For answer option: No
 msgctxt ""
-"Is the gender <em>{person_name}</em> identifies with the same as their "
-"sex registered at birth?"
+"Is the gender <strong>{person_name}</strong> identifies with the same as "
+"their sex registered at birth?"
 msgid "Enter gender identity"
 msgstr ""
 
@@ -6156,7 +6298,7 @@ msgstr ""
 
 #. Answer guidance show link
 #. Answer guidance hide link
-msgctxt "During term time, where does <em>{person_name}</em> usually live?"
+msgctxt "During term time, where does <strong>{person_name}</strong> usually live?"
 msgid "Why we ask for term-time address"
 msgstr ""
 
@@ -6168,7 +6310,7 @@ msgstr ""
 
 #. Answer guidance show link
 #. Answer guidance hide link
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6181,8 +6323,8 @@ msgstr ""
 #. Answer guidance show link
 #. Answer guidance hide link
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6197,8 +6339,8 @@ msgstr ""
 #. Answer guidance show link
 #. Answer guidance hide link
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6213,8 +6355,8 @@ msgstr ""
 #. Answer guidance show link
 #. Answer guidance hide link
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6229,8 +6371,9 @@ msgstr ""
 #. Answer guidance show link
 #. Answer guidance hide link
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Black, Black "
-"Welsh, Black British, Caribbean or African ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Black,"
+" Black Welsh, Black British, Caribbean or African ethnic group or "
+"background?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6243,8 +6386,8 @@ msgstr ""
 #. Answer guidance show link
 #. Answer guidance hide link
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> other ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> other "
+"ethnic group or background?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6257,8 +6400,8 @@ msgstr ""
 #. Answer guidance show link
 #. Answer guidance hide link
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6270,7 +6413,9 @@ msgstr ""
 
 #. Answer guidance show link
 #. Answer guidance hide link
-msgctxt "Has <em>{person_name}</em> previously served in the UK Armed Forces?"
+msgctxt ""
+"Has <strong>{person_name}</strong> previously served in the UK Armed "
+"Forces?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6285,8 +6430,8 @@ msgstr ""
 #. Answer guidance show link
 #. Answer guidance hide link
 msgctxt ""
-"In the last four weeks, was <em>{person_name}</em> actively looking for "
-"any kind of paid work?"
+"In the last four weeks, was <strong>{person_name}</strong> actively "
+"looking for any kind of paid work?"
 msgid "Why we ask this question if they are retired or long-term sick or disabled"
 msgstr ""
 
@@ -6299,8 +6444,8 @@ msgstr ""
 #. Answer guidance show link
 #. Answer guidance hide link
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> waiting to start a job"
-" already accepted?"
+"In the last seven days, was <strong>{person_name}</strong> waiting to "
+"start a job already accepted?"
 msgid "Why we ask this question if they are retired or long-term sick or disabled"
 msgstr ""
 
@@ -6312,7 +6457,7 @@ msgstr ""
 
 #. Answer guidance show link
 #. Answer guidance hide link
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid "Why we ask for workplace"
 msgstr ""
 
@@ -6324,7 +6469,9 @@ msgstr ""
 
 #. Answer guidance show link
 #. Answer guidance hide link
-msgctxt "What is the address of <em>{person_name_possessive}</em> workplace?"
+msgctxt ""
+"What is the address of <strong>{person_name_possessive}</strong> "
+"workplace?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6336,7 +6483,7 @@ msgstr ""
 
 #. Answer guidance show link
 #. Answer guidance hide link
-msgctxt "What is the address of <em>{person_name_possessive}</em> depot?"
+msgctxt "What is the address of <strong>{person_name_possessive}</strong> depot?"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -6350,7 +6497,7 @@ msgid ""
 msgstr ""
 
 #. Answer guidance description
-msgctxt "During term time, where does <em>{person_name}</em> usually live?"
+msgctxt "During term time, where does <strong>{person_name}</strong> usually live?"
 msgid ""
 "Their answer helps us produce an accurate count of the population during "
 "term time. These figures can be used to plan services such as healthcare "
@@ -6367,7 +6514,7 @@ msgid ""
 msgstr ""
 
 #. Answer guidance description
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid ""
 "Their answer will provide a better understanding of their community and "
 "help to support equality and fairness. For example, councils and "
@@ -6384,8 +6531,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid ""
 "Their answer will provide a better understanding of their community and "
 "help to support equality and fairness. For example, councils and "
@@ -6404,8 +6551,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgid ""
 "Their answer will provide a better understanding of their community and "
 "help to support equality and fairness. For example, councils and "
@@ -6424,8 +6571,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid ""
 "Their answer will provide a better understanding of their community and "
 "help to support equality and fairness. For example, councils and "
@@ -6444,8 +6591,9 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Black, Black "
-"Welsh, Black British, Caribbean or African ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Black,"
+" Black Welsh, Black British, Caribbean or African ethnic group or "
+"background?"
 msgid ""
 "Their answer will provide a better understanding of their community and "
 "help to support equality and fairness. For example, councils and "
@@ -6462,8 +6610,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> other ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> other "
+"ethnic group or background?"
 msgid ""
 "Their answer will provide a better understanding of their community and "
 "help to support equality and fairness. For example, councils and "
@@ -6485,8 +6633,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid ""
 "Their answer will help their local community by providing organisations, "
 "such as charities, with an understanding of the services people might "
@@ -6495,8 +6643,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Councils and government will use this information to"
 msgstr ""
 
@@ -6518,7 +6666,9 @@ msgid ""
 msgstr ""
 
 #. Answer guidance description
-msgctxt "Has <em>{person_name}</em> previously served in the UK Armed Forces?"
+msgctxt ""
+"Has <strong>{person_name}</strong> previously served in the UK Armed "
+"Forces?"
 msgid ""
 "Their answer will help their local community by providing information "
 "needed to support people who used to serve in the UK Armed Forces but "
@@ -6526,7 +6676,9 @@ msgid ""
 msgstr ""
 
 #. Answer guidance description
-msgctxt "Has <em>{person_name}</em> previously served in the UK Armed Forces?"
+msgctxt ""
+"Has <strong>{person_name}</strong> previously served in the UK Armed "
+"Forces?"
 msgid ""
 "Councils and government will use this information to carry out the "
 "commitments they made under the Armed Forces Covenant. This is a promise "
@@ -6563,8 +6715,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"In the last four weeks, was <em>{person_name}</em> actively looking for "
-"any kind of paid work?"
+"In the last four weeks, was <strong>{person_name}</strong> actively "
+"looking for any kind of paid work?"
 msgid ""
 "To get a true picture of the working population, we ask this question of "
 "everyone who is not currently working."
@@ -6572,8 +6724,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"In the last four weeks, was <em>{person_name}</em> actively looking for "
-"any kind of paid work?"
+"In the last four weeks, was <strong>{person_name}</strong> actively "
+"looking for any kind of paid work?"
 msgid ""
 "We ask people who are retired because the number of people continuing to "
 "work after retirement is increasing."
@@ -6581,8 +6733,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"In the last four weeks, was <em>{person_name}</em> actively looking for "
-"any kind of paid work?"
+"In the last four weeks, was <strong>{person_name}</strong> actively "
+"looking for any kind of paid work?"
 msgid ""
 "We ask people who are not working due to long-term illness or disability "
 "because some intend to go back to work."
@@ -6611,8 +6763,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> waiting to start a job"
-" already accepted?"
+"In the last seven days, was <strong>{person_name}</strong> waiting to "
+"start a job already accepted?"
 msgid ""
 "To get a true picture of the working population, we ask this question of "
 "everyone who is not currently working."
@@ -6620,8 +6772,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> waiting to start a job"
-" already accepted?"
+"In the last seven days, was <strong>{person_name}</strong> waiting to "
+"start a job already accepted?"
 msgid ""
 "We ask people who are retired because the number of people continuing to "
 "work after retirement is increasing."
@@ -6629,8 +6781,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"In the last seven days, was <em>{person_name}</em> waiting to start a job"
-" already accepted?"
+"In the last seven days, was <strong>{person_name}</strong> waiting to "
+"start a job already accepted?"
 msgid ""
 "We ask people who are not working due to long-term illness or disability "
 "because some intend to go back to work."
@@ -6652,14 +6804,14 @@ msgid ""
 msgstr ""
 
 #. Answer guidance description
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid ""
 "Their answer will help their community by allowing the government and "
 "councils to understand commuting patterns."
 msgstr ""
 
 #. Answer guidance description
-msgctxt "Where does <em>{person_name}</em> mainly work?"
+msgctxt "Where does <strong>{person_name}</strong> mainly work?"
 msgid ""
 "Information about their workplace and how they travel to work are used "
 "together to work out local public transport needs, develop transport "
@@ -6682,14 +6834,18 @@ msgid ""
 msgstr ""
 
 #. Answer guidance description
-msgctxt "What is the address of <em>{person_name_possessive}</em> workplace?"
+msgctxt ""
+"What is the address of <strong>{person_name_possessive}</strong> "
+"workplace?"
 msgid ""
 "Their answer will help their community by allowing the government and "
 "councils to understand commuting patterns."
 msgstr ""
 
 #. Answer guidance description
-msgctxt "What is the address of <em>{person_name_possessive}</em> workplace?"
+msgctxt ""
+"What is the address of <strong>{person_name_possessive}</strong> "
+"workplace?"
 msgid ""
 "Information about their workplace address and how they travel to work are"
 " used together to work out local public transport needs, develop "
@@ -6712,14 +6868,14 @@ msgid ""
 msgstr ""
 
 #. Answer guidance description
-msgctxt "What is the address of <em>{person_name_possessive}</em> depot?"
+msgctxt "What is the address of <strong>{person_name_possessive}</strong> depot?"
 msgid ""
 "Their answer will help their community by allowing the government and "
 "councils to understand commuting patterns."
 msgstr ""
 
 #. Answer guidance description
-msgctxt "What is the address of <em>{person_name_possessive}</em> depot?"
+msgctxt "What is the address of <strong>{person_name_possessive}</strong> depot?"
 msgid ""
 "Information about their workplace address and how they travel to work are"
 " used together to work out local public transport needs, develop "
@@ -6746,7 +6902,7 @@ msgstr ""
 #. For description: Their answer will provide a better understanding of their
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "provide services and share funding fairly"
 msgstr ""
 
@@ -6754,7 +6910,7 @@ msgstr ""
 #. For description: Their answer will provide a better understanding of their
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
-msgctxt "What is <em>{person_name_possessive}</em> ethnic group?"
+msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
 msgid "understand and represent everyone’s interests"
 msgstr ""
 
@@ -6779,8 +6935,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid "provide services and share funding fairly"
 msgstr ""
 
@@ -6789,8 +6945,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> White ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> White "
+"ethnic group or background?"
 msgid "understand and represent everyone’s interests"
 msgstr ""
 
@@ -6819,8 +6975,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgid "provide services and share funding fairly"
 msgstr ""
 
@@ -6829,8 +6985,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Mixed or "
-"Multiple ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
+"or Multiple ethnic group or background?"
 msgid "understand and represent everyone’s interests"
 msgstr ""
 
@@ -6859,8 +7015,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid "provide services and share funding fairly"
 msgstr ""
 
@@ -6869,8 +7025,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Asian, Asian "
-"Welsh or Asian British ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
+" Asian Welsh or Asian British ethnic group or background?"
 msgid "understand and represent everyone’s interests"
 msgstr ""
 
@@ -6899,8 +7055,9 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Black, Black "
-"Welsh, Black British, Caribbean or African ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Black,"
+" Black Welsh, Black British, Caribbean or African ethnic group or "
+"background?"
 msgid "provide services and share funding fairly"
 msgstr ""
 
@@ -6909,8 +7066,9 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> Black, Black "
-"Welsh, Black British, Caribbean or African ethnic group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> Black,"
+" Black Welsh, Black British, Caribbean or African ethnic group or "
+"background?"
 msgid "understand and represent everyone’s interests"
 msgstr ""
 
@@ -6935,8 +7093,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> other ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> other "
+"ethnic group or background?"
 msgid "provide services and share funding fairly"
 msgstr ""
 
@@ -6945,8 +7103,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <em>{person_name_possessive}</em> other ethnic "
-"group or background?"
+"Which one best describes <strong>{person_name_possessive}</strong> other "
+"ethnic group or background?"
 msgid "understand and represent everyone’s interests"
 msgstr ""
 
@@ -6965,16 +7123,16 @@ msgstr ""
 #. Answer guidance list item
 #. For description: Councils and government will use this information to
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "monitor equality to ensure that everyone is treated fairly"
 msgstr ""
 
 #. Answer guidance list item
 #. For description: Councils and government will use this information to
 msgctxt ""
-"Which of the following best describes <em>{person_name_possessive}</em> "
-"sexual orientation?"
+"Which of the following best describes "
+"<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "provide services and share funding"
 msgstr ""
 
