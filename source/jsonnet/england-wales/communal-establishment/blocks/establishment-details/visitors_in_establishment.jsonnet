@@ -62,7 +62,7 @@ local question = {
   question: question,
   routing_rules: [
     {
-        block: 'number-of-visitors-in-establishment',
+      block: 'number-of-visitors-in-establishment',
     },
   ],
 }

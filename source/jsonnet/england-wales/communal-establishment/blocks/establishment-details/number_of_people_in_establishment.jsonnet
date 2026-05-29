@@ -69,10 +69,10 @@ local questionWithExclusive = {
       when: {
         '!=': [
           {
-              source: 'answers',
-              identifier: 'people-in-establishment-answer',
+            source: 'answers',
+            identifier: 'people-in-establishment-answer',
           },
-          null
+          null,
         ],
       },
     },
@@ -81,10 +81,10 @@ local questionWithExclusive = {
       when: {
         '!=': [
           {
-              source: 'answers',
-              identifier: 'people-in-establishment-exclusive',
+            source: 'answers',
+            identifier: 'people-in-establishment-exclusive',
           },
-          null
+          null,
         ],
       },
     },
@@ -93,10 +93,10 @@ local questionWithExclusive = {
       when: {
         '==': [
           {
-              source: 'answers',
-              identifier: 'people-in-establishment-answer',
+            source: 'answers',
+            identifier: 'people-in-establishment-answer',
           },
-          null
+          null,
         ],
       },
     },

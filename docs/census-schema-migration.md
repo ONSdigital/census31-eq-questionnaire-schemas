@@ -355,6 +355,7 @@ New:
     "arguments": {
         "lhs": {
             "source": "previous_transform"
+        },
         "rhs": {
             "value": 1
         }

@@ -53,55 +53,55 @@
   },
   routing_rules: [
     {
-        block: 'medical-establishment',
-        when: {
-          "==": [
-              {
-                  "source": "answers",
-                  "identifier": "nature-of-establishment-answer"
-              },
-              "Medical or care"
-          ]
-        },
+      block: 'medical-establishment',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'nature-of-establishment-answer',
+          },
+          'Medical or care',
+        ],
+      },
     },
     {
-        block: 'education-establishment',
-        when: {
-          "==": [
-              {
-                  "source": "answers",
-                  "identifier": "nature-of-establishment-answer"
-              },
-              "Education"
-          ]
-        },
+      block: 'education-establishment',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'nature-of-establishment-answer',
+          },
+          'Education',
+        ],
+      },
     },
     {
-        block: 'detention-establishment',
-        when: {
-          "==": [
-              {
-                  "source": "answers",
-                  "identifier": "nature-of-establishment-answer"
-              },
-              "Detention"
-          ]
-        },
+      block: 'detention-establishment',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'nature-of-establishment-answer',
+          },
+          'Detention',
+        ],
+      },
     },
     {
-        block: 'travel-establishment',
-        when: {
-          "==": [
-              {
-                  "source": "answers",
-                  "identifier": "nature-of-establishment-answer"
-              },
-              "Travel or temporary accommodation"
-          ]
-        },
+      block: 'travel-establishment',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'nature-of-establishment-answer',
+          },
+          'Travel or temporary accommodation',
+        ],
+      },
     },
     {
-        block: 'responsible-for-establishment',
+      block: 'responsible-for-establishment',
     },
   ],
 }

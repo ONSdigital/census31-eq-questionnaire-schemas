@@ -41,7 +41,7 @@ local placeholders = import '../../../lib/placeholders.libsonnet';
   },
   routing_rules: [
     {
-        block: 'responsible-for-establishment',
+      block: 'responsible-for-establishment',
     },
   ],
 }

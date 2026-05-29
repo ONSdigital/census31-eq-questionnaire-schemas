@@ -164,8 +164,8 @@ function(region_code, census_month_year_date) {
     type: 'Hub',
     options: {
       required_completed_sections: [
-        'people-who-live-here-and-overnight-visitors', 
-        'relationships-section'
+        'people-who-live-here-and-overnight-visitors',
+        'relationships-section',
       ],
     },
   },
