@@ -1801,7 +1801,7 @@ msgstr "Os gwnaeth pandemig y <strong>coronafeirws</strong> effeithio ar gyfeiri
 #. Question description
 msgctxt "How would you describe your national identity?"
 msgid "This relates to where you feel you belong, such as the country or countries you think of as home.<br/>This could be different from your citizenship or ethnic group."
-msgstr "Mae hyn yn ymwneud â ble rydych chi’n teimlo eich bod yn perthyn, er enghraifft, y wlad neu’r gwledydd rydych chi’n ystyried yn gartref i chi. <br/>Gallai hyn fod yn wahanol i’ch dinasyddiaeth neu eich grŵp ethnig."
+msgstr "Mae hyn yn ymwneud â ble rydych chi’n teimlo eich bod yn perthyn, er enghraifft, y wlad neu’r gwledydd rydych chi’n ystyried yn gartref i chi.<br/>Gallai hyn fod yn wahanol i’ch dinasyddiaeth neu eich grŵp ethnig."
 
 #. Question description
 msgctxt "How would <em>{person_name}</em> describe their national identity?"
