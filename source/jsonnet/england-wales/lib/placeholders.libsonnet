@@ -147,6 +147,10 @@ local visitorPersonName() = {
     transforms: [transforms.concatenateNames, transforms.formatPossessive],
   },
   visitorPersonName: visitorPersonName,
+  visitorPersonNamePossessive: {
+    placeholder: 'person_name_possessive',
+    transforms: [transforms.concatenateVisitorNames, transforms.formatPossessive],
+  },
   address: {
     placeholder: 'household_address',
     value: {

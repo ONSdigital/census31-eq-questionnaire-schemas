@@ -20,7 +20,7 @@ local question(additionalAnswerOptions=[]) = {
   title: {
     text: 'What is <strong>{person_name_possessive}</strong> usual address?',
     placeholders: [
-      placeholders.personNamePossessive,
+      placeholders.visitorPersonNamePossessive,
     ],
   },
   type: 'General',

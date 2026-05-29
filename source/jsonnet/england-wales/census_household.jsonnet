@@ -464,7 +464,7 @@ function(region_code, census_month_year_date) {
                     list_to_concatenate: [
                       {
                         source: 'answers',
-                        identifier: 'first-name',
+                        identifier: 'visitor-first-name',
                       },
                       {
                         source: 'answers',
