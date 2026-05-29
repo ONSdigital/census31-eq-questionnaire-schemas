@@ -4,7 +4,7 @@ local guidance = {
   contents: [
     {
       description: {
-        text: '<em>Include</em> shift workers, for example, care workers, hotel porters, who are staying overnight on {census_date} as visitors',
+        text: '<strong>Include</strong> shift workers, for example, care workers, hotel porters, who are staying overnight on {census_date} as visitors',
         placeholders: [
           placeholders.censusDate,
         ],
@@ -62,9 +62,7 @@ local question = {
   question: question,
   routing_rules: [
     {
-      goto: {
         block: 'number-of-visitors-in-establishment',
-      },
     },
   ],
 }

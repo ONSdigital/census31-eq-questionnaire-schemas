@@ -149,29 +149,28 @@ local question(hasPrimary) = {
   question_variants: [
     {
       question: question(hasPrimary=true),
-      when: [rules.hasPrimary],
+      when: rules.hasPrimary,
     },
     {
       question: question(hasPrimary=false),
-      when: [rules.hasNoPrimary],
+      when: rules.hasNoPrimary,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'any-more-people-living-here',
-        when: [
+      block: 'any-more-people-living-here',
+      when: {
+        '!=': [
           {
-            id: 'who-else-lives-here-answer-exclusive',
-            condition: 'set',
+            source: 'answers',
+            identifier: 'who-else-lives-here-answer-exclusive',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        block: 'people-living-here',
-      },
+      block: 'people-living-here',
     },
   ],
 

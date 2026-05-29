@@ -31,7 +31,7 @@ local nonProxyTitle = {
   ],
 };
 local proxyTitle = {
-  text: 'Did <em>{person_name}</em> arrive in the UK on or after {year_before_census_date}?',
+  text: 'Did <strong>{person_name}</strong> arrive in the UK on or after {year_before_census_date}?',
   placeholders: [
     placeholders.personName(),
     placeholders.yearBeforeCensusDate,
@@ -45,42 +45,40 @@ function(region_code) {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'length-of-stay-in-uk',
-        when: [
+      block: 'length-of-stay-in-uk',
+      when: {
+        '==': [
           {
-            id: 'when-arrive-in-uk-answer',
-            condition: 'equals',
-            value: 'Yes',
+            source: 'answers',
+            identifier: 'when-arrive-in-uk-answer',
           },
+          'Yes',
         ],
       },
     },
     {
-      goto: {
-        block: 'location-one-year-ago',
-        when: [
+      block: 'location-one-year-ago',
+      when: {
+        '==': [
           {
-            id: 'when-arrive-in-uk-answer',
-            condition: 'equals',
-            value: 'No',
+            source: 'answers',
+            identifier: 'when-arrive-in-uk-answer',
           },
+          'No',
         ],
       },
     },
     {
-      goto: {
-        block: 'length-of-stay-in-uk',
-      },
+      block: 'length-of-stay-in-uk',
     },
   ],
 }

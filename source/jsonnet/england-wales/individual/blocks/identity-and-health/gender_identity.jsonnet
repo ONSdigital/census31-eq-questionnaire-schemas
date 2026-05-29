@@ -42,7 +42,7 @@ local question(title) = {
 
 local nonProxyTitle = 'Is the gender you identify with the same as your sex registered at birth?';
 local proxyTitle = {
-  text: 'Is the gender <em>{person_name}</em> identifies with the same as their sex registered at birth?',
+  text: 'Is the gender <strong>{person_name}</strong> identifies with the same as their sex registered at birth?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -55,11 +55,11 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

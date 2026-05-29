@@ -137,12 +137,11 @@ function(region_code, census_month_year_date) {
   schema_version: '0.0.1',
   data_version: '0.0.3',
   survey_id: 'census',
-  survey: 'CENSUS',
   form_type: 'H',
   region_code: region_code,
   title: 'Census 2021',
   description: 'Census Household Schema',
-  theme: 'census',
+  theme: 'social',
   legal_basis: 'Voluntary',
   navigation: {
     visible: false,
@@ -161,9 +160,14 @@ function(region_code, census_month_year_date) {
       type: 'string',
     },
   ],
-  hub: {
-    enabled: true,
-    required_completed_sections: ['people-who-live-here-and-overnight-visitors', 'relationships-section'],
+  questionnaire_flow: {
+    type: 'Hub',
+    options: {
+      required_completed_sections: [
+        'people-who-live-here-and-overnight-visitors', 
+        'relationships-section'
+      ],
+    },
   },
   individual_response: {
     for_list: 'household',
@@ -174,8 +178,10 @@ function(region_code, census_month_year_date) {
     guidance: 'By submitting this census you are confirming that, to the best of your knowledge and belief, the details provided are correct.',
     title: 'Submit census',
     warning: 'You must submit this census to complete it',
-    confirmation_email: true,
+  },
+  post_submission: {
     feedback: true,
+    confirmation_email: true,
   },
   sections: [
     {
@@ -197,8 +203,8 @@ function(region_code, census_month_year_date) {
             title: {
               text_plural: {
                 forms: {
-                  one: 'You said <em>{cardinality}</em> person is living here on Sunday {census_date}',
-                  other: 'You said <em>{cardinality}</em> people are living here on Sunday {census_date}',
+                  one: 'You said <strong>{cardinality}</strong> person is living here on Sunday {census_date}',
+                  other: 'You said <strong>{cardinality}</strong> people are living here on Sunday {census_date}',
                 },
                 count: {
                   source: 'list',
@@ -219,8 +225,8 @@ function(region_code, census_month_year_date) {
             title: {
               text_plural: {
                 forms: {
-                  one: 'You said <em>{cardinality}</em> visitor is staying overnight here on Sunday {census_date}',
-                  other: 'You said <em>{cardinality}</em> visitors are staying overnight here on Sunday {census_date}',
+                  one: 'You said <strong>{cardinality}</strong> visitor is staying overnight here on Sunday {census_date}',
+                  other: 'You said <strong>{cardinality}</strong> visitors are staying overnight here on Sunday {census_date}',
                 },
                 count: {
                   source: 'list',
@@ -268,17 +274,21 @@ function(region_code, census_month_year_date) {
           ],
         },
       ],
-      enabled: [
-        {
-          when: [
+      enabled: {
+        when: {
+          '>': [
             {
-              list: 'household',
-              condition: 'greater than',
-              value: 1,
+              count: [
+                {
+                  source: 'list',
+                  identifier: 'household',
+                },
+              ],
             },
+            1,
           ],
         },
-      ],
+      },
     },
     {
       id: 'accommodation-section',
@@ -451,10 +461,16 @@ function(region_code, census_month_year_date) {
                 {
                   transform: 'concatenate_list',
                   arguments: {
-                    list_to_concatenate: {
-                      source: 'answers',
-                      identifier: ['first-name', 'last-name'],
-                    },
+                    list_to_concatenate: [
+                      {
+                        source: 'answers',
+                        identifier: 'first-name',
+                      },
+                      {
+                        source: 'answers',
+                        identifier: 'last-name',
+                      },
+                    ],
                     delimiter: ' ',
                   },
                 },

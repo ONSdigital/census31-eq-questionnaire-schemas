@@ -53,57 +53,55 @@
   },
   routing_rules: [
     {
-      goto: {
         block: 'medical-establishment',
-        when: [
-          {
-            id: 'nature-of-establishment-answer',
-            condition: 'equals',
-            value: 'Medical or care',
-          },
-        ],
-      },
+        when: {
+          "==": [
+              {
+                  "source": "answers",
+                  "identifier": "nature-of-establishment-answer"
+              },
+              "Medical or care"
+          ]
+        },
     },
     {
-      goto: {
         block: 'education-establishment',
-        when: [
-          {
-            id: 'nature-of-establishment-answer',
-            condition: 'equals',
-            value: 'Education',
-          },
-        ],
-      },
+        when: {
+          "==": [
+              {
+                  "source": "answers",
+                  "identifier": "nature-of-establishment-answer"
+              },
+              "Education"
+          ]
+        },
     },
     {
-      goto: {
         block: 'detention-establishment',
-        when: [
-          {
-            id: 'nature-of-establishment-answer',
-            condition: 'equals',
-            value: 'Detention',
-          },
-        ],
-      },
+        when: {
+          "==": [
+              {
+                  "source": "answers",
+                  "identifier": "nature-of-establishment-answer"
+              },
+              "Detention"
+          ]
+        },
     },
     {
-      goto: {
         block: 'travel-establishment',
-        when: [
-          {
-            id: 'nature-of-establishment-answer',
-            condition: 'equals',
-            value: 'Travel or temporary accommodation',
-          },
-        ],
-      },
+        when: {
+          "==": [
+              {
+                  "source": "answers",
+                  "identifier": "nature-of-establishment-answer"
+              },
+              "Travel or temporary accommodation"
+          ]
+        },
     },
     {
-      goto: {
         block: 'responsible-for-establishment',
-      },
     },
   ],
 }

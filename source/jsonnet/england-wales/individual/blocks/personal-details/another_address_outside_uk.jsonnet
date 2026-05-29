@@ -30,23 +30,21 @@ local question(title) = {
   question_variants: [
     {
       question: question('In which country outside the UK do you stay for more than 30 days a year?'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'In which country outside the UK does <em>{person_name}</em> stay for more than 30 days a year?',
+        text: 'In which country outside the UK does <strong>{person_name}</strong> stay for more than 30 days a year?',
         placeholders: [
           placeholders.personName(),
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'address-type',
-      },
+      block: 'address-type',
     },
   ],
 }

@@ -7,7 +7,7 @@ local placeholders = import '../../../lib/placeholders.libsonnet';
   question: {
     id: 'detention-establishment-question',
     title: {
-      text: 'What type of detention establishment is <em>{household_address}</em>?',
+      text: 'What type of detention establishment is <strong>{household_address}</strong>?',
       placeholders: [
         placeholders.address,
       ],
@@ -41,9 +41,7 @@ local placeholders = import '../../../lib/placeholders.libsonnet';
   },
   routing_rules: [
     {
-      goto: {
         block: 'responsible-for-establishment',
-      },
     },
   ],
 }

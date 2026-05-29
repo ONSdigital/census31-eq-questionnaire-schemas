@@ -4,7 +4,7 @@ local rules = import 'rules.libsonnet';
 local title(isProxy) = (
   if isProxy then
     {
-      text: 'During term time, where does <em>{person_name}</em> usually live?',
+      text: 'During term time, where does <strong>{person_name}</strong> usually live?',
       placeholders: [
         placeholders.personName(),
       ],
@@ -132,156 +132,211 @@ local otherNonUkAddressOptions = {
   question_variants: [
     {
       question: question(otherNonUkAddressOptions, isProxy=false),
-      when: [
-        rules.isNotProxy,
-        {
-          id: 'another-address-answer',
-          condition: 'equals',
-          value: 'Yes, an address outside the UK',
-        },
-      ],
-    },
-    {
-      question: question(otherNonUkAddressOptions, isProxy=true),
-      when: [
-        rules.isProxy,
-        {
-          id: 'another-address-answer',
-          condition: 'equals',
-          value: 'Yes, an address outside the UK',
-        },
-      ],
-    },
-    {
-      question: question(otherUkAddressOptions, isProxy=false),
-      when: [
-        rules.isNotProxy,
-        {
-          id: 'another-address-answer',
-          condition: 'equals',
-          value: 'Yes, an address within the UK',
-        },
-      ],
-    },
-    {
-      question: question(otherUkAddressOptions, isProxy=true),
-      when: [
-        rules.isProxy,
-        {
-          id: 'another-address-answer',
-          condition: 'equals',
-          value: 'Yes, an address within the UK',
-        },
-      ],
-    },
-    {
-      question: question(noOtherAddressOptions, isProxy=false),
-      when: [rules.isNotProxy],
-    },
-    {
-      question: question(noOtherAddressOptions, isProxy=true),
-      when: [rules.isProxy],
-    },
-  ],
-  routing_rules: [
-    {
-      goto: {
-        group: 'identity-and-health-group',
-        when: [
+      when: {
+        and: [
+          rules.isNotProxy,
           {
-            id: 'term-time-location-answer',
-            condition: 'equals',
-            value: '{household_address}',
-          },
-        ],
-      },
-    },
-    {
-      goto: {
-        section: 'End',
-        when: [
-          {
-            id: 'term-time-location-answer',
-            condition: 'equals any',
-            values: [
-              '{thirty_day_address}',
-              'The address in {thirty_day_address_country}',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              'Yes, an address outside the UK',
             ],
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'term-time-address-country',
-        when: [
+      question: question(otherNonUkAddressOptions, isProxy=true),
+      when: {
+        and: [
+          rules.isProxy,
           {
-            id: 'another-address-answer',
-            condition: 'equals',
-            value: 'No',
-          },
-          {
-            id: 'term-time-location-answer',
-            condition: 'equals',
-            value: 'Another address',
-          },
-        ],
-      },
-    },
-    {
-      goto: {
-        block: 'term-time-address-country',
-        when: [
-          {
-            id: 'another-address-answer',
-            condition: 'not set',
-          },
-          {
-            id: 'term-time-location-answer',
-            condition: 'equals',
-            value: 'Another address',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              'Yes, an address outside the UK',
+            ],
           },
         ],
       },
     },
     {
-      goto: {
-        section: 'End',
-        when: [
+      question: question(otherUkAddressOptions, isProxy=false),
+      when: {
+        and: [
+          rules.isNotProxy,
           {
-            id: 'term-time-location-answer',
-            condition: 'equals',
-            value: 'Another address',
-          },
-          {
-            id: 'another-address-answer',
-            condition: 'equals',
-            value: 'Yes, an address within the UK',
-          },
-        ],
-      },
-    },
-    {
-      goto: {
-        section: 'End',
-        when: [
-          {
-            id: 'term-time-location-answer',
-            condition: 'equals',
-            value: 'Another address',
-          },
-          {
-            id: 'another-address-answer',
-            condition: 'equals',
-            value: 'Yes, an address outside the UK',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              'Yes, an address within the UK',
+            ],
           },
         ],
       },
     },
     {
-      goto: {
-        group: 'identity-and-health-group',
+      question: question(otherUkAddressOptions, isProxy=true),
+      when: {
+        and: [
+          rules.isProxy,
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              'Yes, an address within the UK',
+            ],
+          },
+        ],
       },
+    },
+    {
+      question: question(noOtherAddressOptions, isProxy=false),
+      when: rules.isNotProxy,
+    },
+    {
+      question: question(noOtherAddressOptions, isProxy=true),
+      when: rules.isProxy,
+    },
+  ],
+  routing_rules: [
+    {
+      group: 'identity-and-health-group',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'term-time-location-answer',
+          },
+          '{household_address}',
+        ],
+      },
+    },
+    {
+      section: 'End',
+      when: {
+        'in': [
+          {
+            identifier: 'term-time-location-answer',
+            source: 'answers',
+          },
+          [
+            '{thirty_day_address}',
+            'The address in {thirty_day_address_country}',
+          ],
+        ],
+      },
+    },
+    {
+      block: 'term-time-address-country',
+      when: {
+        and: [
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              'No',
+            ],
+          },
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'term-time-location-answer',
+              },
+              'Another address',
+            ],
+          },
+        ],
+      },
+    },
+    {
+      block: 'term-time-address-country',
+      when: {
+        and: [
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              null,
+            ],
+          },
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'term-time-location-answer',
+              },
+              'Another address',
+            ],
+          },
+        ],
+      },
+    },
+    {
+      section: 'End',
+      when: {
+        and: [
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'term-time-location-answer',
+              },
+              'Another address',
+            ],
+          },
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              'Yes, an address within the UK',
+            ],
+          },
+        ],
+      },
+    },
+    {
+      section: 'End',
+      when: {
+        and: [
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'term-time-location-answer',
+              },
+              'Another address',
+            ],
+          },
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              'Yes, an address outside the UK',
+            ],
+          },
+        ],
+      },
+    },
+    {
+      group: 'identity-and-health-group',
     },
   ],
 }

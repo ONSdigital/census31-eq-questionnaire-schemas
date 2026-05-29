@@ -8,7 +8,7 @@ local rules = import 'rules.libsonnet';
   question: {
     id: 'central-heating-question',
     title: {
-      text: 'What type of central heating does <em>{household_address}</em> have?',
+      text: 'What type of central heating does <strong>{household_address}</strong> have?',
       placeholders: [placeholders.address],
     },
     type: 'General',
@@ -75,15 +75,11 @@ local rules = import 'rules.libsonnet';
   },
   routing_rules: [
     {
-      goto: {
-        section: 'End',
-        when: [rules.listIsEmpty('household')],
-      },
+      section: 'End',
+      when: rules.listIsEmpty('household'),
     },
     {
-      goto: {
-        block: 'own-or-rent',
-      },
+      block: 'own-or-rent',
     },
   ],
 }

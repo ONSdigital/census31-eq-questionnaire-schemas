@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local questionTitle(isProxy) = (
   if isProxy then {
-    text: 'You selected “Any other Asian background”. How would <em>{person_name}</em> describe their Asian ethnic group or background?',
+    text: 'You selected “Any other Asian background”. How would <strong>{person_name}</strong> describe their Asian ethnic group or background?',
     placeholders: [
       placeholders.personName(),
     ],
@@ -37,18 +37,16 @@ local question(isProxy) = (
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'religion',
-      },
+      block: 'religion',
     },
   ],
 }

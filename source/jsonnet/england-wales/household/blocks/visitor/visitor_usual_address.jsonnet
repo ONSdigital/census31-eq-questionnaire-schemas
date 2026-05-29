@@ -18,7 +18,7 @@ local additionalAnswerOption = [
 local question(additionalAnswerOptions=[]) = {
   id: 'visitor-usual-question',
   title: {
-    text: 'What is <em>{person_name_possessive}</em> usual address?',
+    text: 'What is <strong>{person_name_possessive}</strong> usual address?',
     placeholders: [
       placeholders.personNamePossessive,
     ],
@@ -59,42 +59,40 @@ local question(additionalAnswerOptions=[]) = {
   question_variants: [
     {
       question: question(),
-      when: [rules.isFirstPersonInList(listName)],
+      when: rules.isFirstPersonInList(listName),
     },
     {
       question: question(additionalAnswerOption),
-      when: [rules.isNotFirstPersonInList(listName)],
+      when: rules.isNotFirstPersonInList(listName),
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'visitor-usual-address-details',
-        when: [
+      block: 'visitor-usual-address-details',
+      when: {
+        '==': [
           {
-            id: 'visitor-usual-answer',
-            condition: 'equals',
-            value: 'An address in the UK',
+            source: 'answers',
+            identifier: 'visitor-usual-answer',
           },
+          'An address in the UK',
         ],
       },
     },
     {
-      goto: {
-        block: 'visitor-usual-address-country',
-        when: [
+      block: 'visitor-usual-address-country',
+      when: {
+        '==': [
           {
-            id: 'visitor-usual-answer',
-            condition: 'equals',
-            value: 'An address outside the UK',
+            source: 'answers',
+            identifier: 'visitor-usual-answer',
           },
+          'An address outside the UK',
         ],
       },
     },
     {
-      goto: {
-        section: 'End',
-      },
+      section: 'End',
     },
   ],
 }

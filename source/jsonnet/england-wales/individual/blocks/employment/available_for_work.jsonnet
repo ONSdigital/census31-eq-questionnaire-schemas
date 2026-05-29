@@ -26,7 +26,7 @@ local question(title) = {
 
 local nonProxyTitle = 'Are you available to start work in the next two weeks?';
 local proxyTitle = {
-  text: 'Is <em>{person_name}</em> available to start work in the next two weeks?',
+  text: 'Is <strong>{person_name}</strong> available to start work in the next two weeks?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -39,30 +39,28 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'ever-worked',
-        when: [
+      block: 'ever-worked',
+      when: {
+        '==': [
           {
-            id: 'available-for-work-answer',
-            condition: 'equals',
-            value: 'Yes',
+            source: 'answers',
+            identifier: 'available-for-work-answer',
           },
+          'Yes',
         ],
       },
     },
     {
-      goto: {
-        block: 'about-to-start-job',
-      },
+      block: 'about-to-start-job',
     },
   ],
 }

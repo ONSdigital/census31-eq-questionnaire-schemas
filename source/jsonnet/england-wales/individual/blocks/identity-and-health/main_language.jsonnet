@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'What is your main language?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> main language?',
+  text: 'What is <strong>{person_name_possessive}</strong> main language?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -32,13 +32,15 @@ local routing(region_code) = (
   local regionValue = if region_code == 'GB-WLS' then walesString else englandString;
   {
     block: 'passports',
-    when: [
-      {
-        id: 'main-language-answer',
-        condition: 'equals',
-        value: regionValue,
-      },
-    ],
+    when: {
+      '==': [
+        {
+          source: 'answers',
+          identifier: 'main-language-answer',
+        },
+        regionValue,
+      ],
+    },
   }
 );
 
@@ -81,34 +83,29 @@ function(region_code) {
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDefinitionDescription, region_code, 'You can enter your main language on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyDefinitionDescription, region_code, 'You can enter their main language on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'other-main-language',
-        when: [
+      block: 'other-main-language',
+      when: {
+        '==': [
           {
-            id: 'main-language-answer',
-            condition: 'equals',
-            value: 'Other, including British Sign Language',
+            source: 'answers',
+            identifier: 'main-language-answer',
           },
+          'Other, including British Sign Language',
         ],
       },
     },
+    routing(region_code),
     {
-      goto:
-        routing(region_code),
-    },
-    {
-      goto: {
-        block: 'level-of-spoken-english',
-      },
+      block: 'level-of-spoken-english',
     },
   ],
 }

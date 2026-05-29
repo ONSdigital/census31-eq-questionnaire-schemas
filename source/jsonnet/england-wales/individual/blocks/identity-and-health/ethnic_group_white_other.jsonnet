@@ -25,23 +25,21 @@ local question(title) = {
   question_variants: [
     {
       question: question('You selected “Any other White background”. How would you describe your White ethnic group or background?'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'You selected “Any other White background”. How would <em>{person_name}</em> describe their White ethnic group or background?',
+        text: 'You selected “Any other White background”. How would <strong>{person_name}</strong> describe their White ethnic group or background?',
         placeholders: [
           placeholders.personName(),
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'religion',
-      },
+      block: 'religion',
     },
   ],
 }

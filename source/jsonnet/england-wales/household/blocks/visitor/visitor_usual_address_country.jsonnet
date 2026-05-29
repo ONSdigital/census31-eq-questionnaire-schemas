@@ -9,7 +9,7 @@ local rules = import 'rules.libsonnet';
   question: {
     id: 'visitor-usual-address-country-question',
     title: {
-      text: 'In which country outside the UK does <em>{person_name}</em> usually live?',
+      text: 'In which country outside the UK does <strong>{person_name}</strong> usually live?',
       placeholders: [
         placeholders.personName(),
       ],
@@ -30,9 +30,7 @@ local rules = import 'rules.libsonnet';
   },
   routing_rules: [
     {
-      goto: {
-        section: 'End',
-      },
+      section: 'End',
     },
   ],
 }

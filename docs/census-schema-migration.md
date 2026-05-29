@@ -374,6 +374,42 @@ New:
 ]
 ```
 
+## `enabled`
+
+- Used to enable a section based on a when rule
+- This has been changed from an array of objects to just an object
+- **Action:** Remove the array wrapping the when rule
+
+Old:
+
+```json
+"enabled": [
+    {
+        "when": [
+            {
+                "condition": "greater than",
+                "list": "household",
+                "value": 1
+            }
+        ]
+    }
+]
+```
+
+New:
+
+```json
+"enabled": {
+    "when": [
+        {
+            "condition": "greater than",
+            "list": "household",
+            "value": 1
+        }
+    ]
+}
+```
+
 ## When rules
 
 - This is where the biggest change has happened

@@ -19,6 +19,18 @@
       }
    ],
    "mime_type": "application/json/ons/eq",
+   "post_submission": {
+      "confirmation_email": true,
+      "feedback": true
+   },
+   "questionnaire_flow": {
+      "options": {
+         "summary": {
+            "collapsible": false
+         }
+      },
+      "type": "Linear"
+   },
    "region_code": "GB-WLS",
    "schema_version": "0.0.1",
    "sections": [
@@ -82,57 +94,55 @@
                      },
                      "routing_rules": [
                         {
-                           "goto": {
-                              "block": "medical-establishment",
-                              "when": [
+                           "block": "medical-establishment",
+                           "when": {
+                              "==": [
                                  {
-                                    "condition": "equals",
-                                    "id": "nature-of-establishment-answer",
-                                    "value": "Medical or care"
-                                 }
+                                    "identifier": "nature-of-establishment-answer",
+                                    "source": "answers"
+                                 },
+                                 "Medical or care"
                               ]
                            }
                         },
                         {
-                           "goto": {
-                              "block": "education-establishment",
-                              "when": [
+                           "block": "education-establishment",
+                           "when": {
+                              "==": [
                                  {
-                                    "condition": "equals",
-                                    "id": "nature-of-establishment-answer",
-                                    "value": "Education"
-                                 }
+                                    "identifier": "nature-of-establishment-answer",
+                                    "source": "answers"
+                                 },
+                                 "Education"
                               ]
                            }
                         },
                         {
-                           "goto": {
-                              "block": "detention-establishment",
-                              "when": [
+                           "block": "detention-establishment",
+                           "when": {
+                              "==": [
                                  {
-                                    "condition": "equals",
-                                    "id": "nature-of-establishment-answer",
-                                    "value": "Detention"
-                                 }
+                                    "identifier": "nature-of-establishment-answer",
+                                    "source": "answers"
+                                 },
+                                 "Detention"
                               ]
                            }
                         },
                         {
-                           "goto": {
-                              "block": "travel-establishment",
-                              "when": [
+                           "block": "travel-establishment",
+                           "when": {
+                              "==": [
                                  {
-                                    "condition": "equals",
-                                    "id": "nature-of-establishment-answer",
-                                    "value": "Travel or temporary accommodation"
-                                 }
+                                    "identifier": "nature-of-establishment-answer",
+                                    "source": "answers"
+                                 },
+                                 "Travel or temporary accommodation"
                               ]
                            }
                         },
                         {
-                           "goto": {
-                              "block": "responsible-for-establishment"
-                           }
+                           "block": "responsible-for-establishment"
                         }
                      ],
                      "type": "Question"
@@ -191,15 +201,13 @@
                                  }
                               }
                            ],
-                           "text": "What type of medical or care establishment is <em>{household_address}</em>?"
+                           "text": "What type of medical or care establishment is <strong>{household_address}</strong>?"
                         },
                         "type": "General"
                      },
                      "routing_rules": [
                         {
-                           "goto": {
-                              "block": "responsible-for-establishment"
-                           }
+                           "block": "responsible-for-establishment"
                         }
                      ],
                      "type": "Question"
@@ -241,15 +249,13 @@
                                  }
                               }
                            ],
-                           "text": "What type of education establishment is <em>{household_address}</em>?"
+                           "text": "What type of education establishment is <strong>{household_address}</strong>?"
                         },
                         "type": "General"
                      },
                      "routing_rules": [
                         {
-                           "goto": {
-                              "block": "responsible-for-establishment"
-                           }
+                           "block": "responsible-for-establishment"
                         }
                      ],
                      "type": "Question"
@@ -296,15 +302,13 @@
                                  }
                               }
                            ],
-                           "text": "What type of detention establishment is <em>{household_address}</em>?"
+                           "text": "What type of detention establishment is <strong>{household_address}</strong>?"
                         },
                         "type": "General"
                      },
                      "routing_rules": [
                         {
-                           "goto": {
-                              "block": "responsible-for-establishment"
-                           }
+                           "block": "responsible-for-establishment"
                         }
                      ],
                      "type": "Question"
@@ -351,15 +355,13 @@
                                  }
                               }
                            ],
-                           "text": "What type of travel or temporary accommodation establishment is <em>{household_address}</em>?"
+                           "text": "What type of travel or temporary accommodation establishment is <strong>{household_address}</strong>?"
                         },
                         "type": "General"
                      },
                      "routing_rules": [
                         {
-                           "goto": {
-                              "block": "responsible-for-establishment"
-                           }
+                           "block": "responsible-for-establishment"
                         }
                      ],
                      "type": "Question"
@@ -415,9 +417,7 @@
                      },
                      "routing_rules": [
                         {
-                           "goto": {
-                              "block": "people-in-establishment"
-                           }
+                           "block": "people-in-establishment"
                         }
                      ],
                      "type": "Question"
@@ -509,9 +509,7 @@
                      },
                      "routing_rules": [
                         {
-                           "goto": {
-                              "block": "number-of-people-in-establishment"
-                           }
+                           "block": "number-of-people-in-establishment"
                         }
                      ],
                      "type": "Question"
@@ -536,10 +534,10 @@
                               "guidance": {
                                  "contents": [
                                     {
-                                       "description": "<em>Include</em> everyone from the groups you selected for the previous question"
+                                       "description": "<strong>Include</strong> everyone from the groups you selected for the previous question"
                                     },
                                     {
-                                       "description": "<em>Do not include</em> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
+                                       "description": "<strong>Do not include</strong> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
                                     }
                                  ]
                               },
@@ -547,12 +545,15 @@
                               "title": "How many people are currently living in this establishment?",
                               "type": "General"
                            },
-                           "when": [
-                              {
-                                 "condition": "set",
-                                 "id": "people-in-establishment-answer"
-                              }
-                           ]
+                           "when": {
+                              "!=": [
+                                 {
+                                    "identifier": "people-in-establishment-answer",
+                                    "source": "answers"
+                                 },
+                                 null
+                              ]
+                           }
                         },
                         {
                            "question": {
@@ -581,7 +582,7 @@
                               "guidance": {
                                  "contents": [
                                     {
-                                       "description": "<em>Do not include</em> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
+                                       "description": "<strong>Do not include</strong> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
                                     }
                                  ]
                               },
@@ -590,12 +591,15 @@
                               "title": "How many people are currently living in this establishment?",
                               "type": "MutuallyExclusive"
                            },
-                           "when": [
-                              {
-                                 "condition": "set",
-                                 "id": "people-in-establishment-exclusive"
-                              }
-                           ]
+                           "when": {
+                              "!=": [
+                                 {
+                                    "identifier": "people-in-establishment-exclusive",
+                                    "source": "answers"
+                                 },
+                                 null
+                              ]
+                           }
                         },
                         {
                            "question": {
@@ -624,7 +628,7 @@
                               "guidance": {
                                  "contents": [
                                     {
-                                       "description": "<em>Do not include</em> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
+                                       "description": "<strong>Do not include</strong> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
                                     }
                                  ]
                               },
@@ -633,12 +637,15 @@
                               "title": "How many people are currently living in this establishment?",
                               "type": "MutuallyExclusive"
                            },
-                           "when": [
-                              {
-                                 "condition": "not set",
-                                 "id": "people-in-establishment-answer"
-                              }
-                           ]
+                           "when": {
+                              "==": [
+                                 {
+                                    "identifier": "people-in-establishment-answer",
+                                    "source": "answers"
+                                 },
+                                 null
+                              ]
+                           }
                         }
                      ],
                      "type": "Question"
@@ -695,7 +702,7 @@
                                           ]
                                        }
                                     ],
-                                    "text": "<em>Include</em> shift workers, for example, care workers, hotel porters, who are staying overnight on {census_date} as visitors"
+                                    "text": "<strong>Include</strong> shift workers, for example, care workers, hotel porters, who are staying overnight on {census_date} as visitors"
                                  }
                               }
                            ]
@@ -725,9 +732,7 @@
                      },
                      "routing_rules": [
                         {
-                           "goto": {
-                              "block": "number-of-visitors-in-establishment"
-                           }
+                           "block": "number-of-visitors-in-establishment"
                         }
                      ],
                      "type": "Question"
@@ -783,12 +788,15 @@
                               },
                               "type": "MutuallyExclusive"
                            },
-                           "when": [
-                              {
-                                 "condition": "set",
-                                 "id": "visitors-in-establishment-exclusive"
-                              }
-                           ]
+                           "when": {
+                              "!=": [
+                                 {
+                                    "identifier": "visitors-in-establishment-exclusive",
+                                    "source": "answers"
+                                 },
+                                 null
+                              ]
+                           }
                         },
                         {
                            "question": {
@@ -806,7 +814,7 @@
                               "guidance": {
                                  "contents": [
                                     {
-                                       "description": "<em>Include</em> everyone from the groups you selected for the previous question"
+                                       "description": "<strong>Include</strong> everyone from the groups you selected for the previous question"
                                     }
                                  ]
                               },
@@ -832,12 +840,15 @@
                               },
                               "type": "General"
                            },
-                           "when": [
-                              {
-                                 "condition": "set",
-                                 "id": "visitors-in-establishment-answer"
-                              }
-                           ]
+                           "when": {
+                              "!=": [
+                                 {
+                                    "identifier": "visitors-in-establishment-answer",
+                                    "source": "answers"
+                                 },
+                                 null
+                              ]
+                           }
                         },
                         {
                            "question": {
@@ -886,12 +897,15 @@
                               },
                               "type": "MutuallyExclusive"
                            },
-                           "when": [
-                              {
-                                 "condition": "not set",
-                                 "id": "visitors-in-establishment-answer"
-                              }
-                           ]
+                           "when": {
+                              "==": [
+                                 {
+                                    "identifier": "visitors-in-establishment-answer",
+                                    "source": "answers"
+                                 },
+                                 null
+                              ]
+                           }
                         }
                      ],
                      "type": "Question"
@@ -902,34 +916,15 @@
          ],
          "id": "communal-establishment",
          "title": "Communal Establishment"
-      },
-      {
-         "groups": [
-            {
-               "blocks": [
-                  {
-                     "id": "summary",
-                     "type": "Summary"
-                  }
-               ],
-               "id": "submit-group",
-               "title": "Submit answers"
-            }
-         ],
-         "id": "submit-answers-section",
-         "title": "Submit answers"
       }
    ],
    "submission": {
       "button": "Submit census",
-      "confirmation_email": true,
-      "feedback": true,
       "guidance": "By submitting this census you are confirming that, to the best of your knowledge and belief, the details provided are correct.",
       "title": "Submit census",
       "warning": "You must submit this census to complete it"
    },
-   "survey": "CENSUS",
    "survey_id": "census",
-   "theme": "census",
+   "theme": "social",
    "title": "2021 Census"
 }

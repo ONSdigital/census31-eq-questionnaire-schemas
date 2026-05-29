@@ -35,7 +35,7 @@ local nonProxyGuidanceContent = [
 ];
 
 local proxyTitle = {
-  text: 'What is the address of <em>{person_name_possessive}</em> workplace?',
+  text: 'What is the address of <strong>{person_name_possessive}</strong> workplace?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -57,18 +57,16 @@ local proxyGuidanceContent = [
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyGuidanceHeader, nonProxyGuidanceContent),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyGuidanceHeader, proxyGuidanceContent),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        section: 'End',
-      },
+      section: 'End',
     },
   ],
 }

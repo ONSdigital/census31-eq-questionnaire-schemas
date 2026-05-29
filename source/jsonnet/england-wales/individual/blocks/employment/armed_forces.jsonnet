@@ -7,7 +7,7 @@ local question(title, guidanceHeader, description) = {
   guidance: {
     contents: [
       {
-        description: '<em>Current serving members</em> should only select “No”',
+        description: '<strong>Current serving members</strong> should only select “No”',
       },
     ],
   },
@@ -60,7 +60,7 @@ local nonProxyGuidanceHeader = 'Why your answer is important';
 local nonProxyDescription = 'Your answer will help your local community by providing information needed to support people who used to serve in the UK Armed Forces but have now left.';
 
 local proxyTitle = {
-  text: 'Has <em>{person_name}</em> previously served in the UK Armed Forces?',
+  text: 'Has <strong>{person_name}</strong> previously served in the UK Armed Forces?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -75,11 +75,11 @@ local proxyDescription = 'Their answer will help their local community by provid
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyGuidanceHeader, nonProxyDescription),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyGuidanceHeader, proxyDescription),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

@@ -25,23 +25,21 @@ local question(title) = {
   question_variants: [
     {
       question: question('You selected “Other, including British Sign Language”. What is your main language?'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'You selected “Other, including British Sign Language”. What is <em>{person_name_possessive}</em> main language?',
+        text: 'You selected “Other, including British Sign Language”. What is <strong>{person_name_possessive}</strong> main language?',
         placeholders: [
           placeholders.personNamePossessive,
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'level-of-spoken-english',
-      },
+      block: 'level-of-spoken-english',
     },
   ],
 }

@@ -68,9 +68,7 @@ local question = {
   question: question,
   routing_rules: [
     {
-      goto: {
         block: 'number-of-people-in-establishment',
-      },
     },
   ],
 }

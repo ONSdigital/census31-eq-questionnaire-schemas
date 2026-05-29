@@ -8,7 +8,7 @@ local rules = import 'rules.libsonnet';
   question: {
     id: 'accommodation-type-question',
     title: {
-      text: 'What type of accommodation is <em>{household_address}</em>?',
+      text: 'What type of accommodation is <strong>{household_address}</strong>?',
       placeholders: [placeholders.address],
     },
     type: 'General',
@@ -37,21 +37,15 @@ local rules = import 'rules.libsonnet';
   },
   routing_rules: [
     {
-      goto: {
-        block: 'type-of-house',
-        when: [rules.accommodationIsHouse],
-      },
+      block: 'type-of-house',
+      when: rules.accommodationIsHouse,
     },
     {
-      goto: {
-        block: 'type-of-flat',
-        when: [rules.accommodationIsFlat],
-      },
+      block: 'type-of-flat',
+      when: rules.accommodationIsFlat,
     },
     {
-      goto: {
-        block: 'rooms-shared-with-another-household',
-      },
+      block: 'rooms-shared-with-another-household',
     },
   ],
 }

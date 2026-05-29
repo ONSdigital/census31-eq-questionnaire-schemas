@@ -5,10 +5,10 @@ local question = {
   guidance: {
     contents: [
       {
-        description: '<em>Include</em> everyone from the groups you selected for the previous question',
+        description: '<strong>Include</strong> everyone from the groups you selected for the previous question',
       },
       {
-        description: '<em>Do not include</em> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less',
+        description: '<strong>Do not include</strong> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less',
       },
     ],
   },
@@ -31,7 +31,7 @@ local questionWithExclusive = {
   guidance: {
     contents: [
       {
-        description: '<em>Do not include</em> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less',
+        description: '<strong>Do not include</strong> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less',
       },
     ],
   },
@@ -66,30 +66,39 @@ local questionWithExclusive = {
   question_variants: [
     {
       question: question,
-      when: [
-        {
-          id: 'people-in-establishment-answer',
-          condition: 'set',
-        },
-      ],
+      when: {
+        '!=': [
+          {
+              source: 'answers',
+              identifier: 'people-in-establishment-answer',
+          },
+          null
+        ],
+      },
     },
     {
       question: questionWithExclusive,
-      when: [
-        {
-          id: 'people-in-establishment-exclusive',
-          condition: 'set',
-        },
-      ],
+      when: {
+        '!=': [
+          {
+              source: 'answers',
+              identifier: 'people-in-establishment-exclusive',
+          },
+          null
+        ],
+      },
     },
     {
       question: questionWithExclusive,
-      when: [
-        {
-          id: 'people-in-establishment-answer',
-          condition: 'not set',
-        },
-      ],
+      when: {
+        '==': [
+          {
+              source: 'answers',
+              identifier: 'people-in-establishment-answer',
+          },
+          null
+        ],
+      },
     },
   ],
 }

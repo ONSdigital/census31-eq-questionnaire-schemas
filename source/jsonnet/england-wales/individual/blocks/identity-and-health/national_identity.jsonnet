@@ -5,7 +5,7 @@ local nonProxyTitle = 'How would you describe your national identity?';
 local nonProxyDescription = 'This relates to where you feel you belong, such as the country or countries you think of as home.<p>This could be different from your citizenship or ethnic group.';
 
 local proxyTitle = {
-  text: 'How would <em>{person_name}</em> describe their national identity?',
+  text: 'How would <strong>{person_name}</strong> describe their national identity?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -94,47 +94,53 @@ function(region_code) {
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDescription, nonProxyDetailAnswerLabel, region_code, 'You can describe your national identity on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyDescription, proxyDetailAnswerLabel, region_code, 'You can describe their national identity on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'other-national-identities',
-        when: [
+      block: 'other-national-identities',
+      when: {
+        and: [
           {
-            id: 'national-identity-answer',
-            condition: 'contains any',
-            values: ['British', 'English', 'Welsh', 'Scottish', 'Northern Irish'],
+            'any-in': [
+              ['British', 'English', 'Welsh', 'Scottish', 'Northern Irish'],
+              {
+                identifier: 'national-identity-answer',
+                source: 'answers',
+              },
+            ],
           },
           {
-            id: 'national-identity-answer',
-            condition: 'contains',
-            value: 'Other',
-          },
-        ],
-      },
-    },
-    {
-      goto: {
-        block: 'other-national-identity',
-        when: [
-          {
-            condition: 'contains',
-            id: 'national-identity-answer',
-            value: 'Other',
+            'in': [
+              'Other',
+              {
+                identifier: 'national-identity-answer',
+                source: 'answers',
+              },
+            ],
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'ethnic-group',
+      block: 'other-national-identity',
+      when: {
+        'in': [
+          'Other',
+          {
+            identifier: 'national-identity-answer',
+            source: 'answers',
+          },
+        ],
       },
+    },
+    {
+      block: 'ethnic-group',
     },
   ],
 }

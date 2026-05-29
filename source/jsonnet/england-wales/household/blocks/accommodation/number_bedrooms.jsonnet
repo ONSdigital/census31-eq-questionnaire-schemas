@@ -22,8 +22,6 @@
     }],
   },
   routing_rules: [{
-    goto: {
-      block: 'central-heating',
-    },
+    block: 'central-heating',
   }],
 }
