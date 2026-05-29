@@ -4,7 +4,7 @@ local rules = import 'rules.libsonnet';
 
 local questionTitle(isProxy) = (
   if isProxy then {
-    text: 'What was <em>{person_name_possessive}</em> address one year ago?',
+    text: 'What was <strong>{person_name_possessive}</strong> address one year ago?',
     placeholders: [
       placeholders.personNamePossessive,
     ],
@@ -37,11 +37,11 @@ local question(isProxy) = {
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

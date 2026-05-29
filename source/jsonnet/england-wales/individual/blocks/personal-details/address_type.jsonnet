@@ -49,7 +49,7 @@ local question(title) = {
 };
 
 local ukAddressTitle = {
-  text: 'What type of address is <em>{household_address}</em>?',
+  text: 'What type of address is <strong>{household_address}</strong>?',
   placeholders: [
     {
       placeholder: 'household_address',
@@ -62,7 +62,7 @@ local ukAddressTitle = {
   ],
 };
 local nonProxyNonUkAddressTitle = {
-  text: 'What type of address is your address in <em>{country}</em>?',
+  text: 'What type of address is your address in <strong>{country}</strong>?',
   placeholders: [
     {
       placeholder: 'country',
@@ -74,7 +74,7 @@ local nonProxyNonUkAddressTitle = {
   ],
 };
 local proxyNonUkAddressTitle = {
-  text: 'What type of address is <em>{person_name_possessive}</em> address in {country}?',
+  text: 'What type of address is <strong>{person_name_possessive}</strong> address in {country}?',
   placeholders: [
     placeholders.personNamePossessive,
     {
@@ -94,36 +94,32 @@ local proxyNonUkAddressTitle = {
   question_variants: [
     {
       question: question(ukAddressTitle),
-      when: [
-        {
-          id: 'another-address-answer',
-          condition: 'equals',
-          value: 'Yes, an address within the UK',
-        },
-      ],
-    },
-    {
-      question: question(nonProxyNonUkAddressTitle),
-      when: [rules.isNotProxy],
-    },
-    {
-      question: question(proxyNonUkAddressTitle),
-      when: [rules.isProxy],
-    },
-  ],
-  routing_rules: [
-    {
-      goto: {
-        group: 'identity-and-health-group',
-        when: [
-          rules.under5,
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'another-address-answer',
+          },
+          'Yes, an address within the UK',
         ],
       },
     },
     {
-      goto: {
-        block: 'in-education',
-      },
+      question: question(nonProxyNonUkAddressTitle),
+      when: rules.isNotProxy,
+    },
+    {
+      question: question(proxyNonUkAddressTitle),
+      when: rules.isProxy,
+    },
+  ],
+  routing_rules: [
+    {
+      group: 'identity-and-health-group',
+      when: rules.under5,
+    },
+    {
+      block: 'in-education',
     },
   ],
 }

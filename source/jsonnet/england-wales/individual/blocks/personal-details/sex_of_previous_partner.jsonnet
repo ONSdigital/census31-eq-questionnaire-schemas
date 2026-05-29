@@ -26,7 +26,7 @@ local question(title) = {
 
 local nonProxyTitle = 'Who was your registered civil partnership to?';
 local proxyTitle = {
-  text: 'Who was <em>{person_name_possessive}</em> registered civil partnership to?',
+  text: 'Who was <strong>{person_name_possessive}</strong> registered civil partnership to?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -39,18 +39,16 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'another-address',
-      },
+      block: 'another-address',
     },
   ],
 }

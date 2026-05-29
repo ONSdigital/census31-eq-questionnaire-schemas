@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-05-19 15:21+0100\n"
+"POT-Creation-Date: 2026-05-29 14:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,11 +42,6 @@ msgstr ""
 
 #. Section title
 msgid "Communal Establishment"
-msgstr ""
-
-#. Section title
-#. Group title
-msgid "Submit answers"
 msgstr ""
 
 #. Page title
@@ -96,21 +91,25 @@ msgstr ""
 #. Question text
 msgid ""
 "What type of medical or care establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgstr ""
 
 #. Question text
-msgid "What type of education establishment is <em>{household_address}</em>?"
+msgid ""
+"What type of education establishment is "
+"<strong>{household_address}</strong>?"
 msgstr ""
 
 #. Question text
-msgid "What type of detention establishment is <em>{household_address}</em>?"
+msgid ""
+"What type of detention establishment is "
+"<strong>{household_address}</strong>?"
 msgstr ""
 
 #. Question text
 msgid ""
 "What type of travel or temporary accommodation establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgstr ""
 
 #. Question text
@@ -140,15 +139,16 @@ msgstr ""
 #. Question guidance description
 msgctxt "How many people are currently living in this establishment?"
 msgid ""
-"<em>Include</em> everyone from the groups you selected for the previous "
-"question"
+"<strong>Include</strong> everyone from the groups you selected for the "
+"previous question"
 msgstr ""
 
 #. Question guidance description
 msgctxt "How many people are currently living in this establishment?"
 msgid ""
-"<em>Do not include</em> visitors who have another UK address, or usually "
-"live outside the UK and intend to stay in the UK for 3 months or less"
+"<strong>Do not include</strong> visitors who have another UK address, or "
+"usually live outside the UK and intend to stay in the UK for 3 months or "
+"less"
 msgstr ""
 
 #. Question guidance description
@@ -156,8 +156,8 @@ msgctxt ""
 "Are any of the following visitors staying overnight in this establishment"
 " on {census_date}?"
 msgid ""
-"<em>Include</em> shift workers, for example, care workers, hotel porters,"
-" who are staying overnight on {census_date} as visitors"
+"<strong>Include</strong> shift workers, for example, care workers, hotel "
+"porters, who are staying overnight on {census_date} as visitors"
 msgstr ""
 
 #. Question guidance description
@@ -165,8 +165,8 @@ msgctxt ""
 "How many visitors are staying overnight in this establishment on "
 "{census_date}?"
 msgid ""
-"<em>Include</em> everyone from the groups you selected for the previous "
-"question"
+"<strong>Include</strong> everyone from the groups you selected for the "
+"previous question"
 msgstr ""
 
 #. Answer
@@ -224,112 +224,126 @@ msgstr ""
 #. Answer option
 msgctxt ""
 "What type of medical or care establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Care home without nursing"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of medical or care establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Care home with nursing"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of medical or care establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Children’s home"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of medical or care establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "General hospital"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of medical or care establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Mental health hospital or unit"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of medical or care establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Other hospital"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of medical or care establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Other medical or care establishment"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of education establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of education establishment is "
+"<strong>{household_address}</strong>?"
 msgid "School"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of education establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of education establishment is "
+"<strong>{household_address}</strong>?"
 msgid "University"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of education establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of education establishment is "
+"<strong>{household_address}</strong>?"
 msgid "Other education establishment"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of detention establishment is "
+"<strong>{household_address}</strong>?"
 msgid "Prison service establishment"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of detention establishment is "
+"<strong>{household_address}</strong>?"
 msgid "Approved premises"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of detention establishment is "
+"<strong>{household_address}</strong>?"
 msgid "Detention centre"
 msgstr ""
 
 #. Answer option
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of detention establishment is "
+"<strong>{household_address}</strong>?"
 msgid "Other detention establishment"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of travel or temporary accommodation establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Hotel, guest house, B&B, youth hostel"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of travel or temporary accommodation establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Holiday accommodation"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of travel or temporary accommodation establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Hostel or temporary shelter for homeless people"
 msgstr ""
 
 #. Answer option
 msgctxt ""
 "What type of travel or temporary accommodation establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Other travel or temporary accommodation"
 msgstr ""
 
@@ -483,25 +497,31 @@ msgstr ""
 #. For answer option: Mental health hospital or unit
 msgctxt ""
 "What type of medical or care establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Including secure units"
 msgstr ""
 
 #. Answer option description
 #. For answer option: University
-msgctxt "What type of education establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of education establishment is "
+"<strong>{household_address}</strong>?"
 msgid "For example, hall of residence"
 msgstr ""
 
 #. Answer option description
 #. For answer option: Prison service establishment
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of detention establishment is "
+"<strong>{household_address}</strong>?"
 msgid "Including young offender institutions"
 msgstr ""
 
 #. Answer option description
 #. For answer option: Approved premises
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt ""
+"What type of detention establishment is "
+"<strong>{household_address}</strong>?"
 msgid "Probation or bail hostel"
 msgstr ""
 
@@ -509,7 +529,7 @@ msgstr ""
 #. For answer option: Hotel, guest house, B&B, youth hostel
 msgctxt ""
 "What type of travel or temporary accommodation establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "Including inns and pubs"
 msgstr ""
 
@@ -517,7 +537,7 @@ msgstr ""
 #. For answer option: Holiday accommodation
 msgctxt ""
 "What type of travel or temporary accommodation establishment is "
-"<em>{household_address}</em>?"
+"<strong>{household_address}</strong>?"
 msgid "For example, holiday park"
 msgstr ""
 

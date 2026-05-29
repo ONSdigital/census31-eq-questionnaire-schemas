@@ -36,7 +36,7 @@ local question(title) = {
 
 local nonProxyTitle = 'What is your date of birth?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> date of birth?',
+  text: 'What is <strong>{person_name_possessive}</strong> date of birth?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -49,11 +49,11 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

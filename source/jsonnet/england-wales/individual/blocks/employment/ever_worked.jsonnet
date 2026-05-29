@@ -4,7 +4,7 @@ local rules = import 'rules.libsonnet';
 local title(isProxy) = (
   if isProxy then
     {
-      text: 'Has <em>{person_name}</em> ever done any paid work?',
+      text: 'Has <strong>{person_name}</strong> ever done any paid work?',
       placeholders: [
         placeholders.personName(),
       ],
@@ -55,53 +55,52 @@ local question(isProxy) = {
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        section: 'End',
-        when: [
+      section: 'End',
+      when: {
+        '==': [
           {
-            id: 'ever-worked-answer',
-            condition: 'equals',
-            value: 'No, have never worked',
+            source: 'answers',
+            identifier: 'ever-worked-answer',
           },
+          'No, have never worked',
         ],
       },
     },
     {
-      goto: {
-        section: 'End',
-        when: [
+      section: 'End',
+      when: {
+        '==': [
           {
-            id: 'ever-worked-answer',
-            condition: 'equals',
-            value: 'No, has never worked',
+            source: 'answers',
+            identifier: 'ever-worked-answer',
           },
+          'No, has never worked',
         ],
       },
     },
     {
-      goto: {
-        section: 'End',
-        when: [
+      section: 'End',
+      when: {
+        '==': [
           {
-            id: 'ever-worked-answer',
-            condition: 'not set',
+            source: 'answers',
+            identifier: 'ever-worked-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        block: 'main-job-introduction',
-      },
+      block: 'main-job-introduction',
     },
   ],
 }

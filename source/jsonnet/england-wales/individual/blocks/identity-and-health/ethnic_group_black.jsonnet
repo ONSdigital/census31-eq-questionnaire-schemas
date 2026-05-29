@@ -56,7 +56,7 @@ local question(englandTitle, walesTitle, region_code, guidance, definitionDescri
 local englandPageTitle = 'Black, Black British, Caribbean or African ethnic group or background';
 local nonProxyEnglandTitle = 'Which one best describes your Black, Black British, Caribbean or African ethnic group or background?';
 local proxyEnglandTitle = {
-  text: 'Which one best describes <em>{person_name_possessive}</em> Black, Black British, Caribbean or African ethnic group or background?',
+  text: 'Which one best describes <strong>{person_name_possessive}</strong> Black, Black British, Caribbean or African ethnic group or background?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -65,7 +65,7 @@ local proxyEnglandTitle = {
 local walesPageTitle = 'Black, Black Welsh, Black British, Caribbean or African ethnic group or background';
 local nonProxyWalesTitle = 'Which one best describes your Black, Black Welsh, Black British, Caribbean or African ethnic group or background?';
 local proxyWalesTitle = {
-  text: 'Which one best describes <em>{person_name_possessive}</em> Black, Black Welsh, Black British, Caribbean or African ethnic group or background?',
+  text: 'Which one best describes <strong>{person_name_possessive}</strong> Black, Black Welsh, Black British, Caribbean or African ethnic group or background?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -80,42 +80,40 @@ function(region_code) (
     question_variants: [
       {
         question: question(nonProxyEnglandTitle, nonProxyWalesTitle, region_code, nonProxyGuidance, nonProxyDefinitionDescription, 'You can enter your ethnic group or background on the next question'),
-        when: [rules.isNotProxy],
+        when: rules.isNotProxy,
       },
       {
         question: question(proxyEnglandTitle, proxyWalesTitle, region_code, proxyGuidance, proxyDefinitionDescription, 'You can enter their ethnic group or background on the next question'),
-        when: [rules.isProxy],
+        when: rules.isProxy,
       },
     ],
     routing_rules: [
       {
-        goto: {
-          block: 'other-black-black-british-caribbean-or-african-ethnic-group',
-          when: [
+        block: 'other-black-black-british-caribbean-or-african-ethnic-group',
+        when: {
+          '==': [
             {
-              id: 'black-black-british-caribbean-or-african-ethnic-group-answer',
-              condition: 'equals',
-              value: 'Any other Black, Black British or Caribbean background',
+              source: 'answers',
+              identifier: 'black-black-british-caribbean-or-african-ethnic-group-answer',
             },
+            'Any other Black, Black British or Caribbean background',
           ],
         },
       },
       {
-        goto: {
-          block: 'ethnic-group-black-african',
-          when: [
+        block: 'ethnic-group-black-african',
+        when: {
+          '==': [
             {
-              id: 'black-black-british-caribbean-or-african-ethnic-group-answer',
-              condition: 'equals',
-              value: 'African',
+              source: 'answers',
+              identifier: 'black-black-british-caribbean-or-african-ethnic-group-answer',
             },
+            'African',
           ],
         },
       },
       {
-        goto: {
-          block: 'religion',
-        },
+        block: 'religion',
       },
     ],
   }

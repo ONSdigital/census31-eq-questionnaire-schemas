@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'Which one best describes your White ethnic group or background?';
 local proxyTitle = {
-  text: 'Which one best describes <em>{person_name_possessive}</em> White ethnic group or background?',
+  text: 'Which one best describes <strong>{person_name_possessive}</strong> White ethnic group or background?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -77,30 +77,28 @@ function(region_code) {
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyGuidance, nonProxyDescription, region_code, 'You can enter your ethnic group or background on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyGuidance, proxyDescription, region_code, 'You can enter their ethnic group or background on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'ethnic-group-white-other',
-        when: [
+      block: 'ethnic-group-white-other',
+      when: {
+        '==': [
           {
-            id: 'white-ethnic-group-answer',
-            condition: 'equals',
-            value: 'Any other White background',
+            source: 'answers',
+            identifier: 'white-ethnic-group-answer',
           },
+          'Any other White background',
         ],
       },
     },
     {
-      goto: {
-        block: 'religion',
-      },
+      block: 'religion',
     },
   ],
 }

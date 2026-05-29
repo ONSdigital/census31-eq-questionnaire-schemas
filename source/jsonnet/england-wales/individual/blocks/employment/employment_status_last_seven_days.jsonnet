@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local questionTitle(isProxy) = (
   if isProxy then {
-    text: 'In the last seven days, was <em>{person_name}</em> doing any of the following?',
+    text: 'In the last seven days, was <strong>{person_name}</strong> doing any of the following?',
     placeholders: [
       placeholders.personName(),
     ],
@@ -87,26 +87,20 @@ local question(isProxy) = {
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'not-employed-status-last-seven-days',
-        when: [
-          rules.lastMainJob,
-        ],
-      },
+      block: 'not-employed-status-last-seven-days',
+      when: rules.lastMainJob,
     },
     {
-      goto: {
-        block: 'main-job-introduction',
-      },
+      block: 'main-job-introduction',
     },
   ],
 }

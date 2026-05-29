@@ -19,14 +19,14 @@ local questionTitle = {
 };
 
 local primaryEditPersonQuestionTitle = {
-  text: 'Change details for <em>{person_name}</em> (You)',
+  text: 'Change details for <strong>{person_name}</strong> (You)',
   placeholders: [
     placeholders.personName(includeMiddleNames='if_same_names_exist'),
   ],
 };
 
 local nonPrimaryEditPersonQuestionTitle = {
-  text: 'Change details for <em>{person_name}</em>',
+  text: 'Change details for <strong>{person_name}</strong>',
   placeholders: [
     placeholders.personName(includeMiddleNames='if_same_names_exist'),
   ],
@@ -210,11 +210,11 @@ local addMorePeopleLivingHere(listIsEmpty) = {
     question_variants: [
       {
         question: addMorePeopleLivingHere(listIsEmpty=false),
-        when: [rules.listIsNotEmpty('household')],
+        when: rules.listIsNotEmpty('household'),
       },
       {
         question: addMorePeopleLivingHere(listIsEmpty=true),
-        when: [rules.listIsEmpty('household')],
+        when: rules.listIsEmpty('household'),
       },
     ],
   },
@@ -225,11 +225,11 @@ local addMorePeopleLivingHere(listIsEmpty) = {
     question_variants: [
       {
         question: editQuestion(primaryEditPersonQuestionTitle),
-        when: [rules.isPrimary],
+        when: rules.isPrimary,
       },
       {
         question: editQuestion(nonPrimaryEditPersonQuestionTitle),
-        when: [rules.isNotPrimary],
+        when: rules.isNotPrimary,
       },
     ],
   },
@@ -241,7 +241,7 @@ local addMorePeopleLivingHere(listIsEmpty) = {
       id: 'any-more-people-living-here-remove-person-question',
       type: 'General',
       title: {
-        text: 'Are you sure you want to remove <em>{person_name}</em>?',
+        text: 'Are you sure you want to remove <strong>{person_name}</strong>?',
         placeholders: [
           placeholders.personName(includeMiddleNames='if_same_names_exist'),
         ],

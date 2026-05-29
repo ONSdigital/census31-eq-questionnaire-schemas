@@ -50,9 +50,7 @@ local placeholders = import '../../../lib/placeholders.libsonnet';
   },
   routing_rules: [
     {
-      goto: {
-        block: 'people-in-establishment',
-      },
+      block: 'people-in-establishment',
     },
   ],
 }

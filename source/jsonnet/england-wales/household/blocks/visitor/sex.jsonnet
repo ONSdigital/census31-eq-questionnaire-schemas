@@ -9,9 +9,9 @@ local rules = import 'rules.libsonnet';
   question: {
     id: 'visitor-sex-question',
     title: {
-      text: 'What is <em>{person_name_possessive}</em> sex?',
+      text: 'What is <strong>{person_name_possessive}</strong> sex?',
       placeholders: [
-        placeholders.personNamePossessive,
+        placeholders.visitorPersonNamePossessive,
       ],
     },
     type: 'General',

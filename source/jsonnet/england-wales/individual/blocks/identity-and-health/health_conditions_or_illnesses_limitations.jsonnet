@@ -45,7 +45,7 @@ local nonProxyDefinition = {
   ],
 };
 local proxyTitle = {
-  text: 'Do any of <em>{person_name_possessive}</em> conditions or illnesses reduce their ability to carry out day-to-day activities?',
+  text: 'Do any of <strong>{person_name_possessive}</strong> conditions or illnesses reduce their ability to carry out day-to-day activities?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -72,26 +72,20 @@ local proxyDefinition = {
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDefinition),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyDefinition),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        section: 'End',
-        when: [
-          rules.under5,
-        ],
-      },
+      section: 'End',
+      when: rules.under5,
     },
     {
-      goto: {
-        block: 'look-after-or-support-others',
-      },
+      block: 'look-after-or-support-others',
     },
   ],
 }

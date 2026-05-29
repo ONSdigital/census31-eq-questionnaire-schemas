@@ -27,14 +27,14 @@ local question(title) = {
 
 local nonProxyUnder19Title = 'Are you a schoolchild or student in full-time education?';
 local proxyUnder19Title = {
-  text: 'Is <em>{person_name}</em> a schoolchild or student in full-time education?',
+  text: 'Is <strong>{person_name}</strong> a schoolchild or student in full-time education?',
   placeholders: [
     placeholders.personName(),
   ],
 };
 local nonProxyOver19Title = 'Are you a student in full-time education?';
 local proxyOver19Title = {
-  text: 'Is <em>{person_name}</em> a student in full-time education?',
+  text: 'Is <strong>{person_name}</strong> a student in full-time education?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -47,38 +47,36 @@ local proxyOver19Title = {
   question_variants: [
     {
       question: question(nonProxyOver19Title),
-      when: [rules.isNotProxy, rules.over19],
+      when: { and: [rules.isNotProxy, rules.over19] },
     },
     {
       question: question(proxyOver19Title),
-      when: [rules.isProxy, rules.over19],
+      when: { and: [rules.isProxy, rules.over19] },
     },
     {
       question: question(nonProxyUnder19Title),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyUnder19Title),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'term-time-location',
-        when: [
+      block: 'term-time-location',
+      when: {
+        '==': [
           {
-            id: 'in-education-answer',
-            condition: 'equals',
-            value: 'Yes',
+            source: 'answers',
+            identifier: 'in-education-answer',
           },
+          'Yes',
         ],
       },
     },
     {
-      goto: {
-        group: 'identity-and-health-group',
-      },
+      group: 'identity-and-health-group',
     },
   ],
 }

@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local questionTitle(isProxy) = (
   if isProxy then {
-    text: 'What is the UK address where <em>{person_name}</em> usually stays during term time?',
+    text: 'What is the UK address where <strong>{person_name}</strong> usually stays during term time?',
     placeholders: [
       placeholders.personName(),
     ],
@@ -35,18 +35,16 @@ local question(isProxy) = {
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        section: 'End',
-      },
+      section: 'End',
     },
   ],
 }

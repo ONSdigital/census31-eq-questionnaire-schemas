@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local questionTitle(isProxy) = (
   if isProxy then {
-    text: 'One year ago, what was <em>{person_name_possessive}</em> usual address?',
+    text: 'One year ago, what was <strong>{person_name_possessive}</strong> usual address?',
     placeholders: [
       placeholders.personNamePossessive,
     ],
@@ -66,54 +66,52 @@ local question(isProxy) = {
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'address-one-year-ago',
-        when: [
+      block: 'address-one-year-ago',
+      when: {
+        '==': [
           {
-            id: 'location-one-year-ago-answer',
-            condition: 'equals',
-            value: 'Student term-time or boarding school address in the UK',
+            source: 'answers',
+            identifier: 'location-one-year-ago-answer',
           },
+          'Student term-time or boarding school address in the UK',
         ],
       },
     },
     {
-      goto: {
-        block: 'address-one-year-ago',
-        when: [
+      block: 'address-one-year-ago',
+      when: {
+        '==': [
           {
-            id: 'location-one-year-ago-answer',
-            condition: 'equals',
-            value: 'Another address in the UK',
+            source: 'answers',
+            identifier: 'location-one-year-ago-answer',
           },
+          'Another address in the UK',
         ],
       },
     },
     {
-      goto: {
-        block: 'address-one-year-ago-outside-uk',
-        when: [
+      block: 'address-one-year-ago-outside-uk',
+      when: {
+        '==': [
           {
-            id: 'location-one-year-ago-answer',
-            condition: 'equals',
-            value: 'Another address outside the UK',
+            source: 'answers',
+            identifier: 'location-one-year-ago-answer',
           },
+          'Another address outside the UK',
         ],
       },
     },
     {
-      goto: {
-        block: 'national-identity',
-      },
+      block: 'national-identity',
     },
   ],
 }

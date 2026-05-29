@@ -38,7 +38,7 @@ local question(title) = {
 
 local nonProxyTitle = 'How is your health in general?';
 local proxyTitle = {
-  text: 'How is <em>{person_name_possessive}</em> health in general?',
+  text: 'How is <strong>{person_name_possessive}</strong> health in general?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -51,11 +51,11 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

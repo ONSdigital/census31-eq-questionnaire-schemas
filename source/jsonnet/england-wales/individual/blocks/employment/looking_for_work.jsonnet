@@ -41,7 +41,7 @@ local question(title, guidanceHeader) = {
 
 local nonProxyTitle = 'In the last four weeks, were you actively looking for any kind of paid work?';
 local proxyTitle = {
-  text: 'In the last four weeks, was <em>{person_name}</em> actively looking for any kind of paid work?',
+  text: 'In the last four weeks, was <strong>{person_name}</strong> actively looking for any kind of paid work?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -57,30 +57,28 @@ local proxyGuidanceHeader = 'Why we ask this question if they are retired or lon
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyGuidanceHeader),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyGuidanceHeader),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'about-to-start-job',
-        when: [
+      block: 'about-to-start-job',
+      when: {
+        '==': [
           {
-            id: 'looking-for-work-answer',
-            condition: 'equals',
-            value: 'No',
+            source: 'answers',
+            identifier: 'looking-for-work-answer',
           },
+          'No',
         ],
       },
     },
     {
-      goto: {
-        block: 'available-for-work',
-      },
+      block: 'available-for-work',
     },
   ],
 }

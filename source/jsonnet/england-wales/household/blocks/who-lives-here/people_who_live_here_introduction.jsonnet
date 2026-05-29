@@ -28,7 +28,7 @@ local contentDescription = {
           title: 'What we mean by “this household”',
           contents: [
             {
-              description: 'This is one person living alone or a group of people, not necessarily related, living at the same address, who share cooking facilities <em>and</em> share a living room <em>or</em> sitting room <em>or</em> dining area.',
+              description: 'This is one person living alone or a group of people, not necessarily related, living at the same address, who share cooking facilities <strong>and</strong> share a living room <strong>or</strong> sitting room <strong>or</strong> dining area.',
             },
             {
               description: 'Any other household at this address will need to request a new household access code to start their own census.',

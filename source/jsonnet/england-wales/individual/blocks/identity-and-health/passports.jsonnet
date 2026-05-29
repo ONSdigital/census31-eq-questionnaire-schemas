@@ -55,7 +55,7 @@ local question(title, description) = {
 local nonProxyTitle = 'What passports do you hold?';
 local nonProxyLabel = 'Enter the passports you hold';
 local proxyTitle = {
-  text: 'What passports does <em>{person_name}</em> hold?',
+  text: 'What passports does <strong>{person_name}</strong> hold?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -69,47 +69,53 @@ local proxyLabel = 'Enter passports held';
   question_variants: [
     {
       question: question(nonProxyTitle, 'passports and travel documents that have expired, if you are entitled to renew them'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, 'passports and travel documents that have expired, if they are entitled to renew them'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'passports-additional-other',
-        when: [
+      block: 'passports-additional-other',
+      when: {
+        and: [
           {
-            id: 'passports-answer',
-            condition: 'contains any',
-            values: ['United Kingdom', 'Ireland'],
+            'any-in': [
+              ['United Kingdom', 'Ireland'],
+              {
+                identifier: 'passports-answer',
+                source: 'answers',
+              },
+            ],
           },
           {
-            id: 'passports-answer',
-            condition: 'contains',
-            value: 'Other',
-          },
-        ],
-      },
-    },
-    {
-      goto: {
-        block: 'passports-other',
-        when: [
-          {
-            id: 'passports-answer',
-            condition: 'contains',
-            value: 'Other',
+            'in': [
+              'Other',
+              {
+                identifier: 'passports-answer',
+                source: 'answers',
+              },
+            ],
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'health',
+      block: 'passports-other',
+      when: {
+        'in': [
+          'Other',
+          {
+            identifier: 'passports-answer',
+            source: 'answers',
+          },
+        ],
       },
+    },
+    {
+      block: 'health',
     },
   ],
 }

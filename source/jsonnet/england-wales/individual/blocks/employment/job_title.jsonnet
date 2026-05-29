@@ -21,7 +21,7 @@ local question(title, description) = {
 
 local nonProxyTitle = 'What is your full job title?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> full job title?',
+  text: 'What is <strong>{person_name_possessive}</strong> full job title?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -29,7 +29,7 @@ local proxyTitle = {
 
 local pastNonProxyTitle = 'What was your full job title?';
 local pastProxyTitle = {
-  text: 'What was <em>{person_name_possessive}</em> full job title?',
+  text: 'What was <strong>{person_name_possessive}</strong> full job title?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -45,19 +45,19 @@ local proxyDescription = 'For example, retail assistant, office cleaner, distric
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDescription),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitle, proxyDescription),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(pastNonProxyTitle, nonProxyDescription),
-      when: [rules.isNotProxy, rules.lastMainJob],
+      when: { and: [rules.isNotProxy, rules.lastMainJob] },
     },
     {
       question: question(pastProxyTitle, proxyDescription),
-      when: [rules.isProxy, rules.lastMainJob],
+      when: { and: [rules.isProxy, rules.lastMainJob] },
     },
   ],
 }

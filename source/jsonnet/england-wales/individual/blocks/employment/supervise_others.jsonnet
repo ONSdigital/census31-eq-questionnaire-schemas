@@ -29,7 +29,7 @@ local question(title) = {
 
 local nonProxyTitle = 'Do you supervise or oversee the work of other employees on a day-to-day basis?';
 local proxyTitle = {
-  text: 'Does <em>{person_name}</em> supervise or oversee the work of other employees on a day-to-day basis?',
+  text: 'Does <strong>{person_name}</strong> supervise or oversee the work of other employees on a day-to-day basis?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -37,7 +37,7 @@ local proxyTitle = {
 
 local pastNonProxyTitle = 'Did you supervise or oversee the work of other employees on a day-to-day basis?';
 local pastProxyTitle = {
-  text: 'Did <em>{person_name}</em> supervise or oversee the work of other employees on a day-to-day basis?',
+  text: 'Did <strong>{person_name}</strong> supervise or oversee the work of other employees on a day-to-day basis?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -50,34 +50,28 @@ local pastProxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(pastNonProxyTitle),
-      when: [rules.isNotProxy, rules.lastMainJob],
+      when: { and: [rules.isNotProxy, rules.lastMainJob] },
     },
     {
       question: question(pastProxyTitle),
-      when: [rules.isProxy, rules.lastMainJob],
+      when: { and: [rules.isProxy, rules.lastMainJob] },
     },
   ],
   routing_rules: [
     {
-      goto: {
-        section: 'End',
-        when: [
-          rules.lastMainJob,
-        ],
-      },
+      section: 'End',
+      when: rules.lastMainJob,
     },
     {
-      goto: {
-        block: 'hours-worked',
-      },
+      block: 'hours-worked',
     },
   ],
 }

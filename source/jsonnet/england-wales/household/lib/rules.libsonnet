@@ -1,47 +1,79 @@
 local common_rules = import '../../lib/common_rules.libsonnet';
 
 local listIsEmpty(listName) = {
-  list: listName,
-  condition: 'equals',
-  value: 0,
+  '==': [
+    {
+      count: [
+        {
+          source: 'list',
+          identifier: listName,
+        },
+      ],
+    },
+    0,
+  ],
 };
 
 local listIsNotEmpty(listName) = {
-  list: listName,
-  condition: 'greater than',
-  value: 0,
+  '>': [
+    {
+      count: [
+        {
+          source: 'list',
+          identifier: listName,
+        },
+      ],
+    },
+    0,
+  ],
 };
 
 local isFirstPersonInList(listName) = {
-  list: listName,
-  id_selector: 'first',
-  condition: 'equals',
-  comparison: {
-    source: 'location',
-    id: 'list_item_id',
-  },
+  '==': [
+    {
+      identifier: listName,
+      source: 'list',
+      selector: 'first',
+    },
+    {
+      source: 'location',
+      identifier: 'list_item_id',
+    },
+  ],
 };
 
 local isNotFirstPersonInList(listName) = {
-  list: listName,
-  id_selector: 'first',
-  condition: 'not equals',
-  comparison: {
-    source: 'location',
-    id: 'list_item_id',
-  },
+  '!=': [
+    {
+      identifier: listName,
+      source: 'list',
+      selector: 'first',
+    },
+    {
+      source: 'location',
+      identifier: 'list_item_id',
+    },
+  ],
 };
 
 {
   isNotProxy: {
-    id: 'confirm-who-is-answering-answer',
-    condition: 'equals',
-    value: 'Yes, I am',
+    '==': [
+      {
+        source: 'answers',
+        identifier: 'confirm-who-is-answering-answer',
+      },
+      'Yes, I am',
+    ],
   },
   isProxy: {
-    id: 'confirm-who-is-answering-answer',
-    condition: 'equals',
-    value: 'No, I am answering on their behalf',
+    '==': [
+      {
+        source: 'answers',
+        identifier: 'confirm-who-is-answering-answer',
+      },
+      'No, I am answering on their behalf',
+    ],
   },
   listIsEmpty: listIsEmpty,
   listIsNotEmpty: listIsNotEmpty,
