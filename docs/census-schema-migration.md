@@ -315,6 +315,54 @@ New (with list):
 }
 ```
 
+## `add` transform
+
+- The `add` transform is used to add a number to a list count
+- Previously a list value source without an id selector would return the list count
+- Now the value source without a selector returns the list itself
+- **Action:** Insert a new `list_item_count` transform before the `add` transform and use `previous_transform` to reference it in the `add` transform
+
+Old:
+
+```json
+{
+    "arguments": {
+        "lhs": {
+            "identifier": "household",
+            "source": "list"
+        },
+        "rhs": {
+            "value": 1
+        }
+    },
+    "transform": "add"
+}
+```
+
+New:
+
+```json
+{
+    "transform": "list_item_count",
+    "arguments": {
+        "list_to_count": {
+            "source": "list",
+            "identifier": "household"
+        }
+    }
+},
+{
+    "arguments": {
+        "lhs": {
+            "source": "previous_transform"
+        "rhs": {
+            "value": 1
+        }
+    },
+    "transform": "add"
+}
+```
+
 ## `routing_rules`
 
 - The `goto` element has been removed

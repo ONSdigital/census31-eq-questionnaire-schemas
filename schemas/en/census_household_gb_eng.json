@@ -1043,9 +1043,17 @@
                                                    "transforms": [
                                                       {
                                                          "arguments": {
-                                                            "lhs": {
+                                                            "list_to_count": {
                                                                "identifier": "household",
                                                                "source": "list"
+                                                            }
+                                                         },
+                                                         "transform": "list_item_count"
+                                                      },
+                                                      {
+                                                         "arguments": {
+                                                            "lhs": {
+                                                               "source": "previous_transform"
                                                             },
                                                             "rhs": {
                                                                "value": 1
@@ -1579,9 +1587,17 @@
                                              "transforms": [
                                                 {
                                                    "arguments": {
-                                                      "lhs": {
+                                                      "list_to_count": {
                                                          "identifier": "household",
                                                          "source": "list"
+                                                      }
+                                                   },
+                                                   "transform": "list_item_count"
+                                                },
+                                                {
+                                                   "arguments": {
+                                                      "lhs": {
+                                                         "source": "previous_transform"
                                                       },
                                                       "rhs": {
                                                          "value": 0
@@ -1652,9 +1668,17 @@
                                  "transforms": [
                                     {
                                        "arguments": {
-                                          "lhs": {
+                                          "list_to_count": {
                                              "identifier": "household",
                                              "source": "list"
+                                          }
+                                       },
+                                       "transform": "list_item_count"
+                                    },
+                                    {
+                                       "arguments": {
+                                          "lhs": {
+                                             "source": "previous_transform"
                                           },
                                           "rhs": {
                                              "value": 0
@@ -2092,9 +2116,17 @@
                                           "transforms": [
                                              {
                                                 "arguments": {
-                                                   "lhs": {
+                                                   "list_to_count": {
                                                       "identifier": "visitors",
                                                       "source": "list"
+                                                   }
+                                                },
+                                                "transform": "list_item_count"
+                                             },
+                                             {
+                                                "arguments": {
+                                                   "lhs": {
+                                                      "source": "previous_transform"
                                                    },
                                                    "rhs": {
                                                       "value": 1
@@ -2173,11 +2205,11 @@
                                              "delimiter": " ",
                                              "list_to_concatenate": [
                                                 {
-                                                   "identifier": "first-name",
+                                                   "identifier": "visitor-first-name",
                                                    "source": "answers"
                                                 },
                                                 {
-                                                   "identifier": "last-name",
+                                                   "identifier": "visitor-last-name",
                                                    "source": "answers"
                                                 }
                                              ]
@@ -2213,9 +2245,17 @@
                                              "transforms": [
                                                 {
                                                    "arguments": {
-                                                      "lhs": {
+                                                      "list_to_count": {
                                                          "identifier": "visitors",
                                                          "source": "list"
+                                                      }
+                                                   },
+                                                   "transform": "list_item_count"
+                                                },
+                                                {
+                                                   "arguments": {
+                                                      "lhs": {
+                                                         "source": "previous_transform"
                                                       },
                                                       "rhs": {
                                                          "value": 1
@@ -2313,11 +2353,11 @@
                                              "delimiter": " ",
                                              "list_to_concatenate": [
                                                 {
-                                                   "identifier": "first-name",
+                                                   "identifier": "visitor-first-name",
                                                    "source": "answers"
                                                 },
                                                 {
-                                                   "identifier": "last-name",
+                                                   "identifier": "visitor-last-name",
                                                    "source": "answers"
                                                 }
                                              ]
@@ -2345,11 +2385,11 @@
                                           "delimiter": " ",
                                           "list_to_concatenate": [
                                              {
-                                                "identifier": "first-name",
+                                                "identifier": "visitor-first-name",
                                                 "source": "answers"
                                              },
                                              {
-                                                "identifier": "last-name",
+                                                "identifier": "visitor-last-name",
                                                 "source": "answers"
                                              }
                                           ]
@@ -2415,9 +2455,17 @@
                            "transforms": [
                               {
                                  "arguments": {
-                                    "lhs": {
+                                    "list_to_count": {
                                        "identifier": "household",
                                        "source": "list"
+                                    }
+                                 },
+                                 "transform": "list_item_count"
+                              },
+                              {
+                                 "arguments": {
+                                    "lhs": {
+                                       "source": "previous_transform"
                                     },
                                     "rhs": {
                                        "value": 0
@@ -2465,9 +2513,17 @@
                            "transforms": [
                               {
                                  "arguments": {
-                                    "lhs": {
+                                    "list_to_count": {
                                        "identifier": "visitors",
                                        "source": "list"
+                                    }
+                                 },
+                                 "transform": "list_item_count"
+                              },
+                              {
+                                 "arguments": {
+                                    "lhs": {
+                                       "source": "previous_transform"
                                     },
                                     "rhs": {
                                        "value": 0
