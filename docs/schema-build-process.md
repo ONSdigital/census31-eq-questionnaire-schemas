@@ -42,6 +42,7 @@ Runs the Jsonnet build command for each census type and region. The script passe
 ### The `source` folder
 
 The following directory structure is used to organise the Jsonnet:
+
 ```bash
 source/
 └── jsonnet/
@@ -78,9 +79,9 @@ source/
         │   └── lib/ # common Jsonnet for individual schema
         │       └── rules.libsonnet
                 └── lib/ # common Jsonnet across > 1 census type 
-                        ├── common_rules.libsonnet     
-                        ├── placeholders.libsonnet
-                        └── transforms.libsonnet
+                    ├── common_rules.libsonnet
+                    ├── placeholders.libsonnet
+                    └── transforms.libsonnet
 ```
 
 #### Jsonnet files
@@ -149,5 +150,3 @@ Most of the detail is in the block Jsonnet files. Each block Jsonnet:
 
 - Jsonnet that is common across more than one census type is in the top-level `lib` folder
 - Jsonnet that is common within a census type is in a `<census_type>/lib` folder
-
-
