@@ -53,57 +53,55 @@
   },
   routing_rules: [
     {
-      goto: {
-        block: 'medical-establishment',
-        when: [
+      block: 'medical-establishment',
+      when: {
+        '==': [
           {
-            id: 'nature-of-establishment-answer',
-            condition: 'equals',
-            value: 'Medical or care',
+            source: 'answers',
+            identifier: 'nature-of-establishment-answer',
           },
+          'Medical or care',
         ],
       },
     },
     {
-      goto: {
-        block: 'education-establishment',
-        when: [
+      block: 'education-establishment',
+      when: {
+        '==': [
           {
-            id: 'nature-of-establishment-answer',
-            condition: 'equals',
-            value: 'Education',
+            source: 'answers',
+            identifier: 'nature-of-establishment-answer',
           },
+          'Education',
         ],
       },
     },
     {
-      goto: {
-        block: 'detention-establishment',
-        when: [
+      block: 'detention-establishment',
+      when: {
+        '==': [
           {
-            id: 'nature-of-establishment-answer',
-            condition: 'equals',
-            value: 'Detention',
+            source: 'answers',
+            identifier: 'nature-of-establishment-answer',
           },
+          'Detention',
         ],
       },
     },
     {
-      goto: {
-        block: 'travel-establishment',
-        when: [
+      block: 'travel-establishment',
+      when: {
+        '==': [
           {
-            id: 'nature-of-establishment-answer',
-            condition: 'equals',
-            value: 'Travel or temporary accommodation',
+            source: 'answers',
+            identifier: 'nature-of-establishment-answer',
           },
+          'Travel or temporary accommodation',
         ],
       },
     },
     {
-      goto: {
-        block: 'responsible-for-establishment',
-      },
+      block: 'responsible-for-establishment',
     },
   ],
 }

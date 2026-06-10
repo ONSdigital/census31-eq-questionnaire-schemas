@@ -25,7 +25,7 @@ local firstPersonNamePossessivePlaceholder = {
 local unrelatedQuestionTitle(isPrimary) = (
   if isPrimary then 'Are any of these people related to you?'
   else {
-    text: 'Are any of these people related to <em>{person_name}</em>?',
+    text: 'Are any of these people related to <strong>{person_name}</strong>?',
     placeholders: [
       placeholders.personName(includeMiddleNames='if_same_names_exist'),
     ],
@@ -95,7 +95,7 @@ local unrelatedQuestion(isPrimary) = {
         id: 'relationship-question',
         type: 'General',
         title: {
-          text: '{second_person_name} is your <em>…</em>',
+          text: '{second_person_name} is your <strong>…</strong>',
           placeholders: [secondPersonPlaceholder],
         },
         description: [
@@ -106,18 +106,18 @@ local unrelatedQuestion(isPrimary) = {
           mandatory: false,
           type: 'Relationship',
           playback: {
-            text: '{second_person_name} is your <em>…</em>',
+            text: '{second_person_name} is your <strong>…</strong>',
             placeholders: [secondPersonPlaceholder],
           },
           options: [
             {
               label: 'Husband or wife',
               playback: {
-                text: '{second_person_name} is your <em>husband or wife</em>',
+                text: '{second_person_name} is your <strong>husband or wife</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>husband or wife</em>',
+                text: '{second_person_name} is your <strong>husband or wife</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Husband or wife',
@@ -125,11 +125,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Legally registered civil partner',
               playback: {
-                text: '{second_person_name} is your <em>legally registered civil partner</em>',
+                text: '{second_person_name} is your <strong>legally registered civil partner</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>legally registered civil partner</em>',
+                text: '{second_person_name} is your <strong>legally registered civil partner</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Legally registered civil partner',
@@ -137,11 +137,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Partner',
               playback: {
-                text: '{second_person_name} is your <em>partner</em>',
+                text: '{second_person_name} is your <strong>partner</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>partner</em>',
+                text: '{second_person_name} is your <strong>partner</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Partner',
@@ -149,11 +149,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Son or daughter',
               playback: {
-                text: '{second_person_name} is your <em>son or daughter</em>',
+                text: '{second_person_name} is your <strong>son or daughter</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>son or daughter</em>',
+                text: '{second_person_name} is your <strong>son or daughter</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Son or daughter',
@@ -161,11 +161,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Stepchild',
               playback: {
-                text: '{second_person_name} is your <em>stepchild</em>',
+                text: '{second_person_name} is your <strong>stepchild</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>stepchild</em>',
+                text: '{second_person_name} is your <strong>stepchild</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Stepchild',
@@ -174,11 +174,11 @@ local unrelatedQuestion(isPrimary) = {
               description: 'Including half-brother or half-sister',
               label: 'Brother or sister',
               playback: {
-                text: '{second_person_name} is your <em>brother or sister</em>',
+                text: '{second_person_name} is your <strong>brother or sister</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>brother or sister</em>',
+                text: '{second_person_name} is your <strong>brother or sister</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Brother or sister',
@@ -186,11 +186,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Stepbrother or stepsister',
               playback: {
-                text: '{second_person_name} is your <em>stepbrother or stepsister</em>',
+                text: '{second_person_name} is your <strong>stepbrother or stepsister</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>stepbrother or stepsister</em>',
+                text: '{second_person_name} is your <strong>stepbrother or stepsister</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Stepbrother or stepsister',
@@ -198,11 +198,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Mother or father',
               playback: {
-                text: '{second_person_name} is your <em>mother or father</em>',
+                text: '{second_person_name} is your <strong>mother or father</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>mother or father</em>',
+                text: '{second_person_name} is your <strong>mother or father</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Mother or father',
@@ -210,11 +210,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Stepmother or stepfather',
               playback: {
-                text: '{second_person_name} is your <em>stepmother or stepfather</em>',
+                text: '{second_person_name} is your <strong>stepmother or stepfather</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>stepmother or stepfather</em>',
+                text: '{second_person_name} is your <strong>stepmother or stepfather</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Stepmother or stepfather',
@@ -222,11 +222,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Grandchild',
               playback: {
-                text: '{second_person_name} is your <em>grandchild</em>',
+                text: '{second_person_name} is your <strong>grandchild</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>grandchild</em>',
+                text: '{second_person_name} is your <strong>grandchild</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Grandchild',
@@ -234,11 +234,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Grandparent',
               playback: {
-                text: '{second_person_name} is your <em>grandparent</em>',
+                text: '{second_person_name} is your <strong>grandparent</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>grandparent</em>',
+                text: '{second_person_name} is your <strong>grandparent</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Grandparent',
@@ -246,11 +246,11 @@ local unrelatedQuestion(isPrimary) = {
             {
               label: 'Other relation',
               playback: {
-                text: '{second_person_name} is your <em>other relation</em>',
+                text: '{second_person_name} is your <strong>other relation</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is your <em>other relation</em>',
+                text: '{second_person_name} is your <strong>other relation</strong>',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Other relation',
@@ -259,11 +259,11 @@ local unrelatedQuestion(isPrimary) = {
               description: 'Including foster child',
               label: 'Unrelated',
               playback: {
-                text: '{second_person_name} is <em>unrelated</em> to you',
+                text: '{second_person_name} is <strong>unrelated</strong> to you',
                 placeholders: [secondPersonPlaceholder],
               },
               title: {
-                text: '{second_person_name} is <em>unrelated</em> to you',
+                text: '{second_person_name} is <strong>unrelated</strong> to you',
                 placeholders: [secondPersonPlaceholder],
               },
               value: 'Unrelated',
@@ -271,14 +271,14 @@ local unrelatedQuestion(isPrimary) = {
           ],
         }],
       },
-      when: [rules.isPrimary],
+      when: rules.isPrimary,
     },
     {
       question: {
         id: 'relationship-question',
         type: 'General',
         title: {
-          text: 'Thinking about {first_person_name}, {second_person_name} is their <em>…</em>',
+          text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>…</strong>',
           placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
         },
         description: [
@@ -290,18 +290,18 @@ local unrelatedQuestion(isPrimary) = {
             mandatory: false,
             type: 'Relationship',
             playback: {
-              text: '{second_person_name} is {first_person_name_possessive} <em>…</em>',
+              text: '{second_person_name} is {first_person_name_possessive} <strong>…</strong>',
               placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
             },
             options: [
               {
                 label: 'Husband or wife',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>husband or wife</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>husband or wife</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>husband or wife</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>husband or wife</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Husband or wife',
@@ -309,11 +309,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Legally registered civil partner',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>legally registered civil partner</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>legally registered civil partner</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>legally registered civil partner</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>legally registered civil partner</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Legally registered civil partner',
@@ -321,11 +321,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Partner',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>partner</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>partner</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>partner</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>partner</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Partner',
@@ -333,11 +333,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Son or daughter',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>son or daughter</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>son or daughter</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>son or daughter</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>son or daughter</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Son or daughter',
@@ -345,11 +345,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Stepchild',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>stepchild</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>stepchild</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>stepchild</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>stepchild</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Stepchild',
@@ -358,11 +358,11 @@ local unrelatedQuestion(isPrimary) = {
                 description: 'Including half-brother or half-sister',
                 label: 'Brother or sister',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>brother or sister</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>brother or sister</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>brother or sister</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>brother or sister</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Brother or sister',
@@ -370,11 +370,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Stepbrother or stepsister',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>stepbrother or stepsister</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>stepbrother or stepsister</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>stepbrother or stepsister</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>stepbrother or stepsister</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Stepbrother or stepsister',
@@ -382,11 +382,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Mother or father',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>mother or father</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>mother or father</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>mother or father</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>mother or father</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Mother or father',
@@ -394,11 +394,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Stepmother or stepfather',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>stepmother or stepfather</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>stepmother or stepfather</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>stepmother or stepfather</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>stepmother or stepfather</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Stepmother or stepfather',
@@ -406,11 +406,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Grandchild',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>grandchild</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>grandchild</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>grandchild</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>grandchild</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Grandchild',
@@ -418,11 +418,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Grandparent',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>grandparent</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>grandparent</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>grandparent</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>grandparent</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Grandparent',
@@ -430,11 +430,11 @@ local unrelatedQuestion(isPrimary) = {
               {
                 label: 'Other relation',
                 playback: {
-                  text: '{second_person_name} is {first_person_name_possessive} <em>other relation</em>',
+                  text: '{second_person_name} is {first_person_name_possessive} <strong>other relation</strong>',
                   placeholders: [secondPersonPlaceholder, firstPersonNamePossessivePlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is their <em>other relation</em>',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is their <strong>other relation</strong>',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder],
                 },
                 value: 'Other relation',
@@ -443,11 +443,11 @@ local unrelatedQuestion(isPrimary) = {
                 description: 'Including foster child',
                 label: 'Unrelated',
                 playback: {
-                  text: '{second_person_name} is <em>unrelated</em> to {first_person_name}',
+                  text: '{second_person_name} is <strong>unrelated</strong> to {first_person_name}',
                   placeholders: [secondPersonPlaceholder, firstPersonPlaceholder],
                 },
                 title: {
-                  text: 'Thinking about {first_person_name}, {second_person_name} is <em>unrelated</em> to {first_person_name}',
+                  text: 'Thinking about {first_person_name}, {second_person_name} is <strong>unrelated</strong> to {first_person_name}',
                   placeholders: [firstPersonPlaceholder, secondPersonPlaceholder, firstPersonPlaceholder],
                 },
                 value: 'Unrelated',
@@ -456,7 +456,7 @@ local unrelatedQuestion(isPrimary) = {
           },
         ],
       },
-      when: [rules.isNotPrimary],
+      when: rules.isNotPrimary,
     },
   ],
   unrelated_block: {
@@ -478,11 +478,11 @@ local unrelatedQuestion(isPrimary) = {
     question_variants: [
       {
         question: unrelatedQuestion(isPrimary=true),
-        when: [rules.isPrimary],
+        when: rules.isPrimary,
       },
       {
         question: unrelatedQuestion(isPrimary=false),
-        when: [rules.isNotPrimary],
+        when: rules.isNotPrimary,
       },
     ],
   },

@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'Have you achieved a GCSE or equivalent qualification?';
 local proxyTitle = {
-  text: 'Has <em>{person_name}</em> achieved a GCSE or equivalent qualification?',
+  text: 'Has <strong>{person_name}</strong> achieved a GCSE or equivalent qualification?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -27,7 +27,7 @@ local walesGuidanceProxy = [
 ];
 local walesGuidanceNonProxy = [
   'This is a General Certificate of Secondary Education. GCSEs are subject based. Students in Wales and England usually complete GCSEs at school by the age of 16 years.',
-  'If you have achieved CSEs, O levels or other similar qualifications outside of Wales and England, choose the options you think are the closest match. ',
+  'If you have achieved CSEs, O levels or other similar qualifications outside of Wales and England, choose the options you think are the closest match.',
 ];
 
 local walesOptions = [
@@ -110,75 +110,76 @@ function(region_code) {
   question_variants: [
     {
       question: question(region_code, isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(region_code, isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        group: 'employment-group',
-        when: [
+      group: 'employment-group',
+      when: {
+        '==': [
           {
-            id: 'degree-level-or-above-answer',
-            condition: 'equals',
-            value: 'Yes',
+            source: 'answers',
+            identifier: 'degree-level-or-above-answer',
           },
+          'Yes',
         ],
       },
     },
     {
-      goto: {
-        group: 'employment-group',
-        when: [
+      group: 'employment-group',
+      when: {
+        '!=': [
           {
-            id: 'gcse-answer',
-            condition: 'set',
+            source: 'answers',
+            identifier: 'gcse-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        group: 'employment-group',
-        when: [
+      group: 'employment-group',
+      when: {
+        '!=': [
           {
-            id: 'a-level-answer',
-            condition: 'set',
+            source: 'answers',
+            identifier: 'a-level-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        group: 'employment-group',
-        when: [
+      group: 'employment-group',
+      when: {
+        '!=': [
           {
-            id: 'nvq-level-answer',
-            condition: 'set',
+            source: 'answers',
+            identifier: 'nvq-level-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        group: 'employment-group',
-        when: [
+      group: 'employment-group',
+      when: {
+        '==': [
           {
-            id: 'apprenticeship-answer',
-            condition: 'equals',
-            value: 'Yes',
+            source: 'answers',
+            identifier: 'apprenticeship-answer',
           },
+          'Yes',
         ],
       },
     },
     {
-      goto: {
-        block: 'other-qualifications',
-      },
+      block: 'other-qualifications',
     },
   ],
 }

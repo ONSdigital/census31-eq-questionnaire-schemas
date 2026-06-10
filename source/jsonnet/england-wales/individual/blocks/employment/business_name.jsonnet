@@ -35,7 +35,7 @@ local nonProxyTitle = 'What is the name of the organisation or business you work
 local nonProxyDescription = 'If you are self-employed in your own business, give the business name';
 
 local proxyTitle = {
-  text: 'What is the name of the organisation or business <em>{person_name}</em> works for?',
+  text: 'What is the name of the organisation or business <strong>{person_name}</strong> works for?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -46,7 +46,7 @@ local pastNonProxyTitle = 'What was the name of the organisation or business you
 local pastNonProxyDescription = 'If you were self-employed in your own business, give the business name';
 
 local pastProxyTitle = {
-  text: 'What was the name of the organisation or business <em>{person_name}</em> worked for?',
+  text: 'What was the name of the organisation or business <strong>{person_name}</strong> worked for?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -64,19 +64,19 @@ local pastOption = 'No organisation or worked for a private individual';
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDescription, nonProxyoption),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitle, proxyDescription, proxyOption),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(pastNonProxyTitle, pastNonProxyDescription, pastOption),
-      when: [rules.isNotProxy, rules.lastMainJob],
+      when: { and: [rules.isNotProxy, rules.lastMainJob] },
     },
     {
       question: question(pastProxyTitle, pastProxyDescription, pastOption),
-      when: [rules.isProxy, rules.lastMainJob],
+      when: { and: [rules.isProxy, rules.lastMainJob] },
     },
   ],
 }

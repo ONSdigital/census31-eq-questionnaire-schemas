@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local questionTitle(isProxy) = (
   if isProxy then {
-    text: 'Does <em>{person_name}</em> mainly work in the UK?',
+    text: 'Does <strong>{person_name}</strong> mainly work in the UK?',
     placeholders: [
       placeholders.personName(),
     ],
@@ -51,68 +51,91 @@ local question(isProxy) = {
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'workplace-address',
-        when: [
+      block: 'workplace-address',
+      when: {
+        and: [
           {
-            id: 'workplace-type-answer',
-            condition: 'not set',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'workplace-type-answer',
+              },
+              null,
+            ],
           },
           {
-            id: 'mainly-work-in-uk-answer',
-            condition: 'not equals',
-            value: 'No',
-          },
-        ],
-      },
-    },
-    {
-      goto: {
-        block: 'workplace-address',
-        when: [
-          {
-            id: 'workplace-type-answer',
-            condition: 'equals',
-            value: 'At a workplace',
-          },
-          {
-            id: 'mainly-work-in-uk-answer',
-            condition: 'not equals',
-            value: 'No',
+            '!=': [
+              {
+                source: 'answers',
+                identifier: 'mainly-work-in-uk-answer',
+              },
+              'No',
+            ],
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'depot-address',
-        when: [
+      block: 'workplace-address',
+      when: {
+        and: [
           {
-            id: 'workplace-type-answer',
-            condition: 'equals',
-            value: 'Report to a depot',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'workplace-type-answer',
+              },
+              'At a workplace',
+            ],
           },
           {
-            id: 'mainly-work-in-uk-answer',
-            condition: 'not equals',
-            value: 'No',
+            '!=': [
+              {
+                source: 'answers',
+                identifier: 'mainly-work-in-uk-answer',
+              },
+              'No',
+            ],
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'mainly-work-outside-uk',
+      block: 'depot-address',
+      when: {
+        and: [
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'workplace-type-answer',
+              },
+              'Report to a depot',
+            ],
+          },
+          {
+            '!=': [
+              {
+                source: 'answers',
+                identifier: 'mainly-work-in-uk-answer',
+              },
+              'No',
+            ],
+          },
+        ],
       },
+    },
+    {
+      block: 'mainly-work-outside-uk',
     },
   ],
 }

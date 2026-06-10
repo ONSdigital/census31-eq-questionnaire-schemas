@@ -11,7 +11,7 @@ local question = {
   type: 'General',
   guidance: {
     contents: [{
-      description: '<em>Include</em> everyone from the groups you selected for the previous question',
+      description: '<strong>Include</strong> everyone from the groups you selected for the previous question',
     }],
   },
   answers: [
@@ -68,30 +68,39 @@ local questionWithExclusive = {
   question_variants: [
     {
       question: questionWithExclusive,
-      when: [
-        {
-          id: 'visitors-in-establishment-exclusive',
-          condition: 'set',
-        },
-      ],
+      when: {
+        '!=': [
+          {
+            source: 'answers',
+            identifier: 'visitors-in-establishment-exclusive',
+          },
+          null,
+        ],
+      },
     },
     {
       question: question,
-      when: [
-        {
-          id: 'visitors-in-establishment-answer',
-          condition: 'set',
-        },
-      ],
+      when: {
+        '!=': [
+          {
+            source: 'answers',
+            identifier: 'visitors-in-establishment-answer',
+          },
+          null,
+        ],
+      },
     },
     {
       question: questionWithExclusive,
-      when: [
-        {
-          id: 'visitors-in-establishment-answer',
-          condition: 'not set',
-        },
-      ],
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'visitors-in-establishment-answer',
+          },
+          null,
+        ],
+      },
     },
   ],
 }

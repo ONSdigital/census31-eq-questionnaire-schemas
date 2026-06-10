@@ -8,7 +8,7 @@ local placeholders = import '../../../lib/placeholders.libsonnet';
   question: {
     id: 'confirm-who-is-answering-question',
     title: {
-      text: 'Are you <em>{person_name}?</em>',
+      text: 'Are you <strong>{person_name}?</strong>',
       placeholders: [
         placeholders.personName(includeMiddleNames='if_is_same_name'),
       ],

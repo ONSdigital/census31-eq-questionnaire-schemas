@@ -26,7 +26,7 @@ local question(title) = {
 
 local nonProxyTitle = 'What is your sex?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> sex?',
+  text: 'What is <strong>{person_name_possessive}</strong> sex?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -48,36 +48,30 @@ local guidance = {
       question: question(nonProxyTitle) + {
         guidance: guidance,
       },
-      when: [rules.isNotProxy, rules.over16],
+      when: { and: [rules.isNotProxy, rules.over16] },
     },
     {
       question: question(proxyTitle) + {
         guidance: guidance,
       },
-      when: [rules.isProxy, rules.over16],
+      when: { and: [rules.isProxy, rules.over16] },
     },
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'marital-or-civil-partnership-status',
-        when: [
-          rules.over15,
-        ],
-      },
+      block: 'marital-or-civil-partnership-status',
+      when: rules.over15,
     },
     {
-      goto: {
-        block: 'another-address',
-      },
+      block: 'another-address',
     },
   ],
 }

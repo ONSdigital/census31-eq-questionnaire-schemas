@@ -66,7 +66,7 @@ local question(title, guidanceHeader, description) = {
 
 local nonProxyTitle = 'Which of the following best describes your sexual orientation?';
 local proxyTitle = {
-  text: 'Which of the following best describes <em>{person_name_possessive}</em> sexual orientation?',
+  text: 'Which of the following best describes <strong>{person_name_possessive}</strong> sexual orientation?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -85,11 +85,11 @@ local proxyDescription = 'Their answer will help their local community by provid
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyGuidanceHeader, nonProxyDescription),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyGuidanceHeader, proxyDescription),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

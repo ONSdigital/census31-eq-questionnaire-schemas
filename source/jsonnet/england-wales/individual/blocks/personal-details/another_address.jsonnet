@@ -43,7 +43,7 @@ local question(title) = {
 
 local nonProxyTitle = 'Do you stay at another address for more than 30 days a year?';
 local proxyTitle = {
-  text: 'Does <em>{person_name}</em> stay at another address for more than 30 days a year?',
+  text: 'Does <strong>{person_name}</strong> stay at another address for more than 30 days a year?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -56,79 +56,86 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        group: 'identity-and-health-group',
-        when: [
+      group: 'identity-and-health-group',
+      when: {
+        and: [
           {
-            id: 'another-address-answer',
-            condition: 'not set',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              null,
+            ],
           },
           rules.under5,
         ],
       },
     },
     {
-      goto: {
-        group: 'identity-and-health-group',
-        when: [
+      group: 'identity-and-health-group',
+      when: {
+        and: [
           {
-            id: 'another-address-answer',
-            condition: 'equals',
-            value: 'No',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'another-address-answer',
+              },
+              'No',
+            ],
           },
           rules.under5,
         ],
       },
     },
     {
-      goto: {
-        block: 'in-education',
-        when: [
+      block: 'in-education',
+      when: {
+        '==': [
           {
-            id: 'another-address-answer',
-            condition: 'equals',
-            value: 'No',
+            source: 'answers',
+            identifier: 'another-address-answer',
           },
+          'No',
         ],
       },
     },
     {
-      goto: {
-        block: 'other-address-uk',
-        when: [
+      block: 'other-address-uk',
+      when: {
+        '==': [
           {
-            id: 'another-address-answer',
-            condition: 'equals',
-            value: 'Yes, an address within the UK',
+            source: 'answers',
+            identifier: 'another-address-answer',
           },
+          'Yes, an address within the UK',
         ],
       },
     },
     {
-      goto: {
-        block: 'another-address-outside-uk',
-        when: [
+      block: 'another-address-outside-uk',
+      when: {
+        '==': [
           {
-            id: 'another-address-answer',
-            condition: 'equals',
-            value: 'Yes, an address outside the UK',
+            source: 'answers',
+            identifier: 'another-address-answer',
           },
+          'Yes, an address outside the UK',
         ],
       },
     },
     {
-      goto: {
-        block: 'in-education',
-      },
+      block: 'in-education',
     },
   ],
 }

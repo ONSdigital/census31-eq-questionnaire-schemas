@@ -62,7 +62,7 @@ local question(englandTitle, walesTitle, region_code, guidance, definitionDescri
 local englandPageTitle = 'Asian or Asian British ethnic group or background';
 local nonProxyEnglandTitle = 'Which one best describes your Asian or Asian British ethnic group or background?';
 local proxyEnglandTitle = {
-  text: 'Which one best describes <em>{person_name_possessive}</em> Asian or Asian British ethnic group or background?',
+  text: 'Which one best describes <strong>{person_name_possessive}</strong> Asian or Asian British ethnic group or background?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -71,7 +71,7 @@ local proxyEnglandTitle = {
 local walesPageTitle = 'Asian, Asian Welsh or Asian British ethnic group or background';
 local nonProxyWalesTitle = 'Which one best describes your Asian, Asian Welsh or Asian British ethnic group or background?';
 local proxyWalesTitle = {
-  text: 'Which one best describes <em>{person_name_possessive}</em> Asian, Asian Welsh or Asian British ethnic group or background?',
+  text: 'Which one best describes <strong>{person_name_possessive}</strong> Asian, Asian Welsh or Asian British ethnic group or background?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -84,30 +84,28 @@ function(region_code) {
   question_variants: [
     {
       question: question(nonProxyEnglandTitle, nonProxyWalesTitle, region_code, nonProxyGuidance, nonProxyDefinitionDescription, 'You can enter your ethnic group or background on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyEnglandTitle, proxyWalesTitle, region_code, proxyGuidance, proxyDefinitionDescription, 'You can enter their ethnic group or background on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'other-asian-or-asian-british-ethnic-group',
-        when: [
+      block: 'other-asian-or-asian-british-ethnic-group',
+      when: {
+        '==': [
           {
-            id: 'asian-or-asian-british-ethnic-group-answer',
-            condition: 'equals',
-            value: 'Any other Asian background',
+            source: 'answers',
+            identifier: 'asian-or-asian-british-ethnic-group-answer',
           },
+          'Any other Asian background',
         ],
       },
     },
     {
-      goto: {
-        block: 'religion',
-      },
+      block: 'religion',
     },
   ],
 }

@@ -25,23 +25,21 @@ local question(title) = {
   question_variants: [
     {
       question: question('You selected “Elsewhere”. What is your country of birth?'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'You selected “Elsewhere”. What is <em>{person_name_possessive}</em> country of birth?',
+        text: 'You selected “Elsewhere”. What is <strong>{person_name_possessive}</strong> country of birth?',
         placeholders: [
           placeholders.personNamePossessive,
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'arrive-in-uk',
-      },
+      block: 'arrive-in-uk',
     },
   ],
 }

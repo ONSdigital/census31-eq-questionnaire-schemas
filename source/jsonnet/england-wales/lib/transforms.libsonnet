@@ -3,8 +3,8 @@ local firstNameSource(source, listName) = (
     source: 'answers',
     identifier: 'first-name',
     list_item_selector: {
-      id: listName,
-      id_selector: 'first',
+      identifier: listName,
+      selector: 'first',
       source: 'list',
     },
   } else if source == 'to_list_item' then {
@@ -12,7 +12,7 @@ local firstNameSource(source, listName) = (
     identifier: 'first-name',
     list_item_selector: {
       source: 'location',
-      id: 'to_list_item_id',
+      identifier: 'to_list_item_id',
     },
   } else {
     source: 'answers',
@@ -25,8 +25,8 @@ local middleNamesSource(source, listName) = (
     source: 'answers',
     identifier: 'middle-names',
     list_item_selector: {
-      id: listName,
-      id_selector: 'first',
+      identifier: listName,
+      selector: 'first',
       source: 'list',
     },
   } else if source == 'to_list_item' then {
@@ -34,7 +34,7 @@ local middleNamesSource(source, listName) = (
     identifier: 'middle-names',
     list_item_selector: {
       source: 'location',
-      id: 'to_list_item_id',
+      identifier: 'to_list_item_id',
     },
   }
   else {
@@ -48,8 +48,8 @@ local lastNameSource(source, listName) = (
     source: 'answers',
     identifier: 'last-name',
     list_item_selector: {
-      id: listName,
-      id_selector: 'first',
+      identifier: listName,
+      selector: 'first',
       source: 'list',
     },
   } else if source == 'to_list_item' then {
@@ -57,7 +57,7 @@ local lastNameSource(source, listName) = (
     identifier: 'last-name',
     list_item_selector: {
       source: 'location',
-      id: 'to_list_item_id',
+      identifier: 'to_list_item_id',
     },
   }
   else {
@@ -90,7 +90,7 @@ local formatPossessive = {
 local isSameName(source='', listName='household') = (
   local valueSource = if source == 'first_list_item' then {
     source: 'list',
-    id_selector: 'first',
+    selector: 'first',
     identifier: listName,
   } else {
     source: 'location',
@@ -102,7 +102,7 @@ local isSameName(source='', listName='household') = (
     arguments: {
       list_to_check: {
         source: 'list',
-        id_selector: 'same_name_items',
+        selector: 'same_name_items',
         identifier: listName,
       },
       value: valueSource,
@@ -115,7 +115,7 @@ local listHasSameNameItems = {
   arguments: {
     list_to_check: {
       source: 'list',
-      id_selector: 'same_name_items',
+      selector: 'same_name_items',
       identifier: 'household',
     },
   },
@@ -124,10 +124,33 @@ local listHasSameNameItems = {
 local concatenateNames = {
   transform: 'concatenate_list',
   arguments: {
-    list_to_concatenate: {
-      source: 'answers',
-      identifier: ['first-name', 'last-name'],
-    },
+    list_to_concatenate: [
+      {
+        source: 'answers',
+        identifier: 'first-name',
+      },
+      {
+        source: 'answers',
+        identifier: 'last-name',
+      },
+    ],
+    delimiter: ' ',
+  },
+};
+
+local concatenateVisitorNames = {
+  transform: 'concatenate_list',
+  arguments: {
+    list_to_concatenate: [
+      {
+        source: 'answers',
+        identifier: 'visitor-first-name',
+      },
+      {
+        source: 'answers',
+        identifier: 'visitor-last-name',
+      },
+    ],
     delimiter: ' ',
   },
 };
@@ -138,4 +161,5 @@ local concatenateNames = {
   isSameName: isSameName,
   listHasSameNameItems: listHasSameNameItems,
   concatenateNames: concatenateNames,
+  concatenateVisitorNames: concatenateVisitorNames,
 }

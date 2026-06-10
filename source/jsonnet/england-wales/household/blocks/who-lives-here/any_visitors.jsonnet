@@ -101,18 +101,19 @@ local rules = import 'rules.libsonnet';
   },
   routing_rules: [
     {
-      goto: {
-        section: 'End',
-        when: [{
-          id: 'any-visitors-answer-exclusive',
-          condition: 'set',
-        }],
+      section: 'End',
+      when: {
+        '!=': [
+          {
+            source: 'answers',
+            identifier: 'any-visitors-answer-exclusive',
+          },
+          null,
+        ],
       },
     },
     {
-      goto: {
-        block: 'any-more-visitors',
-      },
+      block: 'any-more-visitors',
     },
   ],
 }

@@ -46,30 +46,28 @@ local proxyTitle = 'What is their name?';
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'date-of-birth',
-        when: [
+      block: 'date-of-birth',
+      when: {
+        '==': [
           {
-            id: 'accommodation-type-answer',
-            condition: 'equals',
-            value: 'A private or family household',
+            source: 'answers',
+            identifier: 'accommodation-type-answer',
           },
+          'A private or family household',
         ],
       },
     },
     {
-      goto: {
-        block: 'establishment-position',
-      },
+      block: 'establishment-position',
     },
   ],
 }

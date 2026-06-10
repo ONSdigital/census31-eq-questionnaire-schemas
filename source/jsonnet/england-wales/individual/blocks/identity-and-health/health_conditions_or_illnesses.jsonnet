@@ -40,7 +40,7 @@ local nonProxyDefinitionContent = [
   },
 ];
 local proxyTitle = {
-  text: 'Does <em>{person_name}</em> have any physical or mental health conditions or illnesses lasting or expected to last 12 months or more?',
+  text: 'Does <strong>{person_name}</strong> have any physical or mental health conditions or illnesses lasting or expected to last 12 months or more?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -61,55 +61,62 @@ local proxyDefinitionContent = [
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDefinitionContent),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyDefinitionContent),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'health-conditions-or-illnesses-limitations',
-        when: [
+      block: 'health-conditions-or-illnesses-limitations',
+      when: {
+        '==': [
           {
-            id: 'health-conditions-or-illnesses-answer',
-            condition: 'equals',
-            value: 'Yes',
+            source: 'answers',
+            identifier: 'health-conditions-or-illnesses-answer',
           },
+          'Yes',
         ],
       },
     },
     {
-      goto: {
-        section: 'End',
-        when: [
+      section: 'End',
+      when: {
+        and: [
           {
-            id: 'health-conditions-or-illnesses-answer',
-            condition: 'equals',
-            value: 'No',
-          },
-          rules.under5,
-        ],
-      },
-    },
-    {
-      goto: {
-        section: 'End',
-        when: [
-          {
-            id: 'health-conditions-or-illnesses-answer',
-            condition: 'not set',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'health-conditions-or-illnesses-answer',
+              },
+              'No',
+            ],
           },
           rules.under5,
         ],
       },
     },
     {
-      goto: {
-        block: 'look-after-or-support-others',
+      section: 'End',
+      when: {
+        and: [
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'health-conditions-or-illnesses-answer',
+              },
+              null,
+            ],
+          },
+          rules.under5,
+        ],
       },
+    },
+    {
+      block: 'look-after-or-support-others',
     },
   ],
 }

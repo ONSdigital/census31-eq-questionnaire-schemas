@@ -24,7 +24,7 @@ local addQuestion(visitorsListEmpty) = {
   title: addQuestionTitle(visitorsListEmpty),
   answers: [
     {
-      id: 'first-name',
+      id: 'visitor-first-name',
       label: 'First name',
       mandatory: true,
       type: 'TextField',
@@ -35,7 +35,7 @@ local addQuestion(visitorsListEmpty) = {
       },
     },
     {
-      id: 'last-name',
+      id: 'visitor-last-name',
       label: 'Last name',
       mandatory: true,
       type: 'TextField',
@@ -105,19 +105,35 @@ local addQuestion(visitorsListEmpty) = {
     question_variants: [
       {
         question: addQuestion(visitorsListEmpty=true),
-        when: [{
-          list: 'visitors',
-          condition: 'equals',
-          value: 0,
-        }],
+        when: {
+          '==': [
+            {
+              count: [
+                {
+                  source: 'list',
+                  identifier: 'visitors',
+                },
+              ],
+            },
+            0,
+          ],
+        },
       },
       {
         question: addQuestion(visitorsListEmpty=false),
-        when: [{
-          list: 'visitors',
-          condition: 'greater than',
-          value: 0,
-        }],
+        when: {
+          '>': [
+            {
+              count: [
+                {
+                  source: 'list',
+                  identifier: 'visitors',
+                },
+              ],
+            },
+            0,
+          ],
+        },
       },
     ],
   },
@@ -129,14 +145,14 @@ local addQuestion(visitorsListEmpty) = {
       id: 'any-more-visitors-edit-visitor-question',
       type: 'General',
       title: {
-        text: 'Change details for <em>{person_name}</em>',
+        text: 'Change details for <strong>{person_name}</strong>',
         placeholders: [
-          placeholders.personName(),
+          placeholders.visitorPersonName(),
         ],
       },
       answers: [
         {
-          id: 'first-name',
+          id: 'visitor-first-name',
           label: 'First name',
           mandatory: true,
           type: 'TextField',
@@ -147,7 +163,7 @@ local addQuestion(visitorsListEmpty) = {
           },
         },
         {
-          id: 'last-name',
+          id: 'visitor-last-name',
           label: 'Last name',
           mandatory: true,
           type: 'TextField',
@@ -168,9 +184,9 @@ local addQuestion(visitorsListEmpty) = {
       id: 'any-more-visitors-remove-visitor-question',
       type: 'General',
       title: {
-        text: 'Are you sure you want to remove <em>{person_name}</em>?',
+        text: 'Are you sure you want to remove <strong>{person_name}</strong>?',
         placeholders: [
-          placeholders.personName(),
+          placeholders.visitorPersonName(),
         ],
       },
       warning: 'All of the information entered about this person will be deleted',
@@ -206,7 +222,7 @@ local addQuestion(visitorsListEmpty) = {
     item_title: {
       text: '{person_name}',
       placeholders: [
-        placeholders.personName(),
+        placeholders.visitorPersonName(),
       ],
     },
   },

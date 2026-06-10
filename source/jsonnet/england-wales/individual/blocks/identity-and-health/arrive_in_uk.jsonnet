@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local questionTitle(isProxy) = (
   if isProxy then {
-    text: 'When did <em>{person_name}</em> most recently arrive to live in the United Kingdom?',
+    text: 'When did <strong>{person_name}</strong> most recently arrive to live in the United Kingdom?',
     placeholders: [
       placeholders.personName(),
     ],
@@ -55,69 +55,68 @@ function(region_code, census_month_year_date) {
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'length-of-stay-in-uk',
-        when: [rules.under1],
-      },
+      block: 'length-of-stay-in-uk',
+      when: rules.under1,
     },
     {
-      goto: {
-        block: 'length-of-stay-in-uk',
-        when: [
+      block: 'length-of-stay-in-uk',
+      when: {
+        '>': [
           {
-            id: 'arrive-in-uk-answer',
-            condition: 'greater than',
-            date_comparison: {
-              value: census_month_year_date,
-              offset_by: {
-                years: -1,
+            date: [
+              {
+                identifier: 'arrive-in-uk-answer',
+                source: 'answers',
               },
-            },
+            ],
+          },
+          {
+            date: [census_month_year_date, { years: -1 }],
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'when-arrive-in-uk',
-        when: [
+      block: 'when-arrive-in-uk',
+      when: {
+        '==': [
           {
-            id: 'arrive-in-uk-answer',
-            condition: 'not set',
+            source: 'answers',
+            identifier: 'arrive-in-uk-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        block: 'when-arrive-in-uk',
-        when: [
+      block: 'when-arrive-in-uk',
+      when: {
+        '==': [
           {
-            id: 'arrive-in-uk-answer',
-            condition: 'equals',
-            date_comparison: {
-              value: census_month_year_date,
-              offset_by: {
-                years: -1,
+            date: [
+              {
+                identifier: 'arrive-in-uk-answer',
+                source: 'answers',
               },
-            },
+            ],
+          },
+          {
+            date: [census_month_year_date, { years: -1 }],
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'location-one-year-ago',
-      },
+      block: 'location-one-year-ago',
     },
   ],
 }

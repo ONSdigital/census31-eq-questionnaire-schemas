@@ -19,7 +19,7 @@ local rules = import 'rules.libsonnet';
           },
         ],
       },
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       content: {
@@ -27,7 +27,7 @@ local rules = import 'rules.libsonnet';
         contents: [
           {
             description: {
-              text: 'The next set of questions is about <em>{person_name_possessive}</em> main job. Their main job is the job in which they work the most hours.',
+              text: 'The next set of questions is about <strong>{person_name_possessive}</strong> main job. Their main job is the job in which they work the most hours.',
               placeholders: [placeholders.personNamePossessive],
             },
           },
@@ -37,7 +37,7 @@ local rules = import 'rules.libsonnet';
           },
         ],
       },
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       content: {
@@ -47,11 +47,11 @@ local rules = import 'rules.libsonnet';
             description: 'The next set of questions is about your last main job. This is the most recent job you had.',
           },
           {
-            description: 'If you had more than one job at the same time, answer for the job in which you usually worked the most hours. ',
+            description: 'If you had more than one job at the same time, answer for the job in which you usually worked the most hours.',
           },
         ],
       },
-      when: [rules.isNotProxy, rules.lastMainJob],
+      when: { and: [rules.isNotProxy, rules.lastMainJob] },
     },
     {
       content: {
@@ -59,7 +59,7 @@ local rules = import 'rules.libsonnet';
         contents: [
           {
             description: {
-              text: 'The next set of questions is about <em>{person_name_possessive}</em> last main job. This is the most recent job they had.',
+              text: 'The next set of questions is about <strong>{person_name_possessive}</strong> last main job. This is the most recent job they had.',
               placeholders: [placeholders.personNamePossessive],
             },
           },
@@ -68,7 +68,7 @@ local rules = import 'rules.libsonnet';
           },
         ],
       },
-      when: [rules.isProxy, rules.lastMainJob],
+      when: { and: [rules.isProxy, rules.lastMainJob] },
     },
   ],
 }

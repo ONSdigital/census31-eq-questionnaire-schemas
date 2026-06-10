@@ -38,26 +38,24 @@ local question(title, guidance) = {
         'You selected “Other”. What passports do you hold?',
         'Include all passports. If you have more than one, enter them all separated by commas.'
       ),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(
         {
-          text: 'You selected “Other”. What passports does <em>{person_name}</em> hold?',
+          text: 'You selected “Other”. What passports does <strong>{person_name}</strong> hold?',
           placeholders: [
             placeholders.personName(),
           ],
         },
         'Include all passports. If they have more than one, enter them all separated by commas.'
       ),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'health',
-      },
+      block: 'health',
     },
   ],
 }
