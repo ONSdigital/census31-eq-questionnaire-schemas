@@ -3881,7 +3881,7 @@ msgstr "Ydy, 20 i 34 awr yr wythnos"
 #. Answer option
 msgctxt "Does <strong>{person_name}</strong> look after, or give any help or support to, anyone because they have long-term physical or mental health conditions or illnesses, or problems related to old age?"
 msgid "Yes, 35 to 49 hours a week"
-msgstr "Ydy, 50 awr neu fwy yr wythnos"
+msgstr "Ydw, 35 i 49 awr yr wythnos"
 
 #. Answer option
 msgctxt "Does <strong>{person_name}</strong> look after, or give any help or support to, anyone because they have long-term physical or mental health conditions or illnesses, or problems related to old age?"
