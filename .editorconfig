@@ -38,7 +38,7 @@ insert_final_newline = false
 [*.{py}]
 max_line_length = 120
 
-[*.{md,po,json,yaml,yml}]
+[*.{md,po,json,jsonnet,yaml,yml}]
 max_line_length = off
 
 [*.{jsonnet,yml,yaml,md,libsonnet}]

@@ -80,10 +80,10 @@
                                     {
                                         "contents": [
                                             {
-                                                "description": "This is a place providing managed residential accommodation. “Managed” here means full-time or part-time supervision of the accommodation."
+                                                "description": "This is a place providing managed residential accommodation. \u201cManaged\u201d here means full-time or part-time supervision of the accommodation."
                                             }
                                         ],
-                                        "title": "What we mean by “communal establishment”"
+                                        "title": "What we mean by \u201ccommunal establishment\u201d"
                                     }
                                 ],
                                 "id": "accommodation-type-question",
@@ -1792,10 +1792,10 @@
                                             {
                                                 "contents": [
                                                     {
-                                                        "description": "This is a single address that is different to the one at the start of this questionnaire. This might be another parent or guardian’s address, a term-time address, a partner’s address or a holiday home."
+                                                        "description": "This is a single address that is different to the one at the start of this questionnaire. This might be another parent or guardian\u2019s address, a term-time address, a partner\u2019s address or a holiday home."
                                                     }
                                                 ],
-                                                "title": "What we mean by “another address”"
+                                                "title": "What we mean by \u201canother address\u201d"
                                             }
                                         ],
                                         "description": ["This should be a single address and could be more than 30 days in a row or divided across the year"],
@@ -1840,10 +1840,10 @@
                                             {
                                                 "contents": [
                                                     {
-                                                        "description": "This is a single address that is different to the one at the start of this questionnaire. This might be another parent or guardian’s address, a term-time address, a partner’s address or a holiday home."
+                                                        "description": "This is a single address that is different to the one at the start of this questionnaire. This might be another parent or guardian\u2019s address, a term-time address, a partner\u2019s address or a holiday home."
                                                     }
                                                 ],
-                                                "title": "What we mean by “another address”"
+                                                "title": "What we mean by \u201canother address\u201d"
                                             }
                                         ],
                                         "description": ["This should be a single address and could be more than 30 days in a row or divided across the year"],
@@ -2213,20 +2213,20 @@
                                                         "value": "Another address when working away from home"
                                                     },
                                                     {
-                                                        "label": "Student’s home address",
-                                                        "value": "Student’s home address"
+                                                        "label": "Student\u2019s home address",
+                                                        "value": "Student\u2019s home address"
                                                     },
                                                     {
-                                                        "label": "Student’s term-time address",
-                                                        "value": "Student’s term-time address"
+                                                        "label": "Student\u2019s term-time address",
+                                                        "value": "Student\u2019s term-time address"
                                                     },
                                                     {
-                                                        "label": "Another parent or guardian’s address",
-                                                        "value": "Another parent or guardian’s address"
+                                                        "label": "Another parent or guardian\u2019s address",
+                                                        "value": "Another parent or guardian\u2019s address"
                                                     },
                                                     {
-                                                        "label": "Partner’s address",
-                                                        "value": "Partner’s address"
+                                                        "label": "Partner\u2019s address",
+                                                        "value": "Partner\u2019s address"
                                                     },
                                                     {
                                                         "label": "Holiday home",
@@ -2282,20 +2282,20 @@
                                                         "value": "Another address when working away from home"
                                                     },
                                                     {
-                                                        "label": "Student’s home address",
-                                                        "value": "Student’s home address"
+                                                        "label": "Student\u2019s home address",
+                                                        "value": "Student\u2019s home address"
                                                     },
                                                     {
-                                                        "label": "Student’s term-time address",
-                                                        "value": "Student’s term-time address"
+                                                        "label": "Student\u2019s term-time address",
+                                                        "value": "Student\u2019s term-time address"
                                                     },
                                                     {
-                                                        "label": "Another parent or guardian’s address",
-                                                        "value": "Another parent or guardian’s address"
+                                                        "label": "Another parent or guardian\u2019s address",
+                                                        "value": "Another parent or guardian\u2019s address"
                                                     },
                                                     {
-                                                        "label": "Partner’s address",
-                                                        "value": "Partner’s address"
+                                                        "label": "Partner\u2019s address",
+                                                        "value": "Partner\u2019s address"
                                                     },
                                                     {
                                                         "label": "Holiday home",
@@ -2350,20 +2350,20 @@
                                                         "value": "Another address when working away from home"
                                                     },
                                                     {
-                                                        "label": "Student’s home address",
-                                                        "value": "Student’s home address"
+                                                        "label": "Student\u2019s home address",
+                                                        "value": "Student\u2019s home address"
                                                     },
                                                     {
-                                                        "label": "Student’s term-time address",
-                                                        "value": "Student’s term-time address"
+                                                        "label": "Student\u2019s term-time address",
+                                                        "value": "Student\u2019s term-time address"
                                                     },
                                                     {
-                                                        "label": "Another parent or guardian’s address",
-                                                        "value": "Another parent or guardian’s address"
+                                                        "label": "Another parent or guardian\u2019s address",
+                                                        "value": "Another parent or guardian\u2019s address"
                                                     },
                                                     {
-                                                        "label": "Partner’s address",
-                                                        "value": "Partner’s address"
+                                                        "label": "Partner\u2019s address",
+                                                        "value": "Partner\u2019s address"
                                                     },
                                                     {
                                                         "label": "Holiday home",
@@ -3832,7 +3832,7 @@
                                             }
                                         ],
                                         "id": "country-of-birth-elsewhere-question",
-                                        "title": "You selected “Elsewhere”. What is your country of birth?",
+                                        "title": "You selected \u201cElsewhere\u201d. What is your country of birth?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -3893,7 +3893,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Elsewhere”. What is <strong>{person_name_possessive}</strong> country of birth?"
+                                            "text": "You selected \u201cElsewhere\u201d. What is <strong>{person_name_possessive}</strong> country of birth?"
                                         },
                                         "type": "General"
                                     },
@@ -4988,7 +4988,7 @@
                                             ]
                                         },
                                         "id": "other-national-identity-question",
-                                        "title": "You selected “Other”. How would you describe your national identity?",
+                                        "title": "You selected \u201cOther\u201d. How would you describe your national identity?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -5049,7 +5049,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Other”. How would <strong>{person_name}</strong> describe their national identity?"
+                                            "text": "You selected \u201cOther\u201d. How would <strong>{person_name}</strong> describe their national identity?"
                                         },
                                         "type": "General"
                                     },
@@ -5099,7 +5099,7 @@
                                             ]
                                         },
                                         "id": "other-national-identities-question",
-                                        "title": "You selected “Other”. How would you describe your other national identity?",
+                                        "title": "You selected \u201cOther\u201d. How would you describe your other national identity?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -5160,7 +5160,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Other”. How would <strong>{person_name}</strong> describe their other national identity?"
+                                            "text": "You selected \u201cOther\u201d. How would <strong>{person_name}</strong> describe their other national identity?"
                                         },
                                         "type": "General"
                                     },
@@ -5194,7 +5194,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -5254,7 +5254,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -5419,7 +5419,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -5475,7 +5475,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -5596,7 +5596,7 @@
                                             }
                                         ],
                                         "id": "ethnic-group-white-other-question",
-                                        "title": "You selected “Any other White background”. How would you describe your White ethnic group or background?",
+                                        "title": "You selected \u201cAny other White background\u201d. How would you describe your White ethnic group or background?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -5649,7 +5649,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Any other White background”. How would <strong>{person_name}</strong> describe their White ethnic group or background?"
+                                            "text": "You selected \u201cAny other White background\u201d. How would <strong>{person_name}</strong> describe their White ethnic group or background?"
                                         },
                                         "type": "General"
                                     },
@@ -5683,7 +5683,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -5735,7 +5735,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -5848,7 +5848,7 @@
                                             }
                                         ],
                                         "id": "other-mixed-or-multiple-ethnic-group-question",
-                                        "title": "You selected “Any other Mixed or Multiple background”. How would you describe your Mixed or Multiple ethnic group or background?",
+                                        "title": "You selected \u201cAny other Mixed or Multiple background\u201d. How would you describe your Mixed or Multiple ethnic group or background?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -5897,7 +5897,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Any other Mixed or Multiple background”. How would <strong>{person_name}</strong> describe their Mixed or Multiple ethnic group or background?"
+                                            "text": "You selected \u201cAny other Mixed or Multiple background\u201d. How would <strong>{person_name}</strong> describe their Mixed or Multiple ethnic group or background?"
                                         },
                                         "type": "General"
                                     },
@@ -5931,7 +5931,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -5987,7 +5987,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -6108,7 +6108,7 @@
                                             }
                                         ],
                                         "id": "other-asian-or-asian-british-ethnic-group-question",
-                                        "title": "You selected “Any other Asian background”. How would you describe your Asian ethnic group or background?",
+                                        "title": "You selected \u201cAny other Asian background\u201d. How would you describe your Asian ethnic group or background?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -6161,7 +6161,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Any other Asian background”. How would <strong>{person_name}</strong> describe their Asian ethnic group or background?"
+                                            "text": "You selected \u201cAny other Asian background\u201d. How would <strong>{person_name}</strong> describe their Asian ethnic group or background?"
                                         },
                                         "type": "General"
                                     },
@@ -6195,7 +6195,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -6244,7 +6244,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -6370,7 +6370,7 @@
                                             }
                                         ],
                                         "id": "ethnic-group-black-african-question",
-                                        "title": "You selected “African”. How would you describe your African ethnic group or background?",
+                                        "title": "You selected \u201cAfrican\u201d. How would you describe your African ethnic group or background?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -6423,7 +6423,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “African”. How would <strong>{person_name}</strong> describe their African ethnic group or background?"
+                                            "text": "You selected \u201cAfrican\u201d. How would <strong>{person_name}</strong> describe their African ethnic group or background?"
                                         },
                                         "type": "General"
                                     },
@@ -6465,7 +6465,7 @@
                                             }
                                         ],
                                         "id": "other-black-black-british-caribbean-or-african-ethnic-group-question",
-                                        "title": "You selected “Any other Black, Black British or Caribbean background”. How would you describe your Black, Black British or Caribbean ethnic group or background?",
+                                        "title": "You selected \u201cAny other Black, Black British or Caribbean background\u201d. How would you describe your Black, Black British or Caribbean ethnic group or background?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -6518,7 +6518,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Any other Black, Black British or Caribbean background”. How would <strong>{person_name}</strong> describe their Black, Black British or Caribbean ethnic group or background?"
+                                            "text": "You selected \u201cAny other Black, Black British or Caribbean background\u201d. How would <strong>{person_name}</strong> describe their Black, Black British or Caribbean ethnic group or background?"
                                         },
                                         "type": "General"
                                     },
@@ -6552,7 +6552,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -6596,7 +6596,7 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone’s interests"]
+                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -6705,7 +6705,7 @@
                                             }
                                         ],
                                         "id": "ethnic-group-other-other-question",
-                                        "title": "You selected “Any other ethnic group”. How would you describe your ethnic group or background?",
+                                        "title": "You selected \u201cAny other ethnic group\u201d. How would you describe your ethnic group or background?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -6758,7 +6758,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Any other ethnic group”. How would <strong>{person_name}</strong> describe their ethnic group or background?"
+                                            "text": "You selected \u201cAny other ethnic group\u201d. How would <strong>{person_name}</strong> describe their ethnic group or background?"
                                         },
                                         "type": "General"
                                     },
@@ -7021,7 +7021,7 @@
                                             ]
                                         },
                                         "id": "religion-other-question",
-                                        "title": "You selected “Any other religion”. What is your religion?",
+                                        "title": "You selected \u201cAny other religion\u201d. What is your religion?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -7089,7 +7089,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Any other religion”. What is <strong>{person_name_possessive}</strong> religion?"
+                                            "text": "You selected \u201cAny other religion\u201d. What is <strong>{person_name_possessive}</strong> religion?"
                                         },
                                         "type": "General"
                                     },
@@ -7165,7 +7165,7 @@
                                                         "description": "This is the language you use most naturally. For example, it could be the language you use at home."
                                                     }
                                                 ],
-                                                "title": "What we mean by “main language”"
+                                                "title": "What we mean by \u201cmain language\u201d"
                                             }
                                         ],
                                         "id": "main-language-question",
@@ -7209,7 +7209,7 @@
                                                         "description": "This is the language they use most naturally. For example, it could be the language they use at home."
                                                     }
                                                 ],
-                                                "title": "What we mean by “main language”"
+                                                "title": "What we mean by \u201cmain language\u201d"
                                             }
                                         ],
                                         "id": "main-language-question",
@@ -7311,7 +7311,7 @@
                                             }
                                         ],
                                         "id": "main-other-main-language-question",
-                                        "title": "You selected “Other, including British Sign Language”. What is your main language?",
+                                        "title": "You selected \u201cOther, including British Sign Language\u201d. What is your main language?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -7372,7 +7372,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Other, including British Sign Language”. What is <strong>{person_name_possessive}</strong> main language?"
+                                            "text": "You selected \u201cOther, including British Sign Language\u201d. What is <strong>{person_name_possessive}</strong> main language?"
                                         },
                                         "type": "General"
                                     },
@@ -7726,7 +7726,7 @@
                                             ]
                                         },
                                         "id": "passports-other-question",
-                                        "title": "You selected “Other”. What passports do you hold?",
+                                        "title": "You selected \u201cOther\u201d. What passports do you hold?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -7787,7 +7787,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Other”. What passports does <strong>{person_name}</strong> hold?"
+                                            "text": "You selected \u201cOther\u201d. What passports does <strong>{person_name}</strong> hold?"
                                         },
                                         "type": "General"
                                     },
@@ -7837,7 +7837,7 @@
                                             ]
                                         },
                                         "id": "passports-additional-other-question",
-                                        "title": "You selected “Other”. What other passports do you hold?",
+                                        "title": "You selected \u201cOther\u201d. What other passports do you hold?",
                                         "type": "General"
                                     },
                                     "when": {
@@ -7898,7 +7898,7 @@
                                                     ]
                                                 }
                                             ],
-                                            "text": "You selected “Other”. What other passports does <strong>{person_name}</strong> hold?"
+                                            "text": "You selected \u201cOther\u201d. What other passports does <strong>{person_name}</strong> hold?"
                                         },
                                         "type": "General"
                                     },
@@ -8083,7 +8083,7 @@
                                                         "description": "Consider conditions that always affect you and those that flare up from time to time. These may include, for example, sensory conditions, developmental conditions or learning impairments."
                                                     }
                                                 ],
-                                                "title": "What we mean by “physical and mental health conditions or illnesses”"
+                                                "title": "What we mean by \u201cphysical and mental health conditions or illnesses\u201d"
                                             }
                                         ],
                                         "id": "health-conditions-or-illnesses-question",
@@ -8129,7 +8129,7 @@
                                                         "description": "Consider conditions that always affect them and those that flare up from time to time. These may include, for example, sensory conditions, developmental conditions or learning impairments."
                                                     }
                                                 ],
-                                                "title": "What we mean by “physical and mental health conditions or illnesses”"
+                                                "title": "What we mean by \u201cphysical and mental health conditions or illnesses\u201d"
                                             }
                                         ],
                                         "id": "health-conditions-or-illnesses-question",
@@ -8297,13 +8297,13 @@
                                                         "description": "This is about whether your health condition or illness currently affects your ability to carry out day-to-day activities."
                                                     },
                                                     {
-                                                        "description": "Consider whether you are still affected while receiving any treatment, medication or using any devices for your condition or illness. For example, if you use a hearing aid and are not restricted in carrying out your day-to-day activities when doing so, select “Not at all”."
+                                                        "description": "Consider whether you are still affected while receiving any treatment, medication or using any devices for your condition or illness. For example, if you use a hearing aid and are not restricted in carrying out your day-to-day activities when doing so, select \u201cNot at all\u201d."
                                                     },
                                                     {
-                                                        "description": "You should select “Yes, a lot” if you usually need some level of support from family members, friends or personal social services for most normal daily activities."
+                                                        "description": "You should select \u201cYes, a lot\u201d if you usually need some level of support from family members, friends or personal social services for most normal daily activities."
                                                     }
                                                 ],
-                                                "title": "What we mean by “reduce your ability”"
+                                                "title": "What we mean by \u201creduce your ability\u201d"
                                             }
                                         ],
                                         "id": "health-conditions-or-illnesses-limitations-question",
@@ -8350,13 +8350,13 @@
                                                         "description": "This is about whether their health condition or illness currently affects their ability to carry out day-to-day activities."
                                                     },
                                                     {
-                                                        "description": "Consider whether they are still affected while receiving any treatment, medication or using any devices for their condition or illness. For example, if they use a hearing aid and are not restricted in carrying out their day-to-day activities when doing so, select “Not at all”."
+                                                        "description": "Consider whether they are still affected while receiving any treatment, medication or using any devices for their condition or illness. For example, if they use a hearing aid and are not restricted in carrying out their day-to-day activities when doing so, select \u201cNot at all\u201d."
                                                     },
                                                     {
-                                                        "description": "You should select “Yes, a lot” if they usually need some level of support from family members, friends or personal social services for most normal daily activities."
+                                                        "description": "You should select \u201cYes, a lot\u201d if they usually need some level of support from family members, friends or personal social services for most normal daily activities."
                                                     }
                                                 ],
-                                                "title": "What we mean by “reduce their ability”"
+                                                "title": "What we mean by \u201creduce their ability\u201d"
                                             }
                                         ],
                                         "id": "health-conditions-or-illnesses-limitations-question",
@@ -9132,10 +9132,10 @@
                                                         "description": "Students are usually aged 18 years or over when they begin these qualifications through a college or university."
                                                     },
                                                     {
-                                                        "description": "Examples include level 4 and 5 qualifications, bachelor’s degrees with or without honours, master’s degrees, PhD or other doctorates and professional qualifications, such as PGCE or chartership."
+                                                        "description": "Examples include level 4 and 5 qualifications, bachelor\u2019s degrees with or without honours, master\u2019s degrees, PhD or other doctorates and professional qualifications, such as PGCE or chartership."
                                                     }
                                                 ],
-                                                "title": "What we mean by “degree level or above”"
+                                                "title": "What we mean by \u201cdegree level or above\u201d"
                                             }
                                         ],
                                         "description": ["This could be equivalent qualifications achieved anywhere outside England and Wales"],
@@ -9184,10 +9184,10 @@
                                                         "description": "Students are usually aged 18 years or over when they begin these qualifications through a college or university."
                                                     },
                                                     {
-                                                        "description": "Examples include level 4 and 5 qualifications, bachelor’s degrees with or without honours, master’s degrees, PhD or other doctorates and professional qualifications, such as PGCE or chartership."
+                                                        "description": "Examples include level 4 and 5 qualifications, bachelor\u2019s degrees with or without honours, master\u2019s degrees, PhD or other doctorates and professional qualifications, such as PGCE or chartership."
                                                     }
                                                 ],
-                                                "title": "What we mean by “degree level or above”"
+                                                "title": "What we mean by \u201cdegree level or above\u201d"
                                             }
                                         ],
                                         "description": ["This could be equivalent qualifications achieved anywhere outside England and Wales"],
@@ -9284,7 +9284,7 @@
                                                         "description": "If you have achieved similar qualifications, such as Scottish Vocational Qualifications or other vocational qualifications outside of the UK, choose the options you think are the closest match."
                                                     }
                                                 ],
-                                                "title": "What we mean by “NVQ”"
+                                                "title": "What we mean by \u201cNVQ\u201d"
                                             }
                                         ],
                                         "description": ["This could be equivalent qualifications achieved anywhere outside England and Wales"],
@@ -9350,7 +9350,7 @@
                                                         "description": "If they have achieved similar qualifications, such as Scottish Vocational Qualifications or other vocational qualifications outside of the UK, choose the options they think are the closest match."
                                                     }
                                                 ],
-                                                "title": "What we mean by “NVQ”"
+                                                "title": "What we mean by \u201cNVQ\u201d"
                                             }
                                         ],
                                         "description": ["This could be equivalent qualifications achieved anywhere outside England and Wales"],
@@ -9451,7 +9451,7 @@
                                                         "description": "An International Baccalaureate diploma is equivalent to three A levels."
                                                     }
                                                 ],
-                                                "title": "What we mean by “AS and A level”"
+                                                "title": "What we mean by \u201cAS and A level\u201d"
                                             }
                                         ],
                                         "description": ["This could be equivalent qualifications achieved anywhere outside England and Wales"],
@@ -9520,7 +9520,7 @@
                                                         "description": "An International Baccalaureate diploma is equivalent to three A levels."
                                                     }
                                                 ],
-                                                "title": "What we mean by “AS and A level”"
+                                                "title": "What we mean by \u201cAS and A level\u201d"
                                             }
                                         ],
                                         "description": ["This could be equivalent qualifications achieved anywhere outside England and Wales"],
@@ -9618,7 +9618,7 @@
                                                         "description": "If you have achieved CSEs, O levels or other similar qualifications outside of England and Wales, choose the options you think are the closest match."
                                                     }
                                                 ],
-                                                "title": "What we mean by “GCSE”"
+                                                "title": "What we mean by \u201cGCSE\u201d"
                                             }
                                         ],
                                         "description": ["This could be equivalent qualifications achieved anywhere outside England and Wales"],
@@ -9684,7 +9684,7 @@
                                                         "description": "If they have achieved CSEs, O levels or other similar qualifications outside of England and Wales, choose the options they think are the closest match."
                                                     }
                                                 ],
-                                                "title": "What we mean by “GCSE”"
+                                                "title": "What we mean by \u201cGCSE\u201d"
                                             }
                                         ],
                                         "description": ["This could be equivalent qualifications achieved anywhere outside England and Wales"],
@@ -9980,7 +9980,7 @@
                                         "guidance": {
                                             "contents": [
                                                 {
-                                                    "description": "<strong>Current serving members</strong> should only select “No”"
+                                                    "description": "<strong>Current serving members</strong> should only select \u201cNo\u201d"
                                                 }
                                             ]
                                         },
@@ -10044,7 +10044,7 @@
                                         "guidance": {
                                             "contents": [
                                                 {
-                                                    "description": "<strong>Current serving members</strong> should only select “No”"
+                                                    "description": "<strong>Current serving members</strong> should only select \u201cNo\u201d"
                                                 }
                                             ]
                                         },
@@ -10138,7 +10138,7 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["If you have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”"],
+                                        "description": ["If you have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select \u201cTemporarily away from work ill, on holiday or temporarily laid off\u201d"],
                                         "guidance": {
                                             "contents": [
                                                 {
@@ -10204,7 +10204,7 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["If they have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”"],
+                                        "description": ["If they have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select \u201cTemporarily away from work ill, on holiday or temporarily laid off\u201d"],
                                         "guidance": {
                                             "contents": [
                                                 {
@@ -12987,10 +12987,10 @@
                                                         "description": "This is where you work most of the time in your main job."
                                                     },
                                                     {
-                                                        "description": "For example, if you work from home three days a week and go to another place of work two days, select “At or from home”."
+                                                        "description": "For example, if you work from home three days a week and go to another place of work two days, select \u201cAt or from home\u201d."
                                                     }
                                                 ],
-                                                "title": "What we mean by “mainly work”"
+                                                "title": "What we mean by \u201cmainly work\u201d"
                                             }
                                         ],
                                         "description": ["If the <strong>coronavirus</strong> pandemic has affected where you mainly work, select the answer that best describes your <strong>current circumstances</strong>"],
@@ -13058,10 +13058,10 @@
                                                         "description": "This is where they work most of the time in their main job."
                                                     },
                                                     {
-                                                        "description": "For example, if they work from home three days a week and go to another place of work two days, select “At or from home”."
+                                                        "description": "For example, if they work from home three days a week and go to another place of work two days, select \u201cAt or from home\u201d."
                                                     }
                                                 ],
-                                                "title": "What we mean by “mainly work”"
+                                                "title": "What we mean by \u201cmainly work\u201d"
                                             }
                                         ],
                                         "description": ["If the <strong>coronavirus</strong> pandemic has affected where they mainly work, select the answer that best describes their <strong>current circumstances</strong>"],

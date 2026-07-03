@@ -48,7 +48,7 @@
                                         "mandatory": true,
                                         "options": [
                                             {
-                                                "description": "For example, care homes, children’s homes or hospitals",
+                                                "description": "For example, care homes, children\u2019s homes or hospitals",
                                                 "label": "Medical or care",
                                                 "value": "Medical or care"
                                             },
@@ -166,8 +166,8 @@
                                             },
                                             {
                                                 "description": "Including secure units",
-                                                "label": "Children’s home",
-                                                "value": "Children’s home"
+                                                "label": "Children\u2019s home",
+                                                "value": "Children\u2019s home"
                                             },
                                             {
                                                 "label": "General hospital",
