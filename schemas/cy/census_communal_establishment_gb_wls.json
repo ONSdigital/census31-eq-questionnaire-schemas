@@ -157,33 +157,33 @@
                                         "mandatory": false,
                                         "options": [
                                             {
-                                                "label": "Care home without nursing",
+                                                "label": "Cartref gofal heb nyrsio",
                                                 "value": "Care home without nursing"
                                             },
                                             {
-                                                "label": "Care home with nursing",
+                                                "label": "Cartref gofal \u00e2 nyrsio",
                                                 "value": "Care home with nursing"
                                             },
                                             {
-                                                "description": "Including secure units",
-                                                "label": "Children\u2019s home",
+                                                "description": "Gan gynnwys unedau diogel",
+                                                "label": "Cartref plant",
                                                 "value": "Children\u2019s home"
                                             },
                                             {
-                                                "label": "General hospital",
+                                                "label": "Ysbyty cyffredinol",
                                                 "value": "General hospital"
                                             },
                                             {
-                                                "description": "Including secure units",
-                                                "label": "Mental health hospital or unit",
+                                                "description": "Gan gynnwys unedau diogel",
+                                                "label": "Ysbyty neu uned iechyd meddwl",
                                                 "value": "Mental health hospital or unit"
                                             },
                                             {
-                                                "label": "Other hospital",
+                                                "label": "Ysbyty arall",
                                                 "value": "Other hospital"
                                             },
                                             {
-                                                "label": "Other medical or care establishment",
+                                                "label": "Math arall o sefydliad meddygol neu ofal",
                                                 "value": "Other medical or care establishment"
                                             }
                                         ],
@@ -201,7 +201,7 @@
                                             }
                                         }
                                     ],
-                                    "text": "What type of medical or care establishment is <strong>{household_address}</strong>?"
+                                    "text": "Pa fath o sefydliad meddygol neu ofal yw <strong>{household_address}</strong>?"
                                 },
                                 "type": "General"
                             },
@@ -222,16 +222,16 @@
                                         "mandatory": false,
                                         "options": [
                                             {
-                                                "label": "School",
+                                                "label": "Ysgol",
                                                 "value": "School"
                                             },
                                             {
-                                                "description": "For example, hall of residence",
-                                                "label": "University",
+                                                "description": "Er enghraifft, neuadd breswyl",
+                                                "label": "Prifysgol",
                                                 "value": "University"
                                             },
                                             {
-                                                "label": "Other education establishment",
+                                                "label": "Math arall o sefydliad addysg",
                                                 "value": "Other education establishment"
                                             }
                                         ],
@@ -249,7 +249,7 @@
                                             }
                                         }
                                     ],
-                                    "text": "What type of education establishment is <strong>{household_address}</strong>?"
+                                    "text": "Pa fath o sefydliad addysg yw <strong>{household_address}</strong>?"
                                 },
                                 "type": "General"
                             },
@@ -270,21 +270,21 @@
                                         "mandatory": false,
                                         "options": [
                                             {
-                                                "description": "Including young offender institutions",
-                                                "label": "Prison service establishment",
+                                                "description": "Gan gynnwys sefydliadau troseddwyr ifanc",
+                                                "label": "Sefydliad gwasanaeth carchardai",
                                                 "value": "Prison service establishment"
                                             },
                                             {
-                                                "description": "Probation or bail hostel",
-                                                "label": "Approved premises",
+                                                "description": "Hostel prawf neu fechn\u00efaeth",
+                                                "label": "Safle a gymeradwywyd",
                                                 "value": "Approved premises"
                                             },
                                             {
-                                                "label": "Detention centre",
+                                                "label": "Canolfan gadw",
                                                 "value": "Detention centre"
                                             },
                                             {
-                                                "label": "Other detention establishment",
+                                                "label": "Math arall o sefydliad cadw",
                                                 "value": "Other detention establishment"
                                             }
                                         ],
@@ -302,7 +302,7 @@
                                             }
                                         }
                                     ],
-                                    "text": "What type of detention establishment is <strong>{household_address}</strong>?"
+                                    "text": "Pa fath o sefydliad cadw yw <strong>{household_address}</strong>?"
                                 },
                                 "type": "General"
                             },
@@ -323,21 +323,21 @@
                                         "mandatory": false,
                                         "options": [
                                             {
-                                                "description": "Including inns and pubs",
-                                                "label": "Hotel, guest house, B&B, youth hostel",
+                                                "description": "Gan gynnwys tafarndai",
+                                                "label": "Gwesty, t\u0177 llety, gwely a brecwast, hostel ieuenctid",
                                                 "value": "Hotel, guest house, B&B, youth hostel"
                                             },
                                             {
-                                                "description": "For example, holiday park",
-                                                "label": "Holiday accommodation",
+                                                "description": "Er enghraifft, parc gwyliau",
+                                                "label": "Llety gwyliau",
                                                 "value": "Holiday accommodation"
                                             },
                                             {
-                                                "label": "Hostel or temporary shelter for homeless people",
+                                                "label": "Hostel neu loches dros dro i bobl ddigartref",
                                                 "value": "Hostel or temporary shelter for homeless people"
                                             },
                                             {
-                                                "label": "Other travel or temporary accommodation",
+                                                "label": "Math arall o lety dros dro neu wrth deithio",
                                                 "value": "Other travel or temporary accommodation"
                                             }
                                         ],
@@ -355,7 +355,7 @@
                                             }
                                         }
                                     ],
-                                    "text": "What type of travel or temporary accommodation establishment is <strong>{household_address}</strong>?"
+                                    "text": "Pa fath o sefydliad llety dros dro neu wrth deithio yw <strong>{household_address}</strong>?"
                                 },
                                 "type": "General"
                             },
@@ -534,10 +534,10 @@
                                         "guidance": {
                                             "contents": [
                                                 {
-                                                    "description": "<strong>Include</strong> everyone from the groups you selected for the previous question"
+                                                    "description": "<strong>Dylech gynnwys</strong> pawb o\u2019r grwpiau y gwnaethoch eu dewis ar gyfer y cwestiwn blaenorol"
                                                 },
                                                 {
-                                                    "description": "<strong>Do not include</strong> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
+                                                    "description": "<strong>Peidiwch \u00e2 chynnwys </strong>ymwelwyr sydd \u00e2 chyfeiriad arall yn y Deyrnas Unedig, neu sy\u2019n byw y tu allan i\u2019r Deyrnas Unedig fel arfer ac sy\u2019n bwriadu aros yn y Deyrnas Unedig am 3 mis neu lai"
                                                 }
                                             ]
                                         },
@@ -582,7 +582,7 @@
                                         "guidance": {
                                             "contents": [
                                                 {
-                                                    "description": "<strong>Do not include</strong> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
+                                                    "description": "<strong>Peidiwch \u00e2 chynnwys </strong>ymwelwyr sydd \u00e2 chyfeiriad arall yn y Deyrnas Unedig, neu sy\u2019n byw y tu allan i\u2019r Deyrnas Unedig fel arfer ac sy\u2019n bwriadu aros yn y Deyrnas Unedig am 3 mis neu lai"
                                                 }
                                             ]
                                         },
@@ -628,7 +628,7 @@
                                         "guidance": {
                                             "contents": [
                                                 {
-                                                    "description": "<strong>Do not include</strong> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
+                                                    "description": "<strong>Peidiwch \u00e2 chynnwys </strong>ymwelwyr sydd \u00e2 chyfeiriad arall yn y Deyrnas Unedig, neu sy\u2019n byw y tu allan i\u2019r Deyrnas Unedig fel arfer ac sy\u2019n bwriadu aros yn y Deyrnas Unedig am 3 mis neu lai"
                                                 }
                                             ]
                                         },
@@ -702,7 +702,7 @@
                                                         ]
                                                     }
                                                 ],
-                                                "text": "<strong>Include</strong> shift workers, for example, care workers, hotel porters, who are staying overnight on {census_date} as visitors"
+                                                "text": "<strong>Dylech gynnwys</strong> gweithwyr shifft, er enghraifft, gweithwyr gofal neu borthorion gwesty, sy\u2019n aros dros nos ar {census_date} fel ymwelwyr"
                                             }
                                         }
                                     ]
@@ -814,7 +814,7 @@
                                         "guidance": {
                                             "contents": [
                                                 {
-                                                    "description": "<strong>Include</strong> everyone from the groups you selected for the previous question"
+                                                    "description": "<strong>Dylech gynnwys</strong> pawb o\u2019r grwpiau y gwnaethoch eu dewis ar gyfer y cwestiwn blaenorol"
                                                 }
                                             ]
                                         },
