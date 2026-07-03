@@ -4,7 +4,7 @@ clean:
 build-schemas:
 	./scripts/build_schemas.sh
 
-build: build-schemas translate-schemas 
+build: build-schemas translate-schemas
 
 run-validator: validator-check
 	./scripts/run_validator.sh
@@ -38,3 +38,20 @@ translate-schemas: translations-check
 
 resolve-suggestions-urls:
 	poetry run python -m scripts.resolve_suggestions_urls
+
+.PHONY: megalint megalint-apply clean-megalint
+megalint:
+	docker run --platform linux/amd64 --rm \
+		-v /var/run/docker.sock:/var/run/docker.sock:rw \
+		-v $(shell pwd):/tmp/lint:rw \
+		ghcr.io/oxsecurity/megalinter:v9.5.0
+
+megalint-apply:
+	docker run --platform linux/amd64 --rm \
+		-v /var/run/docker.sock:/var/run/docker.sock:rw \
+		-v $(shell pwd):/tmp/lint:rw \
+		-e APPLY_FIXES=all \
+		ghcr.io/oxsecurity/megalinter:v9.5.0
+
+clean-megalint:
+	rm -rf megalinter-reports
