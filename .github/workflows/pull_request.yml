@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  lint:
+  lint-python-jsonnet:
     permissions:
       contents: read
     runs-on: ubuntu-22.04
