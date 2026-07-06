@@ -32,7 +32,10 @@
     },
     "questionnaire_flow": {
         "options": {
-            "required_completed_sections": ["people-who-live-here-and-overnight-visitors", "relationships-section"]
+            "required_completed_sections": [
+                "people-who-live-here-and-overnight-visitors",
+                "relationships-section"
+            ]
         },
         "type": "Hub"
     },
@@ -401,7 +404,11 @@
                                                         "description": "Remember to include"
                                                     },
                                                     {
-                                                        "list": ["<strong>students</strong>, if this is either their term-time <strong>or</strong> their out of term-time address", "<strong>people with a second address for work</strong>, if this is their home address", "<strong>armed forces members</strong>, if this is their home address"]
+                                                        "list": [
+                                                            "<strong>students</strong>, if this is either their term-time <strong>or</strong> their out of term-time address",
+                                                            "<strong>people with a second address for work</strong>, if this is their home address",
+                                                            "<strong>armed forces members</strong>, if this is their home address"
+                                                        ]
                                                     }
                                                 ],
                                                 "title": "Who to include"
@@ -578,7 +585,11 @@
                                                         "description": "Remember to include"
                                                     },
                                                     {
-                                                        "list": ["<strong>students</strong>, if this is either their term-time <strong>or</strong> their out of term-time address", "<strong>people with a second address for work</strong>, if this is their home address", "<strong>armed forces members</strong>, if this is their home address"]
+                                                        "list": [
+                                                            "<strong>students</strong>, if this is either their term-time <strong>or</strong> their out of term-time address",
+                                                            "<strong>people with a second address for work</strong>, if this is their home address",
+                                                            "<strong>armed forces members</strong>, if this is their home address"
+                                                        ]
                                                     }
                                                 ],
                                                 "title": "Who to include"
@@ -1176,7 +1187,10 @@
                                 },
                                 "type": "ListRemoveQuestion"
                             },
-                            "same_name_answer_ids": ["first-name", "last-name"],
+                            "same_name_answer_ids": [
+                                "first-name",
+                                "last-name"
+                            ],
                             "summary": {
                                 "item_title": {
                                     "placeholders": [
@@ -1620,13 +1634,22 @@
                                             "title": "Temporarily away"
                                         },
                                         {
-                                            "list": ["people who work away from home within the UK if this is their permanent or family home", "members of the armed forces if this is their permanent or family home", "people who are temporarily outside the UK for <strong>less than 12 months</strong>", "people staying, or expecting to stay, in an establishment such as a hospital, care home or hostel for <strong>less than 6 months</strong>", "other people who usually live here but are temporarily away from home"]
+                                            "list": [
+                                                "people who work away from home within the UK if this is their permanent or family home",
+                                                "members of the armed forces if this is their permanent or family home",
+                                                "people who are temporarily outside the UK for <strong>less than 12 months</strong>",
+                                                "people staying, or expecting to stay, in an establishment such as a hospital, care home or hostel for <strong>less than 6 months</strong>",
+                                                "other people who usually live here but are temporarily away from home"
+                                            ]
                                         },
                                         {
                                             "title": "Temporarily staying"
                                         },
                                         {
-                                            "list": ["people staying temporarily who usually live in the UK but do not have another UK address for example, relatives, friends", "people who usually live outside the UK who are staying in the UK for <strong>3 months or more</strong>"]
+                                            "list": [
+                                                "people staying temporarily who usually live in the UK but do not have another UK address for example, relatives, friends",
+                                                "people who usually live outside the UK who are staying in the UK for <strong>3 months or more</strong>"
+                                            ]
                                         }
                                     ]
                                 },
@@ -1749,7 +1772,10 @@
                                 },
                                 "type": "ListRemoveQuestion"
                             },
-                            "same_name_answer_ids": ["first-name", "last-name"],
+                            "same_name_answer_ids": [
+                                "first-name",
+                                "last-name"
+                            ],
                             "summary": {
                                 "item_title": {
                                     "placeholders": [
@@ -1891,7 +1917,9 @@
                                         "type": "Checkbox"
                                     }
                                 ],
-                                "description": ["These people are counted as visitors"],
+                                "description": [
+                                    "These people are counted as visitors"
+                                ],
                                 "id": "any-visitors-question",
                                 "mandatory": true,
                                 "title": {
@@ -4046,7 +4074,9 @@
                                                 "type": "Relationship"
                                             }
                                         ],
-                                        "description": ["Complete the sentence by selecting the appropriate relationship."],
+                                        "description": [
+                                            "Complete the sentence by selecting the appropriate relationship."
+                                        ],
                                         "id": "relationship-question",
                                         "title": {
                                             "placeholders": [
@@ -6669,7 +6699,9 @@
                                                 "type": "Relationship"
                                             }
                                         ],
-                                        "description": ["Complete the sentence by selecting the appropriate relationship."],
+                                        "description": [
+                                            "Complete the sentence by selecting the appropriate relationship."
+                                        ],
                                         "id": "relationship-question",
                                         "title": {
                                             "placeholders": [
@@ -7040,7 +7072,11 @@
                                         }
                                     },
                                     {
-                                        "list": ["type of property, and if it\u2018s owned or rented", "type of landlord if rented, for example, housing association, council or private", "type of central heating"],
+                                        "list": [
+                                            "type of property, and if it\u2018s owned or rented",
+                                            "type of landlord if rented, for example, housing association, council or private",
+                                            "type of central heating"
+                                        ],
                                         "title": "You will need to know information such as"
                                     }
                                 ],
@@ -7622,7 +7658,16 @@
                                         }
                                     },
                                     {
-                                        "list": ["date of birth", "country of birth", "second or holiday homes", "main language", "general health", "unpaid care provided", "qualifications", "employment details"],
+                                        "list": [
+                                            "date of birth",
+                                            "country of birth",
+                                            "second or holiday homes",
+                                            "main language",
+                                            "general health",
+                                            "unpaid care provided",
+                                            "qualifications",
+                                            "employment details"
+                                        ],
                                         "title": "You will need to know personal details such as"
                                     }
                                 ],
@@ -7834,7 +7879,9 @@
                                                 }
                                             }
                                         ],
-                                        "description": ["For example, 31 3 1980"],
+                                        "description": [
+                                            "For example, 31 3 1980"
+                                        ],
                                         "id": "date-of-birth-question",
                                         "title": "What is your date of birth?",
                                         "type": "General"
@@ -7877,7 +7924,9 @@
                                                 }
                                             }
                                         ],
-                                        "description": ["For example, 31 3 1980"],
+                                        "description": [
+                                            "For example, 31 3 1980"
+                                        ],
                                         "id": "date-of-birth-question",
                                         "title": {
                                             "placeholders": [
@@ -8134,7 +8183,10 @@
                                                 "identifier": "confirm-age-answer",
                                                 "source": "answers"
                                             },
-                                            ["No, I need to correct their date of birth", "No, I need to correct my date of birth"]
+                                            [
+                                                "No, I need to correct their date of birth",
+                                                "No, I need to correct my date of birth"
+                                            ]
                                         ]
                                     }
                                 },
@@ -9227,7 +9279,9 @@
                                                 "title": "What we mean by \u201canother address\u201d"
                                             }
                                         ],
-                                        "description": ["This should be a single address and could be more than 30 days in a row or divided across the year"],
+                                        "description": [
+                                            "This should be a single address and could be more than 30 days in a row or divided across the year"
+                                        ],
                                         "id": "another-address-question",
                                         "title": "Do you stay at another address for more than 30 days a year?",
                                         "type": "General"
@@ -9275,7 +9329,9 @@
                                                 "title": "What we mean by \u201canother address\u201d"
                                             }
                                         ],
-                                        "description": ["This should be a single address and could be more than 30 days in a row or divided across the year"],
+                                        "description": [
+                                            "This should be a single address and could be more than 30 days in a row or divided across the year"
+                                        ],
                                         "id": "another-address-question",
                                         "title": {
                                             "placeholders": [
@@ -10678,7 +10734,10 @@
                                                 "identifier": "term-time-location-answer",
                                                 "source": "answers"
                                             },
-                                            ["{thirty_day_address}", "The address in {thirty_day_address_country}"]
+                                            [
+                                                "{thirty_day_address}",
+                                                "The address in {thirty_day_address_country}"
+                                            ]
                                         ]
                                     }
                                 },
@@ -11209,7 +11268,12 @@
                                                         "identifier": "country-of-birth-answer",
                                                         "source": "answers"
                                                     },
-                                                    ["Wales", "England", "Scotland", "Northern Ireland"]
+                                                    [
+                                                        "Wales",
+                                                        "England",
+                                                        "Scotland",
+                                                        "Northern Ireland"
+                                                    ]
                                                 ]
                                             },
                                             {
@@ -11373,7 +11437,9 @@
                                                 }
                                             }
                                         ],
-                                        "description": ["Do not count short visits away from the UK"],
+                                        "description": [
+                                            "Do not count short visits away from the UK"
+                                        ],
                                         "id": "arrive-in-uk-question",
                                         "title": "When did you most recently arrive to live in the United Kingdom?",
                                         "type": "General"
@@ -11413,7 +11479,9 @@
                                                 }
                                             }
                                         ],
-                                        "description": ["Do not count short visits away from the UK"],
+                                        "description": [
+                                            "Do not count short visits away from the UK"
+                                        ],
                                         "id": "arrive-in-uk-question",
                                         "title": {
                                             "placeholders": [
@@ -11869,7 +11937,10 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["If you had no usual address one year ago, select the address where you were staying.", "If the <strong>coronavirus</strong> pandemic affected your usual address one year ago, select where you were living <strong>before your circumstances changed</strong>."],
+                                        "description": [
+                                            "If you had no usual address one year ago, select the address where you were staying.",
+                                            "If the <strong>coronavirus</strong> pandemic affected your usual address one year ago, select where you were living <strong>before your circumstances changed</strong>."
+                                        ],
                                         "id": "location-one-year-ago-question",
                                         "title": "One year ago, what was your usual address?",
                                         "type": "General"
@@ -12010,7 +12081,10 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["If you had no usual address one year ago, select the address where you were staying.", "If the <strong>coronavirus</strong> pandemic affected your usual address one year ago, select where you were living <strong>before your circumstances changed</strong>."],
+                                        "description": [
+                                            "If you had no usual address one year ago, select the address where you were staying.",
+                                            "If the <strong>coronavirus</strong> pandemic affected your usual address one year ago, select where you were living <strong>before your circumstances changed</strong>."
+                                        ],
                                         "id": "location-one-year-ago-question",
                                         "title": "One year ago, what was your usual address?",
                                         "type": "General"
@@ -12080,7 +12154,10 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["If they had no usual address one year ago, select the address where they were staying.", "If the <strong>coronavirus</strong> pandemic affected their usual address one year ago, select where they were living <strong>before their circumstances changed</strong>."],
+                                        "description": [
+                                            "If they had no usual address one year ago, select the address where they were staying.",
+                                            "If the <strong>coronavirus</strong> pandemic affected their usual address one year ago, select where they were living <strong>before their circumstances changed</strong>."
+                                        ],
                                         "id": "location-one-year-ago-question",
                                         "title": {
                                             "placeholders": [
@@ -12254,7 +12331,10 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["If they had no usual address one year ago, select the address where they were staying.", "If the <strong>coronavirus</strong> pandemic affected their usual address one year ago, select where they were living <strong>before their circumstances changed</strong>."],
+                                        "description": [
+                                            "If they had no usual address one year ago, select the address where they were staying.",
+                                            "If the <strong>coronavirus</strong> pandemic affected their usual address one year ago, select where they were living <strong>before their circumstances changed</strong>."
+                                        ],
                                         "id": "location-one-year-ago-question",
                                         "title": {
                                             "placeholders": [
@@ -12602,7 +12682,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["This relates to where you feel you belong, such as the country or countries you think of as home.<br/>This could be different from your citizenship or ethnic group."],
+                                        "description": [
+                                            "This relates to where you feel you belong, such as the country or countries you think of as home.<br/>This could be different from your citizenship or ethnic group."
+                                        ],
                                         "id": "national-identity-question",
                                         "title": "How would you describe your national identity?",
                                         "type": "General"
@@ -12653,7 +12735,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["This relates to where they feel they belong, such as the country or countries they think of as home.<br/>This could be different from their citizenship or ethnic group."],
+                                        "description": [
+                                            "This relates to where they feel they belong, such as the country or countries they think of as home.<br/>This could be different from their citizenship or ethnic group."
+                                        ],
                                         "id": "national-identity-question",
                                         "title": {
                                             "placeholders": [
@@ -12701,7 +12785,13 @@
                                         "and": [
                                             {
                                                 "any-in": [
-                                                    ["British", "English", "Welsh", "Scottish", "Northern Irish"],
+                                                    [
+                                                        "British",
+                                                        "English",
+                                                        "Welsh",
+                                                        "Scottish",
+                                                        "Northern Irish"
+                                                    ],
                                                     {
                                                         "identifier": "national-identity-answer",
                                                         "source": "answers"
@@ -12972,7 +13062,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -13032,7 +13125,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -13151,7 +13247,9 @@
                                                 "identifier": "ethnic-group-answer",
                                                 "source": "answers"
                                             },
-                                            ["Asian, Asian Welsh or Asian British"]
+                                            [
+                                                "Asian, Asian Welsh or Asian British"
+                                            ]
                                         ]
                                     }
                                 },
@@ -13163,7 +13261,9 @@
                                                 "identifier": "ethnic-group-answer",
                                                 "source": "answers"
                                             },
-                                            ["Black, Black Welsh, Black British, Caribbean or African"]
+                                            [
+                                                "Black, Black Welsh, Black British, Caribbean or African"
+                                            ]
                                         ]
                                     }
                                 },
@@ -13197,7 +13297,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -13253,7 +13356,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -13461,7 +13567,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -13513,7 +13622,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -13709,7 +13821,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -13765,7 +13880,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -13973,7 +14091,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -14022,7 +14143,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -14330,7 +14454,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Your answer will provide a better understanding of your community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -14374,7 +14501,10 @@
                                                     "contents": [
                                                         {
                                                             "description": "Their answer will provide a better understanding of their community and help to support equality and fairness. For example, councils and government use information on ethnic group to make sure they",
-                                                            "list": ["provide services and share funding fairly", "understand and represent everyone\u2019s interests"]
+                                                            "list": [
+                                                                "provide services and share funding fairly",
+                                                                "understand and represent everyone\u2019s interests"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -15466,7 +15596,10 @@
                                         "guidance": {
                                             "contents": [
                                                 {
-                                                    "list": ["current passports and any other travel documents, such as ID cards, that show citizenship of a particular country or countries", "passports and travel documents that have expired, if you are entitled to renew them"],
+                                                    "list": [
+                                                        "current passports and any other travel documents, such as ID cards, that show citizenship of a particular country or countries",
+                                                        "passports and travel documents that have expired, if you are entitled to renew them"
+                                                    ],
                                                     "title": "Include"
                                                 }
                                             ]
@@ -15524,7 +15657,10 @@
                                         "guidance": {
                                             "contents": [
                                                 {
-                                                    "list": ["current passports and any other travel documents, such as ID cards, that show citizenship of a particular country or countries", "passports and travel documents that have expired, if they are entitled to renew them"],
+                                                    "list": [
+                                                        "current passports and any other travel documents, such as ID cards, that show citizenship of a particular country or countries",
+                                                        "passports and travel documents that have expired, if they are entitled to renew them"
+                                                    ],
                                                     "title": "Include"
                                                 }
                                             ]
@@ -15577,7 +15713,10 @@
                                         "and": [
                                             {
                                                 "any-in": [
-                                                    ["United Kingdom", "Ireland"],
+                                                    [
+                                                        "United Kingdom",
+                                                        "Ireland"
+                                                    ],
                                                     {
                                                         "identifier": "passports-answer",
                                                         "source": "answers"
@@ -16540,7 +16679,10 @@
                                                         },
                                                         {
                                                             "description": "Councils and government will use this information to",
-                                                            "list": ["monitor equality to ensure that everyone is treated fairly", "provide services and share funding"]
+                                                            "list": [
+                                                                "monitor equality to ensure that everyone is treated fairly",
+                                                                "provide services and share funding"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why your answer is important",
@@ -16610,7 +16752,10 @@
                                                         },
                                                         {
                                                             "description": "Councils and government will use this information to",
-                                                            "list": ["monitor equality to ensure that everyone is treated fairly", "provide services and share funding"]
+                                                            "list": [
+                                                                "monitor equality to ensure that everyone is treated fairly",
+                                                                "provide services and share funding"
+                                                            ]
                                                         }
                                                     ],
                                                     "hide_guidance": "Why their answer is important",
@@ -16935,7 +17080,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["This could be equivalent apprenticeships completed anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent apprenticeships completed anywhere outside Wales and England"
+                                        ],
                                         "id": "apprenticeship-question",
                                         "title": "Have you completed an apprenticeship?",
                                         "type": "General"
@@ -16970,7 +17117,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["This could be equivalent apprenticeships completed anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent apprenticeships completed anywhere outside Wales and England"
+                                        ],
                                         "id": "apprenticeship-question",
                                         "title": {
                                             "placeholders": [
@@ -17054,7 +17203,9 @@
                                                 "title": "What we mean by \u201cdegree level or above\u201d"
                                             }
                                         ],
-                                        "description": ["This could be equivalent qualifications achieved anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent qualifications achieved anywhere outside Wales and England"
+                                        ],
                                         "id": "degree-level-or-above-question",
                                         "title": "Have you achieved a qualification at degree level or above?",
                                         "type": "General"
@@ -17106,7 +17257,9 @@
                                                 "title": "What we mean by \u201cdegree level or above\u201d"
                                             }
                                         ],
-                                        "description": ["This could be equivalent qualifications achieved anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent qualifications achieved anywhere outside Wales and England"
+                                        ],
                                         "id": "degree-level-or-above-question",
                                         "title": {
                                             "placeholders": [
@@ -17203,7 +17356,9 @@
                                                 "title": "What we mean by \u201cNVQ\u201d"
                                             }
                                         ],
-                                        "description": ["This could be equivalent qualifications achieved anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent qualifications achieved anywhere outside Wales and England"
+                                        ],
                                         "id": "nvq-level-question",
                                         "mandatory": false,
                                         "title": "Have you achieved an NVQ or equivalent qualification?",
@@ -17269,7 +17424,9 @@
                                                 "title": "What we mean by \u201cNVQ\u201d"
                                             }
                                         ],
-                                        "description": ["This could be equivalent qualifications achieved anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent qualifications achieved anywhere outside Wales and England"
+                                        ],
                                         "id": "nvq-level-question",
                                         "mandatory": false,
                                         "title": {
@@ -17374,7 +17531,9 @@
                                                 "title": "What we mean by \u201cAS and A level\u201d"
                                             }
                                         ],
-                                        "description": ["This could be equivalent qualifications achieved anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent qualifications achieved anywhere outside Wales and England"
+                                        ],
                                         "id": "a-level-question",
                                         "mandatory": false,
                                         "title": "Have you achieved an AS, A level or equivalent qualification?",
@@ -17447,7 +17606,9 @@
                                                 "title": "What we mean by \u201cAS and A level\u201d"
                                             }
                                         ],
-                                        "description": ["This could be equivalent qualifications achieved anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent qualifications achieved anywhere outside Wales and England"
+                                        ],
                                         "id": "a-level-question",
                                         "mandatory": false,
                                         "title": {
@@ -17553,7 +17714,9 @@
                                                 "title": "What we mean by \u201cGCSE\u201d"
                                             }
                                         ],
-                                        "description": ["This could be equivalent qualifications achieved anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent qualifications achieved anywhere outside Wales and England"
+                                        ],
                                         "id": "gcse-question",
                                         "mandatory": false,
                                         "title": "Have you achieved a GCSE or equivalent qualification?",
@@ -17627,7 +17790,9 @@
                                                 "title": "What we mean by \u201cGCSE\u201d"
                                             }
                                         ],
-                                        "description": ["This could be equivalent qualifications achieved anywhere outside Wales and England"],
+                                        "description": [
+                                            "This could be equivalent qualifications achieved anywhere outside Wales and England"
+                                        ],
                                         "id": "gcse-question",
                                         "mandatory": false,
                                         "title": {
@@ -17770,7 +17935,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["This could be any qualifications you have ever achieved, even if you are not using them now"],
+                                        "description": [
+                                            "This could be any qualifications you have ever achieved, even if you are not using them now"
+                                        ],
                                         "id": "other-qualifications-question",
                                         "mandatory": false,
                                         "title": "Have you achieved any other qualifications?",
@@ -17816,7 +17983,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["This could be any qualifications they have ever achieved, even if they are not using them now"],
+                                        "description": [
+                                            "This could be any qualifications they have ever achieved, even if they are not using them now"
+                                        ],
                                         "id": "other-qualifications-question",
                                         "mandatory": false,
                                         "title": {
@@ -18078,7 +18247,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["If you have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select \u201cTemporarily away from work ill, on holiday or temporarily laid off\u201d"],
+                                        "description": [
+                                            "If you have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select \u201cTemporarily away from work ill, on holiday or temporarily laid off\u201d"
+                                        ],
                                         "guidance": {
                                             "contents": [
                                                 {
@@ -18144,7 +18315,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["If they have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select \u201cTemporarily away from work ill, on holiday or temporarily laid off\u201d"],
+                                        "description": [
+                                            "If they have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select \u201cTemporarily away from work ill, on holiday or temporarily laid off\u201d"
+                                        ],
                                         "guidance": {
                                             "contents": [
                                                 {
@@ -18751,7 +18924,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["<strong>Furlough</strong> is considered paid work"],
+                                        "description": [
+                                            "<strong>Furlough</strong> is considered paid work"
+                                        ],
                                         "id": "ever-worked-question",
                                         "title": "Have you ever done any paid work?",
                                         "type": "General"
@@ -18789,7 +18964,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["<strong>Furlough</strong> is considered paid work"],
+                                        "description": [
+                                            "<strong>Furlough</strong> is considered paid work"
+                                        ],
                                         "id": "ever-worked-question",
                                         "title": {
                                             "placeholders": [
@@ -19116,7 +19293,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["Your main job is the job in which you usually work the most hours"],
+                                        "description": [
+                                            "Your main job is the job in which you usually work the most hours"
+                                        ],
                                         "id": "main-job-status-question",
                                         "title": "In your main job, what is your employment status?",
                                         "type": "General"
@@ -19168,7 +19347,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["Their main job is the job in which they usually work the most hours"],
+                                        "description": [
+                                            "Their main job is the job in which they usually work the most hours"
+                                        ],
                                         "id": "main-job-status-question",
                                         "title": {
                                             "placeholders": [
@@ -19253,7 +19434,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["This is the most recent job you had. If you had more than one job at the same time, answer for the job in which you usually worked the most hours."],
+                                        "description": [
+                                            "This is the most recent job you had. If you had more than one job at the same time, answer for the job in which you usually worked the most hours."
+                                        ],
                                         "id": "main-job-status-question",
                                         "title": "In your main job, what was your employment status?",
                                         "type": "General"
@@ -19305,7 +19488,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["This is the most recent job they had. If they had more than one job at the same time, answer for the job in which they usually worked the most hours."],
+                                        "description": [
+                                            "This is the most recent job they had. If they had more than one job at the same time, answer for the job in which they usually worked the most hours."
+                                        ],
                                         "id": "main-job-status-question",
                                         "title": {
                                             "placeholders": [
@@ -19395,7 +19580,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["If you are self-employed in your own business, give the business name"],
+                                        "description": [
+                                            "If you are self-employed in your own business, give the business name"
+                                        ],
                                         "id": "business-name-question",
                                         "mandatory": false,
                                         "title": "What is the name of the organisation or business you work for?",
@@ -19446,7 +19633,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["If they are self-employed in their own business, give the business name"],
+                                        "description": [
+                                            "If they are self-employed in their own business, give the business name"
+                                        ],
                                         "id": "business-name-question",
                                         "mandatory": false,
                                         "title": {
@@ -19522,7 +19711,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["If you were self-employed in your own business, give the business name"],
+                                        "description": [
+                                            "If you were self-employed in your own business, give the business name"
+                                        ],
                                         "id": "business-name-question",
                                         "mandatory": false,
                                         "title": "What was the name of the organisation or business you worked for?",
@@ -19573,7 +19764,9 @@
                                                 "type": "Checkbox"
                                             }
                                         ],
-                                        "description": ["If they were self-employed in their own business, give the business name"],
+                                        "description": [
+                                            "If they were self-employed in their own business, give the business name"
+                                        ],
                                         "id": "business-name-question",
                                         "mandatory": false,
                                         "title": {
@@ -19645,7 +19838,9 @@
                                                 "type": "TextField"
                                             }
                                         ],
-                                        "description": ["For example, retail assistant, office cleaner, district nurse, primary school teacher. Do not state your grade or pay band."],
+                                        "description": [
+                                            "For example, retail assistant, office cleaner, district nurse, primary school teacher. Do not state your grade or pay band."
+                                        ],
                                         "id": "job-title-question",
                                         "title": "What is your full job title?",
                                         "type": "General"
@@ -19684,7 +19879,9 @@
                                                 "type": "TextField"
                                             }
                                         ],
-                                        "description": ["For example, retail assistant, office cleaner, district nurse, primary school teacher. Do not state their grade or pay band."],
+                                        "description": [
+                                            "For example, retail assistant, office cleaner, district nurse, primary school teacher. Do not state their grade or pay band."
+                                        ],
                                         "id": "job-title-question",
                                         "title": {
                                             "placeholders": [
@@ -19756,7 +19953,9 @@
                                                 "type": "TextField"
                                             }
                                         ],
-                                        "description": ["For example, retail assistant, office cleaner, district nurse, primary school teacher. Do not state your grade or pay band."],
+                                        "description": [
+                                            "For example, retail assistant, office cleaner, district nurse, primary school teacher. Do not state your grade or pay band."
+                                        ],
                                         "id": "job-title-question",
                                         "title": "What was your full job title?",
                                         "type": "General"
@@ -19795,7 +19994,9 @@
                                                 "type": "TextField"
                                             }
                                         ],
-                                        "description": ["For example, retail assistant, office cleaner, district nurse, primary school teacher. Do not state their grade or pay band."],
+                                        "description": [
+                                            "For example, retail assistant, office cleaner, district nurse, primary school teacher. Do not state their grade or pay band."
+                                        ],
                                         "id": "job-title-question",
                                         "title": {
                                             "placeholders": [
@@ -20087,7 +20288,9 @@
                                                 "type": "TextField"
                                             }
                                         ],
-                                        "description": ["For example, clothing retail, general hospital, primary education, food wholesale, civil service (Welsh Government), local government (housing)"],
+                                        "description": [
+                                            "For example, clothing retail, general hospital, primary education, food wholesale, civil service (Welsh Government), local government (housing)"
+                                        ],
                                         "id": "business-type-question",
                                         "title": "What is the main activity of your organisation, business or freelance work?",
                                         "type": "General"
@@ -20126,7 +20329,9 @@
                                                 "type": "TextField"
                                             }
                                         ],
-                                        "description": ["For example, clothing retail, general hospital, primary education, food wholesale, civil service (Welsh Government), local government (housing)"],
+                                        "description": [
+                                            "For example, clothing retail, general hospital, primary education, food wholesale, civil service (Welsh Government), local government (housing)"
+                                        ],
                                         "id": "business-type-question",
                                         "title": {
                                             "placeholders": [
@@ -20198,7 +20403,9 @@
                                                 "type": "TextField"
                                             }
                                         ],
-                                        "description": ["For example, clothing retail, general hospital, primary education, food wholesale, civil service (Welsh Government), local government (housing)"],
+                                        "description": [
+                                            "For example, clothing retail, general hospital, primary education, food wholesale, civil service (Welsh Government), local government (housing)"
+                                        ],
                                         "id": "business-type-question",
                                         "title": "What was the main activity of your organisation, business or freelance work?",
                                         "type": "General"
@@ -20237,7 +20444,9 @@
                                                 "type": "TextField"
                                             }
                                         ],
-                                        "description": ["For example, clothing retail, general hospital, primary education, food wholesale, civil service (Welsh Government), local government (housing)"],
+                                        "description": [
+                                            "For example, clothing retail, general hospital, primary education, food wholesale, civil service (Welsh Government), local government (housing)"
+                                        ],
                                         "id": "business-type-question",
                                         "title": {
                                             "placeholders": [
@@ -20324,7 +20533,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["This could be remotely or in person"],
+                                        "description": [
+                                            "This could be remotely or in person"
+                                        ],
                                         "id": "supervise-others-question",
                                         "title": "Do you supervise or oversee the work of other employees on a day-to-day basis?",
                                         "type": "General"
@@ -20371,7 +20582,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["This could be remotely or in person"],
+                                        "description": [
+                                            "This could be remotely or in person"
+                                        ],
                                         "id": "supervise-others-question",
                                         "title": {
                                             "placeholders": [
@@ -20443,7 +20656,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["This could be remotely or in person"],
+                                        "description": [
+                                            "This could be remotely or in person"
+                                        ],
                                         "id": "supervise-others-question",
                                         "title": "Did you supervise or oversee the work of other employees on a day-to-day basis?",
                                         "type": "General"
@@ -20490,7 +20705,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["This could be remotely or in person"],
+                                        "description": [
+                                            "This could be remotely or in person"
+                                        ],
                                         "id": "supervise-others-question",
                                         "title": {
                                             "placeholders": [
@@ -20594,7 +20811,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["If the <strong>coronavirus</strong> pandemic has affected your working hours, select the answer that best describes your <strong>current circumstances</strong>"],
+                                        "description": [
+                                            "If the <strong>coronavirus</strong> pandemic has affected your working hours, select the answer that best describes your <strong>current circumstances</strong>"
+                                        ],
                                         "guidance": {
                                             "contents": [
                                                 {
@@ -20643,7 +20862,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["If the <strong>coronavirus</strong> pandemic has affected their working hours, select the answer that best describes their <strong>current circumstances</strong>"],
+                                        "description": [
+                                            "If the <strong>coronavirus</strong> pandemic has affected their working hours, select the answer that best describes their <strong>current circumstances</strong>"
+                                        ],
                                         "guidance": {
                                             "contents": [
                                                 {
@@ -20760,7 +20981,10 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["Answer for the longest part, <strong>by distance</strong>, of your current journey to work.", "If the <strong>coronavirus</strong> pandemic has affected how you travel to work, select the answer that best describes your <strong>current circumstances</strong>."],
+                                        "description": [
+                                            "Answer for the longest part, <strong>by distance</strong>, of your current journey to work.",
+                                            "If the <strong>coronavirus</strong> pandemic has affected how you travel to work, select the answer that best describes your <strong>current circumstances</strong>."
+                                        ],
                                         "id": "travel-to-work-question",
                                         "title": "How do you usually travel to work?",
                                         "type": "General"
@@ -20830,7 +21054,10 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["Answer for the longest part, <strong>by distance</strong>, of their current journey to work.", "If the <strong>coronavirus</strong> pandemic has affected how they travel to work, select the answer that best describes their <strong>current circumstances</strong>."],
+                                        "description": [
+                                            "Answer for the longest part, <strong>by distance</strong>, of their current journey to work.",
+                                            "If the <strong>coronavirus</strong> pandemic has affected how they travel to work, select the answer that best describes their <strong>current circumstances</strong>."
+                                        ],
                                         "id": "travel-to-work-question",
                                         "title": {
                                             "placeholders": [
@@ -20933,7 +21160,9 @@
                                                 "title": "What we mean by \u201cmainly work\u201d"
                                             }
                                         ],
-                                        "description": ["If the <strong>coronavirus</strong> pandemic has affected where you mainly work, select the answer that best describes your <strong>current circumstances</strong>"],
+                                        "description": [
+                                            "If the <strong>coronavirus</strong> pandemic has affected where you mainly work, select the answer that best describes your <strong>current circumstances</strong>"
+                                        ],
                                         "id": "workplace-type-question",
                                         "title": "Where do you mainly work?",
                                         "type": "General"
@@ -21004,7 +21233,9 @@
                                                 "title": "What we mean by \u201cmainly work\u201d"
                                             }
                                         ],
-                                        "description": ["If the <strong>coronavirus</strong> pandemic has affected where they mainly work, select the answer that best describes their <strong>current circumstances</strong>"],
+                                        "description": [
+                                            "If the <strong>coronavirus</strong> pandemic has affected where they mainly work, select the answer that best describes their <strong>current circumstances</strong>"
+                                        ],
                                         "id": "workplace-type-question",
                                         "title": {
                                             "placeholders": [
@@ -21054,7 +21285,10 @@
                                                 "identifier": "workplace-type-answer",
                                                 "source": "answers"
                                             },
-                                            ["At a workplace", "Report to a depot"]
+                                            [
+                                                "At a workplace",
+                                                "Report to a depot"
+                                            ]
                                         ]
                                     }
                                 },
@@ -21099,7 +21333,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["If the <strong>coronavirus</strong> pandemic has affected where you mainly work, select the answer that best describes your <strong>current circumstances</strong>"],
+                                        "description": [
+                                            "If the <strong>coronavirus</strong> pandemic has affected where you mainly work, select the answer that best describes your <strong>current circumstances</strong>"
+                                        ],
                                         "id": "mainly-work-in-uk-question",
                                         "title": "Do you mainly work in the UK?",
                                         "type": "General"
@@ -21133,7 +21369,9 @@
                                                 "type": "Radio"
                                             }
                                         ],
-                                        "description": ["If the <strong>coronavirus</strong> pandemic has affected where they mainly work, select the answer that best describes their <strong>current circumstances</strong>"],
+                                        "description": [
+                                            "If the <strong>coronavirus</strong> pandemic has affected where they mainly work, select the answer that best describes their <strong>current circumstances</strong>"
+                                        ],
                                         "id": "mainly-work-in-uk-question",
                                         "title": {
                                             "placeholders": [
@@ -21684,7 +21922,11 @@
                                         }
                                     },
                                     {
-                                        "list": ["date of birth", "sex", "usual address"],
+                                        "list": [
+                                            "date of birth",
+                                            "sex",
+                                            "usual address"
+                                        ],
                                         "title": "You will need to know"
                                     }
                                 ],
@@ -21748,7 +21990,9 @@
                                         "type": "Date"
                                     }
                                 ],
-                                "description": ["For example, 31 3 1980"],
+                                "description": [
+                                    "For example, 31 3 1980"
+                                ],
                                 "id": "visitor-date-of-birth-question",
                                 "title": {
                                     "placeholders": [
