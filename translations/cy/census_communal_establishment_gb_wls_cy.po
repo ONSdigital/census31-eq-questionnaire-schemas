@@ -93,20 +93,20 @@ msgid "What is the nature of this establishment?"
 msgstr "Pa fath o sefydliad yw hwn?"
 
 #. Question text
-msgid "What type of medical or care establishment is <em>{household_address}</em>?"
-msgstr "Pa fath o sefydliad meddygol neu ofal yw <em>{household_address}</em>?"
+msgid "What type of medical or care establishment is <strong>{household_address}</strong>?"
+msgstr "Pa fath o sefydliad meddygol neu ofal yw <strong>{household_address}</strong>?"
 
 #. Question text
-msgid "What type of education establishment is <em>{household_address}</em>?"
-msgstr "Pa fath o sefydliad addysg yw <em>{household_address}</em>?"
+msgid "What type of education establishment is <strong>{household_address}</strong>?"
+msgstr "Pa fath o sefydliad addysg yw <strong>{household_address}</strong>?"
 
 #. Question text
-msgid "What type of detention establishment is <em>{household_address}</em>?"
-msgstr "Pa fath o sefydliad cadw yw <em>{household_address}</em>?"
+msgid "What type of detention establishment is <strong>{household_address}</strong>?"
+msgstr "Pa fath o sefydliad cadw yw <strong>{household_address}</strong>?"
 
 #. Question text
-msgid "What type of travel or temporary accommodation establishment is <em>{household_address}</em>?"
-msgstr "Pa fath o sefydliad llety dros dro neu wrth deithio yw <em>{household_address}</em>?"
+msgid "What type of travel or temporary accommodation establishment is <strong>{household_address}</strong>?"
+msgstr "Pa fath o sefydliad llety dros dro neu wrth deithio yw <strong>{household_address}</strong>?"
 
 #. Question text
 msgid "Who is responsible for the management of this establishment?"
@@ -130,23 +130,23 @@ msgstr "Faint o ymwelwyr sy'n aros dros nos yn y sefydliad hwn ar {census_date}?
 
 #. Question guidance description
 msgctxt "How many people are currently living in this establishment?"
-msgid "<em>Include</em> everyone from the groups you selected for the previous question"
-msgstr "<em>Dylech gynnwys</em> pawb o’r grwpiau y gwnaethoch eu dewis ar gyfer y cwestiwn blaenorol"
+msgid "<strong>Include</strong> everyone from the groups you selected for the previous question"
+msgstr "<strong>Dylech gynnwys</strong> pawb o’r grwpiau y gwnaethoch eu dewis ar gyfer y cwestiwn blaenorol"
 
 #. Question guidance description
 msgctxt "How many people are currently living in this establishment?"
-msgid "<em>Do not include</em> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
-msgstr "<em>Peidiwch â chynnwys </em>ymwelwyr sydd â chyfeiriad arall yn y Deyrnas Unedig, neu sy’n byw y tu allan i’r Deyrnas Unedig fel arfer ac sy’n bwriadu aros yn y Deyrnas Unedig am 3 mis neu lai"
+msgid "<strong>Do not include</strong> visitors who have another UK address, or usually live outside the UK and intend to stay in the UK for 3 months or less"
+msgstr "<strong>Peidiwch â chynnwys </strong>ymwelwyr sydd â chyfeiriad arall yn y Deyrnas Unedig, neu sy’n byw y tu allan i’r Deyrnas Unedig fel arfer ac sy’n bwriadu aros yn y Deyrnas Unedig am 3 mis neu lai"
 
 #. Question guidance description
 msgctxt "Are any of the following visitors staying overnight in this establishment on {census_date}?"
-msgid "<em>Include</em> shift workers, for example, care workers, hotel porters, who are staying overnight on {census_date} as visitors"
-msgstr "<em>Dylech gynnwys</em> gweithwyr shifft, er enghraifft, gweithwyr gofal neu borthorion gwesty, sy’n aros dros nos ar {census_date} fel ymwelwyr"
+msgid "<strong>Include</strong> shift workers, for example, care workers, hotel porters, who are staying overnight on {census_date} as visitors"
+msgstr "<strong>Dylech gynnwys</strong> gweithwyr shifft, er enghraifft, gweithwyr gofal neu borthorion gwesty, sy’n aros dros nos ar {census_date} fel ymwelwyr"
 
 #. Question guidance description
 msgctxt "How many visitors are staying overnight in this establishment on {census_date}?"
-msgid "<em>Include</em> everyone from the groups you selected for the previous question"
-msgstr "<em>Dylech gynnwys</em> pawb o’r grwpiau y gwnaethoch eu dewis ar gyfer y cwestiwn blaenorol"
+msgid "<strong>Include</strong> everyone from the groups you selected for the previous question"
+msgstr "<strong>Dylech gynnwys</strong> pawb o’r grwpiau y gwnaethoch eu dewis ar gyfer y cwestiwn blaenorol"
 
 #. Answer
 msgctxt "How many people are currently living in this establishment?"
@@ -199,92 +199,92 @@ msgid "Other establishment"
 msgstr "Sefydliad arall"
 
 #. Answer option
-msgctxt "What type of medical or care establishment is <em>{household_address}</em>?"
+msgctxt "What type of medical or care establishment is <strong>{household_address}</strong>?"
 msgid "Care home without nursing"
 msgstr "Cartref gofal heb nyrsio"
 
 #. Answer option
-msgctxt "What type of medical or care establishment is <em>{household_address}</em>?"
+msgctxt "What type of medical or care establishment is <strong>{household_address}</strong>?"
 msgid "Care home with nursing"
 msgstr "Cartref gofal â nyrsio"
 
 #. Answer option
-msgctxt "What type of medical or care establishment is <em>{household_address}</em>?"
+msgctxt "What type of medical or care establishment is <strong>{household_address}</strong>?"
 msgid "Children’s home"
 msgstr "Cartref plant"
 
 #. Answer option
-msgctxt "What type of medical or care establishment is <em>{household_address}</em>?"
+msgctxt "What type of medical or care establishment is <strong>{household_address}</strong>?"
 msgid "General hospital"
 msgstr "Ysbyty cyffredinol"
 
 #. Answer option
-msgctxt "What type of medical or care establishment is <em>{household_address}</em>?"
+msgctxt "What type of medical or care establishment is <strong>{household_address}</strong>?"
 msgid "Mental health hospital or unit"
 msgstr "Ysbyty neu uned iechyd meddwl"
 
 #. Answer option
-msgctxt "What type of medical or care establishment is <em>{household_address}</em>?"
+msgctxt "What type of medical or care establishment is <strong>{household_address}</strong>?"
 msgid "Other hospital"
 msgstr "Ysbyty arall"
 
 #. Answer option
-msgctxt "What type of medical or care establishment is <em>{household_address}</em>?"
+msgctxt "What type of medical or care establishment is <strong>{household_address}</strong>?"
 msgid "Other medical or care establishment"
 msgstr "Math arall o sefydliad meddygol neu ofal"
 
 #. Answer option
-msgctxt "What type of education establishment is <em>{household_address}</em>?"
+msgctxt "What type of education establishment is <strong>{household_address}</strong>?"
 msgid "School"
 msgstr "Ysgol"
 
 #. Answer option
-msgctxt "What type of education establishment is <em>{household_address}</em>?"
+msgctxt "What type of education establishment is <strong>{household_address}</strong>?"
 msgid "University"
 msgstr "Prifysgol"
 
 #. Answer option
-msgctxt "What type of education establishment is <em>{household_address}</em>?"
+msgctxt "What type of education establishment is <strong>{household_address}</strong>?"
 msgid "Other education establishment"
 msgstr "Math arall o sefydliad addysg"
 
 #. Answer option
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt "What type of detention establishment is <strong>{household_address}</strong>?"
 msgid "Prison service establishment"
 msgstr "Sefydliad gwasanaeth carchardai"
 
 #. Answer option
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt "What type of detention establishment is <strong>{household_address}</strong>?"
 msgid "Approved premises"
 msgstr "Safle a gymeradwywyd"
 
 #. Answer option
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt "What type of detention establishment is <strong>{household_address}</strong>?"
 msgid "Detention centre"
 msgstr "Canolfan gadw"
 
 #. Answer option
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt "What type of detention establishment is <strong>{household_address}</strong>?"
 msgid "Other detention establishment"
 msgstr "Math arall o sefydliad cadw"
 
 #. Answer option
-msgctxt "What type of travel or temporary accommodation establishment is <em>{household_address}</em>?"
+msgctxt "What type of travel or temporary accommodation establishment is <strong>{household_address}</strong>?"
 msgid "Hotel, guest house, B&B, youth hostel"
 msgstr "Gwesty, tŷ llety, gwely a brecwast, hostel ieuenctid"
 
 #. Answer option
-msgctxt "What type of travel or temporary accommodation establishment is <em>{household_address}</em>?"
+msgctxt "What type of travel or temporary accommodation establishment is <strong>{household_address}</strong>?"
 msgid "Holiday accommodation"
 msgstr "Llety gwyliau"
 
 #. Answer option
-msgctxt "What type of travel or temporary accommodation establishment is <em>{household_address}</em>?"
+msgctxt "What type of travel or temporary accommodation establishment is <strong>{household_address}</strong>?"
 msgid "Hostel or temporary shelter for homeless people"
 msgstr "Hostel neu loches dros dro i bobl ddigartref"
 
 #. Answer option
-msgctxt "What type of travel or temporary accommodation establishment is <em>{household_address}</em>?"
+msgctxt "What type of travel or temporary accommodation establishment is <strong>{household_address}</strong>?"
 msgid "Other travel or temporary accommodation"
 msgstr "Math arall o lety dros dro neu wrth deithio"
 
@@ -416,37 +416,37 @@ msgstr "Gan gynnwys llochesau i bobl ddigartref"
 #. Answer option description
 #. For answer option: Children’s home
 #. For answer option: Mental health hospital or unit
-msgctxt "What type of medical or care establishment is <em>{household_address}</em>?"
+msgctxt "What type of medical or care establishment is <strong>{household_address}</strong>?"
 msgid "Including secure units"
 msgstr "Gan gynnwys unedau diogel"
 
 #. Answer option description
 #. For answer option: University
-msgctxt "What type of education establishment is <em>{household_address}</em>?"
+msgctxt "What type of education establishment is <strong>{household_address}</strong>?"
 msgid "For example, hall of residence"
 msgstr "Er enghraifft, neuadd breswyl"
 
 #. Answer option description
 #. For answer option: Prison service establishment
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt "What type of detention establishment is <strong>{household_address}</strong>?"
 msgid "Including young offender institutions"
 msgstr "Gan gynnwys sefydliadau troseddwyr ifanc"
 
 #. Answer option description
 #. For answer option: Approved premises
-msgctxt "What type of detention establishment is <em>{household_address}</em>?"
+msgctxt "What type of detention establishment is <strong>{household_address}</strong>?"
 msgid "Probation or bail hostel"
 msgstr "Hostel prawf neu fechnïaeth"
 
 #. Answer option description
 #. For answer option: Hotel, guest house, B&B, youth hostel
-msgctxt "What type of travel or temporary accommodation establishment is <em>{household_address}</em>?"
+msgctxt "What type of travel or temporary accommodation establishment is <strong>{household_address}</strong>?"
 msgid "Including inns and pubs"
 msgstr "Gan gynnwys tafarndai"
 
 #. Answer option description
 #. For answer option: Holiday accommodation
-msgctxt "What type of travel or temporary accommodation establishment is <em>{household_address}</em>?"
+msgctxt "What type of travel or temporary accommodation establishment is <strong>{household_address}</strong>?"
 msgid "For example, holiday park"
 msgstr "Er enghraifft, parc gwyliau"
 
