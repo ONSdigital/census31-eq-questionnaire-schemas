@@ -26,7 +26,7 @@ for region_code in GB-WLS GB-ENG; do
             --tla-str census_month_year_date="${CENSUS_MONTH_YEAR_DATE}" \
             --jpath "${ADDITIONAL_LIBRARY_PATH}" \
             "${SOURCE_FILE}" \
-            > "${DESTINATION_FILE}"
+            >"${DESTINATION_FILE}"
 
     done
 done
