@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'What is your country of birth?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> country of birth?',
+  text: 'What is <strong>{person_name_possessive}</strong> country of birth?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -93,55 +93,57 @@ function(region_code) {
   question_variants: [
     {
       question: question(nonProxyTitle, region_code, 'You can enter your country of birth on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, region_code, 'You can enter their country of birth on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'country-of-birth-elsewhere',
-        when: [
+      block: 'country-of-birth-elsewhere',
+      when: {
+        '==': [
           {
-            id: 'country-of-birth-answer',
-            condition: 'equals',
-            value: 'Elsewhere',
+            source: 'answers',
+            identifier: 'country-of-birth-answer',
           },
+          'Elsewhere',
         ],
       },
     },
     {
-      goto: {
-        block: 'arrive-in-uk',
-        when: [
+      block: 'arrive-in-uk',
+      when: {
+        '==': [
           {
-            id: 'country-of-birth-answer',
-            condition: 'equals',
-            value: 'Republic of Ireland',
+            source: 'answers',
+            identifier: 'country-of-birth-answer',
           },
+          'Republic of Ireland',
         ],
       },
     },
     {
-      goto: {
-        block: 'national-identity',
-        when: [
+      block: 'national-identity',
+      when: {
+        and: [
           {
-            id: 'country-of-birth-answer',
-            condition: 'equals any',
-            values: ['Wales', 'England', 'Scotland', 'Northern Ireland'],
+            'in': [
+              {
+                identifier: 'country-of-birth-answer',
+                source: 'answers',
+              },
+              ['Wales', 'England', 'Scotland', 'Northern Ireland'],
+            ],
           },
           rules.under1,
         ],
       },
     },
     {
-      goto: {
-        block: 'location-one-year-ago',
-      },
+      block: 'location-one-year-ago',
     },
   ],
 }

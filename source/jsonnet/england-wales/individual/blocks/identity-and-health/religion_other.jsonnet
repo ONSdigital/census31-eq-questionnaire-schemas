@@ -32,31 +32,25 @@ function(region_code) {
   question_variants: [
     {
       question: question('You selected “Any other religion”. What is your religion?'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'You selected “Any other religion”. What is <em>{person_name_possessive}</em> religion?',
+        text: 'You selected “Any other religion”. What is <strong>{person_name_possessive}</strong> religion?',
         placeholders: [
           placeholders.personNamePossessive,
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'passports',
-        when: [
-          rules.under3,
-        ],
-      },
+      block: 'passports',
+      when: rules.under3,
     },
     {
-      goto: {
-        block: if region_code == 'GB-WLS' then 'understand-welsh' else 'main-language',
-      },
+      block: if region_code == 'GB-WLS' then 'understand-welsh' else 'main-language',
     },
   ],
 }

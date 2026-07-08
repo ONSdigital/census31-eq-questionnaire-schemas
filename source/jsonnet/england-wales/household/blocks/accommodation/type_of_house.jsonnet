@@ -28,8 +28,6 @@
     }],
   },
   routing_rules: [{
-    goto: {
-      block: 'rooms-shared-with-another-household',
-    },
+    block: 'rooms-shared-with-another-household',
   }],
 }

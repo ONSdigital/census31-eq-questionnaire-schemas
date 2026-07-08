@@ -38,26 +38,24 @@ local question(title, guidance) = {
         'You selected “Other”. How would you describe your national identity?',
         'Include all national identities. If you have more than one, enter them all separated by commas.'
       ),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(
         {
-          text: 'You selected “Other”. How would <em>{person_name}</em> describe their national identity?',
+          text: 'You selected “Other”. How would <strong>{person_name}</strong> describe their national identity?',
           placeholders: [
             placeholders.personName(),
           ],
         },
         'Include all national identities. If they have more than one, enter them all separated by commas.'
       ),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'ethnic-group',
-      },
+      block: 'ethnic-group',
     },
   ],
 }

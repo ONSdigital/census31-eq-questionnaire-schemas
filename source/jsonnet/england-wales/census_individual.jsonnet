@@ -102,12 +102,11 @@ function(region_code, census_month_year_date) {
   schema_version: '0.0.1',
   data_version: '0.0.3',
   survey_id: 'census',
-  survey: 'CENSUS',
   form_type: 'I',
   region_code: region_code,
   title: 'Census 2021',
   description: 'Census Individual Schema',
-  theme: 'census',
+  theme: 'social',
   legal_basis: 'Voluntary',
   navigation: {
     visible: false,
@@ -126,13 +125,23 @@ function(region_code, census_month_year_date) {
       type: 'string',
     },
   ],
+  questionnaire_flow: {
+    type: 'Linear',
+    options: {
+      summary: {
+        collapsible: false,
+      },
+    },
+  },
   submission: {
     button: 'Submit census',
     guidance: 'By submitting this census you are confirming that, to the best of your knowledge and belief, the details provided are correct.',
     title: 'Submit census',
     warning: 'You must submit this census to complete it',
-    confirmation_email: true,
+  },
+  post_submission: {
     feedback: true,
+    confirmation_email: true,
   },
   sections: [
     {
@@ -249,22 +258,6 @@ function(region_code, census_month_year_date) {
             workplace_address,
             depot_address,
             mainly_work_outside_uk,
-          ],
-        },
-      ],
-    },
-    {
-      id: 'submit-answers-section',
-      title: 'Submit answers',
-      groups: [
-        {
-          id: 'submit-group',
-          title: 'Submit answers',
-          blocks: [
-            {
-              id: 'summary',
-              type: 'Summary',
-            },
           ],
         },
       ],

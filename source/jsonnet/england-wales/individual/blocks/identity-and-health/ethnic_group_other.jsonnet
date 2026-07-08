@@ -46,7 +46,7 @@ local question(title, guidance, definitionDescription, otherEthnicGroup) = {
 
 local nonProxyTitle = 'Which one best describes your other ethnic group or background?';
 local proxyTitle = {
-  text: 'Which one best describes <em>{person_name_possessive}</em> other ethnic group or background?',
+  text: 'Which one best describes <strong>{person_name_possessive}</strong> other ethnic group or background?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -59,30 +59,28 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyGuidance, nonProxyDefinitionDescription, 'You can enter your ethnic group or background on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyGuidance, proxyDefinitionDescription, 'You can enter their ethnic group or background on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'ethnic-group-other-other',
-        when: [
+      block: 'ethnic-group-other-other',
+      when: {
+        '==': [
           {
-            id: 'other-ethnic-group-answer',
-            condition: 'equals',
-            value: 'Any other ethnic group',
+            source: 'answers',
+            identifier: 'other-ethnic-group-answer',
           },
+          'Any other ethnic group',
         ],
       },
     },
     {
-      goto: {
-        block: 'religion',
-      },
+      block: 'religion',
     },
   ],
 }

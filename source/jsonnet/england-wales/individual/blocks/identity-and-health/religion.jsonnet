@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'What is your religion?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> religion?',
+  text: 'What is <strong>{person_name_possessive}</strong> religion?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -79,38 +79,32 @@ function(region_code) {
   question_variants: [
     {
       question: question(nonProxyTitle, region_code, 'You can enter your religion on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, region_code, 'You can enter their religion on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'religion-other',
-        when: [
+      block: 'religion-other',
+      when: {
+        '==': [
           {
-            id: 'religion-answer',
-            condition: 'equals',
-            value: 'Any other religion',
+            source: 'answers',
+            identifier: 'religion-answer',
           },
+          'Any other religion',
         ],
       },
     },
     {
-      goto: {
-        block: 'passports',
-        when: [
-          rules.under3,
-        ],
-      },
+      block: 'passports',
+      when: rules.under3,
     },
     {
-      goto: {
-        block: if region_code == 'GB-WLS' then 'understand-welsh' else 'main-language',
-      },
+      block: if region_code == 'GB-WLS' then 'understand-welsh' else 'main-language',
     },
   ],
 }

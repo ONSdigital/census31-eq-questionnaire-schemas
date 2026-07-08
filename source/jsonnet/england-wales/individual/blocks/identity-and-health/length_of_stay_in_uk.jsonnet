@@ -27,7 +27,7 @@ local question(title) = {
 local nonProxyTitle = 'Including the time already spent here, how long do you intend to stay in the United Kingdom?';
 
 local proxyTitle = {
-  text: 'Including the time already spent here, how long does <em>{person_name}</em> intend to stay in the United Kingdom?',
+  text: 'Including the time already spent here, how long does <strong>{person_name}</strong> intend to stay in the United Kingdom?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -40,26 +40,20 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'national-identity',
-        when: [
-          rules.under1,
-        ],
-      },
+      block: 'national-identity',
+      when: rules.under1,
     },
     {
-      goto: {
-        block: 'location-one-year-ago',
-      },
+      block: 'location-one-year-ago',
     },
   ],
 }

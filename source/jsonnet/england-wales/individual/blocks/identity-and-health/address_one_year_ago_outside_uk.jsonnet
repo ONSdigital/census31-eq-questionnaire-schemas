@@ -25,23 +25,21 @@ local question(title) = {
   question_variants: [
     {
       question: question('In which country outside the UK was your usual address one year ago?'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'In which country outside the UK was <em>{person_name_possessive}</em> usual address one year ago?',
+        text: 'In which country outside the UK was <strong>{person_name_possessive}</strong> usual address one year ago?',
         placeholders: [
           placeholders.personNamePossessive,
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'national-identity',
-      },
+      block: 'national-identity',
     },
   ],
 }

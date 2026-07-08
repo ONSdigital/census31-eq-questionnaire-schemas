@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local questionTitle(isProxy) = (
   if isProxy then {
-    text: 'Where does <em>{person_name}</em> mainly work?',
+    text: 'Where does <strong>{person_name}</strong> mainly work?',
     placeholders: [
       placeholders.personName(),
     ],
@@ -21,7 +21,7 @@ local questionGuidance(isProxy) = (
     {
       description: 'This is where they work most of the time in their main job.',
     },
-    { description: 'For example, if they work from home three days a week and go to another place of work two days, select  “At or from home”.' },
+    { description: 'For example, if they work from home three days a week and go to another place of work two days, select “At or from home”.' },
   ]
   else [
     { description: 'This is where you work most of the time in your main job.' },
@@ -98,44 +98,40 @@ local question(isProxy) = {
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'mainly-work-in-uk',
-        when: [
+      block: 'mainly-work-in-uk',
+      when: {
+        'in': [
           {
-            id: 'workplace-type-answer',
-            condition: 'equals any',
-            values: [
-              'At a workplace',
-              'Report to a depot',
-            ],
+            identifier: 'workplace-type-answer',
+            source: 'answers',
           },
+          ['At a workplace', 'Report to a depot'],
         ],
       },
     },
     {
-      goto: {
-        block: 'mainly-work-in-uk',
-        when: [
+      block: 'mainly-work-in-uk',
+      when: {
+        '==': [
           {
-            id: 'workplace-type-answer',
-            condition: 'not set',
+            source: 'answers',
+            identifier: 'workplace-type-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        section: 'End',
-      },
+      section: 'End',
     },
   ],
 }

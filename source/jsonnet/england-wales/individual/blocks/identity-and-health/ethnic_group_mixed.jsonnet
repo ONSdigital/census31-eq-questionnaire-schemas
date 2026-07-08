@@ -54,7 +54,7 @@ local question(title, guidance, definitionDescription, mixedMultipleBackgroundDe
 
 local nonProxyTitle = 'Which one best describes your Mixed or Multiple ethnic group or background?';
 local proxyTitle = {
-  text: 'Which one best describes <em>{person_name_possessive}</em> Mixed or Multiple ethnic group or background?',
+  text: 'Which one best describes <strong>{person_name_possessive}</strong> Mixed or Multiple ethnic group or background?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -67,30 +67,28 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyGuidance, nonProxyDefinitionDescription, 'You can enter your ethnic group or background on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyGuidance, proxyDefinitionDescription, 'You can enter their ethnic group or background on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'other-mixed-or-multiple-ethnic-group',
-        when: [
+      block: 'other-mixed-or-multiple-ethnic-group',
+      when: {
+        '==': [
           {
-            id: 'mixed-or-multiple-ethnic-group-answer',
-            condition: 'equals',
-            value: 'Any other Mixed or Multiple background',
+            source: 'answers',
+            identifier: 'mixed-or-multiple-ethnic-group-answer',
           },
+          'Any other Mixed or Multiple background',
         ],
       },
     },
     {
-      goto: {
-        block: 'religion',
-      },
+      block: 'religion',
     },
   ],
 }

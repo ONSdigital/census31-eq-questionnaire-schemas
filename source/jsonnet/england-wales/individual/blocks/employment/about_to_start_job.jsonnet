@@ -41,7 +41,7 @@ local question(title, guidanceHeader) = {
 
 local nonProxyTitle = 'In the last seven days, were you waiting to start a job already accepted?';
 local proxyTitle = {
-  text: 'In the last seven days, was <em>{person_name}</em> waiting to start a job already accepted?',
+  text: 'In the last seven days, was <strong>{person_name}</strong> waiting to start a job already accepted?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -57,11 +57,11 @@ local proxyGuidanceHeader = 'Why we ask this question if they are retired or lon
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyGuidanceHeader),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyGuidanceHeader),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

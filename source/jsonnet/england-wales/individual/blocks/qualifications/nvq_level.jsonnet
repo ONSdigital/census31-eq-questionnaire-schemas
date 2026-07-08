@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'Have you achieved an NVQ or equivalent qualification?';
 local proxyTitle = {
-  text: 'Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?',
+  text: 'Has <strong>{person_name}</strong> achieved an NVQ or equivalent qualification?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -97,11 +97,11 @@ function(region_code) {
   question_variants: [
     {
       question: question(region_code, isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(region_code, isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

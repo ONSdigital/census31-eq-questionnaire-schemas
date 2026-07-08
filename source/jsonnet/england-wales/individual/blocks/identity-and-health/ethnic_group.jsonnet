@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'What is your ethnic group?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> ethnic group?',
+  text: 'What is <strong>{person_name_possessive}</strong> ethnic group?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -26,46 +26,54 @@ local walesBlackEthnicityLabel = 'Black, Black Welsh, Black British, Caribbean o
 
 local englandAsianEthnicityRoutingRule = {
   block: 'asian-or-asian-british-ethnic-group',
-  when: [
-    {
-      id: 'ethnic-group-answer',
-      condition: 'equals any',
-      values: [englandAsianEthnicityLabel],
-    },
-  ],
+  when: {
+    'in': [
+      {
+        identifier: 'ethnic-group-answer',
+        source: 'answers',
+      },
+      [englandAsianEthnicityLabel],
+    ],
+  },
 };
 
 local walesAsianEthnicityRoutingRule = {
   block: 'asian-or-asian-british-ethnic-group',
-  when: [
-    {
-      id: 'ethnic-group-answer',
-      condition: 'equals any',
-      values: [walesAsianEthnicityLabel],
-    },
-  ],
+  when: {
+    'in': [
+      {
+        identifier: 'ethnic-group-answer',
+        source: 'answers',
+      },
+      [walesAsianEthnicityLabel],
+    ],
+  },
 };
 
 local englandBlackEthnicityRoutingRule = {
   block: 'black-black-british-caribbean-or-african-ethnic-group',
-  when: [
-    {
-      id: 'ethnic-group-answer',
-      condition: 'equals any',
-      values: [englandBlackEthnicityLabel],
-    },
-  ],
+  when: {
+    'in': [
+      {
+        identifier: 'ethnic-group-answer',
+        source: 'answers',
+      },
+      [englandBlackEthnicityLabel],
+    ],
+  },
 };
 
 local walesBlackEthnicityRoutingRule = {
   block: 'black-black-british-caribbean-or-african-ethnic-group',
-  when: [
-    {
-      id: 'ethnic-group-answer',
-      condition: 'equals any',
-      values: [walesBlackEthnicityLabel],
-    },
-  ],
+  when: {
+    'in': [
+      {
+        identifier: 'ethnic-group-answer',
+        source: 'answers',
+      },
+      [walesBlackEthnicityLabel],
+    ],
+  },
 };
 
 local question(title, guidance, description, region_code) = (
@@ -136,60 +144,54 @@ function(region_code) (
     question_variants: [
       {
         question: question(nonProxyTitle, nonProxyGuidance, nonProxyDescription, region_code),
-        when: [rules.isNotProxy],
+        when: rules.isNotProxy,
       },
       {
         question: question(proxyTitle, proxyGuidance, proxyDescription, region_code),
-        when: [rules.isProxy],
+        when: rules.isProxy,
       },
     ],
     routing_rules: [
       {
-        goto: {
-          block: 'white-ethnic-group',
-          when: [
+        block: 'white-ethnic-group',
+        when: {
+          '==': [
             {
-              id: 'ethnic-group-answer',
-              condition: 'equals',
-              value: 'White',
+              source: 'answers',
+              identifier: 'ethnic-group-answer',
             },
+            'White',
           ],
         },
       },
       {
-        goto: {
-          block: 'mixed-or-multiple-ethnic-group',
-          when: [
+        block: 'mixed-or-multiple-ethnic-group',
+        when: {
+          '==': [
             {
-              id: 'ethnic-group-answer',
-              condition: 'equals',
-              value: 'Mixed or Multiple ethnic groups',
+              source: 'answers',
+              identifier: 'ethnic-group-answer',
             },
+            'Mixed or Multiple ethnic groups',
+          ],
+        },
+      },
+      asianEthnicityRoutingRule,
+      blackEthnicityRoutingRule,
+      {
+        block: 'other-ethnic-group',
+        when: {
+          '==': [
+            {
+              source: 'answers',
+              identifier: 'ethnic-group-answer',
+            },
+            'Other ethnic group',
           ],
         },
       },
       {
-        goto: asianEthnicityRoutingRule,
-      },
-      {
-        goto: blackEthnicityRoutingRule,
-      },
-      {
-        goto: {
-          block: 'other-ethnic-group',
-          when: [
-            {
-              id: 'ethnic-group-answer',
-              condition: 'equals',
-              value: 'Other ethnic group',
-            },
-          ],
-        },
-      },
-      {
-        goto: {
-          block: 'religion',
-        },
+        block: 'religion',
       },
     ],
   }

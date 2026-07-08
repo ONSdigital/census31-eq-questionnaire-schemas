@@ -26,33 +26,32 @@
   },
   routing_rules: [
     {
-      goto: {
-        block: 'term-time-address-uk',
-        when: [
+      block: 'term-time-address-uk',
+      when: {
+        '==': [
           {
-            id: 'term-time-address-country-answer',
-            condition: 'equals',
-            value: 'Yes',
+            source: 'answers',
+            identifier: 'term-time-address-country-answer',
           },
+          'Yes',
         ],
       },
     },
     {
-      goto: {
-        block: 'term-time-address-country-outside-uk',
-        when: [
+      block: 'term-time-address-country-outside-uk',
+      when: {
+        '==': [
           {
-            id: 'term-time-address-country-answer',
-            condition: 'equals',
-            value: 'No',
+            source: 'answers',
+            identifier: 'term-time-address-country-answer',
           },
+          'No',
         ],
       },
     },
     {
-      goto: {
-        section: 'End',
-      },
+      section: 'End',
+
     },
   ],
 }

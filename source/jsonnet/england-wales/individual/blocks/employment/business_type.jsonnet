@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'What is the main activity of your organisation, business or freelance work?';
 local proxyTitle = {
-  text: 'What is the main activity of <em>{person_name_possessive}</em> organisation, business or freelance work?',
+  text: 'What is the main activity of <strong>{person_name_possessive}</strong> organisation, business or freelance work?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -11,7 +11,7 @@ local proxyTitle = {
 
 local pastNonProxyTitle = 'What was the main activity of your organisation, business or freelance work?';
 local pastProxyTitle = {
-  text: 'What was the main activity of <em>{person_name_possessive}</em> organisation, business or freelance work?',
+  text: 'What was the main activity of <strong>{person_name_possessive}</strong> organisation, business or freelance work?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -48,19 +48,19 @@ function(region_code) {
   question_variants: [
     {
       question: question(nonProxyTitle, region_code),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitle, region_code),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(pastNonProxyTitle, region_code),
-      when: [rules.isNotProxy, rules.lastMainJob],
+      when: { and: [rules.isNotProxy, rules.lastMainJob] },
     },
     {
       question: question(pastProxyTitle, region_code),
-      when: [rules.isProxy, rules.lastMainJob],
+      when: { and: [rules.isProxy, rules.lastMainJob] },
     },
   ],
 }
