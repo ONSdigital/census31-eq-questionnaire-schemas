@@ -20,7 +20,7 @@ python --version
 ### Authenticate
 
 Authenticate to make sure Docker can pull from GAR
-```shell
+```bash
 gcloud auth login
 ```
 
@@ -32,8 +32,8 @@ We use poetry to manage the dependencies in this repository, to install poetry u
 curl -sSL https://install.python-poetry.org | python3 - --version 2.1.2
 ```
 
-Install the dependencies for this project. Add the option `--without dev` to ignore dev dependencies. 
-```
+Install the dependencies for this project. Add the option `--without dev` to ignore dev dependencies.
+```bash
 poetry install
 ```
 
@@ -51,7 +51,7 @@ To validate a single schema, run the following command:
 ./scripts/validate_schemas.sh <path-to-schema-json>
 
 # For Example
-./scripts/validate_schemas.sh schemas/health/en/health_demo.json  
+./scripts/validate_schemas.sh schemas/health/en/health_demo.json
 ````
 
 **Schema file names must use snake case to be compatible with runner**
@@ -65,20 +65,20 @@ The latest release of the eq-translations package is required to successfully ru
 ### Generating Translation Templates
 
 To generate a translation template `.pot` file in order to translate a schema, use the following command. It will generate a template file containing all the strings to be translated:
-```
+```bash
 make translation-templates
 ```
 
 ### Generating Translated Schemas
 
 To translate a schema, a `.po` file for the schema will need to be added to the `translations/{SURVEY_TYPE}/{LANGUAGE_CODE}/` directory containing strings from the schema. For example, `translations/health/cy/`
-and the matching translations. 
+and the matching translations.
 
 The `.po` file needs to be named in the following format: `{SCHEMA_NAME}.po`
 
 Once this in place, the following command can be run in order to generate a translated
 schema:
-```
+```bash
 make translate-schemas
 ```
 The translated schema will be added to the `/schemas/{SURVEY_TYPE}/{LANGUAGE_CODE}/` directory. For example, `schemas/health/cy/`
@@ -92,7 +92,7 @@ make test-translation-templates
 
 ## Testing built schemas with census31-eq-questionnaire-runner
 
-In order to test the schemas in this repo you will need to create symbolic links between the `/schemas` directory in runner and the folders in the schemas directory here. 
+In order to test the schemas in this repo you will need to create symbolic links between the `/schemas` directory in runner and the folders in the schemas directory here.
 
 For example in your local census31-eq-questionnaire-runner repository, running the following command will create a symbolic link between the business folder here and the schemas directory in runner.
 ```bash

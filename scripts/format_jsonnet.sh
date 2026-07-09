@@ -1,5 +1,5 @@
 #!/bin/bash
 
-for file in $(find ./source -name '*.jsonnet' -o -name '*.libsonnet'); do
-  jsonnetfmt -i $file
-done
+while IFS= read -r -d '' file; do
+    jsonnetfmt -i "$file"
+done < <(find ./source \( -name '*.jsonnet' -o -name '*.libsonnet' \) -print0)
