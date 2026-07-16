@@ -13,9 +13,9 @@ logger.addHandler(logging.StreamHandler(sys.stdout))
 
 TRANSLATION_MAP = {
     "cy": [
-        "schemas/en/census_individual_gb_wls.json",
-        "schemas/en/census_household_gb_wls.json",
-        "schemas/en/census_communal_establishment_gb_wls.json",
+        "schemas/census/en/census_individual_gb_wls.json",
+        "schemas/census/en/census_household_gb_wls.json",
+        "schemas/census/en/census_communal_establishment_gb_wls.json",
     ],
 }
 
@@ -33,11 +33,9 @@ def translate_schemas(runner_directory):
             theme_path = os.path.dirname(schema)
 
             translation_file = f"{schema_name}.po"
-            relative_dir = theme_path.replace("en", language)
+            relative_dir = theme_path.replace("/en", f"/{language}")
             output_dir = f"{runner_directory}/{relative_dir}"
-            language_dir = f"{runner_directory}/{relative_dir}".replace(
-                "schemas", "translations"
-            )
+            language_dir = f"{runner_directory}/translations/{language}"
 
             logger_file_path = f"{relative_dir}/{schema_name}.json"
 
