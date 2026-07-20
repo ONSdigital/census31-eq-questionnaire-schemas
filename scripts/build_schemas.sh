@@ -2,7 +2,7 @@
 
 set -e
 
-mkdir -p schemas/en
+mkdir -p schemas/census/en
 
 # Build Census schema for each region
 for region_code in GB-WLS GB-ENG; do
@@ -14,7 +14,7 @@ for region_code in GB-WLS GB-ENG; do
 
     for census_type in "individual" "household" "communal_establishment"; do
 
-        DESTINATION_FILE="schemas/en/census_${census_type}_${FORMATTED_REGION_CODE}.json"
+        DESTINATION_FILE="schemas/census/en/census_${census_type}_${FORMATTED_REGION_CODE}.json"
 
         SOURCE_FILE="source/jsonnet/england-wales/census_${census_type}.jsonnet"
         ADDITIONAL_LIBRARY_PATH="source/jsonnet/england-wales/${census_type}/lib/"

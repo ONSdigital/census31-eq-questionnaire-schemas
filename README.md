@@ -96,7 +96,7 @@ In order to test the schemas in this repo you will need to create symbolic links
 
 For example in your local census31-eq-questionnaire-runner repository, running the following command will create a symbolic link between the business folder here and the schemas directory in runner.
 ```bash
-ln -s <PATH_TO_REPO>/census31-eq-questionnaire-schemas/schemas/business <PATH_TO_REPO>/census31-eq-questionnaire-runner/schemas
+ln -s <PATH_TO_REPO>/census31-eq-questionnaire-schemas/schemas/census <PATH_TO_REPO>/census31-eq-questionnaire-runner/schemas
 ```
 You should now be able to launch a questionnaire using one of the schemas.
 
