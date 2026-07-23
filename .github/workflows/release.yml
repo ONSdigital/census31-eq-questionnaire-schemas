@@ -1,9 +1,8 @@
 name: Release
 
 on:
-  pull_request:
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
   release:
@@ -36,8 +35,8 @@ jobs:
         run: make build
       - name: Zip schemas
         run: zip -r schemas.zip schemas
-      # - name: Upload release asset
-      #   run: gh release upload "$RELEASE_TAG" schemas.zip --clobber
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     RELEASE_TAG: ${{ github.event.release.tag_name }}
+      - name: Upload release asset
+        run: gh release upload "$RELEASE_TAG" schemas.zip --clobber
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
