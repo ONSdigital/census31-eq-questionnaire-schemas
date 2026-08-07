@@ -17,6 +17,7 @@ ENABLE:
   - JSON
   - MAKEFILE
   - MARKDOWN
+  - REPOSITORY
   - YAML
 
 FORMATTERS_DISABLE_ERRORS: false # Ensures code is actually fixable when using `make megalint-apply`
