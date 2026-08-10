@@ -12,20 +12,20 @@ Since the Census in 2021 the EQ questionnaire schema has moved on. This document
 
 ```json
 {
-    "groups": [
+  "groups": [
+    {
+      "blocks": [
         {
-            "blocks": [
-                {
-                    "id": "summary",
-                    "type": "Summary"
-                }
-            ],
-            "id": "submit-group",
-            "title": "Submit answers"
+          "id": "summary",
+          "type": "Summary"
         }
-    ],
-    "id": "submit-answers-section",
-    "title": "Submit answers"
+      ],
+      "id": "submit-group",
+      "title": "Submit answers"
+    }
+  ],
+  "id": "submit-answers-section",
+  "title": "Submit answers"
 }
 ```
 
@@ -111,18 +111,18 @@ Old:
 
 ```json
 {
-    "arguments": {
-        "list_to_check": {
-            "id_selector": "same_name_items",
-            "identifier": "household",
-            "source": "list"
-        },
-        "value": {
-            "identifier": "list_item_id",
-            "source": "location"
-        }
+  "arguments": {
+    "list_to_check": {
+      "id_selector": "same_name_items",
+      "identifier": "household",
+      "source": "list"
     },
-    "transform": "contains"
+    "value": {
+      "identifier": "list_item_id",
+      "source": "location"
+    }
+  },
+  "transform": "contains"
 }
 ```
 
@@ -130,18 +130,18 @@ New:
 
 ```json
 {
-    "arguments": {
-        "list_to_check": {
-            "selector": "same_name_items",
-            "identifier": "household",
-            "source": "list"
-        },
-        "value": {
-            "identifier": "list_item_id",
-            "source": "location"
-        }
+  "arguments": {
+    "list_to_check": {
+      "selector": "same_name_items",
+      "identifier": "household",
+      "source": "list"
     },
-    "transform": "contains"
+    "value": {
+      "identifier": "list_item_id",
+      "source": "location"
+    }
+  },
+  "transform": "contains"
 }
 ```
 
@@ -156,14 +156,14 @@ Old (location source):
 
 ```json
 {
-    "first_name": {
-        "id": "first-name",
-        "list_item_selector": {
-            "id": "to_list_item_id",
-            "source": "location"
-        },
-        "source": "answers"
-    }
+  "first_name": {
+    "id": "first-name",
+    "list_item_selector": {
+      "id": "to_list_item_id",
+      "source": "location"
+    },
+    "source": "answers"
+  }
 }
 ```
 
@@ -171,14 +171,14 @@ New (location source):
 
 ```json
 {
-    "first_name": {
-        "identifier": "first-name",
-        "list_item_selector": {
-            "identifier": "to_list_item_id",
-            "source": "location"
-        },
-        "source": "answers"
-    }
+  "first_name": {
+    "identifier": "first-name",
+    "list_item_selector": {
+      "identifier": "to_list_item_id",
+      "source": "location"
+    },
+    "source": "answers"
+  }
 }
 ```
 
@@ -186,15 +186,15 @@ Old (list source):
 
 ```json
 {
-    "first_name": {
-        "identifier": "first-name",
-        "list_item_selector": {
-            "id": "household",
-            "id_selector": "first",
-            "source": "list"
-        },
-        "source": "answers"
-    }
+  "first_name": {
+    "identifier": "first-name",
+    "list_item_selector": {
+      "id": "household",
+      "id_selector": "first",
+      "source": "list"
+    },
+    "source": "answers"
+  }
 }
 ```
 
@@ -202,15 +202,15 @@ New (list source):
 
 ```json
 {
-    "first_name": {
-        "identifier": "first-name",
-        "list_item_selector": {
-            "identifier": "household",
-            "selector": "first",
-            "source": "list"
-        },
-        "source": "answers"
-    }
+  "first_name": {
+    "identifier": "first-name",
+    "list_item_selector": {
+      "identifier": "household",
+      "selector": "first",
+      "source": "list"
+    },
+    "source": "answers"
+  }
 }
 ```
 
@@ -226,17 +226,14 @@ Old:
 
 ```json
 {
-    "arguments": {
-        "delimiter": " ",
-        "list_to_concatenate": {
-            "identifier": [
-                "first-name",
-                "last-name"
-            ],
-            "source": "answers"
-        }
-    },
-    "transform": "concatenate_list"
+  "arguments": {
+    "delimiter": " ",
+    "list_to_concatenate": {
+      "identifier": ["first-name", "last-name"],
+      "source": "answers"
+    }
+  },
+  "transform": "concatenate_list"
 }
 ```
 
@@ -244,20 +241,20 @@ New:
 
 ```json
 {
-    "arguments": {
-        "delimiter": " ",
-        "list_to_concatenate": [
-            {
-                "source": "answers",
-                "identifier": "first-name"
-            },
-            {
-                "source": "answers",
-                "identifier": "last-name"
-            }
-        ]
-    },
-    "transform": "concatenate_list"
+  "arguments": {
+    "delimiter": " ",
+    "list_to_concatenate": [
+      {
+        "source": "answers",
+        "identifier": "first-name"
+      },
+      {
+        "source": "answers",
+        "identifier": "last-name"
+      }
+    ]
+  },
+  "transform": "concatenate_list"
 }
 ```
 
@@ -265,22 +262,19 @@ Old (with list):
 
 ```json
 {
-    "arguments": {
+  "arguments": {
     "delimiter": " ",
     "list_to_concatenate": {
-        "identifier": [
-            "first-name",
-            "last-name"
-        ],
-        "list_item_selector": {
-            "id": "visitors",
-            "id_selector": "first",
-            "source": "list"
-        },
-        "source": "answers"
+      "identifier": ["first-name", "last-name"],
+      "list_item_selector": {
+        "id": "visitors",
+        "id_selector": "first",
+        "source": "list"
+      },
+      "source": "answers"
     }
-    },
-    "transform": "concatenate_list"
+  },
+  "transform": "concatenate_list"
 }
 ```
 
@@ -288,30 +282,30 @@ New (with list):
 
 ```json
 {
-    "arguments": {
-        "delimiter": " ",
-        "list_to_concatenate": [
-            {
-                "source": "answers",
-                "identifier": "first-name",
-                "list_item_selector": {
-                    "source": "list",
-                    "identifier": "visitors",
-                    "selector": "first"
-                }
-            },
-            {
-                "source": "answers",
-                "identifier": "last-name",
-                "list_item_selector": {
-                    "source": "list",
-                    "identifier": "visitors",
-                    "selector": "first"
-                }
-            }
-        ]
-    },
-    "transform": "concatenate_list"
+  "arguments": {
+    "delimiter": " ",
+    "list_to_concatenate": [
+      {
+        "source": "answers",
+        "identifier": "first-name",
+        "list_item_selector": {
+          "source": "list",
+          "identifier": "visitors",
+          "selector": "first"
+        }
+      },
+      {
+        "source": "answers",
+        "identifier": "last-name",
+        "list_item_selector": {
+          "source": "list",
+          "identifier": "visitors",
+          "selector": "first"
+        }
+      }
+    ]
+  },
+  "transform": "concatenate_list"
 }
 ```
 
@@ -326,16 +320,16 @@ Old:
 
 ```json
 {
-    "arguments": {
-        "lhs": {
-            "identifier": "household",
-            "source": "list"
-        },
-        "rhs": {
-            "value": 1
-        }
+  "arguments": {
+    "lhs": {
+      "identifier": "household",
+      "source": "list"
     },
-    "transform": "add"
+    "rhs": {
+      "value": 1
+    }
+  },
+  "transform": "add"
 }
 ```
 
@@ -495,7 +489,7 @@ New:
 
 - Previously multiple when rules were an implicit logical `and`
 - The new rules make this `and` explicit
-- **Action:** Add a new `and` property within the `when` rule that has an array wrapping the rules  (the rule migration is covered following this)
+- **Action:** Add a new `and` property within the `when` rule that has an array wrapping the rules (the rule migration is covered following this)
 
 Old:
 
@@ -561,8 +555,8 @@ Old:
 
 ```json
 {
-    "condition": "set",
-    "id": "gcse-answer"
+  "condition": "set",
+  "id": "gcse-answer"
 }
 ```
 
@@ -570,13 +564,13 @@ New:
 
 ```json
 {
-    "!=": [
-        {
-            "source": "answers",
-            "identifier": "gcse-answer"
-        },
-        null
-    ]
+  "!=": [
+    {
+      "source": "answers",
+      "identifier": "gcse-answer"
+    },
+    null
+  ]
 }
 ```
 
@@ -586,8 +580,8 @@ Old:
 
 ```json
 {
-    "condition": "not set",
-    "id": "another-address-answer"
+  "condition": "not set",
+  "id": "another-address-answer"
 }
 ```
 
@@ -595,13 +589,13 @@ New:
 
 ```json
 {
-    "==": [
-        {
-            "source": "answers",
-            "identifier": "another-address-answer"
-        },
-        null
-    ]
+  "==": [
+    {
+      "source": "answers",
+      "identifier": "another-address-answer"
+    },
+    null
+  ]
 }
 ```
 
@@ -611,9 +605,9 @@ Old:
 
 ```json
 {
-    "condition": "equals",
-    "id": "confirm-who-is-answering-answer",
-    "value": "For myself"
+  "condition": "equals",
+  "id": "confirm-who-is-answering-answer",
+  "value": "For myself"
 }
 ```
 
@@ -621,13 +615,13 @@ New:
 
 ```json
 {
-    "==": [
-        {
-            "source": "answers",
-            "identifier": "confirm-who-is-answering-answer"
-        },
-        "For myself"
-    ]
+  "==": [
+    {
+      "source": "answers",
+      "identifier": "confirm-who-is-answering-answer"
+    },
+    "For myself"
+  ]
 }
 ```
 
@@ -637,32 +631,31 @@ Old:
 
 ```json
 {
-    "comparison": {
-        "id": "list_item_id",
-        "source": "location"
-    },
-    "condition": "equals",
-    "id_selector": "primary_person",
-    "list": "household"
+  "comparison": {
+    "id": "list_item_id",
+    "source": "location"
+  },
+  "condition": "equals",
+  "id_selector": "primary_person",
+  "list": "household"
 }
-
 ```
 
 New:
 
 ```json
 {
-    "==": [
-        {
-            "source": "list",
-            "identifier": "household",
-            "selector": "primary_person"
-        },
-        {
-            "source": "location",
-            "identifier": "list_item_id"
-        }
-    ]
+  "==": [
+    {
+      "source": "list",
+      "identifier": "household",
+      "selector": "primary_person"
+    },
+    {
+      "source": "location",
+      "identifier": "list_item_id"
+    }
+  ]
 }
 ```
 
@@ -672,9 +665,9 @@ Old:
 
 ```json
 {
-    "condition": "equals",
-    "list": "household",
-    "value": 0
+  "condition": "equals",
+  "list": "household",
+  "value": 0
 }
 ```
 
@@ -682,17 +675,17 @@ New:
 
 ```json
 {
-    "==": [
+  "==": [
+    {
+      "count": [
         {
-            "count": [
-                {
-                    "source": "list",
-                    "identifier": "household"
-                }
-            ]
-        },
-        0
-    ]
+          "source": "list",
+          "identifier": "household"
+        }
+      ]
+    },
+    0
+  ]
 }
 ```
 
@@ -702,14 +695,14 @@ Old:
 
 ```json
 {
-    "condition": "equals",
-    "date_comparison": {
-        "offset_by": {
-            "years": -1
-        },
-        "value": "2021-03-21"
+  "condition": "equals",
+  "date_comparison": {
+    "offset_by": {
+      "years": -1
     },
-    "id": "arrive-in-uk-answer"
+    "value": "2021-03-21"
+  },
+  "id": "arrive-in-uk-answer"
 }
 ```
 
@@ -717,19 +710,19 @@ New:
 
 ```json
 {
-    "==": [
+  "==": [
+    {
+      "date": [
         {
-            "date": [
-                {
-                    "identifier": "arrive-in-uk-answer",
-                    "source": "answers"
-                }
-            ]
-        },
-        {
-            "date": ["2021-03-21", { "years": -1 }]
+          "identifier": "arrive-in-uk-answer",
+          "source": "answers"
         }
-    ]
+      ]
+    },
+    {
+      "date": ["2021-03-21", { "years": -1 }]
+    }
+  ]
 }
 ```
 
@@ -739,9 +732,9 @@ Old:
 
 ```json
 {
-    "condition": "not equals",
-    "id": "mainly-work-in-uk-answer",
-    "value": "No"
+  "condition": "not equals",
+  "id": "mainly-work-in-uk-answer",
+  "value": "No"
 }
 ```
 
@@ -749,13 +742,13 @@ New:
 
 ```json
 {
-    "!=": [
-        {
-            "source": "answers",
-            "identifier": "mainly-work-in-uk-answer"
-        },
-        "No"
-    ]
+  "!=": [
+    {
+      "source": "answers",
+      "identifier": "mainly-work-in-uk-answer"
+    },
+    "No"
+  ]
 }
 ```
 
@@ -765,13 +758,13 @@ Old:
 
 ```json
 {
-    "comparison": {
-        "id": "list_item_id",
-        "source": "location"
-    },
-    "condition": "not equals",
-    "id_selector": "primary_person",
-    "list": "household"
+  "comparison": {
+    "id": "list_item_id",
+    "source": "location"
+  },
+  "condition": "not equals",
+  "id_selector": "primary_person",
+  "list": "household"
 }
 ```
 
@@ -779,17 +772,17 @@ New:
 
 ```json
 {
-    "!=": [
-        {
-            "identifier": "household",
-            "source": "list",
-            "selector": "primary_person"
-        },
-        {
-            "source": "location",
-            "identifier": "list_item_id"
-        }
-    ]
+  "!=": [
+    {
+      "identifier": "household",
+      "source": "list",
+      "selector": "primary_person"
+    },
+    {
+      "source": "location",
+      "identifier": "list_item_id"
+    }
+  ]
 }
 ```
 
@@ -799,9 +792,9 @@ Old:
 
 ```json
 {
-    "condition": "greater than",
-    "list": "household",
-    "value": 0
+  "condition": "greater than",
+  "list": "household",
+  "value": 0
 }
 ```
 
@@ -809,17 +802,17 @@ New:
 
 ```json
 {
-    ">": [
+  ">": [
+    {
+      "count": [
         {
-            "count": [
-                {
-                    "source": "list",
-                    "identifier": "household"
-                }
-            ]
-        },
-        0
-    ]
+          "source": "list",
+          "identifier": "household"
+        }
+      ]
+    },
+    0
+  ]
 }
 ```
 
@@ -829,14 +822,14 @@ Old:
 
 ```json
 {
-    "condition": "greater than",
-    "date_comparison": {
-        "offset_by": {
-            "years": -5
-        },
-        "value": "2021-03-21"
+  "condition": "greater than",
+  "date_comparison": {
+    "offset_by": {
+      "years": -5
     },
-    "id": "date-of-birth-answer"
+    "value": "2021-03-21"
+  },
+  "id": "date-of-birth-answer"
 }
 ```
 
@@ -844,19 +837,19 @@ New:
 
 ```json
 {
-    ">": [
+  ">": [
+    {
+      "date": [
         {
-            "date": [
-                {
-                    "identifier": "date-of-birth-answer",
-                    "source": "answers"
-                }
-            ]
-        },
-        {
-            "date": ["2021-03-21", { "years": -5 }]
+          "identifier": "date-of-birth-answer",
+          "source": "answers"
         }
-    ]
+      ]
+    },
+    {
+      "date": ["2021-03-21", { "years": -5 }]
+    }
+  ]
 }
 ```
 
@@ -866,14 +859,14 @@ Old:
 
 ```json
 {
-    "condition": "less than or equal to",
-    "date_comparison": {
-        "offset_by": {
-            "years": -15
-        },
-        "value": "2021-03-21"
+  "condition": "less than or equal to",
+  "date_comparison": {
+    "offset_by": {
+      "years": -15
     },
-    "id": "date-of-birth-answer"
+    "value": "2021-03-21"
+  },
+  "id": "date-of-birth-answer"
 }
 ```
 
@@ -881,19 +874,19 @@ New:
 
 ```json
 {
-    "<=": [
+  "<=": [
+    {
+      "date": [
         {
-            "date": [
-                {
-                    "identifier": "date-of-birth-answer",
-                    "source": "answers"
-                }
-            ]
-        },
-        {
-            "date": ["2021-03-21", { "years": -15 }]
+          "identifier": "date-of-birth-answer",
+          "source": "answers"
         }
-    ]
+      ]
+    },
+    {
+      "date": ["2021-03-21", { "years": -15 }]
+    }
+  ]
 }
 ```
 
@@ -903,9 +896,9 @@ Old:
 
 ```json
 {
-    "condition": "contains",
-    "id": "national-identity-answer",
-    "value": "Other"
+  "condition": "contains",
+  "id": "national-identity-answer",
+  "value": "Other"
 }
 ```
 
@@ -913,13 +906,13 @@ New:
 
 ```json
 {
-    "in": [
-        "Other",
-        {
-            "identifier": "national-identity-answer",
-            "source": "answers"
-        }
-    ]
+  "in": [
+    "Other",
+    {
+      "identifier": "national-identity-answer",
+      "source": "answers"
+    }
+  ]
 }
 ```
 
@@ -929,12 +922,9 @@ Old:
 
 ```json
 {
-    "condition": "contains any",
-    "id": "passports-answer",
-    "values": [
-        "United Kingdom",
-        "Ireland"
-    ]
+  "condition": "contains any",
+  "id": "passports-answer",
+  "values": ["United Kingdom", "Ireland"]
 }
 ```
 
@@ -942,13 +932,13 @@ New:
 
 ```json
 {
-    "any-in": [
-        ["United Kingdom", "Ireland"],
-        {
-            "identifier": "national-identity-answer",
-            "source": "answers"
-        }
-    ]
+  "any-in": [
+    ["United Kingdom", "Ireland"],
+    {
+      "identifier": "national-identity-answer",
+      "source": "answers"
+    }
+  ]
 }
 ```
 
@@ -958,12 +948,9 @@ Old:
 
 ```json
 {
-    "condition": "equals any",
-    "id": "confirm-age-answer",
-    "values": [
-        "No, I need to correct their date of birth",
-        "No, I need to correct my date of birth"
-    ]
+  "condition": "equals any",
+  "id": "confirm-age-answer",
+  "values": ["No, I need to correct their date of birth", "No, I need to correct my date of birth"]
 }
 ```
 
@@ -971,15 +958,12 @@ New:
 
 ```json
 {
-    "in": [
-        {
-            "identifier": "confirm-age-answer",
-            "source": "answers"
-        },
-        [
-            "No, I need to correct their date of birth",
-            "No, I need to correct my date of birth"
-        ]
-    ]
+  "in": [
+    {
+      "identifier": "confirm-age-answer",
+      "source": "answers"
+    },
+    ["No, I need to correct their date of birth", "No, I need to correct my date of birth"]
+  ]
 }
 ```

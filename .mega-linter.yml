@@ -12,10 +12,8 @@
 ENABLE:
   - ACTION
   - BASH
-  - DOCKERFILE
   - EDITORCONFIG
   - JSON
-  - MAKEFILE
   - MARKDOWN
   - REPOSITORY
   - YAML
@@ -24,8 +22,16 @@ FORMATTERS_DISABLE_ERRORS: false # Ensures code is actually fixable when using `
 SHOW_ELAPSED_TIME: true # Displays execution time for each linter
 FLAVOR_SUGGESTIONS: false # Disables suggestions to use different MegaLinter flavors
 
-REPOSITORY_GRYPE_DISABLE_ERRORS: true # No container images in this repo
-REPOSITORY_GRYPE_DISABLE: true
+DISABLE_LINTERS:
+  - REPOSITORY_GRYPE # No container images in this repo
+  - REPOSITORY_CHECKOV # Vulns covered by osv-scanner; IaC too limited here to justify 17s
+  - REPOSITORY_TRIVY # osv-scanner covers vulnerabilities faster (1.82s vs 18.68s)
+  - REPOSITORY_TRIVY_SBOM # Redundant with trivy (also disabled)
+  - REPOSITORY_TRUFFLEHOG # Running on changed files only; secretlint is sufficient
+  - REPOSITORY_GITLEAKS # Overlaps with secretlint; 12s vs 2s
+  - REPOSITORY_KINGFISHER # Overlaps with secretlint; 10s vs 2s
+  - REPOSITORY_BETTERLEAKS # Overlaps with secretlint
+  - REPOSITORY_SYFT # Generates an SBOM artifact but never fails the lint check
 
 ACTION_ZIZMOR_UNSECURED_ENV_VARIABLES:
   - GITHUB_TOKEN
