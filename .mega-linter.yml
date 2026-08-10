@@ -24,5 +24,8 @@ FORMATTERS_DISABLE_ERRORS: false # Ensures code is actually fixable when using `
 SHOW_ELAPSED_TIME: true # Displays execution time for each linter
 FLAVOR_SUGGESTIONS: false # Disables suggestions to use different MegaLinter flavors
 
+REPOSITORY_GRYPE_DISABLE_ERRORS: true # No container images in this repo
+REPOSITORY_GRYPE_DISABLE: true
+
 ACTION_ZIZMOR_UNSECURED_ENV_VARIABLES:
   - GITHUB_TOKEN
