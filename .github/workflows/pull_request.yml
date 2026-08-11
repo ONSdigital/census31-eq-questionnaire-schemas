@@ -1,7 +1,6 @@
 name: PR
 
-permissions:
-  contents: read
+permissions: {}
 
 on:
   pull_request:
