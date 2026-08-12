@@ -18,7 +18,6 @@ The schema build process allows us to break down the creation of a schema into m
 
 The Census schemas that we generate can be broken down as:
 
-<!-- prettier-ignore -->
 | Census type            | Region  | Language |
 |------------------------|---------|----------|
 | Individual             | England | en       |
