@@ -27,7 +27,9 @@ The Census schemas that we generate can be broken down as:
 | Communal Establishment | England | en       |
 |                        | Wales   | en, cy   |
 
-The `en` language schemas are generated using the `make build-schemas` command. Once these are generated `make translation-templates` generates the `.pot` files for the Welsh region schemas. Once these templates are translated (i.e. a translator uses the `.pot` files to create `.po` files in the target languages) and the `.po` files added to the `translations` directory, `make translate-schemas` will generate the `cy` language schemas.
+The `en` language schemas are generated using the `make build-schemas` command.
+Once these are generated `make translation-templates` generates the `.pot` files for the Welsh region schemas.
+Then after these templates are translated (i.e. a translator uses the `.pot` files to create `.po` files in the target languages) and the `.po` files added to the `translations` directory, `make translate-schemas` will generate the `cy` language schemas.
 
 ## The build
 
@@ -62,7 +64,7 @@ source/
         │       ├── responsible_for_establishment.jsonnet
         │       └── travel_establishment.jsonnet
         ├── household/ # used by census_household.jsonnet
-        │   ├── blocks/ 
+        │   ├── blocks/
         │   │   ├── accommodation/
         │   │   ├── individual/
         │   │   ├── relationships/
@@ -78,7 +80,7 @@ source/
         │   │   └── qualifications/
         │   └── lib/ # common Jsonnet for individual schema
         │       └── rules.libsonnet
-                └── lib/ # common Jsonnet across > 1 census type 
+                └── lib/ # common Jsonnet across > 1 census type
                     ├── common_rules.libsonnet
                     ├── placeholders.libsonnet
                     └── transforms.libsonnet
@@ -113,7 +115,7 @@ block-beta
     QI["import blocks"]
     QF["questionnaire function()<br>└─ sections<br>&nbsp;&nbsp;&nbsp;&nbsp;└─ groups<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ blocks"]
   end
-  space 
+  space
   block:B
     columns 1
     BT("&lt;block&gt;.jsonnet")

@@ -16,9 +16,9 @@ logger = logging.getLogger(__name__)
 coloredlogs.install(level="DEBUG", logger=logger, fmt="%(message)s")
 
 SCHEMAS_TO_EXTRACT = [
-    "schemas/en/census_individual_gb_wls.json",
-    "schemas/en/census_household_gb_wls.json",
-    "schemas/en/census_communal_establishment_gb_wls.json",
+    "schemas/census/en/census_individual_gb_wls.json",
+    "schemas/census/en/census_household_gb_wls.json",
+    "schemas/census/en/census_communal_establishment_gb_wls.json",
 ]
 
 

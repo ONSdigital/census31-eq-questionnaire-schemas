@@ -17,7 +17,8 @@ try:
         if latest_tag != version:
             latest_tag_with_prefix = r"\#" + latest_tag
             logger.error(
-                f"eq-translations is out of date. Update using: 'poetry add git+https://github.com/ONSDigital/eq-translations{latest_tag_with_prefix}'"
+                f"eq-translations is out of date. Update using: "
+                f"'poetry add git+https://github.com/ONSDigital/eq-translations{latest_tag_with_prefix}'"
             )
             sys.exit(1)
     else:

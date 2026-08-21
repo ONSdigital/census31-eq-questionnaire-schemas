@@ -5,17 +5,38 @@ on:
     types: [published]
 
 jobs:
-  add-schemas-to-release:
+  release:
     permissions:
       contents: write
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
-      - name: Zip artifacts
-        run: zip -r schemas.zip schemas
-      - name: Release
-        uses: softprops/action-gh-release@c95fe1489396fe8a9eb87c0abf8aa5b2ef267fda
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          files: schemas.zip
+          persist-credentials: false
+      - run: |
+          echo "PYTHON_VERSION=$(cat .python-version)" >> "$GITHUB_ENV"
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install Poetry
+        uses: snok/install-poetry@a783c322200f0519c7926aa6faa857c4e23e9263 # v1.4.2
+        with:
+          version: 2.1.2
+          virtualenvs-create: true
+          virtualenvs-in-project: false
+          virtualenvs-path: ~/.virtualenvs
+      - name: Install virtual environment
+        run: poetry install
+      - name: Install jsonnet
+        uses: zendesk/setup-jsonnet@74119dac8a540c99167a65f14aa1ee99ff143ec2 #v16
+        with:
+          version: v0.22.0
+      - name: Build schemas
+        run: make build
+      - name: Zip schemas
+        run: zip -r schemas.zip schemas
+      - name: Upload release asset
+        run: gh release upload "$RELEASE_TAG" schemas.zip --clobber
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
