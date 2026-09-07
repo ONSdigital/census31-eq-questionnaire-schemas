@@ -106,7 +106,7 @@ function(region_code, census_month_year_date) {
   region_code: region_code,
   title: 'Census 2021',
   description: 'Census Individual Schema',
-  theme: 'social',
+  theme: 'census',
   legal_basis: 'Voluntary',
   navigation: {
     visible: false,
