@@ -141,7 +141,7 @@ function(region_code, census_month_year_date) {
   region_code: region_code,
   title: 'Census 2021',
   description: 'Census Household Schema',
-  theme: 'social',
+  theme: 'census',
   legal_basis: 'Voluntary',
   navigation: {
     visible: false,
