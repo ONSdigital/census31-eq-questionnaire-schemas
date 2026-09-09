@@ -24,7 +24,6 @@ FLAVOR_SUGGESTIONS: false # Disables suggestions to use different MegaLinter fla
 
 DISABLE_LINTERS:
   - REPOSITORY_GRYPE # No container images in this repo
-  - REPOSITORY_CHECKOV # Vulns covered by osv-scanner; IaC too limited here to justify 17s
   - REPOSITORY_TRIVY # osv-scanner covers vulnerabilities faster (1.82s vs 18.68s)
   - REPOSITORY_TRIVY_SBOM # Redundant with trivy (also disabled)
   - REPOSITORY_TRUFFLEHOG # Running on changed files only; secretlint is sufficient
