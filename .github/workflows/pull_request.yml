@@ -84,6 +84,7 @@ jobs:
           path: schemas
 
   validate-schemas:
+    needs: build
     permissions:
       contents: read
     runs-on: ubuntu-22.04
