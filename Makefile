@@ -6,7 +6,7 @@ build-schemas:
 
 build: build-schemas translate-schemas
 
-run-validator: validator-check
+run-validator:
 	./scripts/run_validator.sh
 
 lint:
@@ -21,7 +21,7 @@ format:
 validator-check:
 	poetry run python -m scripts.eq_validator_check
 
-validate-schemas: validator-check
+validate-schemas:
 	poetry run python -m scripts.validate_schemas
 
 translations-check:
