@@ -87,6 +87,7 @@ jobs:
     needs: build
     permissions:
       contents: read
+      packages: read
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -122,6 +123,8 @@ jobs:
         with:
           name: schemas
           path: schemas
+      - name: Log in to GitHub Container Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u $ --password-stdin
       - name: Spin up validator
         run: make run-validator
       - name: Validate schemas
