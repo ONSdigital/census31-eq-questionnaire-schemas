@@ -8,6 +8,7 @@ authors = ["ONSDigital"]
 python = "^3.13"
 coloredlogs = "*"
 eq-translations = {git = "https://github.com/ONSDigital/eq-translations.git", rev = "v4.10.3"}
+idna = ">=3.15"
 
 [tool.poetry.group.dev.dependencies]
 black = "*"
@@ -15,6 +16,8 @@ isort = "*"
 pylint = "*"
 flake8-quotes = "*"
 jsonpointer = "*"
+click = ">=8.3.3"
+setuptools = ">=83.0.0"
 jsonpath-rw = "*"
 
 [build-system]
