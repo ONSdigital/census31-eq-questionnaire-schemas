@@ -126,7 +126,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Spin up validator
-        run: TAG=pr-5-update-ajv-port-to-5006 make run-validator  # Revert after testing
+        run: TAG=pr-5-update-ajv-port-to-5006 make run-validator # Revert after testing
       - name: Validate schemas
         run: make validate-schemas
 
