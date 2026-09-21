@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 try:
     response = requests.get(
-        "https://api.github.com/repos/ONSdigital/eq-questionnaire-validator/releases",
+        "https://api.github.com/repos/ONSdigital/census31-eq-questionnaire-validator/releases",
         timeout=120,
     )
     if response.status_code == 200:
