@@ -86,6 +86,7 @@ jobs:
           path: schemas
 
   validate-schemas:
+    needs: build
     permissions:
       contents: "read"
       packages: "read"
@@ -125,12 +126,24 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+      - name: Download schema artifacts
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c #v8.0.1
+        with:
+          name: schemas
+          path: schemas
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Spin up validator
         run: TAG=pr-5-update-ajv-port-to-5006 make run-validator # Revert after testing
       - name: Validate schemas
         run: make validate-schemas
 
   test-translation-templates:
+    needs: build
     permissions:
       contents: "read"
     runs-on: ubuntu-22.04
@@ -160,5 +173,10 @@ jobs:
       - name: Install virtual environment
         if: steps.cache-virtualenv.outputs.cache-hit != 'true'
         run: poetry install
+      - name: Download schema artifacts
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c #v8.0.1
+        with:
+          name: schemas
+          path: schemas
       - name: Test translation templates
         run: make test-translation-templates
