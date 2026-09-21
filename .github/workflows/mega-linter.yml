@@ -6,8 +6,7 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
+permissions: {}
 
 env:
   GITHUB_STATUS_REPORTER: false
@@ -21,6 +20,8 @@ jobs:
   megalinter:
     name: MegaLinter
     runs-on: ubuntu-22.04
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout Code

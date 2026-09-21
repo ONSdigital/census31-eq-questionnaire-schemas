@@ -20,7 +20,7 @@ function(region_code, census_month_year_date) {
   region_code: region_code,
   title: '2021 Census',
   description: 'Census Communal Establishment',
-  theme: 'social',
+  theme: 'census',
   legal_basis: 'Voluntary',
   metadata: [
     {

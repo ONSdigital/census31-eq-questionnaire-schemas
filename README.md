@@ -2,17 +2,18 @@
 
 A registry for census questionnaire schemas for [census31-eq-questionnaire-runner](https://github.com/ONSdigital/census31-eq-questionnaire-runner).
 
-
 ## Setup
 
 It is recommended that you use [Pyenv](https://github.com/pyenv/pyenv) to manage your Python installations.
 
 Use pyenv to install the Python version specified by the `.python-version` file.
+
 ```bash
 pyenv install
 ```
 
 Check the installed version of Python is correct with:
+
 ```bash
 python --version
 ```
@@ -20,6 +21,7 @@ python --version
 ### Authenticate
 
 Authenticate to make sure Docker can pull from GAR
+
 ```bash
 gcloud auth login
 ```
@@ -33,6 +35,7 @@ curl -sSL https://install.python-poetry.org | python3 - --version 2.1.2
 ```
 
 Install the dependencies for this project. Add the option `--without dev` to ignore dev dependencies.
+
 ```bash
 poetry install
 ```
@@ -52,7 +55,7 @@ To validate a single schema, run the following command:
 
 # For Example
 ./scripts/validate_schemas.sh schemas/health/en/health_demo.json
-````
+```
 
 **Schema file names must use snake case to be compatible with runner**
 
@@ -65,6 +68,7 @@ The latest release of the eq-translations package is required to successfully ru
 ### Generating Translation Templates
 
 To generate a translation template `.pot` file in order to translate a schema, use the following command. It will generate a template file containing all the strings to be translated:
+
 ```bash
 make translation-templates
 ```
@@ -78,14 +82,17 @@ The `.po` file needs to be named in the following format: `{SCHEMA_NAME}.po`
 
 Once this in place, the following command can be run in order to generate a translated
 schema:
+
 ```bash
 make translate-schemas
 ```
+
 The translated schema will be added to the `/schemas/{SURVEY_TYPE}/{LANGUAGE_CODE}/` directory. For example, `schemas/health/cy/`
 
 ### Testing Translation Templates
 
 To check that translations are up to date use the following command (This check will run automatically when a pull request is raised):
+
 ```bash
 make test-translation-templates
 ```
@@ -95,9 +102,11 @@ make test-translation-templates
 In order to test the schemas in this repo you will need to create symbolic links between the `/schemas` directory in runner and the folders in the schemas directory here.
 
 For example in your local census31-eq-questionnaire-runner repository, running the following command will create a symbolic link between the business folder here and the schemas directory in runner.
+
 ```bash
 ln -s <PATH_TO_REPO>/census31-eq-questionnaire-schemas/schemas/census <PATH_TO_REPO>/census31-eq-questionnaire-runner/schemas
 ```
+
 You should now be able to launch a questionnaire using one of the schemas.
 
 **CAVEAT - while `raw.githubusercontent.com` can be used for development and sandbox integrations, it is NOT a formally hosted survey questionnaire registry**
