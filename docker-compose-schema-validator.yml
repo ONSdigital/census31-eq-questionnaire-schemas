@@ -1,6 +1,6 @@
 services:
   ajv-validator:
-    image: europe-west2-docker.pkg.dev/ons-eq-ci/docker-images/eq-questionnaire-validator-ajv:${TAG}
+    image: ghcr.io/onsdigital/census31-eq-questionnaire-validator-ajv:pr-5-update-ajv-port-to-5006 # Revert after testing
     networks:
       - eq-schema
     ports:
@@ -12,11 +12,12 @@ services:
       retries: 20
 
   py-validator:
-    image: europe-west2-docker.pkg.dev/ons-eq-ci/docker-images/eq-questionnaire-validator:${TAG}
+    image: ghcr.io/onsdigital/census31-eq-questionnaire-validator:${TAG}
     networks:
       - eq-schema
     environment:
       AJV_VALIDATOR_HOST: ajv-validator
+      AJV_VALIDATOR_PORT: 5006 # Revert after testing
     ports:
       - 5001:5000
     depends_on:
