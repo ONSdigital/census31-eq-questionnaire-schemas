@@ -10,7 +10,7 @@ on:
 jobs:
   lint-python-jsonnet:
     permissions:
-      contents: "read"
+      contents: read
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -46,7 +46,7 @@ jobs:
 
   build:
     permissions:
-      contents: "read"
+      contents: read
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -88,8 +88,8 @@ jobs:
   validate-schemas:
     needs: build
     permissions:
-      contents: "read"
-      packages: "read"
+      contents: read
+      packages: read
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -139,7 +139,7 @@ jobs:
   test-translation-templates:
     needs: build
     permissions:
-      contents: "read"
+      contents: read
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
