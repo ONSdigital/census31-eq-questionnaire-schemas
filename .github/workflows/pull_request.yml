@@ -132,7 +132,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Spin up validator
-        run: TAG=pr-5-update-ajv-port-to-5006 make run-validator # Revert after testing
+        run: make run-validator
       - name: Validate schemas
         run: make validate-schemas
 
