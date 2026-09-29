@@ -128,7 +128,7 @@ function(region_code) {
   region_code: region_code,
   title: 'Census 2021',
   description: 'Census Northern Ireland Household Schema',
-  theme: 'social',
+  theme: 'census-nisra',
   legal_basis: 'Voluntary',
   navigation: {
     visible: false,
