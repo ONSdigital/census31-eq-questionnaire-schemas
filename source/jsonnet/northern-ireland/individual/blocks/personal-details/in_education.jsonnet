@@ -27,14 +27,14 @@ local question(title) = {
 
 local nonProxyUnder16Title = 'Are you a schoolchild or student in full-time education?';
 local proxyUnder16Title = {
-  text: 'Is <em>{person_name}</em> a schoolchild or student in full-time education?',
+  text: 'Is <strong>{person_name}</strong> a schoolchild or student in full-time education?',
   placeholders: [
     placeholders.personName(),
   ],
 };
 local nonProxyOver16Title = 'Are you a student in full-time education?';
 local proxyOver16Title = {
-  text: 'Is <em>{person_name}</em> a student in full-time education?',
+  text: 'Is <strong>{person_name}</strong> a student in full-time education?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -47,46 +47,44 @@ local proxyOver16Title = {
   question_variants: [
     {
       question: question(nonProxyOver16Title),
-      when: [rules.isNotProxy, rules.over16],
+      when: { and: [rules.isNotProxy, rules.over16] },
     },
     {
       question: question(proxyOver16Title),
-      when: [rules.isProxy, rules.over16],
+      when: { and: [rules.isProxy, rules.over16] },
     },
     {
       question: question(nonProxyOver16Title),
-      when: [rules.isNotProxy, rules.lastBirthdayAgeOver(16)],
+      when: { and: [rules.isNotProxy, rules.lastBirthdayAgeOver(16)] },
     },
     {
       question: question(proxyOver16Title),
-      when: [rules.isProxy, rules.lastBirthdayAgeOver(16)],
+      when: { and: [rules.isProxy, rules.lastBirthdayAgeOver(16)] },
     },
     {
       question: question(nonProxyUnder16Title),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyUnder16Title),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'term-time-location',
-        when: [
+      block: 'term-time-location',
+      when: {
+        '==': [
           {
-            id: 'in-education-answer',
-            condition: 'equals',
-            value: 'Yes',
+            source: 'answers',
+            identifier: 'in-education-answer',
           },
+          'Yes',
         ],
       },
     },
     {
-      goto: {
-        group: 'identity-and-health-group',
-      },
+      group: 'identity-and-health-group',
     },
   ],
 }

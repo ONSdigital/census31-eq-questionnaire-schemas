@@ -25,37 +25,29 @@ local question(title) = {
   question_variants: [
     {
       question: question('You selected “Other”. What religion, religious denomination or body do you belong to?'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'You selected “Other”. What religion, religious denomination or body does <em>{person_name}</em> belong to?',
+        text: 'You selected “Other”. What religion, religious denomination or body does <strong>{person_name}</strong> belong to?',
         placeholders: [
           placeholders.personName(),
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'health',
-        when: [
-          rules.under3,
-        ],
-      },
+      block: 'health',
+      when: rules.under3,
     },
     {
-      goto: {
-        block: 'health',
-        when: [rules.lastBirthdayAgeLessThan(3)],
-      },
+      block: 'health',
+      when: rules.lastBirthdayAgeLessThan(3),
     },
     {
-      goto: {
-        block: 'main-language',
-      },
+      block: 'main-language',
     },
   ],
 }

@@ -34,7 +34,7 @@ local question(title) = {
 
 local nonProxyTitle = 'How often do you speak Ulster-Scots?';
 local proxyTitle = {
-  text: 'How often does <em>{person_name}</em> speak Ulster-Scots?',
+  text: 'How often does <strong>{person_name}</strong> speak Ulster-Scots?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -46,11 +46,11 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

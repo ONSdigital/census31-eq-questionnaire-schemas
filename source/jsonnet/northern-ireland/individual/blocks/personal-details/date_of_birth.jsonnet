@@ -38,7 +38,7 @@ local question(title, mandatory) = {
 
 local nonProxyTitle = 'What is your date of birth?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> date of birth?',
+  text: 'What is <strong>{person_name_possessive}</strong> date of birth?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -51,27 +51,28 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle, true),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, false),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'confirm-age',
-        when: [{
-          id: 'date-of-birth-answer',
-          condition: 'set',
-        }],
+      block: 'confirm-age',
+      when: {
+        '!=': [
+          {
+            source: 'answers',
+            identifier: 'date-of-birth-answer',
+          },
+          null,
+        ],
       },
     },
     {
-      goto: {
-        block: 'age-last-birthday',
-      },
+      block: 'age-last-birthday',
     },
   ],
 }

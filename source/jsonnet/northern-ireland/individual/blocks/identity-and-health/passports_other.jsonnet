@@ -28,23 +28,21 @@ local question(title) = {
   question_variants: [
     {
       question: question('You selected “Other”. What passports do you hold?'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'You selected “Other”. What passports does <em>{person_name}</em> hold?',
+        text: 'You selected “Other”. What passports does <strong>{person_name}</strong> hold?',
         placeholders: [
           placeholders.personName(),
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
         block: 'national-identity',
-      },
     },
   ],
 }

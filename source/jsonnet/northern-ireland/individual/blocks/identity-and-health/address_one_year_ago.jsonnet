@@ -21,7 +21,7 @@ local question(title) = {
 
 local nonProxyTitle = 'Enter details of your address one year ago.';
 local proxyTitle = {
-  text: 'Enter details of <em>{person_name_possessive}</em> address one year ago.',
+  text: 'Enter details of <strong>{person_name_possessive}</strong> address one year ago.',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -34,11 +34,11 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

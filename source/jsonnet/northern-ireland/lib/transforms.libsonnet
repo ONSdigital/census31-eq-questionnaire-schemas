@@ -3,8 +3,8 @@ local firstNameSource(source, listName) = (
     source: 'answers',
     identifier: 'first-name',
     list_item_selector: {
-      id: listName,
-      id_selector: 'first',
+      identifier: listName,
+      selector: 'first',
       source: 'list',
     },
   } else if source == 'to_list_item' then {
@@ -25,8 +25,8 @@ local middleNamesSource(source, listName) = (
     source: 'answers',
     identifier: 'middle-names',
     list_item_selector: {
-      id: listName,
-      id_selector: 'first',
+      identifier: listName,
+      selector: 'first',
       source: 'list',
     },
   } else if source == 'to_list_item' then {
@@ -48,8 +48,8 @@ local lastNameSource(source, listName) = (
     source: 'answers',
     identifier: 'last-name',
     list_item_selector: {
-      id: listName,
-      id_selector: 'first',
+      identifier: listName,
+      selector: 'first',
       source: 'list',
     },
   } else if source == 'to_list_item' then {
@@ -90,8 +90,8 @@ local formatPossessive = {
 local isSameName(source='', listName='household') = (
   local valueSource = if source == 'first_list_item' then {
     source: 'list',
-    id_selector: 'first',
     identifier: listName,
+    selector: 'first',
   } else {
     source: 'location',
     identifier: 'list_item_id',
@@ -102,8 +102,8 @@ local isSameName(source='', listName='household') = (
     arguments: {
       list_to_check: {
         source: 'list',
-        id_selector: 'same_name_items',
         identifier: listName,
+        selector: 'same_name_items',
       },
       value: valueSource,
     },
@@ -115,7 +115,7 @@ local listHasSameNameItems = {
   arguments: {
     list_to_check: {
       source: 'list',
-      id_selector: 'same_name_items',
+      selector: 'same_name_items',
       identifier: 'household',
     },
   },
@@ -124,10 +124,16 @@ local listHasSameNameItems = {
 local concatenateNames = {
   transform: 'concatenate_list',
   arguments: {
-    list_to_concatenate: {
-      source: 'answers',
-      identifier: ['first-name', 'last-name'],
-    },
+    list_to_concatenate: [
+      {
+        source: 'answers',
+        identifier: 'first-name',
+      },
+      {
+        source: 'answers',
+        identifier: 'last-name',
+      },
+    ],
     delimiter: ' ',
   },
 };

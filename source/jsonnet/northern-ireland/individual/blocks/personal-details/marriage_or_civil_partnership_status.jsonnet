@@ -55,7 +55,7 @@ local question(title) = {
 local nonProxyTitle = 'What is your marital or civil partnership status?';
 
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> marital or civil partnership status?',
+  text: 'What is <strong>{person_name_possessive}</strong> marital or civil partnership status?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -68,11 +68,11 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

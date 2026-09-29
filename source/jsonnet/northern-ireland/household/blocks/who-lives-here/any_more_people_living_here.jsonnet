@@ -33,21 +33,21 @@ local addPersonQuestionTitle = {
 };
 
 local primaryEditPersonQuestionTitle = {
-  text: 'Change details for <em>{person_name}</em> (You)',
+  text: 'Change details for <strong>{person_name}</strong> (You)',
   placeholders: [
     placeholders.personName(includeMiddleNames='if_same_names_exist'),
   ],
 };
 
 local nonPrimaryEditPersonQuestionTitle = {
-  text: 'Change details for <em>{person_name}</em>',
+  text: 'Change details for <strong>{person_name}</strong>',
   placeholders: [
     placeholders.personName(includeMiddleNames='if_same_names_exist'),
   ],
 };
 
 local removePersonQuestionTitle = {
-  text: 'Are you sure you want to remove <em>{person_name}</em>?',
+  text: 'Are you sure you want to remove <strong>{person_name}</strong>?',
   placeholders: [
     placeholders.personName(includeMiddleNames='if_same_names_exist'),
   ],
@@ -223,11 +223,11 @@ local editQuestion(questionTitle) = {
     question_variants: [
       {
         question: editQuestion(primaryEditPersonQuestionTitle),
-        when: [rules.isPrimary],
+        when: rules.isPrimary,
       },
       {
         question: editQuestion(nonPrimaryEditPersonQuestionTitle),
-        when: [rules.isNotPrimary],
+        when: rules.isNotPrimary,
       },
     ],
   },

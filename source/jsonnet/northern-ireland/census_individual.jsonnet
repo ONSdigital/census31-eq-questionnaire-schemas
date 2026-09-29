@@ -91,12 +91,11 @@ function(region_code) {
   schema_version: '0.0.1',
   data_version: '0.0.3',
   survey_id: 'census',
-  survey: 'CENSUS',
   form_type: 'I',
   region_code: region_code,
   title: 'Census 2021',
-  description: 'Census England Individual Schema',
-  theme: 'census-nisra',
+  description: 'Census Northern Ireland Individual Schema',
+  theme: 'social',
   legal_basis: 'Voluntary',
   navigation: {
     visible: false,
@@ -115,13 +114,23 @@ function(region_code) {
       type: 'string',
     },
   ],
+  questionnaire_flow: {
+    type: 'Linear',
+    options: {
+      summary: {
+        collapsible: false,
+      },
+    },
+  },
   submission: {
     button: 'Submit census',
-    guidance: 'By submitting this census return you are confirming that, to the best of your knowledge and belief, the details provided are correct.',
+    guidance: 'By submitting this census you are confirming that, to the best of your knowledge and belief, the details provided are correct.',
     title: 'Submit census',
     warning: 'You must submit this census to complete it',
-    confirmation_email: true,
+  },
+  post_submission: {
     feedback: true,
+    confirmation_email: true,
   },
   sections: [
     {
@@ -233,22 +242,6 @@ function(region_code) {
             study_location_country,
             study_location_in_northern_ireland,
             travel_to_study_location,
-          ],
-        },
-      ],
-    },
-    {
-      id: 'submit-answers-section',
-      title: 'Submit answers',
-      groups: [
-        {
-          id: 'submit-group',
-          title: 'Submit answers',
-          blocks: [
-            {
-              id: 'summary',
-              type: 'Summary',
-            },
           ],
         },
       ],

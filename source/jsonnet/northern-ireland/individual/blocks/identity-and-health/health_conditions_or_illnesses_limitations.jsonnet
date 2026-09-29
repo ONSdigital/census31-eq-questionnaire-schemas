@@ -38,7 +38,7 @@ local question(title) = {
 local nonProxyTitle = 'Are your day-to-day activities limited because of a health problem or disability which has lasted, or is expected to last, at least 12 months?';
 
 local proxyTitle = {
-  text: 'Are <em>{person_name_possessive}</em> day-to-day activities limited because of a health problem or disability which has lasted, or is expected to last, at least 12 months?',
+  text: 'Are <strong>{person_name_possessive}</strong> day-to-day activities limited because of a health problem or disability which has lasted, or is expected to last, at least 12 months?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -51,11 +51,11 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

@@ -1,124 +1,221 @@
 {
   lastBirthdayAgeOver(age): {
-    id: 'age-last-birthday-answer',
-    condition: 'greater than or equal to',
-    value: age,
+    '>=': [
+      {
+        source: 'answers',
+        identifier: 'age-last-birthday-answer',
+      },
+      age,
+    ],
   },
   lastBirthdayAgeLessThan(age): {
-    id: 'age-last-birthday-answer',
-    condition: 'less than',
-    value: age,
+    '<': [
+      {
+        source: 'answers',
+        identifier: 'age-last-birthday-answer',
+      },
+      age,
+    ],
   },
   over16: {
-    id: 'date-of-birth-answer',
-    condition: 'less than or equal to',
-    date_comparison: {
-      value: std.extVar('census_date'),
-      offset_by: {
-        years: -16,
+    '<=': [
+      {
+        date: [
+          {
+            source: 'answers',
+            identifier: 'date-of-birth-answer',
+          },
+        ],
       },
-    },
+      {
+        date: [std.extVar('census_date'), { years: -16 }],
+      },
+    ],
   },
   over5: {
-    id: 'date-of-birth-answer',
-    condition: 'less than or equal to',
-    date_comparison: {
-      value: std.extVar('census_date'),
-      offset_by: {
-        years: -5,
+    '<=': [
+      {
+        date: [
+          {
+            source: 'answers',
+            identifier: 'date-of-birth-answer',
+          },
+        ],
       },
-    },
+      {
+        date: [std.extVar('census_date'), { years: -5 }],
+      },
+    ],
   },
   under4: {
-    id: 'date-of-birth-answer',
-    condition: 'greater than',
-    date_comparison: {
-      value: std.extVar('census_date'),
-      offset_by: {
-        years: -4,
+    '>': [
+      {
+        date: [
+          {
+            source: 'answers',
+            identifier: 'date-of-birth-answer',
+          },
+        ],
       },
-    },
+      {
+        date: [std.extVar('census_date'), { years: -4 }],
+      },
+    ],
   },
   under3: {
-    id: 'date-of-birth-answer',
-    condition: 'greater than',
-    date_comparison: {
-      value: std.extVar('census_date'),
-      offset_by: {
-        years: -3,
+    '>': [
+      {
+        date: [
+          {
+            source: 'answers',
+            identifier: 'date-of-birth-answer',
+          },
+        ],
       },
-    },
+      {
+        date: [std.extVar('census_date'), { years: -3 }],
+      },
+    ],
   },
   under1: {
-    id: 'date-of-birth-answer',
-    condition: 'greater than',
-    date_comparison: {
-      value: std.extVar('census_date'),
-      offset_by: {
-        years: -1,
+    '>': [
+      {
+        date: [
+          {
+            source: 'answers',
+            identifier: 'date-of-birth-answer',
+          },
+        ],
       },
-    },
+      {
+        date: [std.extVar('census_date'), { years: -1 }],
+      },
+    ],
   },
   schoolYearUnder4: {
-    id: 'date-of-birth-answer',
-    condition: 'greater than',
-    date_comparison: {
-      value: '2020-06-30',
-      offset_by: {
-        years: -4,
+    '>': [
+      {
+        date: [
+          {
+            source: 'answers',
+            identifier: 'date-of-birth-answer',
+          },
+        ],
       },
-    },
+      {
+        date: ['2020-06-30', { years: -4 }],
+      },
+    ],
   },
   mainJob: {
-    id: 'employment-status-last-seven-days-answer-exclusive',
-    condition: 'not set',
+    '==': [
+      {
+        source: 'answers',
+        identifier: 'employment-status-last-seven-days-answer-exclusive',
+      },
+      null,
+    ],
   },
   lastMainJob: {
-    id: 'employment-status-last-seven-days-answer-exclusive',
-    condition: 'contains',
-    value: 'None of these apply',
+    'in': [
+      'None of these apply',
+      {
+        source: 'answers',
+        identifier: 'employment-status-last-seven-days-answer-exclusive',
+      },
+    ],
   },
   hasWorked: {
-    id: 'ever-worked-answer',
-    condition: 'not equals any',
-    values: ['No, has never worked', 'No, have never worked'],
+    and: [
+      {
+        '!=': [
+          {
+            source: 'answers',
+            identifier: 'ever-worked-answer',
+          },
+          'No, has never worked',
+        ],
+      },
+      {
+        '!=': [
+          {
+            source: 'answers',
+            identifier: 'ever-worked-answer',
+          },
+          'No, have never worked',
+        ],
+      },
+      {
+        '!=': [
+          {
+            source: 'answers',
+            identifier: 'ever-worked-answer',
+          },
+          null,
+        ],
+      },
+    ],
   },
   accommodationIsHouse: {
-    id: 'accommodation-type-answer',
-    condition: 'equals',
-    value: 'Whole house or bungalow',
+    '==': [
+      {
+        source: 'answers',
+        identifier: 'accommodation-type-answer',
+      },
+      'Whole house or bungalow',
+    ],
   },
   accommodationIsFlat: {
-    id: 'accommodation-type-answer',
-    condition: 'equals',
-    value: 'Flat, maisonette or apartment',
+    '==': [
+      {
+        source: 'answers',
+        identifier: 'accommodation-type-answer',
+      },
+      'Flat, maisonette or apartment',
+    ],
   },
   isPrimary: {
-    list: 'household',
-    id_selector: 'primary_person',
-    condition: 'equals',
-    comparison: {
-      source: 'location',
-      id: 'list_item_id',
-    },
+    '==': [
+      {
+        source: 'list',
+        identifier: 'household',
+        selector: 'primary_person',
+      },
+      {
+        source: 'location',
+        identifier: 'list_item_id',
+      },
+    ],
   },
   isNotPrimary: {
-    list: 'household',
-    id_selector: 'primary_person',
-    condition: 'not equals',
-    comparison: {
-      source: 'location',
-      id: 'list_item_id',
-    },
+    '!=': [
+      {
+        source: 'list',
+        identifier: 'household',
+        selector: 'primary_person',
+      },
+      {
+        source: 'location',
+        identifier: 'list_item_id',
+      },
+    ],
   },
   hasPrimary: {
-    id: 'do-you-usually-live-here-answer',
-    condition: 'equals',
-    value: 'Yes, I usually live here',
+    '==': [
+      {
+        source: 'answers',
+        identifier: 'do-you-usually-live-here-answer',
+      },
+      'Yes, I usually live here',
+    ],
   },
   hasNoPrimary: {
-    id: 'do-you-usually-live-here-answer',
-    condition: 'equals',
-    value: 'No, I don’t usually live here',
+    '==': [
+      {
+        source: 'answers',
+        identifier: 'do-you-usually-live-here-answer',
+      },
+      'No, I don’t usually live here',
+    ],
   },
 }

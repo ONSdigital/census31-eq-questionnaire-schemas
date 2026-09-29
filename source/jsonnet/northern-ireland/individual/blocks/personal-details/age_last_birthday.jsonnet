@@ -9,7 +9,7 @@ local rules = import 'rules.libsonnet';
     id: 'age-last-birthday-question',
     type: 'General',
     title: {
-      text: 'What was <em>{person_name_possessive}</em> age on their last birthday?',
+      text: 'What was <strong>{person_name_possessive}</strong> age on their last birthday?',
       placeholders: [
         placeholders.personNamePossessive,
       ],
@@ -48,9 +48,7 @@ local rules = import 'rules.libsonnet';
   },
   routing_rules: [
     {
-      goto: {
-        block: 'sex',
-      },
+      block: 'sex',
     },
   ],
 }

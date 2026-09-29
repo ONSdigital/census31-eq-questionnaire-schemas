@@ -9,7 +9,7 @@ local placeholders = import '../../../lib/placeholders.libsonnet';
     type: 'MutuallyExclusive',
     mandatory: false,
     title: {
-      text: 'What type of central heating does <em>{household_address}</em> have?',
+      text: 'What type of central heating does <strong>{household_address}</strong> have?',
       placeholders: [placeholders.address],
     },
     guidance: {

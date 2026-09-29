@@ -2,13 +2,21 @@ local common_rules = import '../../lib/common_rules.libsonnet';
 
 {
   isNotProxy: {
-    id: 'confirm-who-is-answering-answer',
-    condition: 'equals',
-    value: 'For myself',
+    '==': [
+      {
+        source: 'answers',
+        identifier: 'confirm-who-is-answering-answer',
+      },
+      'For myself',
+    ],
   },
   isProxy: {
-    id: 'confirm-who-is-answering-answer',
-    condition: 'equals',
-    value: 'For someone else',
+    '==': [
+      {
+        source: 'answers',
+        identifier: 'confirm-who-is-answering-answer',
+      },
+      'For someone else',
+    ],
   },
 } + common_rules

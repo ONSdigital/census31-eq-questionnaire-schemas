@@ -18,9 +18,9 @@ local question(title) = {
   ],
 };
 
-local nonProxyTitleSchool = 'What is the address of your main place of <em>study</em>?';
+local nonProxyTitleSchool = 'What is the address of your main place of <strong>study</strong>?';
 local proxyTitleSchool = {
-  text: 'What is the address of <em>{person_name_possessive}</em> main place of <em>study</em>?',
+  text: 'What is the address of <strong>{person_name_possessive}</strong> main place of <strong>study</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -33,11 +33,11 @@ local proxyTitleSchool = {
   question_variants: [
     {
       question: question(nonProxyTitleSchool),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitleSchool),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

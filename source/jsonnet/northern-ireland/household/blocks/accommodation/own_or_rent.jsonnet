@@ -7,7 +7,7 @@ local placeholders = import '../../../lib/placeholders.libsonnet';
   question: {
     id: 'own-or-rent-question',
     title: {
-      text: 'Does your household own or rent <em>{household_address}</em>?',
+      text: 'Does your household own or rent <strong>{household_address}</strong>?',
       placeholders: [placeholders.address],
     },
     type: 'General',
@@ -43,29 +43,31 @@ local placeholders = import '../../../lib/placeholders.libsonnet';
   },
   routing_rules: [
     {
-      goto: {
-        block: 'number-of-vehicles',
-        when: [{
-          id: 'own-or-rent-answer',
-          condition: 'equals',
-          value: 'Owns outright',
-        }],
+      block: 'number-of-vehicles',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'own-or-rent-answer',
+          },
+          'Owns outright',
+        ],
       },
     },
     {
-      goto: {
-        block: 'number-of-vehicles',
-        when: [{
-          id: 'own-or-rent-answer',
-          condition: 'equals',
-          value: 'Owns with a mortgage or loan',
-        }],
+      block: 'number-of-vehicles',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'own-or-rent-answer',
+          },
+          'Owns with a mortgage or loan',
+        ],
       },
     },
     {
-      goto: {
-        block: 'who-rent-from',
-      },
+      block: 'who-rent-from',
     },
   ],
 }

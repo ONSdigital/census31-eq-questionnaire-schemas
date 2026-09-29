@@ -61,9 +61,9 @@ local question(title, description) = {
 };
 
 
-local nonProxyTitleSchool = 'How do you usually travel to your main place of <em>study</em>, including school?';
+local nonProxyTitleSchool = 'How do you usually travel to your main place of <strong>study</strong>, including school?';
 local proxyTitleSchool = {
-  text: 'How does <em>{person_name}</em> usually travel to their main place of <em>study</em>, including school?',
+  text: 'How does <strong>{person_name}</strong> usually travel to their main place of <strong>study</strong>, including school?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -79,11 +79,11 @@ local proxyDescriptionSchool = 'Answer for the longest part, by distance, of the
   question_variants: [
     {
       question: question(nonProxyTitleSchool, nonProxyDescriptionSchool),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitleSchool, proxyDescriptionSchool),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

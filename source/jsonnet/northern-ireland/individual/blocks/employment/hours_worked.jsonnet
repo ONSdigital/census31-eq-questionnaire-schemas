@@ -5,7 +5,7 @@ local questionTitle(isProxy, isEmployed) = (
   local employedTitle = (
     if isProxy then
       {
-        text: 'In <em>{person_name_possessive}</em> main job, how many hours a week do they usually work?',
+        text: 'In <strong>{person_name_possessive}</strong> main job, how many hours a week do they usually work?',
         placeholders: [
           placeholders.personNamePossessive,
         ],
@@ -15,7 +15,7 @@ local questionTitle(isProxy, isEmployed) = (
   local unemployedTitle = (
     if isProxy then
       {
-        text: 'In <em>{person_name_possessive}</em> main job, how many hours a week did they usually work?',
+        text: 'In <strong>{person_name_possessive}</strong> main job, how many hours a week did they usually work?',
         placeholders: [
           placeholders.personNamePossessive,
         ],
@@ -83,46 +83,48 @@ local question(isProxy, isEmployed) = {
   question_variants: [
     {
       question: question(isProxy=false, isEmployed=true),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(isProxy=true, isEmployed=true),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(isProxy=false, isEmployed=false),
-      when: [rules.isNotProxy, rules.lastMainJob],
+      when: { and: [rules.isNotProxy, rules.lastMainJob] },
     },
     {
       question: question(isProxy=true, isEmployed=false),
-      when: [rules.isProxy, rules.lastMainJob],
+      when: { and: [rules.isProxy, rules.lastMainJob] },
     },
   ],
   routing_rules: [
     {
-      goto: {
-        group: 'school-group',
-        when: [{
-          id: 'in-education-answer',
-          condition: 'equals',
-          value: 'Yes',
-        }],
+      group: 'school-group',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'in-education-answer',
+          },
+          'Yes',
+        ],
       },
     },
     {
-      goto: {
-        group: 'school-group',
-        when: [{
-          id: 'not-employed-status-last-seven-days-answer',
-          condition: 'contains',
-          value: 'Studying',
-        }],
+      group: 'school-group',
+      when: {
+        'in': [
+          'Studying',
+          {
+            source: 'answers',
+            identifier: 'not-employed-status-last-seven-days-answer',
+          },
+        ],
       },
     },
     {
-      goto: {
-        block: 'workplace-type',
-      },
+      block: 'workplace-type',
     },
   ],
 }

@@ -32,14 +32,14 @@ local addVisitorQuestionTitle = {
 };
 
 local editPersonQuestionTitle = {
-  text: 'Change details for <em>{person_name}</em>',
+  text: 'Change details for <strong>{person_name}</strong>',
   placeholders: [
     placeholders.personName(),
   ],
 };
 
 local removePersonQuestionTitle = {
-  text: 'Are you sure you want to remove <em>{person_name}</em>?',
+  text: 'Are you sure you want to remove <strong>{person_name}</strong>?',
   placeholders: [
     placeholders.personName(),
   ],

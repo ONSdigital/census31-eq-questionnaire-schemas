@@ -30,36 +30,34 @@ local question(title) = {
   page_title: 'Study location',
   question_variants: [
     {
-      question: question('Is your place of <em>study</em> in Northern Ireland?'),
-      when: [rules.isNotProxy],
+      question: question('Is your place of <strong>study</strong> in Northern Ireland?'),
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'Is <em>{person_name_possessive}</em> place of <em>study</em> in Northern Ireland?',
+        text: 'Is <strong>{person_name_possessive}</strong> place of <strong>study</strong> in Northern Ireland?',
         placeholders: [
           placeholders.personNamePossessive,
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'study-location-country',
-        when: [
+      block: 'study-location-country',
+      when: {
+        '==': [
           {
-            id: 'study-location-answer',
-            condition: 'equals',
-            value: 'No, it is in another country',
+            source: 'answers',
+            identifier: 'study-location-answer',
           },
+          'No, it is in another country',
         ],
       },
     },
     {
-      goto: {
-        block: 'study-location-in-northern-ireland',
-      },
+      block: 'study-location-in-northern-ireland',
     },
   ],
 }

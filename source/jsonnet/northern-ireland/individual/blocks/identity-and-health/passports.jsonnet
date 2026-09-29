@@ -55,7 +55,7 @@ local nonProxyDefinitionContent = 'Include current passports and any other trave
 local nonProxyTitle = 'What passports do you hold?';
 local proxyDefinitionContent = 'Include current passports and any other travel documents, including those that are expired, if they are entitled to renew them.';
 local proxyTitle = {
-  text: 'What passports does <em>{person_name}</em> hold?',
+  text: 'What passports does <strong>{person_name}</strong> hold?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -69,47 +69,53 @@ local proxyLabel = 'Please specify the passports held';
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDefinitionContent, 'You can enter your passports on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyDefinitionContent, 'You can enter their passports on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'passports-additional-other',
-        when: [
+      block: 'passports-additional-other',
+      when: {
+        and: [
           {
-            id: 'passports-answer',
-            condition: 'contains any',
-            values: ['United Kingdom', 'Ireland'],
+            'any-in': [
+              ['United Kingdom', 'Ireland'],
+              {
+                source: 'answers',
+                identifier: 'passports-answer',
+              },
+            ],
           },
           {
-            id: 'passports-answer',
-            condition: 'contains',
-            value: 'Other',
-          },
-        ],
-      },
-    },
-    {
-      goto: {
-        block: 'passports-other',
-        when: [
-          {
-            id: 'passports-answer',
-            condition: 'contains',
-            value: 'Other',
+            'in': [
+              'Other',
+              {
+                source: 'answers',
+                identifier: 'passports-answer',
+              },
+            ],
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'national-identity',
+      block: 'passports-other',
+      when: {
+        'in': [
+          'Other',
+          {
+            source: 'answers',
+            identifier: 'passports-answer',
+          },
+        ],
       },
+    },
+    {
+      block: 'national-identity',
     },
   ],
 }

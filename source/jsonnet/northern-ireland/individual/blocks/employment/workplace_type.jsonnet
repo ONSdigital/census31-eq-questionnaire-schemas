@@ -32,24 +32,24 @@ local question(title, description) = {
 };
 
 
-local nonProxyTitleWork = 'Where is your main place of <em>work</em>?';
+  local nonProxyTitleWork = 'Where is your main place of <strong>work</strong>?';
 local proxyTitleWork = {
-  text: 'Where is <em>{person_name_possessive}</em> main place of <em>work</em>?',
+  text: 'Where is <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
 };
-local nonProxyTitleDidWork = 'Where did you mainly <em>work</em>?';
+  local nonProxyTitleDidWork = 'Where did you mainly <strong>work</strong>?';
 local proxyTitleDidWork = {
-  text: 'Where did <em>{person_name}</em> mainly <em>work</em>?',
+  text: 'Where did <strong>{person_name}</strong> mainly <strong>work</strong>?',
   placeholders: [
     placeholders.personName(),
   ],
 };
 
 local nonProxyDescriptionWork = 'Answer for the place where you spend the most time. Even if ill, on maternity leave, holiday or temporarily laid off provide details of your main place of work.';
-local proxyDescriptionWork = {
-  text: 'Answer for the place where <em>{person_name}</em> spends the most time. Even if ill, on maternity leave, holiday or temporarily laid off provide details of their main place of work.',
+  local proxyDescriptionWork = {
+  text: 'Answer for the place where <strong>{person_name}</strong> spends the most time. Even if ill, on maternity leave, holiday or temporarily laid off provide details of their main place of work.',
   placeholders: [
     placeholders.personName(),
   ],
@@ -57,7 +57,7 @@ local proxyDescriptionWork = {
 
 local nonProxyDescriptionDidWork = 'Answer for the place where you spent the most time.';
 local proxyDescriptionDidWork = {
-  text: 'Answer for the place where <em>{person_name}</em> spent the most time.',
+  text: 'Answer for the place where <strong>{person_name}</strong> spent the most time.',
   placeholders: [
     placeholders.personName(),
   ],
@@ -70,50 +70,48 @@ local proxyDescriptionDidWork = {
   question_variants: [
     {
       question: question(nonProxyTitleWork, nonProxyDescriptionWork),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitleWork, proxyDescriptionWork),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(nonProxyTitleDidWork, nonProxyDescriptionDidWork),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitleDidWork, proxyDescriptionDidWork),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'workplace-location',
-        when: [
+      block: 'workplace-location',
+      when: {
+        '==': [
           {
-            id: 'workplace-type-answer',
-            condition: 'equals',
-            value: 'At a workplace',
+            source: 'answers',
+            identifier: 'workplace-type-answer',
           },
+          'At a workplace',
         ],
       },
     },
     {
-      goto: {
-        block: 'travel-to-work',
-        when: [
+      block: 'travel-to-work',
+      when: {
+        '==': [
           {
-            id: 'workplace-type-answer',
-            condition: 'equals',
-            value: 'No fixed place',
+            source: 'answers',
+            identifier: 'workplace-type-answer',
           },
+          'No fixed place',
         ],
       },
     },
     {
-      goto: {
-        section: 'End',
-      },
+      section: 'End',
     },
   ],
 }

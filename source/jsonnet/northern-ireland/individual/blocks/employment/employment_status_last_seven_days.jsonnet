@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local questionTitle(isProxy) = (
   if isProxy then {
-    text: 'In the last seven days, was <em>{person_name}</em> doing any of the following?',
+    text: 'In the last seven days, was <strong>{person_name}</strong> doing any of the following?',
     placeholders: [
       placeholders.personName(),
     ],
@@ -12,8 +12,8 @@ local questionTitle(isProxy) = (
 );
 
 local questionDescription(isProxy) =
-  if isProxy then 'If they have a job but have been off work on <em>furlough</em>, select “Temporarily away from work ill, on holiday or temporarily laid off”'
-  else 'If you have a job but have been off work on <em>furlough</em>, select “Temporarily away from work ill, on holiday or temporarily laid off”';
+  if isProxy then 'If they have a job but have been off work on <strong>furlough</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”'
+  else 'If you have a job but have been off work on <strong>furlough</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”';
 
 local question(isProxy) = {
   id: 'employment-status-last-seven-days-question',
@@ -77,26 +77,20 @@ local question(isProxy) = {
   question_variants: [
     {
       question: question(isProxy=false),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(isProxy=true),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'not-employed-status-last-seven-days',
-        when: [
-          rules.lastMainJob,
-        ],
-      },
+      block: 'not-employed-status-last-seven-days',
+      when: rules.lastMainJob,
     },
     {
-      goto: {
-        block: 'main-job-introduction',
-      },
+      block: 'main-job-introduction',
     },
   ],
 }

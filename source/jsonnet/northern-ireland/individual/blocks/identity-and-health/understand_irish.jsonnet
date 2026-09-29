@@ -38,7 +38,7 @@ local question(title) = {
 
 local nonProxyTitle = 'Can you understand, speak, read or write Irish?';
 local proxyTitle = {
-  text: 'Can <em>{person_name}</em> understand, speak, read or write Irish?',
+  text: 'Can <strong>{person_name}</strong> understand, speak, read or write Irish?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -51,30 +51,28 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'frequency-irish',
-        when: [
+      block: 'frequency-irish',
+      when: {
+        'in': [
+          'Speak Irish',
           {
-            id: 'understand-irish-answer',
-            condition: 'contains',
-            value: 'Speak Irish',
+            source: 'answers',
+            identifier: 'understand-irish-answer',
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'understand-ulster-scots',
-      },
+      block: 'understand-ulster-scots',
     },
   ],
 }

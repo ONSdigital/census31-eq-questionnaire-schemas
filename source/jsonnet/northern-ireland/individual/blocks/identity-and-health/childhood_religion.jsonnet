@@ -1,9 +1,9 @@
 local placeholders = import '../../../lib/placeholders.libsonnet';
 local rules = import 'rules.libsonnet';
 
-local nonProxyTitle = 'What religion, religious denomination or body were you <em>brought up</em> in?';
+local nonProxyTitle = 'What religion, religious denomination or body were you <strong>brought up</strong> in?';
 local proxyTitle = {
-  text: 'What religion, religious denomination or body was {person_name} <em>brought up</em> in?',
+  text: 'What religion, religious denomination or body was {person_name} <strong>brought up</strong> in?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -65,42 +65,36 @@ local question(title) = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'childhood-religion-other',
-        when: [
+      block: 'childhood-religion-other',
+      when: {
+        'in': [
+          'Other',
           {
-            id: 'childhood-religion-answer',
-            condition: 'contains',
-            value: 'Other',
+            source: 'answers',
+            identifier: 'childhood-religion-answer',
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'health',
-        when: [rules.under3],
-      },
+      block: 'health',
+      when: rules.under3,
     },
     {
-      goto: {
-        block: 'health',
-        when: [rules.lastBirthdayAgeLessThan(3)],
-      },
+      block: 'health',
+      when: rules.lastBirthdayAgeLessThan(3),
     },
     {
-      goto: {
-        block: 'main-language',
-      },
+      block: 'main-language',
     },
   ],
 }

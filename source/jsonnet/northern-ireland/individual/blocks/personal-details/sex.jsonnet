@@ -26,7 +26,7 @@ local question(title) = {
 
 local nonProxyTitle = 'What is your sex?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> sex?',
+  text: 'What is <strong>{person_name_possessive}</strong> sex?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -39,42 +39,32 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'marital-or-civil-partnership-status',
-        when: [rules.over16],
-      },
+      block: 'marital-or-civil-partnership-status',
+      when: rules.over16,
     },
     {
-      goto: {
-        block: 'marital-or-civil-partnership-status',
-        when: [rules.lastBirthdayAgeOver(16)],
-      },
+      block: 'marital-or-civil-partnership-status',
+      when: rules.lastBirthdayAgeOver(16),
     },
     {
-      goto: {
-        group: 'identity-and-health-group',
-        when: [rules.schoolYearUnder4],
-      },
+      group: 'identity-and-health-group',
+      when: rules.schoolYearUnder4,
     },
     {
-      goto: {
-        group: 'identity-and-health-group',
-        when: [rules.lastBirthdayAgeLessThan(4)],
-      },
+      group: 'identity-and-health-group',
+      when: rules.lastBirthdayAgeLessThan(4),
     },
     {
-      goto: {
-        block: 'in-education',
-      },
+      block: 'in-education',
     },
   ],
 }

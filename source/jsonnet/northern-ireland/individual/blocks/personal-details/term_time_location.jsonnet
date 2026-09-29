@@ -35,7 +35,7 @@ local question(title) = {
 
 local nonProxyTitle = 'During term time, where do you usually live?';
 local proxyTitle = {
-  text: 'During term time, where does <em>{person_name}</em> usually live?',
+  text: 'During term time, where does <strong>{person_name}</strong> usually live?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -48,42 +48,40 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'term-time-address-country-outside-uk',
-        when: [
+      block: 'term-time-address-country-outside-uk',
+      when: {
+        '==': [
           {
-            id: 'term-time-location-answer',
-            condition: 'equals',
-            value: 'At another address outside the UK',
+            source: 'answers',
+            identifier: 'term-time-location-answer',
           },
+          'At another address outside the UK',
         ],
       },
     },
     {
-      goto: {
-        block: 'term-time-address-uk',
-        when: [
+      block: 'term-time-address-uk',
+      when: {
+        '==': [
           {
-            id: 'term-time-location-answer',
-            condition: 'equals',
-            value: 'At another address in the UK',
+            source: 'answers',
+            identifier: 'term-time-location-answer',
           },
+          'At another address in the UK',
         ],
       },
     },
     {
-      goto: {
-        group: 'identity-and-health-group',
-      },
+      group: 'identity-and-health-group',
     },
   ],
 }

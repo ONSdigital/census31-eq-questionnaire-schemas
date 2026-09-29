@@ -39,7 +39,7 @@ local question(title) = {
 
 local nonProxyTitle = 'Which of the following describes what you were doing in the last seven days?';
 local proxyTitle = {
-  text: 'Which of the following describes what <em>{person_name}</em> was doing in the last seven days?',
+  text: 'Which of the following describes what <strong>{person_name}</strong> was doing in the last seven days?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -52,11 +52,11 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

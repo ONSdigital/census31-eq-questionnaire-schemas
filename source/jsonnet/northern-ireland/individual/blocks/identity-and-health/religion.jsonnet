@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'What religion, religious denomination or body do you belong to?';
 local proxyTitle = {
-  text: 'What religion, religious denomination or body does <em>{person_name}</em> belong to?',
+  text: 'What religion, religious denomination or body does <strong>{person_name}</strong> belong to?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -65,53 +65,48 @@ local question(title, otherReligionDescription) = {
   question_variants: [
     {
       question: question(nonProxyTitle, 'You can enter your religion on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, 'You can enter their religion on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'religion-other',
-        when: [
+      block: 'religion-other',
+      when: {
+        'in': [
+          'Other',
           {
-            id: 'religion-answer',
-            condition: 'contains',
-            value: 'Other',
+            source: 'answers',
+            identifier: 'religion-answer',
           },
         ],
       },
     },
     {
-      goto: {
-        block: 'childhood-religion',
-        when: [
+      block: 'childhood-religion',
+      when: {
+        '==': [
           {
-            id: 'religion-answer',
-            condition: 'not set',
+            source: 'answers',
+            identifier: 'religion-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        block: 'health',
-        when: [rules.under3],
-      },
+      block: 'health',
+      when: rules.under3,
     },
     {
-      goto: {
-        block: 'health',
-        when: [rules.lastBirthdayAgeLessThan(3)],
-      },
+      block: 'health',
+      when: rules.lastBirthdayAgeLessThan(3),
     },
     {
-      goto: {
-        block: 'main-language',
-      },
+      block: 'main-language',
     },
   ],
 }

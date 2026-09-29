@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'What is your ethnic group?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> ethnic group?',
+  text: 'What is <strong>{person_name_possessive}</strong> ethnic group?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -79,30 +79,28 @@ local question(title, otherEthnicGroupDescription) = {
   question_variants: [
     {
       question: question(nonProxyTitle, 'You can enter your ethnic group on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, 'You can enter their ethnic group on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'ethnic-group-other',
-        when: [
+      block: 'ethnic-group-other',
+      when: {
+        '==': [
           {
-            id: 'ethnic-group-answer',
-            condition: 'equals',
-            value: 'Any other ethnic group',
+            source: 'answers',
+            identifier: 'ethnic-group-answer',
           },
+          'Any other ethnic group',
         ],
       },
     },
     {
-      goto: {
-        block: 'religion',
-      },
+      block: 'religion',
     },
   ],
 }

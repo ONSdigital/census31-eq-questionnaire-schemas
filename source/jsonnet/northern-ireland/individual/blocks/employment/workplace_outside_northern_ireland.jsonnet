@@ -23,17 +23,17 @@ local question(title) = {
   ],
 };
 
-local nonProxyTitle = 'In which town and county is your main place of <em>work</em>?';
+  local nonProxyTitle = 'In which town and county is your main place of <strong>work</strong>?';
 local proxyTitle = {
-  text: 'In which town and county is <em>{person_name_possessive}</em> main place of <em>work</em>?',
+  text: 'In which town and county is <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
 };
 
-local pastNonProxyTitle = 'In which town and county was your main place of <em>work</em>?';
+  local pastNonProxyTitle = 'In which town and county was your main place of <strong>work</strong>?';
 local pastProxyTitle = {
-  text: 'In which town and county was <em>{person_name_possessive}</em> main place of <em>work</em>?',
+  text: 'In which town and county was <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -46,26 +46,24 @@ local pastProxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(pastNonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(pastProxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'travel-to-work',
-      },
+      block: 'travel-to-work',
     },
   ],
 }

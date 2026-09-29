@@ -5,7 +5,7 @@ local question(title, label) = {
   id: 'ever-worked-question',
   title: title,
   type: 'General',
-  description: ['<em>Furlough</em> is considered paid work'],
+  description: ['<strong>Furlough</strong> is considered paid work'],
   answers: [
     {
       id: 'ever-worked-answer',
@@ -33,7 +33,7 @@ local nonProxyTitle = 'Have you ever done any paid work?';
 local nonProxyLabel = 'No, have never worked';
 
 local proxyTitle = {
-  text: 'Has <em>{person_name}</em> ever done any paid work?',
+  text: 'Has <strong>{person_name}</strong> ever done any paid work?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -47,44 +47,44 @@ local proxyLabel = 'No, has never worked';
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyLabel),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyLabel),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'main-job-introduction',
-        when: [rules.hasWorked],
+      block: 'main-job-introduction',
+      when: rules.hasWorked,
+    },
+    {
+      group: 'school-group',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'in-education-answer',
+          },
+          'Yes',
+        ],
       },
     },
     {
-      goto: {
-        group: 'school-group',
-        when: [{
-          id: 'in-education-answer',
-          condition: 'equals',
-          value: 'Yes',
-        }],
+      group: 'school-group',
+      when: {
+        'in': [
+          'Studying',
+          {
+            source: 'answers',
+            identifier: 'not-employed-status-last-seven-days-answer',
+          },
+        ],
       },
     },
     {
-      goto: {
-        group: 'school-group',
-        when: [{
-          id: 'not-employed-status-last-seven-days-answer',
-          condition: 'contains',
-          value: 'Studying',
-        }],
-      },
-    },
-    {
-      goto: {
-        section: 'End',
-      },
+      section: 'End',
     },
   ],
 }

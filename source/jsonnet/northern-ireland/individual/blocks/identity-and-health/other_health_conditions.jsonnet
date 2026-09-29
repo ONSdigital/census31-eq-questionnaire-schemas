@@ -61,10 +61,10 @@ local question(title) = {
   ],
 };
 
-local nonProxyTitle = 'Do you have any of the following <em>other health conditions</em> which have lasted, or are expected to last, at least 12 months?';
+local nonProxyTitle = 'Do you have any of the following <strong>other health conditions</strong> which have lasted, or are expected to last, at least 12 months?';
 
 local proxyTitle = {
-  text: 'Does {person_name} have any of the following <em>other health conditions</em> which have lasted, or are expected to last, at least 12 months?',
+  text: 'Does {person_name} have any of the following <strong>other health conditions</strong> which have lasted, or are expected to last, at least 12 months?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -77,42 +77,32 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
         section: 'End',
-        when: [rules.schoolYearUnder4],
-      },
+        when: rules.schoolYearUnder4,
     },
     {
-      goto: {
         section: 'End',
-        when: [rules.lastBirthdayAgeLessThan(4)],
-      },
+        when: rules.lastBirthdayAgeLessThan(4),
     },
     {
-      goto: {
         block: 'look-after-or-support-others',
-        when: [rules.over5],
-      },
+        when: rules.over5,
     },
     {
-      goto: {
         block: 'look-after-or-support-others',
-        when: [rules.lastBirthdayAgeOver(5)],
-      },
+        when: rules.lastBirthdayAgeOver(5),
     },
     {
-      goto: {
         group: 'school-group',
-      },
     },
   ],
 }

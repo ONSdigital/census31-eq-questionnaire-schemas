@@ -60,17 +60,17 @@ local question(title, description) = {
   ],
 };
 
-local nonProxyTitleWork = 'How do you usually travel to your main place of <em>work</em>?';
+local nonProxyTitleWork = 'How do you usually travel to your main place of <strong>work</strong>?';
 local proxyTitleWork = {
-  text: 'How does <em>{person_name}</em> usually travel to their main place of <em>work</em>?',
+  text: 'How does <strong>{person_name}</strong> usually travel to their main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personName(),
   ],
 };
 
-local pastNonProxyTitleWork = 'How did you usually travel to your main place of <em>work</em>?';
+local pastNonProxyTitleWork = 'How did you usually travel to your main place of <strong>work</strong>?';
 local pastProxyTitleWork = {
-  text: 'How did <em>{person_name}</em> usually travel to their main place of <em>work</em>?',
+  text: 'How did <strong>{person_name}</strong> usually travel to their main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -86,26 +86,24 @@ local proxyDescriptionWork = 'Answer for the longest part, by distance, of their
   question_variants: [
     {
       question: question(nonProxyTitleWork, nonProxyDescriptionWork),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitleWork, proxyDescriptionWork),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(pastNonProxyTitleWork, nonProxyDescriptionWork),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(pastProxyTitleWork, proxyDescriptionWork),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
         section: 'End',
-      },
     },
   ],
 }

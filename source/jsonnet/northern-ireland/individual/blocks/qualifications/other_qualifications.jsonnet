@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'Have you achieved any other qualifications?';
 local proxyTitle = {
-  text: 'Has <em>{person_name}</em> achieved any other qualifications?',
+  text: 'Has <strong>{person_name}</strong> achieved any other qualifications?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -46,11 +46,11 @@ local question(title) = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

@@ -9,7 +9,7 @@ local rules = import 'rules.libsonnet';
     id: 'renewable-energy-systems-question',
     mandatory: false,
     title: {
-      text: 'What type of renewable energy systems does <em>{household_address}</em> have?',
+      text: 'What type of renewable energy systems does <strong>{household_address}</strong> have?',
       placeholders: [placeholders.address],
     },
     type: 'MutuallyExclusive',
@@ -58,15 +58,11 @@ local rules = import 'rules.libsonnet';
   },
   routing_rules: [
     {
-      goto: {
         section: 'End',
-        when: [rules.listIsEmpty('household')],
-      },
+        when: rules.listIsEmpty('household'),
     },
     {
-      goto: {
         block: 'own-or-rent',
-      },
     },
   ],
 }

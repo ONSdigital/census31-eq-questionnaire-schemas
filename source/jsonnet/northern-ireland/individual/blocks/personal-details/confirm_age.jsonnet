@@ -59,7 +59,7 @@ local nonProxyNoLabel = 'No, I need to correct my date of birth';
 local nonProxyNoValue = 'No, I need to correct my date of birth';
 
 local proxyTitle = {
-  text: '<em>{person_name}</em> is {age} old. Is this correct?',
+  text: '<strong>{person_name}</strong> is {age} old. Is this correct?',
   placeholders: [
     placeholders.personName(),
     dateOfBirthPlaceholder,
@@ -83,30 +83,28 @@ local proxyNoValue = 'No, I need to correct their date of birth';
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyYesLabel, nonProxyYesValue, nonProxyNoLabel, nonProxyNoValue),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyYesLabel, proxyYesValue, proxyNoLabel, proxyNoValue),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'date-of-birth',
-        when: [
+      block: 'date-of-birth',
+      when: {
+        'in': [
           {
-            id: 'confirm-age-answer',
-            condition: 'equals any',
-            values: [proxyNoValue, nonProxyNoValue],
+            source: 'answers',
+            identifier: 'confirm-age-answer',
           },
+          [proxyNoValue, nonProxyNoValue],
         ],
       },
     },
     {
-      goto: {
-        block: 'sex',
-      },
+      block: 'sex',
     },
   ],
 }

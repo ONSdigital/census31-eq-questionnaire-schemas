@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'What is your main language?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> main language?',
+  text: 'What is <strong>{person_name_possessive}</strong> main language?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -51,42 +51,40 @@ local question(title, definitionDescription) = {
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDefinitionDescription),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyDefinitionDescription),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'other-main-language',
-        when: [
+      block: 'other-main-language',
+      when: {
+        '==': [
           {
-            id: 'main-language-answer',
-            condition: 'equals',
-            value: 'Other, including British or Irish Sign Language',
+            source: 'answers',
+            identifier: 'main-language-answer',
           },
+          'Other, including British or Irish Sign Language',
         ],
       },
     },
     {
-      goto: {
-        block: 'understand-irish',
-        when: [
+      block: 'understand-irish',
+      when: {
+        '==': [
           {
-            id: 'main-language-answer',
-            condition: 'equals',
-            value: 'English',
+            source: 'answers',
+            identifier: 'main-language-answer',
           },
+          'English',
         ],
       },
     },
     {
-      goto: {
-        block: 'level-of-spoken-english',
-      },
+      block: 'level-of-spoken-english',
     },
   ],
 }

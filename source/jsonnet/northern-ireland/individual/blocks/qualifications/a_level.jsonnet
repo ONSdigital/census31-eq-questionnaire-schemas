@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'Have you achieved an A level, AS level or equivalent qualifications?';
 local proxyTitle = {
-  text: 'Has <em>{person_name}</em> achieved an A level, AS level or equivalent qualifications?',
+  text: 'Has <strong>{person_name}</strong> achieved an A level, AS level or equivalent qualifications?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -65,11 +65,11 @@ local question(title) = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

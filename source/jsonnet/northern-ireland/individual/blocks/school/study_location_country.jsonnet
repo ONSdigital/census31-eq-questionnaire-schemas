@@ -23,24 +23,22 @@ local question(title) = {
   page_title: 'Country of study',
   question_variants: [
     {
-      question: question('In which country is your course of <em>study</em>, including school?'),
-      when: [rules.isNotProxy],
+      question: question('In which country is your course of <strong>study</strong>, including school?'),
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'In which country is <em>{person_name_possessive}</em> course of <em>study</em>, including school?',
+        text: 'In which country is <strong>{person_name_possessive}</strong> course of <strong>study</strong>, including school?',
         placeholders: [
           placeholders.personNamePossessive,
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'travel-to-study-location',
-      },
+      block: 'travel-to-study-location',
     },
   ],
 }

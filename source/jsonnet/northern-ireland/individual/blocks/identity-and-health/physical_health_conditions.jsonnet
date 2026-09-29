@@ -50,10 +50,10 @@ local question(title) = {
   ],
 };
 
-local nonProxyTitle = 'Do you have any of the following <em>physical health conditions</em> which have lasted, or are expected to last, at least 12 months?';
+local nonProxyTitle = 'Do you have any of the following <strong>physical health conditions</strong> which have lasted, or are expected to last, at least 12 months?';
 
 local proxyTitle = {
-  text: 'Does {person_name} have any of the following <em>physical health conditions</em> which have lasted, or are expected to last, at least 12 months?',
+  text: 'Does {person_name} have any of the following <strong>physical health conditions</strong> which have lasted, or are expected to last, at least 12 months?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -66,11 +66,11 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

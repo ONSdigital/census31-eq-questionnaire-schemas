@@ -31,7 +31,7 @@ local question(title) = {
 
 local nonProxyTitle = 'What year did you come to live in Northern Ireland?';
 local proxyTitle = {
-  text: 'What year did <em>{person_name}</em> come to live in Northern Ireland?',
+  text: 'What year did <strong>{person_name}</strong> come to live in Northern Ireland?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -44,30 +44,24 @@ local proxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'passports',
-        when: [rules.under1],
-      },
+      block: 'passports',
+      when: rules.under1,
     },
     {
-      goto: {
-        block: 'passports',
-        when: [rules.lastBirthdayAgeLessThan(1)],
-      },
+      block: 'passports',
+      when: rules.lastBirthdayAgeLessThan(1),
     },
     {
-      goto: {
-        block: 'location-one-year-ago',
-      },
+      block: 'location-one-year-ago',
     },
   ],
 }

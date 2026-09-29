@@ -24,23 +24,21 @@ local question(title) = {
   question_variants: [
     {
       question: question('During term time, in which country outside the UK do you usually live?'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question({
-        text: 'During term time, in which country outside the UK does <em>{person_name}</em> usually live?',
+        text: 'During term time, in which country outside the UK does <strong>{person_name}</strong> usually live?',
         placeholders: [
           placeholders.personName(),
         ],
       }),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        group: 'identity-and-health-group',
-      },
+      group: 'identity-and-health-group',
     },
   ],
 }

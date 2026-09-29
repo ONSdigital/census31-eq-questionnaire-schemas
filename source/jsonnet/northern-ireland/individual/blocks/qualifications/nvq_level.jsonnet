@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'Have you achieved an NVQ or equivalent qualification?';
 local proxyTitle = {
-  text: 'Has <em>{person_name}</em> achieved an NVQ or equivalent qualification?',
+  text: 'Has <strong>{person_name}</strong> achieved an NVQ or equivalent qualification?',
   placeholders: [
     placeholders.personName(),
   ],
@@ -64,63 +64,64 @@ local question(title) = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'apprenticeship',
-        when: [
+      block: 'apprenticeship',
+      when: {
+        '==': [
           {
-            id: 'degree-level-or-above-answer',
-            condition: 'equals',
-            value: 'Yes',
+            source: 'answers',
+            identifier: 'degree-level-or-above-answer',
           },
+          'Yes',
         ],
       },
     },
     {
-      goto: {
-        block: 'apprenticeship',
-        when: [
+      block: 'apprenticeship',
+      when: {
+        '!=': [
           {
-            id: 'gcse-answer',
-            condition: 'set',
+            source: 'answers',
+            identifier: 'gcse-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        block: 'apprenticeship',
-        when: [
+      block: 'apprenticeship',
+      when: {
+        '!=': [
           {
-            id: 'a-level-answer',
-            condition: 'set',
+            source: 'answers',
+            identifier: 'a-level-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        block: 'apprenticeship',
-        when: [
+      block: 'apprenticeship',
+      when: {
+        '!=': [
           {
-            id: 'nvq-level-answer',
-            condition: 'set',
+            source: 'answers',
+            identifier: 'nvq-level-answer',
           },
+          null,
         ],
       },
     },
     {
-      goto: {
-        block: 'other-qualifications',
-      },
+      block: 'other-qualifications',
     },
   ],
 }

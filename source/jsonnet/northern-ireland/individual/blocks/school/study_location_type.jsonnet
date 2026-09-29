@@ -31,16 +31,16 @@ local question(title, description) = {
   ],
 };
 
-local nonProxyTitleStudy = 'Where is your main place of <em>study</em>?';
+  local nonProxyTitleStudy = 'Where is your main place of <strong>study</strong>?';
 local proxyTitleStudy = {
-  text: 'Where is <em>{person_name_possessive}</em> main place of <em>study</em>?',
+  text: 'Where is <strong>{person_name_possessive}</strong> main place of <strong>study</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
 };
 local nonProxyDescriptionStudy = 'Answer for the place where you spend the most time. If student or schoolchild, answer for your study address.';
 local proxyDescriptionStudy = {
-  text: 'Answer for the place where <em>{person_name}</em> spends the most time. If student or schoolchild, answer for their study address.',
+  text: 'Answer for the place where <strong>{person_name}</strong> spends the most time. If student or schoolchild, answer for their study address.',
   placeholders: [
     placeholders.personName(),
   ],
@@ -53,42 +53,40 @@ local proxyDescriptionStudy = {
   question_variants: [
     {
       question: question(nonProxyTitleStudy, nonProxyDescriptionStudy),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitleStudy, proxyDescriptionStudy),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'study-location',
-        when: [
+      block: 'study-location',
+      when: {
+        '==': [
           {
-            id: 'study-location-type-answer',
-            condition: 'equals',
-            value: 'At a campus or school',
+            source: 'answers',
+            identifier: 'study-location-type-answer',
           },
+          'At a campus or school',
         ],
       },
     },
     {
-      goto: {
-        section: 'End',
-        when: [
+      section: 'End',
+      when: {
+        '==': [
           {
-            id: 'study-location-type-answer',
-            condition: 'equals',
-            value: 'At or from home',
+            source: 'answers',
+            identifier: 'study-location-type-answer',
           },
+          'At or from home',
         ],
       },
     },
     {
-      goto: {
-        block: 'travel-to-study-location',
-      },
+      block: 'travel-to-study-location',
     },
   ],
 }

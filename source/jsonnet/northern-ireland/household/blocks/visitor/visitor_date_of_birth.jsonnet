@@ -9,7 +9,7 @@ local rules = import 'rules.libsonnet';
   question: {
     id: 'visitor-date-of-birth-question',
     title: {
-      text: 'What is <em>{person_name_possessive}</em> date of birth?',
+      text: 'What is <strong>{person_name_possessive}</strong> date of birth?',
       placeholders: [
         placeholders.personNamePossessive,
       ],

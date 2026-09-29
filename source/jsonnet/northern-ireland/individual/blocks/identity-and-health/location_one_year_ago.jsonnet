@@ -44,7 +44,7 @@ local nonProxyTitle = 'One year ago, what was your usual address?';
 local nonProxyDescription = 'If you had no usual address one year ago, state the address where you were staying';
 
 local proxyTitle = {
-  text: 'One year ago, what was <em>{person_name_possessive}</em> usual address?',
+  text: 'One year ago, what was <strong>{person_name_possessive}</strong> usual address?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -58,45 +58,43 @@ local proxyDescription = 'If they had no usual address one year ago, state the a
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDescription),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, proxyDescription),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'address-one-year-ago-outside-uk',
-        when: [
+      block: 'address-one-year-ago-outside-uk',
+      when: {
+        '==': [
           {
-            id: 'location-one-year-ago-answer',
-            condition: 'equals',
-            value: 'An address outside the UK',
+            source: 'answers',
+            identifier: 'location-one-year-ago-answer',
           },
+          'An address outside the UK',
         ],
       },
     },
     {
-      goto: {
-        block: 'address-one-year-ago',
-        when: [
+      block: 'address-one-year-ago',
+      when: {
+        'in': [
           {
-            id: 'location-one-year-ago-answer',
-            condition: 'equals any',
-            values: [
-              'Another address in the UK',
-              'Student term-time or boarding school address in the UK',
-            ],
+            source: 'answers',
+            identifier: 'location-one-year-ago-answer',
           },
+          [
+            'Another address in the UK',
+            'Student term-time or boarding school address in the UK',
+          ],
         ],
       },
     },
     {
-      goto: {
-        block: 'passports',
-      },
+      block: 'passports',
     },
   ],
 }

@@ -18,17 +18,17 @@ local question(title) = {
   ],
 };
 
-local nonProxyTitleWork = 'What is the address of your main place of <em>work</em>?';
+local nonProxyTitleWork = 'What is the address of your main place of <strong>work</strong>?';
 local proxyTitleWork = {
-  text: 'What is the address of <em>{person_name_possessive}</em> main place of <em>work</em>?',
+  text: 'What is the address of <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
 };
 
-local pastNonProxyTitleWork = 'What was the address of your main place of <em>work</em>?';
+local pastNonProxyTitleWork = 'What was the address of your main place of <strong>work</strong>?';
 local pastProxyTitleWork = {
-  text: 'What was the address of <em>{person_name_possessive}</em> main place of <em>work</em>?',
+  text: 'What was the address of <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -42,19 +42,19 @@ local pastProxyTitleWork = {
   question_variants: [
     {
       question: question(nonProxyTitleWork),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitleWork),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(pastNonProxyTitleWork),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(pastProxyTitleWork),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
 }

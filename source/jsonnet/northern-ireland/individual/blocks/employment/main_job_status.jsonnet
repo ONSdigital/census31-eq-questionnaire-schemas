@@ -33,7 +33,7 @@ local question(title, description) = {
 
 local nonProxyTitle = 'In your main job, what is your employment status?';
 local proxyTitle = {
-  text: 'In their main job, what is <em>{person_name_possessive}</em> employment status?',
+  text: 'In their main job, what is <strong>{person_name_possessive}</strong> employment status?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -41,7 +41,7 @@ local proxyTitle = {
 
 local pastNonProxyTitle = 'In your main job, what was your employment status?';
 local pastProxyTitle = {
-  text: 'In their main job, what was <em>{person_name_possessive}</em> employment status?',
+  text: 'In their main job, what was <strong>{person_name_possessive}</strong> employment status?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -59,19 +59,19 @@ local pastProxyDescription = 'This is the most recent job they had. If they had 
   question_variants: [
     {
       question: question(nonProxyTitle, nonProxyDescription),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitle, proxyDescription),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(pastNonProxyTitle, pastNonProxyDescription),
-      when: [rules.isNotProxy, rules.lastMainJob],
+      when: { and: [rules.isNotProxy, rules.lastMainJob] },
     },
     {
       question: question(pastProxyTitle, pastProxyDescription),
-      when: [rules.isProxy, rules.lastMainJob],
+      when: { and: [rules.isProxy, rules.lastMainJob] },
     },
   ],
 }

@@ -17,17 +17,17 @@ local question(title) = {
   ],
 };
 
-local nonProxyTitle = 'In which country is your main place of <em>work</em>?';
+  local nonProxyTitle = 'In which country is your main place of <strong>work</strong>?';
 local proxyTitle = {
-  text: 'In which country is <em>{person_name_possessive}</em> main place of <em>work</em>?',
+  text: 'In which country is <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
 };
 
-local pastNonProxyTitle = 'In which country was your main place of <em>work</em>?';
+  local pastNonProxyTitle = 'In which country was your main place of <strong>work</strong>?';
 local pastProxyTitle = {
-  text: 'In which country was <em>{person_name_possessive}</em> main place of <em>work</em>?',
+  text: 'In which country was <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -40,30 +40,31 @@ local pastProxyTitle = {
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy, rules.mainJob],
+      when: { and: [rules.isNotProxy, rules.mainJob] },
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy, rules.mainJob],
+      when: { and: [rules.isProxy, rules.mainJob] },
     },
     {
       question: question(pastNonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(pastProxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'workplace-outside-northern-ireland',
-        when: [
+      block: 'workplace-outside-northern-ireland',
+      when: {
+        'in': [
           {
-            id: 'workplace-country-answer',
-            condition: 'equals any',
-            values: [
+            source: 'answers',
+            identifier: 'workplace-country-answer',
+          },
+          [
               'Carlow',
               'Cavan',
               'Clare',
@@ -138,15 +139,12 @@ local pastProxyTitle = {
               'Loch Garman',
               'Cill Mhantáin',
               'Ulaidh',
-            ],
-          },
+          ],
         ],
       },
     },
     {
-      goto: {
-        block: 'travel-to-work',
-      },
+      block: 'travel-to-work',
     },
   ],
 }

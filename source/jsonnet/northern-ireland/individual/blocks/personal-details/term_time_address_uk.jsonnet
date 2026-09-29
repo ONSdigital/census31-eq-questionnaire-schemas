@@ -28,18 +28,16 @@ local proxyTitle = 'Enter details of their term time address.';
   question_variants: [
     {
       question: question(nonProxyTitle),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        group: 'identity-and-health-group',
-      },
+      group: 'identity-and-health-group',
     },
   ],
 }

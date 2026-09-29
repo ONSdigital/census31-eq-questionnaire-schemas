@@ -3,7 +3,7 @@ local rules = import 'rules.libsonnet';
 
 local nonProxyTitle = 'What is your country of birth?';
 local proxyTitle = {
-  text: 'What is <em>{person_name_possessive}</em> country of birth?',
+  text: 'What is <strong>{person_name_possessive}</strong> country of birth?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
@@ -56,103 +56,120 @@ local question(title, elsewhereDescription) = {
   question_variants: [
     {
       question: question(nonProxyTitle, 'You can enter your country of birth on the next question'),
-      when: [rules.isNotProxy],
+      when: rules.isNotProxy,
     },
     {
       question: question(proxyTitle, 'You can enter their country of birth on the next question'),
-      when: [rules.isProxy],
+      when: rules.isProxy,
     },
   ],
   routing_rules: [
     {
-      goto: {
-        block: 'country-of-birth-elsewhere',
-        when: [
+      block: 'country-of-birth-elsewhere',
+      when: {
+        '==': [
           {
-            id: 'country-of-birth-answer',
-            condition: 'equals',
-            value: 'Elsewhere',
+            source: 'answers',
+            identifier: 'country-of-birth-answer',
           },
+          'Elsewhere',
         ],
       },
     },
     {
-      goto: {
-        block: 'passports',
-        when: [
+      block: 'passports',
+      when: {
+        and: [
           {
-            id: 'country-of-birth-answer',
-            condition: 'equals',
-            value: 'Northern Ireland',
-          },
-          rules.under1,
-        ],
-      },
-    },
-    {
-      goto: {
-        block: 'passports',
-        when: [
-          {
-            id: 'country-of-birth-answer',
-            condition: 'equals',
-            value: 'Northern Ireland',
-          },
-          rules.lastBirthdayAgeLessThan(1),
-        ],
-      },
-    },
-    {
-      goto: {
-        block: 'passports',
-        when: [
-          {
-            id: 'country-of-birth-answer',
-            condition: 'not set',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'country-of-birth-answer',
+              },
+              'Northern Ireland',
+            ],
           },
           rules.under1,
         ],
       },
     },
     {
-      goto: {
-        block: 'passports',
-        when: [
+      block: 'passports',
+      when: {
+        and: [
           {
-            id: 'country-of-birth-answer',
-            condition: 'not set',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'country-of-birth-answer',
+              },
+              'Northern Ireland',
+            ],
           },
           rules.lastBirthdayAgeLessThan(1),
         ],
       },
     },
     {
-      goto: {
-        block: 'location-one-year-ago',
-        when: [
+      block: 'passports',
+      when: {
+        and: [
           {
-            id: 'country-of-birth-answer',
-            condition: 'not set',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'country-of-birth-answer',
+              },
+              null,
+            ],
           },
+          rules.under1,
         ],
       },
     },
     {
-      goto: {
-        block: 'arrive-in-country',
-        when: [
+      block: 'passports',
+      when: {
+        and: [
           {
-            id: 'country-of-birth-answer',
-            condition: 'not equals',
-            value: 'Northern Ireland',
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'country-of-birth-answer',
+              },
+              null,
+            ],
           },
+          rules.lastBirthdayAgeLessThan(1),
         ],
       },
     },
     {
-      goto: {
-        block: 'location-one-year-ago',
+      block: 'location-one-year-ago',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'country-of-birth-answer',
+          },
+          null,
+        ],
       },
+    },
+    {
+      block: 'arrive-in-country',
+      when: {
+        '!=': [
+          {
+            source: 'answers',
+            identifier: 'country-of-birth-answer',
+          },
+          'Northern Ireland',
+        ],
+      },
+    },
+    {
+      block: 'location-one-year-ago',
     },
   ],
 }
