@@ -90,7 +90,7 @@ local removePersonQuestionTitle = {
       title: addVisitorQuestionTitle,
       answers: [
         {
-          id: 'first-name',
+          id: 'visitor-first-name',
           label: 'First name',
           mandatory: true,
           type: 'TextField',
@@ -101,7 +101,7 @@ local removePersonQuestionTitle = {
           },
         },
         {
-          id: 'last-name',
+          id: 'visitor-last-name',
           label: 'Last name',
           mandatory: true,
           type: 'TextField',
@@ -133,7 +133,7 @@ local removePersonQuestionTitle = {
       title: editPersonQuestionTitle,
       answers: [
         {
-          id: 'first-name',
+          id: 'visitor-first-name',
           label: 'First name',
           mandatory: true,
           type: 'TextField',
@@ -144,7 +144,7 @@ local removePersonQuestionTitle = {
           },
         },
         {
-          id: 'last-name',
+          id: 'visitor-last-name',
           label: 'Last name',
           mandatory: true,
           type: 'TextField',

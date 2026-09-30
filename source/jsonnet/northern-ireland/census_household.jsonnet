@@ -445,11 +445,11 @@ function(region_code) {
                       list_to_concatenate: [
                         {
                           source: 'answers',
-                          identifier: 'first-name',
+                          identifier: 'visitor-first-name',
                         },
                         {
                           source: 'answers',
-                          identifier: 'last-name',
+                          identifier: 'visitor-last-name',
                         },
                       ],
                     delimiter: ' ',
