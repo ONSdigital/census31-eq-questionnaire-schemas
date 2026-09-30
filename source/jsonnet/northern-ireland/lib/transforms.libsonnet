@@ -138,10 +138,28 @@ local concatenateNames = {
   },
 };
 
+local concatenateVisitorNames = {
+  transform: 'concatenate_list',
+  arguments: {
+    list_to_concatenate: [
+      {
+        source: 'answers',
+        identifier: 'visitor-first-name',
+      },
+      {
+        source: 'answers',
+        identifier: 'visitor-last-name',
+      },
+    ],
+    delimiter: ' ',
+  },
+};
+
 {
   formatPersonName: formatPersonName,
   formatPossessive: formatPossessive,
   isSameName: isSameName,
   listHasSameNameItems: listHasSameNameItems,
   concatenateNames: concatenateNames,
+  concatenateVisitorNames: concatenateVisitorNames,
 }

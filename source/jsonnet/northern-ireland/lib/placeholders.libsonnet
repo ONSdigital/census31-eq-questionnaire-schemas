@@ -4,9 +4,15 @@ local getListOrdinality(listName) = {
   placeholder: 'ordinality',
   transforms: [
     {
+      transform: 'list_item_count',
+      arguments: {
+        list_to_count: { source: 'list', identifier: listName },
+      },
+    },
+    {
       transform: 'add',
       arguments: {
-        lhs: { source: 'list', identifier: listName },
+        lhs: { source: 'previous_transform' },
         rhs: { value: 1 },
       },
     },
@@ -27,9 +33,15 @@ local getListCardinality(listName) = {
   placeholder: 'cardinality',
   transforms: [
     {
+      transform: 'list_item_count',
+      arguments: {
+        list_to_count: { source: 'list', identifier: listName },
+      },
+    },
+    {
       transform: 'add',
       arguments: {
-        lhs: { source: 'list', identifier: listName },
+        lhs: { source: 'previous_transform' },
         rhs: { value: 0 },
       },
     },
@@ -95,11 +107,21 @@ local personName(includeMiddleNames='') = (
     }
 );
 
+local visitorPersonName() = {
+  placeholder: 'person_name',
+  transforms: [transforms.concatenateVisitorNames],
+};
+
 {
   personName: personName,
   personNamePossessive: {
     placeholder: 'person_name_possessive',
     transforms: [transforms.concatenateNames, transforms.formatPossessive],
+  },
+  visitorPersonName: visitorPersonName,
+  visitorPersonNamePossessive: {
+    placeholder: 'person_name_possessive',
+    transforms: [transforms.concatenateVisitorNames, transforms.formatPossessive],
   },
   address: {
     placeholder: 'household_address',

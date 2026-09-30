@@ -19,7 +19,7 @@ local summaryTitle = {
 local summaryTitlePersonName = {
   text: '{person_name}',
   placeholders: [
-    placeholders.personName(),
+    placeholders.visitorPersonName(),
   ],
 };
 
@@ -34,14 +34,14 @@ local addVisitorQuestionTitle = {
 local editPersonQuestionTitle = {
   text: 'Change details for <strong>{person_name}</strong>',
   placeholders: [
-    placeholders.personName(),
+    placeholders.visitorPersonName(),
   ],
 };
 
 local removePersonQuestionTitle = {
   text: 'Are you sure you want to remove <strong>{person_name}</strong>?',
   placeholders: [
-    placeholders.personName(),
+    placeholders.visitorPersonName(),
   ],
 };
 

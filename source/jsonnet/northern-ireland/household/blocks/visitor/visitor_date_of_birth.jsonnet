@@ -11,7 +11,7 @@ local rules = import 'rules.libsonnet';
     title: {
       text: 'What is <strong>{person_name_possessive}</strong> date of birth?',
       placeholders: [
-        placeholders.personNamePossessive,
+        placeholders.visitorPersonNamePossessive,
       ],
     },
     description: [

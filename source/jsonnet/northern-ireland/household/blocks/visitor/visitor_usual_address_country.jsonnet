@@ -11,7 +11,7 @@ local rules = import 'rules.libsonnet';
     title: {
       text: 'In which country outside the UK does <strong>{person_name}</strong> usually live?',
       placeholders: [
-        placeholders.personName(),
+        placeholders.visitorPersonName(),
       ],
     },
     type: 'General',
