@@ -23,7 +23,7 @@ local question(title) = {
   ],
 };
 
-  local nonProxyTitle = 'In which town and county is your main place of <strong>work</strong>?';
+local nonProxyTitle = 'In which town and county is your main place of <strong>work</strong>?';
 local proxyTitle = {
   text: 'In which town and county is <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [
@@ -31,7 +31,7 @@ local proxyTitle = {
   ],
 };
 
-  local pastNonProxyTitle = 'In which town and county was your main place of <strong>work</strong>?';
+local pastNonProxyTitle = 'In which town and county was your main place of <strong>work</strong>?';
 local pastProxyTitle = {
   text: 'In which town and county was <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [

@@ -42,7 +42,7 @@ local question(title) = {
   ],
   routing_rules: [
     {
-        block: 'ethnic-group',
+      block: 'ethnic-group',
     },
   ],
 }

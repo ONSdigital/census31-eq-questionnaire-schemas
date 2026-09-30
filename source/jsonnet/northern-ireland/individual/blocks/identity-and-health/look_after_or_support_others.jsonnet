@@ -69,15 +69,15 @@ local proxyGuidance = 'Exclude anything they do in paid employment';
   ],
   routing_rules: [
     {
-        block: 'sexual-orientation',
-        when: rules.over16,
+      block: 'sexual-orientation',
+      when: rules.over16,
     },
     {
-        block: 'sexual-orientation',
-        when: rules.lastBirthdayAgeOver(16),
+      block: 'sexual-orientation',
+      when: rules.lastBirthdayAgeOver(16),
     },
     {
-        group: 'school-group',
+      group: 'school-group',
     },
   ],
 }

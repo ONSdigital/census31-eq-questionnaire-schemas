@@ -442,16 +442,16 @@ function(region_code) {
                 {
                   transform: 'concatenate_list',
                   arguments: {
-                      list_to_concatenate: [
-                        {
-                          source: 'answers',
-                          identifier: 'visitor-first-name',
-                        },
-                        {
-                          source: 'answers',
-                          identifier: 'visitor-last-name',
-                        },
-                      ],
+                    list_to_concatenate: [
+                      {
+                        source: 'answers',
+                        identifier: 'visitor-first-name',
+                      },
+                      {
+                        source: 'answers',
+                        identifier: 'visitor-last-name',
+                      },
+                    ],
                     delimiter: ' ',
                   },
                 },

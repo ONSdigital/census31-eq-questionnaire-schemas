@@ -39,7 +39,7 @@ local question(title) = {
   ],
   routing_rules: [
     {
-        block: 'level-of-spoken-english',
+      block: 'level-of-spoken-english',
     },
   ],
 }

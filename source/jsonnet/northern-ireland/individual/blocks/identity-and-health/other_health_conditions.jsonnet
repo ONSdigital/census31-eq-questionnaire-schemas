@@ -86,23 +86,23 @@ local proxyTitle = {
   ],
   routing_rules: [
     {
-        section: 'End',
-        when: rules.schoolYearUnder4,
+      section: 'End',
+      when: rules.schoolYearUnder4,
     },
     {
-        section: 'End',
-        when: rules.lastBirthdayAgeLessThan(4),
+      section: 'End',
+      when: rules.lastBirthdayAgeLessThan(4),
     },
     {
-        block: 'look-after-or-support-others',
-        when: rules.over5,
+      block: 'look-after-or-support-others',
+      when: rules.over5,
     },
     {
-        block: 'look-after-or-support-others',
-        when: rules.lastBirthdayAgeOver(5),
+      block: 'look-after-or-support-others',
+      when: rules.lastBirthdayAgeOver(5),
     },
     {
-        group: 'school-group',
+      group: 'school-group',
     },
   ],
 }

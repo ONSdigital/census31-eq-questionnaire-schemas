@@ -32,14 +32,14 @@ local question(title, description) = {
 };
 
 
-  local nonProxyTitleWork = 'Where is your main place of <strong>work</strong>?';
+local nonProxyTitleWork = 'Where is your main place of <strong>work</strong>?';
 local proxyTitleWork = {
   text: 'Where is <strong>{person_name_possessive}</strong> main place of <strong>work</strong>?',
   placeholders: [
     placeholders.personNamePossessive,
   ],
 };
-  local nonProxyTitleDidWork = 'Where did you mainly <strong>work</strong>?';
+local nonProxyTitleDidWork = 'Where did you mainly <strong>work</strong>?';
 local proxyTitleDidWork = {
   text: 'Where did <strong>{person_name}</strong> mainly <strong>work</strong>?',
   placeholders: [
@@ -48,7 +48,7 @@ local proxyTitleDidWork = {
 };
 
 local nonProxyDescriptionWork = 'Answer for the place where you spend the most time. Even if ill, on maternity leave, holiday or temporarily laid off provide details of your main place of work.';
-  local proxyDescriptionWork = {
+local proxyDescriptionWork = {
   text: 'Answer for the place where <strong>{person_name}</strong> spends the most time. Even if ill, on maternity leave, holiday or temporarily laid off provide details of their main place of work.',
   placeholders: [
     placeholders.personName(),

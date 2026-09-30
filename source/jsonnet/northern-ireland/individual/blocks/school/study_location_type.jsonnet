@@ -31,7 +31,7 @@ local question(title, description) = {
   ],
 };
 
-  local nonProxyTitleStudy = 'Where is your main place of <strong>study</strong>?';
+local nonProxyTitleStudy = 'Where is your main place of <strong>study</strong>?';
 local proxyTitleStudy = {
   text: 'Where is <strong>{person_name_possessive}</strong> main place of <strong>study</strong>?',
   placeholders: [

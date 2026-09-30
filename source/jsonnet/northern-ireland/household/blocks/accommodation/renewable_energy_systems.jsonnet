@@ -58,11 +58,11 @@ local rules = import 'rules.libsonnet';
   },
   routing_rules: [
     {
-        section: 'End',
-        when: rules.listIsEmpty('household'),
+      section: 'End',
+      when: rules.listIsEmpty('household'),
     },
     {
-        block: 'own-or-rent',
+      block: 'own-or-rent',
     },
   ],
 }

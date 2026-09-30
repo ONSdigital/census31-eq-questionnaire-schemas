@@ -39,7 +39,7 @@ local question(title) = {
   ],
   routing_rules: [
     {
-        block: 'passports',
+      block: 'passports',
     },
   ],
 }
