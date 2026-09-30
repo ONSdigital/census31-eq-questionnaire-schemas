@@ -8,7 +8,7 @@ local additionalAnswerOption = [
     label: {
       text: 'Same address as {first_person}',
       placeholders: [
-        placeholders.firstPersonNameForList(listName),
+        placeholders.firstVisitorPersonNameForList(listName),
       ],
     },
     value: 'Same address as {first_person}',

@@ -80,6 +80,38 @@ local firstPersonNameForList(listName) = {
   ],
 };
 
+local firstVisitorPersonNameForList(listName) = {
+  placeholder: 'first_person',
+  transforms: [
+    {
+      arguments: {
+        delimiter: ' ',
+        list_to_concatenate: [
+          {
+            source: 'answers',
+            identifier: 'visitor-first-name',
+            list_item_selector: {
+              source: 'list',
+              identifier: listName,
+              selector: 'first',
+            },
+          },
+          {
+            source: 'answers',
+            identifier: 'visitor-last-name',
+            list_item_selector: {
+              source: 'list',
+              identifier: listName,
+              selector: 'first',
+            },
+          },
+        ],
+      },
+      transform: 'concatenate_list',
+    },
+  ],
+};
+
 local firstPersonNamePossessiveForList(listName) = {
   placeholder: 'first_person_possessive',
   transforms: [
@@ -146,4 +178,5 @@ local visitorPersonName() = {
   getListCardinality: getListCardinality,
   firstPersonNameForList: firstPersonNameForList,
   firstPersonNamePossessiveForList: firstPersonNamePossessiveForList,
+  firstVisitorPersonNameForList: firstVisitorPersonNameForList,
 }
