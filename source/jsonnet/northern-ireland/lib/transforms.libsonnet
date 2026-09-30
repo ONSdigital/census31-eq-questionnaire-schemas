@@ -12,7 +12,7 @@ local firstNameSource(source, listName) = (
     identifier: 'first-name',
     list_item_selector: {
       source: 'location',
-      id: 'to_list_item_id',
+      identifier: 'to_list_item_id',
     },
   } else {
     source: 'answers',
@@ -34,7 +34,7 @@ local middleNamesSource(source, listName) = (
     identifier: 'middle-names',
     list_item_selector: {
       source: 'location',
-      id: 'to_list_item_id',
+      identifier: 'to_list_item_id',
     },
   }
   else {
@@ -57,7 +57,7 @@ local lastNameSource(source, listName) = (
     identifier: 'last-name',
     list_item_selector: {
       source: 'location',
-      id: 'to_list_item_id',
+      identifier: 'to_list_item_id',
     },
   }
   else {

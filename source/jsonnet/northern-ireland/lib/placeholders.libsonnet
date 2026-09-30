@@ -42,15 +42,26 @@ local firstPersonNameForList(listName) = {
     {
       arguments: {
         delimiter: ' ',
-        list_to_concatenate: {
-          identifier: ['first-name', 'last-name'],
-          source: 'answers',
-          list_item_selector: {
-            source: 'list',
-            id: listName,
-            id_selector: 'first',
+        list_to_concatenate: [
+          {
+            source: 'answers',
+            identifier: 'first-name',
+            list_item_selector: {
+              source: 'list',
+              identifier: listName,
+              selector: 'first',
+            },
           },
-        },
+          {
+            source: 'answers',
+            identifier: 'last-name',
+            list_item_selector: {
+              source: 'list',
+              identifier: listName,
+              selector: 'first',
+            },
+          },
+        ],
       },
       transform: 'concatenate_list',
     },

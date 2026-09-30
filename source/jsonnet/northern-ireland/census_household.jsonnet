@@ -261,23 +261,21 @@ function(region_code) {
           ],
         },
       ],
-      enabled: [
-        {
-          when: {
-            '>': [
-              {
-                count: [
-                  {
-                    source: 'list',
-                    identifier: 'household',
-                  },
-                ],
-              },
-              1,
-            ],
-          },
+      enabled: {
+        when: {
+          '>': [
+            {
+              count: [
+                {
+                  source: 'list',
+                  identifier: 'household',
+                },
+              ],
+            },
+            1,
+          ],
         },
-      ],
+      },
     },
     {
       id: 'accommodation-section',
