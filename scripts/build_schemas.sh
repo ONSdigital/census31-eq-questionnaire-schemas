@@ -5,7 +5,7 @@ set -e
 mkdir -p schemas/census/en
 
 # Build Census schema for each region
-for region_code in GB-WLS GB-ENG; do
+for region_code in GB-WLS GB-ENG GB-NIR; do
     # Lowercase the region code and replace '-' with '_'
     FORMATTED_REGION_CODE=$(echo "${region_code}" | tr '[:upper:]' '[:lower:]' | tr - _)
 
@@ -16,17 +16,34 @@ for region_code in GB-WLS GB-ENG; do
 
         DESTINATION_FILE="schemas/census/en/census_${census_type}_${FORMATTED_REGION_CODE}.json"
 
-        SOURCE_FILE="source/jsonnet/england-wales/census_${census_type}.jsonnet"
-        ADDITIONAL_LIBRARY_PATH="source/jsonnet/england-wales/${census_type}/lib/"
+        if [[ "$region_code" = "GB-NIR" ]]; then
+            if [[ "$census_type" != "communal_establishment" ]]; then
+                SOURCE_FILE="source/jsonnet/northern-ireland/census_${census_type}.jsonnet"
+                ADDITIONAL_LIBRARY_PATH="source/jsonnet/northern-ireland/${census_type}/lib/"
 
-        jsonnet \
-            --ext-str region_code=${region_code} \
-            --tla-str region_code="${region_code}" \
-            --ext-str census_date="${CENSUS_DATE}" \
-            --tla-str census_month_year_date="${CENSUS_MONTH_YEAR_DATE}" \
-            --jpath "${ADDITIONAL_LIBRARY_PATH}" \
-            "${SOURCE_FILE}" \
-            >"${DESTINATION_FILE}"
+                jsonnet \
+                    --ext-str region_code=${region_code} \
+                    --tla-str region_code="${region_code}" \
+                    --ext-str census_date="${CENSUS_DATE}" \
+                    --jpath "${ADDITIONAL_LIBRARY_PATH}" \
+                    "${SOURCE_FILE}" \
+                    >"${DESTINATION_FILE}"
+                echo "Built ${DESTINATION_FILE}"
+            fi
+        else
+            SOURCE_FILE="source/jsonnet/england-wales/census_${census_type}.jsonnet"
+            ADDITIONAL_LIBRARY_PATH="source/jsonnet/england-wales/${census_type}/lib/"
+
+            jsonnet \
+                --ext-str region_code=${region_code} \
+                --tla-str region_code="${region_code}" \
+                --ext-str census_date="${CENSUS_DATE}" \
+                --tla-str census_month_year_date="${CENSUS_MONTH_YEAR_DATE}" \
+                --jpath "${ADDITIONAL_LIBRARY_PATH}" \
+                "${SOURCE_FILE}" \
+                >"${DESTINATION_FILE}"
+            echo "Built ${DESTINATION_FILE}"
+        fi
 
     done
 done

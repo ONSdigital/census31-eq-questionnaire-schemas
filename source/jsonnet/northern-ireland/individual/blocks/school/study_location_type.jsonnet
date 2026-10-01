@@ -1,0 +1,92 @@
+local placeholders = import '../../../lib/placeholders.libsonnet';
+local rules = import 'rules.libsonnet';
+
+local question(title, description) = {
+  id: 'study-location-type-question',
+  title: title,
+  description: [
+    description,
+  ],
+  type: 'General',
+  answers: [
+    {
+      id: 'study-location-type-answer',
+      mandatory: true,
+      options: [
+        {
+          label: 'At a campus or school',
+          value: 'At a campus or school',
+        },
+        {
+          label: 'At or from home',
+          value: 'At or from home',
+        },
+        {
+          label: 'No fixed place',
+          value: 'No fixed place',
+        },
+      ],
+      type: 'Radio',
+    },
+  ],
+};
+
+local nonProxyTitleStudy = 'Where is your main place of <strong>study</strong>?';
+local proxyTitleStudy = {
+  text: 'Where is <strong>{person_name_possessive}</strong> main place of <strong>study</strong>?',
+  placeholders: [
+    placeholders.personNamePossessive,
+  ],
+};
+local nonProxyDescriptionStudy = 'Answer for the place where you spend the most time. If student or schoolchild, answer for your study address.';
+local proxyDescriptionStudy = {
+  text: 'Answer for the place where <strong>{person_name}</strong> spends the most time. If student or schoolchild, answer for their study address.',
+  placeholders: [
+    placeholders.personName(),
+  ],
+};
+
+{
+  type: 'Question',
+  id: 'study-location-type',
+  page_title: 'Type of study location',
+  question_variants: [
+    {
+      question: question(nonProxyTitleStudy, nonProxyDescriptionStudy),
+      when: rules.isNotProxy,
+    },
+    {
+      question: question(proxyTitleStudy, proxyDescriptionStudy),
+      when: rules.isProxy,
+    },
+  ],
+  routing_rules: [
+    {
+      block: 'study-location',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'study-location-type-answer',
+          },
+          'At a campus or school',
+        ],
+      },
+    },
+    {
+      section: 'End',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'study-location-type-answer',
+          },
+          'At or from home',
+        ],
+      },
+    },
+    {
+      block: 'travel-to-study-location',
+    },
+  ],
+}
