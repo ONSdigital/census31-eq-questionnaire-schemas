@@ -345,10 +345,10 @@ profile = ["gprof2dot (>=2022.7.29)"]
 
 [[package]]
 name = "eq-translations"
-version = "1.0.0"
-description = "ONS Digital eQ Translations App"
+version = "5.0.0"
+description = "Translation scripts for EQ Questionnaire Schemas"
 optional = false
-python-versions = "^3.12"
+python-versions = "^3.13"
 groups = ["main"]
 files = []
 develop = false
@@ -363,9 +363,9 @@ tqdm = "*"
 
 [package.source]
 type = "git"
-url = "https://github.com/ONSDigital/eq-translations.git"
-reference = "v4.10.3"
-resolved_reference = "0f21bcb4a8a6ef6cd2bd28848d198eed911bff53"
+url = "https://github.com/ONSDigital/census31-eq-translations.git"
+reference = "v5.0.0"
+resolved_reference = "1f9a7e32abc55c0d664e0a788885548808665596"
 
 [[package]]
 name = "flake8"
@@ -843,4 +843,4 @@ zstd = ["backports-zstd (>=1.0.0) ; python_version < \"3.14\""]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.13"
-content-hash = "2db29a81b3e44b42e294eeae98c0623257b8bdc6b54a31faaeab8c95e5d2241a"
+content-hash = "f0f74c1ad56240e9278bb79c193469e467ceb617b51245bd30e47317192fbf89"
