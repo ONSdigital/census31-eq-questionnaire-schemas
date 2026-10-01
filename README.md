@@ -63,7 +63,7 @@ To validate a single schema, run the following command:
 
 ** N.B. Currently only supporting translations for Health themed surveys (PHM).
 
-The latest release of the eq-translations package is required to successfully run the translation scripts. The release version is checked automatically when running translations commands and the scripts will error if the release version does not match the installed version.
+The latest release of the census31-eq-translations package is required to successfully run the translation scripts. The release version is checked automatically when running translations commands and the scripts will error if the release version does not match the installed version.
 
 ### Generating Translation Templates
 
