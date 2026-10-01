@@ -9,7 +9,8 @@ logger = logging.getLogger(__name__)
 
 try:
     response = requests.get(
-        "https://api.github.com/repos/ONSdigital/census31-eq-translations/releases", timeout=120
+        "https://api.github.com/repos/ONSdigital/census31-eq-translations/releases",
+        timeout=120,
     )
     if response.status_code == 200:
         version = f"v{eq_translations.__version__}"
