@@ -17,7 +17,7 @@ for region_code in GB-WLS GB-ENG GB-NIR; do
         DESTINATION_FILE="schemas/census/en/census_${census_type}_${FORMATTED_REGION_CODE}.json"
 
         if [[ "$region_code" = "GB-NIR" ]]; then
-            if [[ "$census_type" != "communal_establishment"  ]]; then
+            if [[ "$census_type" != "communal_establishment" ]]; then
                 SOURCE_FILE="source/jsonnet/northern-ireland/census_${census_type}.jsonnet"
                 ADDITIONAL_LIBRARY_PATH="source/jsonnet/northern-ireland/${census_type}/lib/"
 
@@ -27,7 +27,7 @@ for region_code in GB-WLS GB-ENG GB-NIR; do
                     --ext-str census_date="${CENSUS_DATE}" \
                     --jpath "${ADDITIONAL_LIBRARY_PATH}" \
                     "${SOURCE_FILE}" \
-                    > "${DESTINATION_FILE}"
+                    >"${DESTINATION_FILE}"
                 echo "Built ${DESTINATION_FILE}"
             fi
         else
@@ -47,4 +47,3 @@ for region_code in GB-WLS GB-ENG GB-NIR; do
 
     done
 done
-
