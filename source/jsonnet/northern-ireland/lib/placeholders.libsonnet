@@ -29,34 +29,6 @@ local getListOrdinality(listName) = {
     },
   ],
 };
-
-local getListOrdinalityWithoutDeterminer(listName) = {
-  placeholder: 'ordinality',
-  transforms: [
-    {
-      transform: 'list_item_count',
-      arguments: {
-        list_to_count: { source: 'list', identifier: listName },
-      },
-    },
-    {
-      transform: 'add',
-      arguments: {
-        lhs: { source: 'previous_transform' },
-        rhs: { value: 1 },
-      },
-    },
-    {
-      arguments: {
-        number_to_format: {
-          source: 'previous_transform',
-        },
-      },
-      transform: 'format_ordinal',
-    },
-  ],
-};
-
 local getListCardinality(listName) = {
   placeholder: 'cardinality',
   transforms: [
@@ -108,15 +80,6 @@ local firstPersonNameForList(listName) = {
   ],
 };
 
-local firstPersonNamePossessiveForList(listName) = {
-  placeholder: 'first_person_possessive',
-  transforms: [
-    transforms.isSameName(source='first_list_item', listName=listName),
-    transforms.formatPersonName(source='first_list_item', listName=listName),
-    transforms.formatPossessive,
-  ],
-};
-
 local firstVisitorPersonNameForList(listName) = {
   placeholder: 'first_person',
   transforms: [
@@ -146,6 +109,15 @@ local firstVisitorPersonNameForList(listName) = {
       },
       transform: 'concatenate_list',
     },
+  ],
+};
+
+local firstPersonNamePossessiveForList(listName) = {
+  placeholder: 'first_person_possessive',
+  transforms: [
+    transforms.isSameName(source='first_list_item', listName=listName),
+    transforms.formatPersonName(source='first_list_item', listName=listName),
+    transforms.formatPossessive,
   ],
 };
 
@@ -202,20 +174,7 @@ local visitorPersonName() = {
       },
     }],
   },
-  yearBeforeCensusDate: {
-    placeholder: 'year_before_census_date',
-    transforms: [{
-      transform: 'format_date',
-      arguments: {
-        date_to_format: {
-          value: '2020-03-21',
-        },
-        date_format: 'd MMMM yyyy',
-      },
-    }],
-  },
   getListOrdinality: getListOrdinality,
-  getListOrdinalityWithoutDeterminer: getListOrdinalityWithoutDeterminer,
   getListCardinality: getListCardinality,
   firstPersonNameForList: firstPersonNameForList,
   firstPersonNamePossessiveForList: firstPersonNamePossessiveForList,
