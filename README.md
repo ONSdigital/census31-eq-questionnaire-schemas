@@ -110,5 +110,3 @@ ln -s <PATH_TO_REPO>/census31-eq-questionnaire-schemas/schemas/census <PATH_TO_R
 You should now be able to launch a questionnaire using one of the schemas.
 
 **CAVEAT - while `raw.githubusercontent.com` can be used for development and sandbox integrations, it is NOT a formally hosted survey questionnaire registry**
-
-Force build, to revert
