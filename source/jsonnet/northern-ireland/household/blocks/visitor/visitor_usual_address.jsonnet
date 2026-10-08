@@ -45,6 +45,7 @@ local question(additionalAnswerOptions=[]) = {
         {
           label: 'An address outside the UK',
           value: 'An address outside the UK',
+          description: 'You can enter their country on the next question',
         },
       ],
       type: 'Radio',
@@ -68,18 +69,6 @@ local question(additionalAnswerOptions=[]) = {
   ],
   routing_rules: [
     {
-      block: 'visitor-usual-address-details',
-      when: {
-        '==': [
-          {
-            source: 'answers',
-            identifier: 'visitor-usual-answer',
-          },
-          'An address in the UK',
-        ],
-      },
-    },
-    {
       block: 'visitor-usual-address-country',
       when: {
         '==': [
@@ -88,6 +77,18 @@ local question(additionalAnswerOptions=[]) = {
             identifier: 'visitor-usual-answer',
           },
           'An address outside the UK',
+        ],
+      },
+    },
+    {
+      block: 'visitor-usual-address-details',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'visitor-usual-answer',
+          },
+          'An address in the UK',
         ],
       },
     },

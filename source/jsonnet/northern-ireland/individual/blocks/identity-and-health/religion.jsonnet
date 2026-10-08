@@ -1,0 +1,111 @@
+local placeholders = import '../../../lib/placeholders.libsonnet';
+local rules = import 'rules.libsonnet';
+
+local nonProxyTitle = 'What religion, religious denomination or body do you belong to?';
+local proxyTitle = {
+  text: 'What religion, religious denomination or body does <strong>{person_name}</strong> belong to?',
+  placeholders: [
+    placeholders.personName(),
+  ],
+};
+
+local question(title, otherReligionDescription) = {
+  id: 'religion-question',
+  title: title,
+  type: 'MutuallyExclusive',
+  mandatory: false,
+  answers: [
+    {
+      id: 'religion-answer',
+      mandatory: false,
+      type: 'Checkbox',
+      options: [
+        {
+          label: 'Roman Catholic',
+          value: 'Roman Catholic',
+        },
+        {
+          label: 'Presbyterian Church in Ireland',
+          value: 'Presbyterian Church in Ireland',
+        },
+        {
+          label: 'Church of Ireland',
+          value: 'Church of Ireland',
+        },
+        {
+          label: 'Methodist Church in Ireland',
+          value: 'Methodist Church in Ireland',
+        },
+        {
+          label: 'Other',
+          value: 'Other',
+          description: otherReligionDescription,
+        },
+      ],
+    },
+    {
+      id: 'religion-answer-exclusive',
+      type: 'Checkbox',
+      mandatory: false,
+      options: [
+        {
+          label: 'None',
+          value: 'None',
+        },
+      ],
+    },
+  ],
+};
+
+{
+  type: 'Question',
+  id: 'religion',
+  page_title: 'Religion',
+  question_variants: [
+    {
+      question: question(nonProxyTitle, 'You can enter your religion on the next question'),
+      when: rules.isNotProxy,
+    },
+    {
+      question: question(proxyTitle, 'You can enter their religion on the next question'),
+      when: rules.isProxy,
+    },
+  ],
+  routing_rules: [
+    {
+      block: 'religion-other',
+      when: {
+        'in': [
+          'Other',
+          {
+            source: 'answers',
+            identifier: 'religion-answer',
+          },
+        ],
+      },
+    },
+    {
+      block: 'childhood-religion',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'religion-answer',
+          },
+          null,
+        ],
+      },
+    },
+    {
+      block: 'health',
+      when: rules.under3,
+    },
+    {
+      block: 'health',
+      when: rules.lastBirthdayAgeLessThan(3),
+    },
+    {
+      block: 'main-language',
+    },
+  ],
+}
