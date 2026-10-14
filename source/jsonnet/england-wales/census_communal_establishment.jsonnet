@@ -10,80 +10,88 @@ local responsible_for_establishment = import 'communal-establishment/blocks/esta
 local travel_establishment = import 'communal-establishment/blocks/establishment-details/travel_establishment.jsonnet';
 local visitors_in_establishment = import 'communal-establishment/blocks/establishment-details/visitors_in_establishment.jsonnet';
 
-function(region_code, census_month_year_date, schemas_version=null) {
-  mime_type: 'application/json/ons/eq',
-  language: 'en',
-  schemas_version: schemas_version,
-  data_version: '0.0.3',
-  survey_id: 'census',
-  form_type: 'C',
-  region_code: region_code,
-  title: '2021 Census',
-  description: 'Census Communal Establishment',
-  theme: 'census',
-  legal_basis: 'Voluntary',
-  metadata: [
-    {
-      name: 'case_type',
-      type: 'string',
-    },
-    {
-      name: 'display_address',
-      type: 'string',
-    },
-    {
-      name: 'questionnaire_id',
-      type: 'string',
-    },
-    {
-      name: 'ru_ref',
-      type: 'string',
-    },
-    {
-      name: 'user_id',
-      type: 'string',
-      optional: true,
-    },
-  ],
-  questionnaire_flow: {
-    type: 'Linear',
-    options: {
-      summary: {
-        collapsible: false,
+function(region_code, census_month_year_date, schemas_version=null, is_test_schema=false)
+  (
+    if is_test_schema == true then
+      {
+        is_test_schema: true,
+      }
+    else {}
+  )
+  {
+    mime_type: 'application/json/ons/eq',
+    language: 'en',
+    schemas_version: schemas_version,
+    data_version: '0.0.3',
+    survey_id: 'census',
+    form_type: 'C',
+    region_code: region_code,
+    title: '2021 Census',
+    description: 'Census Communal Establishment',
+    theme: 'census',
+    legal_basis: 'Voluntary',
+    metadata: [
+      {
+        name: 'case_type',
+        type: 'string',
+      },
+      {
+        name: 'display_address',
+        type: 'string',
+      },
+      {
+        name: 'questionnaire_id',
+        type: 'string',
+      },
+      {
+        name: 'ru_ref',
+        type: 'string',
+      },
+      {
+        name: 'user_id',
+        type: 'string',
+        optional: true,
+      },
+    ],
+    questionnaire_flow: {
+      type: 'Linear',
+      options: {
+        summary: {
+          collapsible: false,
+        },
       },
     },
-  },
-  submission: {
-    button: 'Submit census',
-    guidance: 'By submitting this census you are confirming that, to the best of your knowledge and belief, the details provided are correct.',
-    title: 'Submit census',
-    warning: 'You must submit this census to complete it',
-  },
-  post_submission: {
-    feedback: true,
-    confirmation_email: true,
-  },
-  sections: [
-    {
-      id: 'communal-establishment',
-      title: 'Communal Establishment',
-      groups: [
-        {
-          id: 'establishment-details-group',
-          blocks: [
-            establishment_details,
-            medical_establishment,
-            education_establishment,
-            detention_establishment,
-            travel_establishment,
-            responsible_for_establishment,
-            people_in_establishment,
-            number_of_people_in_establishment,
-            visitors_in_establishment,
-            number_of_visitors_in_establishment,
-          ],
-        },
-      ],
+    submission: {
+      button: 'Submit census',
+      guidance: 'By submitting this census you are confirming that, to the best of your knowledge and belief, the details provided are correct.',
+      title: 'Submit census',
+      warning: 'You must submit this census to complete it',
     },
-  ],
-}
+    post_submission: {
+      feedback: true,
+      confirmation_email: true,
+    },
+    sections: [
+      {
+        id: 'communal-establishment',
+        title: 'Communal Establishment',
+        groups: [
+          {
+            id: 'establishment-details-group',
+            blocks: [
+              establishment_details,
+              medical_establishment,
+              education_establishment,
+              detention_establishment,
+              travel_establishment,
+              responsible_for_establishment,
+              people_in_establishment,
+              number_of_people_in_establishment,
+              visitors_in_establishment,
+              number_of_visitors_in_establishment,
+            ],
+          },
+        ],
+      },
+    ],
+  }

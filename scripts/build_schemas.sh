@@ -6,32 +6,32 @@ set -e
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
-        --schemas-version)
-            version="$2"
-            shift 2
-            ;;
-        *)
-            echo "Unknown argument: $1"
-            exit 1
-            ;;
+    --schemas-version)
+        version="$2"
+        shift 2
+        ;;
+    --is-test-schema)
+        test=true
+        shift 1
+        ;;
+    *)
+        echo "Unknown argument: $1"
+        exit 1
+        ;;
     esac
 done
 
-# Validate only if supplied
+# Use version if present
 if [[ -n "${version:-}" ]]; then
-    if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-        echo "Invalid version: $version"
-        exit 1
-    fi
-fi
-
-# Use it if present
-if [[ -n "${version:-}" ]]; then
-    echo "Using version $version"
+    echo "Using schemas version: $version"
 else
-    echo "No version specified"
+    echo "No schemas version specified"
 fi
 
+# Use version if present
+if [[ -n "${test:-}" ]]; then
+    echo "Built schemas will be test versions"
+fi
 
 mkdir -p schemas/census/en
 
@@ -48,12 +48,15 @@ for region_code in GB-WLS GB-ENG GB-NIR; do
         DESTINATION_FILE="schemas/census/en/census_${census_type}_${FORMATTED_REGION_CODE}.json"
 
         jsonnet_args=(
-            --ext-str region_code=${region_code}
+            --ext-str region_code="${region_code}"
             --tla-str region_code="${region_code}"
             --ext-str census_date="${CENSUS_DATE}"
         )
         [[ -n "${version:-}" ]] &&
             jsonnet_args+=(--tla-str "schemas_version=$version")
+        if [[ -n "${test:-}" ]]; then
+            jsonnet_args+=(--tla-code "is_test_schema=true")
+        fi
 
         if [[ "$region_code" = "GB-NIR" ]]; then
             if [[ "$census_type" != "communal_establishment" ]]; then

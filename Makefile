@@ -4,7 +4,12 @@ clean:
 build-schemas:
 	./scripts/build_schemas.sh $(if $(SCHEMAS_VERSION),--schemas-version $(SCHEMAS_VERSION))
 
-build: build-schemas translate-schemas
+build-test-schemas:
+	./scripts/build_schemas.sh --is-test-schema
+
+build: build-test-schemas translate-schemas
+
+build-release: build-schemas translate-schemas
 
 run-validator: validator-check
 	./scripts/run_validator.sh
