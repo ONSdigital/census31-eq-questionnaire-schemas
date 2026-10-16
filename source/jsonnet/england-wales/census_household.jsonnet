@@ -131,377 +131,386 @@ local visitor_introduction = import 'household/blocks/visitor/visitor_introducti
 
 local understandWelshBlock(region_code) = if region_code == 'GB-WLS' then [understand_welsh] else [];
 
-function(region_code, census_month_year_date) {
-  mime_type: 'application/json/ons/eq',
-  language: 'en',
-  schema_version: '0.0.1',
-  data_version: '0.0.3',
-  survey_id: 'census',
-  form_type: 'H',
-  region_code: region_code,
-  title: 'Census 2021',
-  description: 'Census Household Schema',
-  theme: 'census',
-  legal_basis: 'Voluntary',
-  navigation: {
-    visible: false,
-  },
-  metadata: [
-    {
-      name: 'case_type',
-      type: 'string',
+function(region_code, census_month_year_date, schemas_version=null, is_test_schema=false)
+  (
+    if is_test_schema == true then
+      {
+        is_test_schema: true,
+      }
+    else {}
+  )
+  +
+  {
+    mime_type: 'application/json/ons/eq',
+    language: 'en',
+    schemas_version: schemas_version,
+    data_version: '0.0.3',
+    survey_id: 'census',
+    form_type: 'H',
+    region_code: region_code,
+    title: 'Census 2021',
+    description: 'Census Household Schema',
+    theme: 'census',
+    legal_basis: 'Voluntary',
+    navigation: {
+      visible: false,
     },
-    {
-      name: 'display_address',
-      type: 'string',
+    metadata: [
+      {
+        name: 'case_type',
+        type: 'string',
+      },
+      {
+        name: 'display_address',
+        type: 'string',
+      },
+      {
+        name: 'questionnaire_id',
+        type: 'string',
+      },
+      {
+        name: 'ru_ref',
+        type: 'string',
+      },
+      {
+        name: 'user_id',
+        type: 'string',
+        optional: true,
+      },
+    ],
+    questionnaire_flow: {
+      type: 'Hub',
+      options: {
+        required_completed_sections: [
+          'people-who-live-here-and-overnight-visitors',
+          'relationships-section',
+        ],
+      },
     },
-    {
-      name: 'questionnaire_id',
-      type: 'string',
+    individual_response: {
+      for_list: 'household',
+      individual_section_id: 'individual-section',
     },
-    {
-      name: 'ru_ref',
-      type: 'string',
+    submission: {
+      button: 'Submit census',
+      guidance: 'By submitting this census you are confirming that, to the best of your knowledge and belief, the details provided are correct.',
+      title: 'Submit census',
+      warning: 'You must submit this census to complete it',
     },
-    {
-      name: 'user_id',
-      type: 'string',
-      optional: true,
+    post_submission: {
+      feedback: true,
+      confirmation_email: true,
     },
-  ],
-  questionnaire_flow: {
-    type: 'Hub',
-    options: {
-      required_completed_sections: [
-        'people-who-live-here-and-overnight-visitors',
-        'relationships-section',
-      ],
-    },
-  },
-  individual_response: {
-    for_list: 'household',
-    individual_section_id: 'individual-section',
-  },
-  submission: {
-    button: 'Submit census',
-    guidance: 'By submitting this census you are confirming that, to the best of your knowledge and belief, the details provided are correct.',
-    title: 'Submit census',
-    warning: 'You must submit this census to complete it',
-  },
-  post_submission: {
-    feedback: true,
-    confirmation_email: true,
-  },
-  sections: [
-    {
-      id: 'people-who-live-here-and-overnight-visitors',
-      title: 'People who live here',
-      summary: {
-        show_on_completion: true,
-        page_title: 'People who live here and overnight visitors summary',
-        title: {
-          text: 'People who live at {household_address} and overnight visitors',
-          placeholders: [
-            placeholders.address,
+    sections: [
+      {
+        id: 'people-who-live-here-and-overnight-visitors',
+        title: 'People who live here',
+        summary: {
+          show_on_completion: true,
+          page_title: 'People who live here and overnight visitors summary',
+          title: {
+            text: 'People who live at {household_address} and overnight visitors',
+            placeholders: [
+              placeholders.address,
+            ],
+          },
+          items: [
+            {
+              type: 'List',
+              for_list: 'household',
+              title: {
+                text_plural: {
+                  forms: {
+                    one: 'You said <strong>{cardinality}</strong> person is living here on Sunday {census_date}',
+                    other: 'You said <strong>{cardinality}</strong> people are living here on Sunday {census_date}',
+                  },
+                  count: {
+                    source: 'list',
+                    identifier: 'household',
+                  },
+                },
+
+                placeholders: [
+                  placeholders.censusDate,
+                  placeholders.getListCardinality('household'),
+                ],
+              },
+              add_link_text: 'Add someone to this household',
+            },
+            {
+              type: 'List',
+              for_list: 'visitors',
+              title: {
+                text_plural: {
+                  forms: {
+                    one: 'You said <strong>{cardinality}</strong> visitor is staying overnight here on Sunday {census_date}',
+                    other: 'You said <strong>{cardinality}</strong> visitors are staying overnight here on Sunday {census_date}',
+                  },
+                  count: {
+                    source: 'list',
+                    identifier: 'visitors',
+                  },
+                },
+
+                placeholders: [
+                  placeholders.censusDate,
+                  placeholders.getListCardinality('visitors'),
+                ],
+              },
+              add_link_text: 'Add a visitor',
+            },
           ],
         },
-        items: [
+        groups: [
           {
-            type: 'List',
-            for_list: 'household',
-            title: {
-              text_plural: {
-                forms: {
-                  one: 'You said <strong>{cardinality}</strong> person is living here on Sunday {census_date}',
-                  other: 'You said <strong>{cardinality}</strong> people are living here on Sunday {census_date}',
-                },
-                count: {
-                  source: 'list',
-                  identifier: 'household',
-                },
-              },
-
-              placeholders: [
-                placeholders.censusDate,
-                placeholders.getListCardinality('household'),
-              ],
-            },
-            add_link_text: 'Add someone to this household',
-          },
-          {
-            type: 'List',
-            for_list: 'visitors',
-            title: {
-              text_plural: {
-                forms: {
-                  one: 'You said <strong>{cardinality}</strong> visitor is staying overnight here on Sunday {census_date}',
-                  other: 'You said <strong>{cardinality}</strong> visitors are staying overnight here on Sunday {census_date}',
-                },
-                count: {
-                  source: 'list',
-                  identifier: 'visitors',
-                },
-              },
-
-              placeholders: [
-                placeholders.censusDate,
-                placeholders.getListCardinality('visitors'),
-              ],
-            },
-            add_link_text: 'Add a visitor',
+            id: 'who-lives-here-group',
+            title: 'Who lives here',
+            blocks: [
+              coronavirus_circumstances,
+              people_who_live_here_introduction,
+              do_you_usually_live_here,
+              who_else_lives_here,
+              people_living_here,
+              any_more_people_living_here,
+              any_visitors,
+              any_more_visitors,
+            ],
           },
         ],
       },
-      groups: [
-        {
-          id: 'who-lives-here-group',
-          title: 'Who lives here',
-          blocks: [
-            coronavirus_circumstances,
-            people_who_live_here_introduction,
-            do_you_usually_live_here,
-            who_else_lives_here,
-            people_living_here,
-            any_more_people_living_here,
-            any_visitors,
-            any_more_visitors,
-          ],
-        },
-      ],
-    },
-    {
-      id: 'relationships-section',
-      title: 'Relationships',
-      show_on_hub: false,
-      groups: [
-        {
-          id: 'relationships-group',
-          title: 'Relationships',
-          blocks: [
-            relationships_introduction,
-            relationships_collector,
-          ],
-        },
-      ],
-      enabled: {
-        when: {
-          '>': [
-            {
-              count: [
-                {
-                  source: 'list',
-                  identifier: 'household',
-                },
-              ],
-            },
-            1,
-          ],
-        },
-      },
-    },
-    {
-      id: 'accommodation-section',
-      title: 'Household and accommodation',
-      summary: {
-        show_on_completion: false,
-        page_title: 'Household and accommodation summary',
-      },
-      groups: [
-        {
-          id: 'accommodation-group',
-          blocks: [
-            accommodation_introduction,
-            accommodation_type,
-            type_of_house,
-            type_of_flat,
-            rooms_shared_with_another_household,
-            number_bedrooms,
-            central_heating,
-            own_or_rent,
-            who_rent_from,
-            number_of_vehicles,
-          ],
-        },
-      ],
-    },
-    {
-      id: 'individual-section',
-      title: 'Individual Section',
-      summary: {
-        show_on_completion: false,
-        page_title: 'Individual summary',
-      },
-      repeat: {
-        for_list: 'household',
-        title: {
-          text: '{person_name}',
-          placeholders: [placeholders.personName(includeMiddleNames='if_same_names_exist')],
-        },
-        page_title: 'Person {list_item_position}',
-      },
-      groups: [
-        {
-          id: 'personal-details-group',
-          title: 'Personal details',
-          blocks: [
-            individual_introduction,
-            individual_coronavirus_circumstances,
-            proxy,
-            date_of_birth,
-            confirm_age,
-            sex,
-            marriage_or_civil_partnership_status,
-            sex_of_current_spouse,
-            sex_of_previous_spouse,
-            sex_of_current_partner,
-            sex_of_previous_partner,
-            another_address,
-            another_address_outside_uk,
-            other_address_uk,
-            address_type,
-            in_education,
-            term_time_location,
-            term_time_address_country,
-            term_time_address_country_outside_uk,
-            term_time_address_uk,
-          ],
-        },
-        {
-          id: 'identity-and-health-group',
-          title: 'Identity and health',
-          blocks: [
-            country_of_birth(region_code),
-            country_of_birth_elsewhere,
-            arrive_in_uk(region_code, census_month_year_date),
-            when_arrive_in_uk(region_code),
-            length_of_stay_in_uk,
-            location_one_year_ago,
-            address_one_year_ago_outside_uk,
-            address_one_year_ago,
-            national_identity(region_code),
-            other_national_identity,
-            other_national_identities,
-            ethnic_group(region_code),
-            ethnic_group_white(region_code),
-            ethnic_group_white_other,
-            ethnic_group_mixed,
-            ethnic_group_mixed_other,
-            ethnic_group_asian(region_code),
-            ethnic_group_asian_other,
-            ethnic_group_black(region_code),
-            ethnic_group_black_african,
-            ethnic_group_black_other(region_code),
-            ethnic_group_other,
-            ethnic_group_other_other,
-            religion(region_code),
-            religion_other(region_code),
-          ] + understandWelshBlock(region_code) + [
-            language(region_code),
-            other_main_language,
-            speak_english,
-            passports,
-            passports_other,
-            passports_additional_other,
-            health,
-            health_conditions_or_illnesses,
-            health_conditions_or_illnesses_limitations,
-            look_after_or_support_others,
-            sexual_orientation,
-            gender_identity,
-          ],
-        },
-        {
-          id: 'qualifications-group',
-          title: 'Qualifications',
-          blocks: [
-            qualifications(region_code),
-            apprenticeship(region_code),
-            degree(region_code),
-            nvq_level(region_code),
-            a_level(region_code),
-            gcse(region_code),
-            other_qualifications(region_code),
-          ],
-        },
-        {
-          id: 'employment-group',
-          title: 'Employment',
-          blocks: [
-            armed_forces,
-            employment_status_last_seven_days,
-            not_employed_status_last_seven_days,
-            looking_for_work,
-            available_for_work,
-            about_to_start_job,
-            ever_worked,
-            main_job_introduction,
-            main_job_status,
-            business_name,
-            job_title,
-            job_description,
-            business_type(region_code),
-            supervise_others,
-            hours_worked,
-            travel_to_work,
-            workplace_type,
-            mainly_work_in_uk,
-            workplace_address,
-            depot_address,
-            mainly_work_outside_uk,
-          ],
-        },
-      ],
-    },
-    {
-      id: 'visitor-section',
-      title: 'Visitors',
-      summary: {
-        show_on_completion: false,
-        page_title: 'Visitor summary',
-      },
-      repeat: {
-        for_list: 'visitors',
-        title: {
-          text: '{person_name} (Visitor)',
-          placeholders: [
-            {
-              placeholder: 'person_name',
-              transforms: [
-                {
-                  transform: 'concatenate_list',
-                  arguments: {
-                    list_to_concatenate: [
-                      {
-                        source: 'answers',
-                        identifier: 'visitor-first-name',
-                      },
-                      {
-                        source: 'answers',
-                        identifier: 'last-name',
-                      },
-                    ],
-                    delimiter: ' ',
+      {
+        id: 'relationships-section',
+        title: 'Relationships',
+        show_on_hub: false,
+        groups: [
+          {
+            id: 'relationships-group',
+            title: 'Relationships',
+            blocks: [
+              relationships_introduction,
+              relationships_collector,
+            ],
+          },
+        ],
+        enabled: {
+          when: {
+            '>': [
+              {
+                count: [
+                  {
+                    source: 'list',
+                    identifier: 'household',
                   },
-                },
-              ],
-            },
-          ],
+                ],
+              },
+              1,
+            ],
+          },
         },
-        page_title: 'Visitor {list_item_position}',
       },
-      groups: [
-        {
-          id: 'visitor-group',
-          blocks: [
-            visitor_introduction,
-            visitor_dob,
-            visitor_sex,
-            visitor_usual_address,
-            visitor_usual_address_details,
-            visitor_usual_address_country,
-          ],
+      {
+        id: 'accommodation-section',
+        title: 'Household and accommodation',
+        summary: {
+          show_on_completion: false,
+          page_title: 'Household and accommodation summary',
         },
-      ],
-    },
-  ],
-}
+        groups: [
+          {
+            id: 'accommodation-group',
+            blocks: [
+              accommodation_introduction,
+              accommodation_type,
+              type_of_house,
+              type_of_flat,
+              rooms_shared_with_another_household,
+              number_bedrooms,
+              central_heating,
+              own_or_rent,
+              who_rent_from,
+              number_of_vehicles,
+            ],
+          },
+        ],
+      },
+      {
+        id: 'individual-section',
+        title: 'Individual Section',
+        summary: {
+          show_on_completion: false,
+          page_title: 'Individual summary',
+        },
+        repeat: {
+          for_list: 'household',
+          title: {
+            text: '{person_name}',
+            placeholders: [placeholders.personName(includeMiddleNames='if_same_names_exist')],
+          },
+          page_title: 'Person {list_item_position}',
+        },
+        groups: [
+          {
+            id: 'personal-details-group',
+            title: 'Personal details',
+            blocks: [
+              individual_introduction,
+              individual_coronavirus_circumstances,
+              proxy,
+              date_of_birth,
+              confirm_age,
+              sex,
+              marriage_or_civil_partnership_status,
+              sex_of_current_spouse,
+              sex_of_previous_spouse,
+              sex_of_current_partner,
+              sex_of_previous_partner,
+              another_address,
+              another_address_outside_uk,
+              other_address_uk,
+              address_type,
+              in_education,
+              term_time_location,
+              term_time_address_country,
+              term_time_address_country_outside_uk,
+              term_time_address_uk,
+            ],
+          },
+          {
+            id: 'identity-and-health-group',
+            title: 'Identity and health',
+            blocks: [
+              country_of_birth(region_code),
+              country_of_birth_elsewhere,
+              arrive_in_uk(region_code, census_month_year_date),
+              when_arrive_in_uk(region_code),
+              length_of_stay_in_uk,
+              location_one_year_ago,
+              address_one_year_ago_outside_uk,
+              address_one_year_ago,
+              national_identity(region_code),
+              other_national_identity,
+              other_national_identities,
+              ethnic_group(region_code),
+              ethnic_group_white(region_code),
+              ethnic_group_white_other,
+              ethnic_group_mixed,
+              ethnic_group_mixed_other,
+              ethnic_group_asian(region_code),
+              ethnic_group_asian_other,
+              ethnic_group_black(region_code),
+              ethnic_group_black_african,
+              ethnic_group_black_other(region_code),
+              ethnic_group_other,
+              ethnic_group_other_other,
+              religion(region_code),
+              religion_other(region_code),
+            ] + understandWelshBlock(region_code) + [
+              language(region_code),
+              other_main_language,
+              speak_english,
+              passports,
+              passports_other,
+              passports_additional_other,
+              health,
+              health_conditions_or_illnesses,
+              health_conditions_or_illnesses_limitations,
+              look_after_or_support_others,
+              sexual_orientation,
+              gender_identity,
+            ],
+          },
+          {
+            id: 'qualifications-group',
+            title: 'Qualifications',
+            blocks: [
+              qualifications(region_code),
+              apprenticeship(region_code),
+              degree(region_code),
+              nvq_level(region_code),
+              a_level(region_code),
+              gcse(region_code),
+              other_qualifications(region_code),
+            ],
+          },
+          {
+            id: 'employment-group',
+            title: 'Employment',
+            blocks: [
+              armed_forces,
+              employment_status_last_seven_days,
+              not_employed_status_last_seven_days,
+              looking_for_work,
+              available_for_work,
+              about_to_start_job,
+              ever_worked,
+              main_job_introduction,
+              main_job_status,
+              business_name,
+              job_title,
+              job_description,
+              business_type(region_code),
+              supervise_others,
+              hours_worked,
+              travel_to_work,
+              workplace_type,
+              mainly_work_in_uk,
+              workplace_address,
+              depot_address,
+              mainly_work_outside_uk,
+            ],
+          },
+        ],
+      },
+      {
+        id: 'visitor-section',
+        title: 'Visitors',
+        summary: {
+          show_on_completion: false,
+          page_title: 'Visitor summary',
+        },
+        repeat: {
+          for_list: 'visitors',
+          title: {
+            text: '{person_name} (Visitor)',
+            placeholders: [
+              {
+                placeholder: 'person_name',
+                transforms: [
+                  {
+                    transform: 'concatenate_list',
+                    arguments: {
+                      list_to_concatenate: [
+                        {
+                          source: 'answers',
+                          identifier: 'visitor-first-name',
+                        },
+                        {
+                          source: 'answers',
+                          identifier: 'last-name',
+                        },
+                      ],
+                      delimiter: ' ',
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+          page_title: 'Visitor {list_item_position}',
+        },
+        groups: [
+          {
+            id: 'visitor-group',
+            blocks: [
+              visitor_introduction,
+              visitor_dob,
+              visitor_sex,
+              visitor_usual_address,
+              visitor_usual_address_details,
+              visitor_usual_address_country,
+            ],
+          },
+        ],
+      },
+    ],
+  }
