@@ -10,14 +10,7 @@ local responsible_for_establishment = import 'communal-establishment/blocks/esta
 local travel_establishment = import 'communal-establishment/blocks/establishment-details/travel_establishment.jsonnet';
 local visitors_in_establishment = import 'communal-establishment/blocks/establishment-details/visitors_in_establishment.jsonnet';
 
-function(region_code, census_month_year_date, schemas_version=null, is_test_schema=false)
-  (
-    if is_test_schema == true then
-      {
-        is_test_schema: true,
-      }
-    else {}
-  )
+function(region_code, census_month_year_date, schemas_version=null)
   {
     mime_type: 'application/json/ons/eq',
     language: 'en',

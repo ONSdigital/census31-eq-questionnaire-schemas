@@ -118,15 +118,7 @@ local visitor_usual_address = import 'household/blocks/visitor/visitor_usual_add
 local visitor_usual_address_country = import 'household/blocks/visitor/visitor_usual_address_country.jsonnet';
 local visitor_usual_address_details = import 'household/blocks/visitor/visitor_usual_address_details.jsonnet';
 
-function(region_code, schemas_version=null, is_test_schema=false)
-  (
-    if is_test_schema == true then
-      {
-        is_test_schema: true,
-      }
-    else {}
-  )
-  +
+function(region_code, schemas_version=null)
   {
     mime_type: 'application/json/ons/eq',
     language: 'en',

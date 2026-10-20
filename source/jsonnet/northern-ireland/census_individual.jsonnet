@@ -85,15 +85,7 @@ local workplace_location = import 'individual/blocks/employment/workplace_locati
 local workplace_outside_northern_ireland = import 'individual/blocks/employment/workplace_outside_northern_ireland.jsonnet';
 local workplace_type = import 'individual/blocks/employment/workplace_type.jsonnet';
 
-function(region_code, schemas_version=null, is_test_schema=false)
-  (
-    if is_test_schema == true then
-      {
-        is_test_schema: true,
-      }
-    else {}
-  )
-  +
+function(region_code, schemas_version=null)
   {
     mime_type: 'application/json/ons/eq',
     language: 'en',

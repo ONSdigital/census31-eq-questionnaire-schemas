@@ -4,12 +4,7 @@ clean:
 build-schemas:
 	./scripts/build_schemas.sh $(if $(SCHEMAS_VERSION),--schemas-version $(SCHEMAS_VERSION))
 
-build-test-schemas:
-	./scripts/build_schemas.sh --is-test-schema
-
-build: build-test-schemas translate-schemas
-
-build-release: build-schemas translate-schemas
+build: build-schemas translate-schemas
 
 run-validator: validator-check
 	./scripts/run_validator.sh
@@ -26,7 +21,7 @@ format:
 validator-check:
 	poetry run python -m scripts.eq_validator_check
 
-validate-schemas: validator-check
+validate-schemas:
 	poetry run python -m scripts.validate_schemas
 
 translations-check:

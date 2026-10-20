@@ -10,10 +10,6 @@ while [[ $# -gt 0 ]]; do
         version="$2"
         shift 2
         ;;
-    --is-test-schema)
-        test=true
-        shift 1
-        ;;
     *)
         echo "Unknown argument: $1"
         exit 1
@@ -26,11 +22,6 @@ if [[ -n "${version:-}" ]]; then
     echo "Using schemas version: $version"
 else
     echo "No schemas version specified"
-fi
-
-# Use version if present
-if [[ -n "${test:-}" ]]; then
-    echo "Built schemas will be test versions"
 fi
 
 mkdir -p schemas/census/en
@@ -54,9 +45,6 @@ for region_code in GB-WLS GB-ENG GB-NIR; do
         )
         [[ -n "${version:-}" ]] &&
             jsonnet_args+=(--tla-str "schemas_version=$version")
-        if [[ -n "${test:-}" ]]; then
-            jsonnet_args+=(--tla-code "is_test_schema=true")
-        fi
 
         if [[ "$region_code" = "GB-NIR" ]]; then
             if [[ "$census_type" != "communal_establishment" ]]; then

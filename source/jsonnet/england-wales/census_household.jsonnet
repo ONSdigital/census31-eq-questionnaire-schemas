@@ -131,15 +131,7 @@ local visitor_introduction = import 'household/blocks/visitor/visitor_introducti
 
 local understandWelshBlock(region_code) = if region_code == 'GB-WLS' then [understand_welsh] else [];
 
-function(region_code, census_month_year_date, schemas_version=null, is_test_schema=false)
-  (
-    if is_test_schema == true then
-      {
-        is_test_schema: true,
-      }
-    else {}
-  )
-  +
+function(region_code, census_month_year_date, schemas_version=null)
   {
     mime_type: 'application/json/ons/eq',
     language: 'en',
