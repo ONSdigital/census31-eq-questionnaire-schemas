@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-05-29 14:40+0100\n"
+"POT-Creation-Date: 2026-10-22 08:05-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -410,7 +410,6 @@ msgstr ""
 #. Group title
 msgid "Employment"
 msgstr ""
-
 
 #. Content page main heading
 msgid "Main job"
@@ -1432,22 +1431,6 @@ msgctxt ""
 "the United Kingdom?"
 msgid "Do not count short visits away from the UK"
 msgstr ""
-
-#. Question description
-msgctxt "One year ago, what was your usual address?"
-msgid ""
-"If you had no usual address one year ago, select the address where you "
-"were staying."
-msgstr ""
-
-#. Question description
-msgctxt ""
-"One year ago, what was <strong>{person_name_possessive}</strong> usual "
-"address?"
-msgid ""
-"If they had no usual address one year ago, select the address where they "
-"were staying."
-msgstr """
 
 #. Question description
 msgctxt "How would you describe your national identity?"
