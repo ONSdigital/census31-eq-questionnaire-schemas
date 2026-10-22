@@ -243,7 +243,6 @@ function(region_code) {
           id: 'who-lives-here-group',
           title: 'Who lives here',
           blocks: [
-            coronavirus_circumstances,
             people_who_live_here_introduction,
             do_you_usually_live_here,
             anyone_else,

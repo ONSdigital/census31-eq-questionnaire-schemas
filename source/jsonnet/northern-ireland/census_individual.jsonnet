@@ -149,7 +149,6 @@ function(region_code) {
           id: 'personal-details-group',
           title: 'Personal details',
           blocks: [
-            coronavirus_circumstances,
             accommodation_type,
             proxy,
             name,
