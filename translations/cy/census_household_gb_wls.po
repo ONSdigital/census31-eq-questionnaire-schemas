@@ -716,11 +716,6 @@ msgid "In this section, we are going to ask you questions about <strong>{person_
 msgstr "Yn yr adran hon, byddwn yn gofyn cwestiynau i chi am <strong>{person_name}</strong>."
 
 #. Content page description
-msgctxt "Coronavirus (COVID-19)"
-msgid "Circumstances for <strong>{person_name}</strong> may have changed during the coronavirus pandemic. Answer all questions based on the situation as it is now."
-msgstr "Gall amgylchiadau <strong>{person_name}</strong> fod wedi newid yn ystod pandemig y coronafeirws. Atebwch bob cwestiwn yn seiliedig ar y sefyllfa fel y mae ar hyn o bryd."
-
-#. Content page description
 msgctxt "Qualifications"
 msgid "The next set of questions is about any qualifications you have ever achieved in Wales, England or worldwide, including equivalents, even if you are not using them now."
 msgstr "Mae'r gyfres nesaf o gwestiynau yn ymwneud ag unrhyw gymwysterau rydych chi wedi’u hennill erioed yng Nghymru, Lloegr neu unrhyw le arall yn y byd, gan gynnwys cymwysterau cyfatebol, hyd yn oed os nad ydych yn eu defnyddio erbyn hyn."
@@ -734,11 +729,6 @@ msgstr "Mae’r gyfres nesaf o gwestiynau yn ymwneud ag unrhyw gymwysterau y mae
 msgctxt "Main job"
 msgid "The next set of questions is about your main job. Your main job is the job in which you work the most hours."
 msgstr "Mae’r gyfres nesaf o gwestiynau yn ymwneud â’ch prif swydd. Eich prif swydd yw’r swydd rydych chi’n gweithio’r nifer fwyaf o oriau ynddi."
-
-#. Content page description
-msgctxt "Main job"
-msgid "Your circumstances may have changed during the coronavirus pandemic. Answer all questions based on your situation as it is now."
-msgstr "Gall eich amgylchiadau fod wedi newid yn ystod pandemig y coronafeirws. Atebwch bob cwestiwn yn seiliedig ar eich sefyllfa fel y mae ar hyn o bryd."
 
 #. Content page description
 msgctxt "Main job"
@@ -1869,24 +1859,9 @@ msgid "This could be any qualifications they have ever achieved, even if they ar
 msgstr "Gallai hyn fod yn unrhyw gymwysterau mae wedi’u hennill, hyd yn oed os nad yw’n eu defnyddio nhw nawr"
 
 #. Question description
-msgctxt "In the last seven days, were you doing any of the following?"
-msgid "If you have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”"
-msgstr "Os oes gennych chi swydd ond rydych wedi bod i ffwrdd o'r gwaith ar <strong>ffyrlo</strong>, dan <strong>gwarantin</strong> neu'n <strong>hunanynysu</strong>, dewiswch “I ffwrdd o’ch gwaith dros dro yn sâl, ar wyliau, neu wedi’ch cadw dros dro o’ch gwaith am na all eich cyflogwr gynnig gwaith ar hyn o bryd\""
-
-#. Question description
 msgctxt "In the last seven days, was <strong>{person_name}</strong> doing any of the following?"
 msgid "If they have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”"
 msgstr "Os oes gan yr unigolyn swydd ond os yw wedi bod i ffwrdd o'r gwaith ar <strong>ffyrlo</strong>, dan <strong>gwarantin</strong> neu'n <strong>hunanynysu</strong>, atebwch “I ffwrdd o’r gwaith dros dro yn sâl, ar wyliau, neu mae'r unigolyn wedi’i gadw dros dro o’r gwaith am na all y cyflogwr gynnig gwaith ar hyn o bryd”"
-
-#. Question description
-msgctxt "Have you ever done any paid work?"
-msgid "<strong>Furlough</strong> is considered paid work"
-msgstr "Caiff <strong>ffyrlo</strong> ei ystyried yn waith am dâl"
-
-#. Question description
-msgctxt "Has <strong>{person_name}</strong> ever done any paid work?"
-msgid "<strong>Furlough</strong> is considered paid work"
-msgstr "Caiff <strong>ffyrlo</strong> ei ystyried yn waith am dâl"
 
 #. Question description
 msgctxt "In your main job, what is your employment status?"
@@ -1987,11 +1962,6 @@ msgstr "Gallai hyn fod o bell neu yn yr un lle"
 msgctxt "Did <strong>{person_name}</strong> supervise or oversee the work of other employees on a day-to-day basis?"
 msgid "This could be remotely or in person"
 msgstr "Gallai hyn fod o bell neu yn yr un lle"
-
-#. Question description
-msgctxt "In your main job, how many hours a week do you usually work?"
-msgid "If the <strong>coronavirus</strong> pandemic has affected your working hours, select the answer that best describes your <strong>current circumstances</strong>"
-msgstr "Os yw pandemig y <strong>coronafeirws </strong> wedi effeithio ar eich oriau gwaith, dewiswch yr ateb sy'n disgrifio orau eich <strong>amgylchiadau ar hyn o bryd</strong>"
 
 #. Question description
 msgctxt "In <strong>{person_name_possessive}</strong> main job, how many hours a week do they usually work?"
