@@ -104,7 +104,7 @@ function(region_code, census_month_year_date) {
   survey_id: 'census',
   form_type: 'I',
   region_code: region_code,
-  title: 'Census 2021',
+  title: 'Census 2027',
   description: 'Census Individual Schema',
   theme: 'census',
   legal_basis: 'Voluntary',

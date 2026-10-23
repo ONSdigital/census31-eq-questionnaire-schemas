@@ -9,7 +9,7 @@ for region_code in GB-WLS GB-ENG GB-NIR; do
     # Lowercase the region code and replace '-' with '_'
     FORMATTED_REGION_CODE=$(echo "${region_code}" | tr '[:upper:]' '[:lower:]' | tr - _)
 
-    CENSUS_DATE="2027-03-21"
+    CENSUS_DATE="2027-03-14"
     CENSUS_MONTH_YEAR_DATE="2027-03"
 
     for census_type in "individual" "household" "communal_establishment"; do
