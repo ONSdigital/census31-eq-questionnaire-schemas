@@ -34,6 +34,7 @@ venv
 
 # Added to prevent committing coverage reports.
 htmlcov/
+.coverage
 
 .mypy_cache
 

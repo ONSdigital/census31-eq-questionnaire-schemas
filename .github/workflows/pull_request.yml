@@ -136,7 +136,7 @@ jobs:
       - name: Validate schemas
         run: make validate-schemas
 
-  test-translation-templates:
+  test:
     needs: build
     permissions:
       contents: read
@@ -167,6 +167,8 @@ jobs:
       - name: Install virtual environment
         if: steps.cache-virtualenv.outputs.cache-hit != 'true'
         run: poetry install
+      - name: Test eq_translations
+        run: make test
       - name: Download schema artifacts
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c #v8.0.1
         with:
