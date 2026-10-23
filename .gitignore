@@ -49,4 +49,4 @@ venv
 /scripts/__pycache__/
 
 megalinter-reports/
-schemas/
+/schemas/
