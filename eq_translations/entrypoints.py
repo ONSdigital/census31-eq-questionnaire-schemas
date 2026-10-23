@@ -2,7 +2,7 @@ import os
 
 from termcolor import colored
 
-from eq_translations import SurveySchema, SchemaTranslation
+from eq_translations import SchemaTranslation, SurveySchema
 from eq_translations.validate_translation import (
     get_missing_non_plural_pointers,
     get_missing_translated_plural_forms,

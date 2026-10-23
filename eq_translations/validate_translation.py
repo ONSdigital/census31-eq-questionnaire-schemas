@@ -2,9 +2,9 @@ from jsonpointer import resolve_pointer
 from termcolor import colored
 
 from eq_translations.utils import (
-    list_pointers,
     find_pointers_to,
     get_plural_forms_for_language,
+    list_pointers,
 )
 
 

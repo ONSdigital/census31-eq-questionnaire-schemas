@@ -1,9 +1,10 @@
 import logging
 import sys
 
-import eq_translations
 import requests
 from requests.exceptions import RequestException
+
+import eq_translations
 
 logger = logging.getLogger(__name__)
 

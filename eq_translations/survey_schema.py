@@ -6,14 +6,14 @@ from jsonpath_ng import parse
 from jsonpointer import set_pointer
 from termcolor import colored
 
-from eq_translations.extractable_strings import EXTRACTABLE_STRINGS, CONTEXT_DEFINITIONS
+from eq_translations.extractable_strings import CONTEXT_DEFINITIONS, EXTRACTABLE_STRINGS
 from eq_translations.translatable_item import TranslatableItem
 from eq_translations.utils import (
-    json_path_to_json_pointer,
-    get_message_id,
     dumb_to_smart_quotes,
-    get_plural_forms_for_language,
+    get_message_id,
     get_parent_schema_object,
+    get_plural_forms_for_language,
+    json_path_to_json_pointer,
 )
 
 
