@@ -1,3 +1,10 @@
+# Python temp file
+*.py[cod]
+__pycache__
+.pytest_cache
+tests/output/
+.cache
+
 # Unit test / coverage reports
 .coverage
 .coverage.*
@@ -6,6 +13,7 @@ coverage.xml
 coverage/
 /profiling/
 combined_profile.prof
+htmlcov/
 
 .cache
 
@@ -31,10 +39,6 @@ venv
 ._*
 .Spotlight-V100
 .Trashes
-
-# Added to prevent committing coverage reports.
-htmlcov/
-.coverage
 
 .mypy_cache
 
