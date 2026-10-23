@@ -18,16 +18,16 @@ function display_result {
     fi
 }
 
-find . -type f -name "*.py" -not -path "./megalinter-reports/*" -print0 | xargs -0 pylint --reports=n --output-format=colorized --rcfile=.pylintrc -j 0
+find . -type f -name "*.py" -not -path "./megalinter-reports/*" -not -path "./census31-eq-translations/*" -print0 | xargs -0 pylint --reports=n --output-format=colorized --rcfile=.pylintrc -j 0
 # pylint bit encodes the exit code to allow you to figure out which category has failed.
 # https://docs.pylint.org/en/1.6.0/run.html#exit-codes
 # We want to fail on all errors so don't check for specific bits in the output; but if we did in future, see:
 # http://stackoverflow.com/questions/6626351/how-to-extract-bits-from-return-code-number-in-bash
 display_result $? 2 "Pylint linting check"
 
-isort --check .
+isort --check . --skip census31-eq-translations
 display_result $? 1 "isort linting check"
 
-black --check . --exclude node_modules
+black --check . --exclude node_modules --exclude census31-eq-translations
 
 display_result $? 1 "Python code formatting check"

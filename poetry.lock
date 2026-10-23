@@ -362,10 +362,8 @@ termcolor = "*"
 tqdm = "*"
 
 [package.source]
-type = "git"
-url = "https://github.com/ONSDigital/census31-eq-translations.git"
-reference = "v5.0.0"
-resolved_reference = "1f9a7e32abc55c0d664e0a788885548808665596"
+type = "directory"
+url = "census31-eq-translations"
 
 [[package]]
 name = "flake8"
@@ -843,4 +841,4 @@ zstd = ["backports-zstd (>=1.0.0) ; python_version < \"3.14\""]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.13"
-content-hash = "8d9214e7a0316e95dc0f237fd52c529497b5661239923c01bfde199082fe4418"
+content-hash = "1fc26d83f495604f741971f2b9ab812dc7f0e72e2f6e2ce291475b6627f77269"
