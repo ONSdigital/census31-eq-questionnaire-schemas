@@ -1,0 +1,3 @@
+[submodule "census31-eq-translations"]
+	path = census31-eq-translations
+	url = ssh://github.com/ONSdigital/census31-eq-translations

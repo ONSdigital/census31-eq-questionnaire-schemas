@@ -7,8 +7,8 @@ authors = ["ONSDigital"]
 [tool.poetry.dependencies]
 python = "^3.13"
 coloredlogs = "^15.0.1"
-eq-translations = {git = "https://github.com/ONSDigital/census31-eq-translations.git", rev = "v5.0.0"}
 idna = ">=3.20"
+eq-translations = {path = "census31-eq-translations"}
 
 [tool.poetry.group.dev.dependencies]
 black = "^26.10.1"

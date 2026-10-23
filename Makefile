@@ -27,13 +27,13 @@ validate-schemas: validator-check
 translations-check:
 	poetry run python -m scripts.eq_translations_check
 
-translation-templates: translations-check
+translation-templates:
 	poetry run python -m scripts.extract_translation_templates
 
-test-translation-templates: translations-check
+test-translation-templates:
 	poetry run python -m scripts.extract_translation_templates --test
 
-translate-schemas: translations-check
+translate-schemas:
 	poetry run python -m scripts.translate_schemas
 
 resolve-suggestions-urls:
