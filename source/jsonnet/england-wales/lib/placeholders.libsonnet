@@ -208,7 +208,7 @@ local visitorPersonName() = {
       transform: 'format_date',
       arguments: {
         date_to_format: {
-          value: '2020-03-21',
+          value: '2026-03-14',
         },
         date_format: 'd MMMM yyyy',
       },

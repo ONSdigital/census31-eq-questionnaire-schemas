@@ -19,8 +19,8 @@ msgstr ""
 "Language: cy_GB\n"
 
 #. Questionnaire title
-msgid "2021 Census"
-msgstr "cyfrifiad 2021"
+msgid "2027 Census"
+msgstr "cyfrifiad 2027"
 
 #. Questionnaire legal basis
 msgid "Voluntary"
