@@ -95,15 +95,19 @@ class SurveySchema:
 
     def _get_context_for_pointer(self, pointer, context_type):
         context_definition = CONTEXT_DEFINITIONS.get(context_type)
-        if context_definition:
-            parent_schema_object = get_parent_schema_object(
-                self.schema, pointer, context_definition["parent_schema_property"]
+        if not context_definition:
+            return None
+
+        parent_schema_object = get_parent_schema_object(
+            self.schema, pointer, context_definition["parent_schema_property"]
+        )
+        if context_definition["property"] in parent_schema_object:
+            context_string = self._get_single_string_value(
+                parent_schema_object[context_definition["property"]]
             )
-            if context_definition["property"] in parent_schema_object:
-                context_string = self._get_single_string_value(
-                    parent_schema_object[context_definition["property"]]
-                )
-                return context_definition["text"].format(context=context_string)
+            return context_definition["text"].format(context=context_string)
+
+        return None
 
     @property
     def catalog(self):

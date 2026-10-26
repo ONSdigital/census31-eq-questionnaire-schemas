@@ -19,6 +19,7 @@ class SchemaTranslation:
     def language(self):
         if self.catalog and self.catalog.locale:
             return self.catalog.locale.language
+        return None
 
     def get_translation(
         self,
