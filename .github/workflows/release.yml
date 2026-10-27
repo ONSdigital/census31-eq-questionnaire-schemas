@@ -34,13 +34,10 @@ jobs:
         with:
           version: v0.22.0
       - name: Build schemas
-        run: make build SCHEMAS_VERSION="${RELEASE_TAG}"
-        env:
-          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: make build SCHEMAS_VERSION="$GITHUB_REF_NAME"
       - name: Zip schemas
         run: zip -r schemas.zip schemas
       - name: Upload release asset
-        run: gh release upload "$RELEASE_TAG" schemas.zip --clobber
+        run: gh release upload "$GITHUB_REF_NAME" schemas.zip --clobber
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_TAG: ${{ github.event.release.tag_name }}
