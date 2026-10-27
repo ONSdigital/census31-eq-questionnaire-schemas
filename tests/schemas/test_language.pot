@@ -1,0 +1,231 @@
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-09-07 09:00+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#. Questionnaire title
+msgid "Test Language Survey"
+msgstr ""
+
+#. Submission button
+msgid "Submission button"
+msgstr ""
+
+#. Submission guidance
+msgid "Submission guidance"
+msgstr ""
+
+#. Submission title
+msgid "Submission title"
+msgstr ""
+
+#. Submission warning
+msgid "Submission warning"
+msgstr ""
+
+#. Post submission guidance heading
+msgid "Post submission guidance title"
+msgstr ""
+
+#. Post submission guidance description
+msgid "Post submission guidance description."
+msgstr ""
+
+#. Post submission guidance list item
+#. For heading: Post submission guidance title
+#. For description: Post submission guidance description.
+msgid "Post submission guidance list item"
+msgstr ""
+
+#. Section title
+msgid "Household details"
+msgstr ""
+
+#. Page title
+msgid "Custom section page title"
+msgstr ""
+
+#. Page title
+msgid "Custom question page title"
+msgstr ""
+
+#. Content page main heading
+msgid "Interstitial Definition"
+msgstr ""
+
+#. Content page description
+msgctxt "Interstitial Definition"
+msgid "This questionnaire is going to ask you personal data"
+msgstr ""
+
+#. Definition title
+msgctxt "Interstitial Definition"
+msgid "Personal data"
+msgstr ""
+
+#. Definition description
+msgctxt "Interstitial Definition"
+msgid ""
+"Personal data means any information relating to an identified or "
+"identifiable individual"
+msgstr ""
+
+#. Question text
+msgid "Please enter a name"
+msgstr ""
+
+#. Question text
+msgid "What is {person_name_possessive} date of birth?"
+msgstr ""
+
+#. Question text
+msgid "How many people live at your household?"
+msgstr ""
+
+#. Question text
+msgid "{number_of_people} person lives here, is this correct?"
+msgid_plural "{number_of_people} people live here, is this correct?"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Question text
+msgid "Which football team do you support?"
+msgstr ""
+
+#. Question text
+msgid "What is your favorite day of the week?"
+msgstr ""
+
+#. Question description
+msgctxt "Please enter a name"
+msgid "The full name of the person"
+msgstr ""
+
+#. Question description
+msgctxt "What is {person_name_possessive} date of birth?"
+msgid "{person_name_possessive} date of birth"
+msgstr ""
+
+#. Question description
+msgctxt "How many people live at your household?"
+msgid "The total number of people in the household"
+msgstr ""
+
+#. Question instruction
+msgctxt "Please enter a name"
+msgid "Enter the name of a person"
+msgstr ""
+
+#. Question warning
+msgctxt "How many people live at your household?"
+msgid "This is a very important question"
+msgstr ""
+
+#. Answer
+msgctxt "Please enter a name"
+msgid "First Name"
+msgstr ""
+
+#. Answer
+msgctxt "Please enter a name"
+msgid "Last Name"
+msgstr ""
+
+#. Answer
+msgctxt "What is {person_name_possessive} date of birth?"
+msgid "Date of Birth"
+msgstr ""
+
+#. Answer
+msgctxt "How many people live at your household?"
+msgid "Number of household residents"
+msgstr ""
+
+#. Answer
+msgctxt "Which football team do you support?"
+msgid "Football team"
+msgstr ""
+
+#. Answer
+msgctxt "What is your favorite day of the week?"
+msgid "Days of the Week"
+msgstr ""
+
+#. Checkbox answer instruction
+msgctxt "What is your favorite day of the week?"
+msgid "Select your answer"
+msgstr ""
+
+#. Dropdown field placeholder text
+msgctxt "Which football team do you support?"
+msgid "Select an option"
+msgstr ""
+
+#. Answer description
+#. For answer: Date of Birth
+msgctxt "What is {person_name_possessive} date of birth?"
+msgid "Enter your date of birth"
+msgstr ""
+
+#. Answer description
+#. For answer: Football team
+msgctxt "Which football team do you support?"
+msgid "Your favourite team from the Premier League."
+msgstr ""
+
+#. Answer option
+msgctxt "{number_of_people} people live here, is this correct?"
+msgid "Yes, {number_of_people} person lives here"
+msgid_plural "Yes, {number_of_people} people live here"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Answer option
+msgctxt "{number_of_people} people live here, is this correct?"
+msgid "No"
+msgstr ""
+
+#. Answer option
+msgctxt "Which football team do you support?"
+msgid "Liverpool"
+msgstr ""
+
+#. Answer option
+msgctxt "Which football team do you support?"
+msgid "Chelsea"
+msgstr ""
+
+#. Answer option
+msgctxt "Which football team do you support?"
+msgid "Rugby is better!"
+msgstr ""
+
+#. Answer option
+msgctxt "What is your favorite day of the week?"
+msgid "Monday"
+msgstr ""
+
+#. Answer option
+msgctxt "What is your favorite day of the week?"
+msgid "Saturday"
+msgstr ""
+
+#. Answer option
+msgctxt "What is your favorite day of the week?"
+msgid "Sunday"
+msgstr ""
+

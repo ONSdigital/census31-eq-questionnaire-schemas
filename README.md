@@ -20,10 +20,10 @@ python --version
 
 ### Authenticate
 
-Authenticate to make sure Docker can pull from GAR
+Authenticate to make sure Docker can pull from GitHub Container Registry
 
 ```bash
-gcloud auth login
+docker login ghcr.io -u <username> --password-stdin
 ```
 
 ### Install Poetry
@@ -31,7 +31,7 @@ gcloud auth login
 We use poetry to manage the dependencies in this repository, to install poetry use:
 
 ```bash
-curl -sSL https://install.python-poetry.org | python3 - --version 2.1.2
+curl -sSL https://install.python-poetry.org | python3
 ```
 
 Install the dependencies for this project. Add the option `--without dev` to ignore dev dependencies.
@@ -54,16 +54,12 @@ To validate a single schema, run the following command:
 ./scripts/validate_schemas.sh <path-to-schema-json>
 
 # For Example
-./scripts/validate_schemas.sh schemas/health/en/health_demo.json
+./scripts/validate_schemas.sh schemas/census/en/census_household_gb_eng.json
 ```
 
-**Schema file names must use snake case to be compatible with runner**
+**Important:** Schema file names must use snake case to be compatible with runner
 
 ## Translations
-
-** N.B. Currently only supporting translations for Health themed surveys (PHM).
-
-The latest release of the census31-eq-translations package is required to successfully run the translation scripts. The release version is checked automatically when running translations commands and the scripts will error if the release version does not match the installed version.
 
 ### Generating Translation Templates
 
@@ -75,7 +71,7 @@ make translation-templates
 
 ### Generating Translated Schemas
 
-To translate a schema, a `.po` file for the schema will need to be added to the `translations/{SURVEY_TYPE}/{LANGUAGE_CODE}/` directory containing strings from the schema. For example, `translations/health/cy/`
+To translate a schema, a `.po` file for the schema will need to be added to the `translations/{LANGUAGE_CODE}/` directory containing strings from the schema. For example, `translations/cy/`
 and the matching translations.
 
 The `.po` file needs to be named in the following format: `{SCHEMA_NAME}.po`
@@ -87,7 +83,7 @@ schema:
 make translate-schemas
 ```
 
-The translated schema will be added to the `/schemas/{SURVEY_TYPE}/{LANGUAGE_CODE}/` directory. For example, `schemas/health/cy/`
+The translated schema will be added to the `/schemas/{SURVEY_TYPE}/{LANGUAGE_CODE}/` directory. For example, `schemas/census/cy/`
 
 ### Testing Translation Templates
 

@@ -9,6 +9,7 @@ import tempfile
 from glob import glob
 
 import coloredlogs
+
 from eq_translations.entrypoints import handle_extract_template
 
 logger = logging.getLogger(__name__)
@@ -31,8 +32,8 @@ def get_template_content(filename, ignore_context=False):
     with open(filename, encoding="utf-8") as file:
         return list(
             filter(
-                lambda l: all(
-                    not l.startswith(param) for param in line_beginnings_to_ignore
+                lambda line: all(
+                    not line.startswith(param) for param in line_beginnings_to_ignore
                 ),
                 file.readlines(),
             )
