@@ -3,7 +3,6 @@ local accommodation_type = import 'individual/blocks/personal-details/accommodat
 local age_last_birthday = import 'individual/blocks/personal-details/age_last_birthday.jsonnet';
 local confirm_age = import 'individual/blocks/personal-details/confirm_age.jsonnet';
 local proxy = import 'individual/blocks/personal-details/confirm_who_is_answering.jsonnet';
-local coronavirus_circumstances = import 'individual/blocks/personal-details/coronavirus_circumstances.jsonnet';
 local date_of_birth = import 'individual/blocks/personal-details/date_of_birth.jsonnet';
 local establishment_position = import 'individual/blocks/personal-details/establishment_position.jsonnet';
 local in_education = import 'individual/blocks/personal-details/in_education.jsonnet';
@@ -150,7 +149,6 @@ function(region_code) {
           id: 'personal-details-group',
           title: 'Personal details',
           blocks: [
-            coronavirus_circumstances,
             accommodation_type,
             proxy,
             name,
