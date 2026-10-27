@@ -13,6 +13,9 @@ lint:
 	poetry run ./scripts/run_lint_python.sh
 	./scripts/lint_jsonnet.sh
 
+test:
+	poetry run pytest --cov-config=.coveragerc --cov --cov-report html tests
+
 format:
 	./scripts/format_jsonnet.sh
 	poetry run isort .
@@ -27,13 +30,13 @@ validate-schemas:
 translations-check:
 	poetry run python -m scripts.eq_translations_check
 
-translation-templates: translations-check
+translation-templates:
 	poetry run python -m scripts.extract_translation_templates
 
-test-translation-templates: translations-check
+test-translation-templates:
 	poetry run python -m scripts.extract_translation_templates --test
 
-translate-schemas: translations-check
+translate-schemas:
 	poetry run python -m scripts.translate_schemas
 
 resolve-suggestions-urls:
