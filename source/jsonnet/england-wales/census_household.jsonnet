@@ -67,7 +67,6 @@ local ethnic_group_other = import 'individual/blocks/identity-and-health/ethnic_
 local ethnic_group_other_other = import 'individual/blocks/identity-and-health/ethnic_group_other_other.jsonnet';
 local ethnic_group_white = import 'individual/blocks/identity-and-health/ethnic_group_white.jsonnet';
 local ethnic_group_white_other = import 'individual/blocks/identity-and-health/ethnic_group_white_other.jsonnet';
-local gender_identity = import 'individual/blocks/identity-and-health/gender_identity.jsonnet';
 local health = import 'individual/blocks/identity-and-health/health.jsonnet';
 local health_conditions_or_illnesses = import 'individual/blocks/identity-and-health/health_conditions_or_illnesses.jsonnet';
 local health_conditions_or_illnesses_limitations = import 'individual/blocks/identity-and-health/health_conditions_or_illnesses_limitations.jsonnet';
@@ -408,7 +407,6 @@ function(region_code, census_month_year_date, schemas_version=null)
               health_conditions_or_illnesses_limitations,
               look_after_or_support_others,
               sexual_orientation,
-              gender_identity,
             ],
           },
           {
