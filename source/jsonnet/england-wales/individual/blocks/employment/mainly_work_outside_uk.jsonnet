@@ -40,4 +40,18 @@ local proxyTitle = {
       when: rules.isProxy,
     },
   ],
+  routing_rules: [
+    {
+      group: 'follow-up-group',
+      when: {
+        '==': [
+          {
+            source: 'answers',
+            identifier: 'confirm-who-is-answering-answer',
+          },
+          'Yes, I am',
+        ],
+      },
+    }
+  ],
 }
