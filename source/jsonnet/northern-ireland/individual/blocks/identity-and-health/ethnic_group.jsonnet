@@ -44,6 +44,14 @@ local question(title, otherEthnicGroupDescription) = {
           value: 'Filipino',
         },
         {
+          label: 'Pakistani',
+          value: 'Pakistani',
+        },
+        {
+          label: 'Bangladeshi',
+          value: 'Bangladeshi',
+        },
+        {
           label: 'Black African',
           value: 'Black African',
         },
