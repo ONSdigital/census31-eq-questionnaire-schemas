@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-05-29 14:40+0100\n"
+"POT-Creation-Date: 2026-10-28 15:40-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -313,45 +313,11 @@ msgid "Ethnic group"
 msgstr ""
 
 #. Page title
-msgid "White ethnic group or background"
-msgstr ""
-
-#. Page title
-msgid "Other White ethnic group or background"
-msgstr ""
-
-#. Page title
-msgid "Mixed or Multiple ethnic group or background"
-msgstr ""
-
-#. Page title
-msgid "Other Mixed or Multiple ethnic group or background"
-msgstr ""
-
-#. Page title
-msgid "Asian, Asian Welsh or Asian British ethnic group or background"
-msgstr ""
-
-#. Page title
-msgid "Other Asian ethnic group or background"
-msgstr ""
-
-#. Page title
-msgid ""
-"Black, Black Welsh, Black British, Caribbean or African ethnic group or "
-"background"
+msgid "Ethnic Group Detail"
 msgstr ""
 
 #. Page title
 msgid "Other African ethnic group or background"
-msgstr ""
-
-#. Page title
-msgid "Other Black, Black British or Caribbean ethnic group or background"
-msgstr ""
-
-#. Page title
-msgid "Other ethnic group or background"
 msgstr ""
 
 #. Page title
@@ -1375,141 +1341,45 @@ msgid "What is your ethnic group?"
 msgstr ""
 
 #. Question text
-msgid "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgstr ""
-
-#. Question text
-msgid "Which one best describes your White ethnic group or background?"
+msgid ""
+"How would <strong>{person_name}</strong> describe their ethnic group? "
+"Question 1 of 2"
 msgstr ""
 
 #. Question text
 msgid ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
 msgstr ""
 
 #. Question text
 msgid ""
-"You selected “Any other White background”. How would you describe your "
-"White ethnic group or background?"
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
 msgstr ""
 
 #. Question text
 msgid ""
-"You selected “Any other White background”. How would "
-"<strong>{person_name}</strong> describe their White ethnic group or "
-"background?"
+"You selected ‘African’. How would you describe your African ethnic group,"
+" for example your tribe or country?"
 msgstr ""
 
 #. Question text
 msgid ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"You selected “Any other Mixed or Multiple background”. How would you "
-"describe your Mixed or Multiple ethnic group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"You selected “Any other Mixed or Multiple background”. How would "
-"<strong>{person_name}</strong> describe their Mixed or Multiple ethnic "
-"group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"You selected “Any other Asian background”. How would you describe your "
-"Asian ethnic group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"You selected “Any other Asian background”. How would "
-"<strong>{person_name}</strong> describe their Asian ethnic group or "
-"background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"Which one best describes your Black, Black Welsh, Black British, "
-"Caribbean or African ethnic group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"Which one best describes <strong>{person_name_possessive}</strong> Black,"
-" Black Welsh, Black British, Caribbean or African ethnic group or "
-"background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"You selected “African”. How would you describe your African ethnic group "
-"or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"You selected “African”. How would <strong>{person_name}</strong> describe"
-" their African ethnic group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"You selected “Any other Black, Black British or Caribbean background”. "
-"How would you describe your Black, Black British or Caribbean ethnic "
-"group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"You selected “Any other Black, Black British or Caribbean background”. "
-"How would <strong>{person_name}</strong> describe their Black, Black "
-"British or Caribbean ethnic group or background?"
-msgstr ""
-
-#. Question text
-msgid "Which one best describes your other ethnic group or background?"
-msgstr ""
-
-#. Question text
-msgid ""
-"Which one best describes <strong>{person_name_possessive}</strong> other "
-"ethnic group or background?"
+"You selected ‘African’. How would <strong>{person_name}</strong> describe"
+" their African ethnic group, for example their tribe or country?"
 msgstr ""
 
 #. Question text
 msgid ""
 "You selected “Any other ethnic group”. How would you describe your ethnic"
-" group or background?"
+" group?"
 msgstr ""
 
 #. Question text
 msgid ""
 "You selected “Any other ethnic group”. How would "
-"<strong>{person_name}</strong> describe their ethnic group or background?"
+"<strong>{person_name}</strong> describe their ethnic group?"
 msgstr ""
 
 #. Question text
@@ -3735,90 +3605,29 @@ msgstr ""
 
 #. Answer
 msgctxt ""
-"You selected “Any other White background”. How would you describe your "
-"White ethnic group or background?"
-msgid "White ethnic group or background"
-msgstr ""
-
-#. Answer
-msgctxt ""
-"You selected “Any other White background”. How would "
-"<strong>{person_name}</strong> describe their White ethnic group or "
-"background?"
-msgid "White ethnic group or background"
-msgstr ""
-
-#. Answer
-msgctxt ""
-"You selected “Any other Mixed or Multiple background”. How would you "
-"describe your Mixed or Multiple ethnic group or background?"
-msgid "Mixed or Multiple ethnic group or background"
-msgstr ""
-
-#. Answer
-msgctxt ""
-"You selected “Any other Mixed or Multiple background”. How would "
-"<strong>{person_name}</strong> describe their Mixed or Multiple ethnic "
-"group or background?"
-msgid "Mixed or Multiple ethnic group or background"
-msgstr ""
-
-#. Answer
-msgctxt ""
-"You selected “Any other Asian background”. How would you describe your "
-"Asian ethnic group or background?"
-msgid "Asian ethnic group or background"
-msgstr ""
-
-#. Answer
-msgctxt ""
-"You selected “Any other Asian background”. How would "
-"<strong>{person_name}</strong> describe their Asian ethnic group or "
-"background?"
-msgid "Asian ethnic group or background"
-msgstr ""
-
-#. Answer
-msgctxt ""
-"You selected “African”. How would you describe your African ethnic group "
-"or background?"
+"You selected ‘African’. How would you describe your African ethnic group,"
+" for example your tribe or country?"
 msgid "African ethnic group or background"
 msgstr ""
 
 #. Answer
 msgctxt ""
-"You selected “African”. How would <strong>{person_name}</strong> describe"
-" their African ethnic group or background?"
+"You selected ‘African’. How would <strong>{person_name}</strong> describe"
+" their African ethnic group, for example their tribe or country?"
 msgid "African ethnic group or background"
-msgstr ""
-
-#. Answer
-msgctxt ""
-"You selected “Any other Black, Black British or Caribbean background”. "
-"How would you describe your Black, Black British or Caribbean ethnic "
-"group or background?"
-msgid "Black, Black British or Caribbean ethnic group or background"
-msgstr ""
-
-#. Answer
-msgctxt ""
-"You selected “Any other Black, Black British or Caribbean background”. "
-"How would <strong>{person_name}</strong> describe their Black, Black "
-"British or Caribbean ethnic group or background?"
-msgid "Black, Black British or Caribbean ethnic group or background"
 msgstr ""
 
 #. Answer
 msgctxt ""
 "You selected “Any other ethnic group”. How would you describe your ethnic"
-" group or background?"
+" group?"
 msgid "Ethnic group or background"
 msgstr ""
 
 #. Answer
 msgctxt ""
 "You selected “Any other ethnic group”. How would "
-"<strong>{person_name}</strong> describe their ethnic group or background?"
+"<strong>{person_name}</strong> describe their ethnic group?"
 msgid "Ethnic group or background"
 msgstr ""
 
@@ -4070,70 +3879,18 @@ msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
 #. Answer description
-#. For answer: White ethnic group or background
+#. For answer: African ethnic group or background
 msgctxt ""
-"You selected “Any other White background”. How would you describe your "
-"White ethnic group or background?"
-msgid "Enter your own answer or select from suggestions"
-msgstr ""
-
-#. Answer description
-#. For answer: White ethnic group or background
-msgctxt ""
-"You selected “Any other White background”. How would "
-"<strong>{person_name}</strong> describe their White ethnic group or "
-"background?"
-msgid "Enter your own answer or select from suggestions"
-msgstr ""
-
-#. Answer description
-#. For answer: Asian ethnic group or background
-msgctxt ""
-"You selected “Any other Asian background”. How would you describe your "
-"Asian ethnic group or background?"
-msgid "Enter your own answer or select from suggestions"
-msgstr ""
-
-#. Answer description
-#. For answer: Asian ethnic group or background
-msgctxt ""
-"You selected “Any other Asian background”. How would "
-"<strong>{person_name}</strong> describe their Asian ethnic group or "
-"background?"
+"You selected ‘African’. How would you describe your African ethnic group,"
+" for example your tribe or country?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
 #. Answer description
 #. For answer: African ethnic group or background
 msgctxt ""
-"You selected “African”. How would you describe your African ethnic group "
-"or background?"
-msgid "Enter your own answer or select from suggestions"
-msgstr ""
-
-#. Answer description
-#. For answer: African ethnic group or background
-msgctxt ""
-"You selected “African”. How would <strong>{person_name}</strong> describe"
-" their African ethnic group or background?"
-msgid "Enter your own answer or select from suggestions"
-msgstr ""
-
-#. Answer description
-#. For answer: Black, Black British or Caribbean ethnic group or background
-msgctxt ""
-"You selected “Any other Black, Black British or Caribbean background”. "
-"How would you describe your Black, Black British or Caribbean ethnic "
-"group or background?"
-msgid "Enter your own answer or select from suggestions"
-msgstr ""
-
-#. Answer description
-#. For answer: Black, Black British or Caribbean ethnic group or background
-msgctxt ""
-"You selected “Any other Black, Black British or Caribbean background”. "
-"How would <strong>{person_name}</strong> describe their Black, Black "
-"British or Caribbean ethnic group or background?"
+"You selected ‘African’. How would <strong>{person_name}</strong> describe"
+" their African ethnic group, for example their tribe or country?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -4141,7 +3898,7 @@ msgstr ""
 #. For answer: Ethnic group or background
 msgctxt ""
 "You selected “Any other ethnic group”. How would you describe your ethnic"
-" group or background?"
+" group?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -4149,7 +3906,7 @@ msgstr ""
 #. For answer: Ethnic group or background
 msgctxt ""
 "You selected “Any other ethnic group”. How would "
-"<strong>{person_name}</strong> describe their ethnic group or background?"
+"<strong>{person_name}</strong> describe their ethnic group?"
 msgid "Enter your own answer or select from suggestions"
 msgstr ""
 
@@ -5621,306 +5378,309 @@ msgstr ""
 
 #. Answer option
 msgctxt "What is your ethnic group?"
-msgid "White"
+msgid "Asian"
 msgstr ""
 
 #. Answer option
 msgctxt "What is your ethnic group?"
-msgid "Mixed or Multiple ethnic groups"
+msgid "Black"
 msgstr ""
 
 #. Answer option
 msgctxt "What is your ethnic group?"
-msgid "Asian, Asian Welsh or Asian British"
+msgid "Mixed Asian and White"
 msgstr ""
 
 #. Answer option
 msgctxt "What is your ethnic group?"
-msgid "Black, Black Welsh, Black British, Caribbean or African"
+msgid "Mixed Black and White"
 msgstr ""
 
 #. Answer option
 msgctxt "What is your ethnic group?"
-msgid "Other ethnic group"
+msgid "Mixed other"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "White"
+msgctxt "What is your ethnic group?"
+msgid "White, any country"
 msgstr ""
 
 #. Answer option
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "Mixed or Multiple ethnic groups"
-msgstr ""
-
-#. Answer option
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "Asian, Asian Welsh or Asian British"
-msgstr ""
-
-#. Answer option
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "Black, Black Welsh, Black British, Caribbean or African"
-msgstr ""
-
-#. Answer option
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "Other ethnic group"
-msgstr ""
-
-#. Answer option
-msgctxt "Which one best describes your White ethnic group or background?"
-msgid "Welsh, English, Scottish, Northern Irish or British"
-msgstr ""
-
-#. Answer option
-msgctxt "Which one best describes your White ethnic group or background?"
-msgid "Irish"
-msgstr ""
-
-#. Answer option
-msgctxt "Which one best describes your White ethnic group or background?"
-msgid "Gypsy or Irish Traveller"
-msgstr ""
-
-#. Answer option
-msgctxt "Which one best describes your White ethnic group or background?"
-msgid "Roma"
-msgstr ""
-
-#. Answer option
-msgctxt "Which one best describes your White ethnic group or background?"
-msgid "Any other White background"
+msgctxt "What is your ethnic group?"
+msgid "None of the above"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid "Welsh, English, Scottish, Northern Irish or British"
+"How would <strong>{person_name}</strong> describe their ethnic group? "
+"Question 1 of 2"
+msgid "Asian"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid "Irish"
+"How would <strong>{person_name}</strong> describe their ethnic group? "
+"Question 1 of 2"
+msgid "Black"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid "Gypsy or Irish Traveller"
+"How would <strong>{person_name}</strong> describe their ethnic group? "
+"Question 1 of 2"
+msgid "Mixed Asian and White"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid "Roma"
+"How would <strong>{person_name}</strong> describe their ethnic group? "
+"Question 1 of 2"
+msgid "Mixed Black and White"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid "Any other White background"
+"How would <strong>{person_name}</strong> describe their ethnic group? "
+"Question 1 of 2"
+msgid "Mixed other"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
-msgid "White and Black Caribbean"
+"How would <strong>{person_name}</strong> describe their ethnic group? "
+"Question 1 of 2"
+msgid "White, any country"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
-msgid "White and Black African"
+"How would <strong>{person_name}</strong> describe their ethnic group? "
+"Question 1 of 2"
+msgid "None of the above"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
-msgid "White and Asian"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
-msgid "Any other Mixed or Multiple background"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
-msgid "White and Black Caribbean"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
-msgid "White and Black African"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
-msgid "White and Asian"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
-msgid "Any other Mixed or Multiple background"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid "Indian"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid "Pakistani"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid "Bangladeshi"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid "Chinese"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid "Any other Asian background"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid "Indian"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid "Pakistani"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid "Bangladeshi"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid "Chinese"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid "Any other Asian background"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes your Black, Black Welsh, Black British, "
-"Caribbean or African ethnic group or background?"
-msgid "Caribbean"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes your Black, Black Welsh, Black British, "
-"Caribbean or African ethnic group or background?"
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
 msgid "African"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes your Black, Black Welsh, Black British, "
-"Caribbean or African ethnic group or background?"
-msgid "Any other Black, Black British or Caribbean background"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Black,"
-" Black Welsh, Black British, Caribbean or African ethnic group or "
-"background?"
-msgid "Caribbean"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Black,"
-" Black Welsh, Black British, Caribbean or African ethnic group or "
-"background?"
-msgid "African"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Black,"
-" Black Welsh, Black British, Caribbean or African ethnic group or "
-"background?"
-msgid "Any other Black, Black British or Caribbean background"
-msgstr ""
-
-#. Answer option
-msgctxt "Which one best describes your other ethnic group or background?"
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
 msgid "Arab"
 msgstr ""
 
 #. Answer option
-msgctxt "Which one best describes your other ethnic group or background?"
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Bangladeshi"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "British"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Caribbean"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Chinese"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "English"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Gypsy or Irish Traveller"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Indian"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Irish"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Northern Irish"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Pakistani"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Roma"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Scottish"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
+msgid "Welsh"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
 msgid "Any other ethnic group"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> other "
-"ethnic group or background?"
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "African"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
 msgid "Arab"
 msgstr ""
 
 #. Answer option
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> other "
-"ethnic group or background?"
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Bangladeshi"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "British"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Caribbean"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Chinese"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "English"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Gypsy or Irish Traveller"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Indian"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Irish"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Northern Irish"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Pakistani"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Roma"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Scottish"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
+msgid "Welsh"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
 msgid "Any other ethnic group"
 msgstr ""
 
@@ -7570,157 +7330,6 @@ msgid "You can describe their national identity on the next question"
 msgstr ""
 
 #. Answer option description
-#. For answer option: White
-msgctxt "What is your ethnic group?"
-msgid ""
-"Includes Welsh, British, Northern Irish, Irish, Gypsy, Irish Traveller, "
-"Roma or any other White background"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Mixed or Multiple ethnic groups
-msgctxt "What is your ethnic group?"
-msgid ""
-"Includes White and Black Caribbean, White and Black African, White and "
-"Asian or any other Mixed or Multiple background"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Asian, Asian Welsh or Asian British
-msgctxt "What is your ethnic group?"
-msgid ""
-"Includes Indian, Pakistani, Bangladeshi, Chinese or any other Asian "
-"background"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Black, Black Welsh, Black British, Caribbean or African
-msgctxt "What is your ethnic group?"
-msgid "Includes Black British, Caribbean, African or any other Black background"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Other ethnic group
-msgctxt "What is your ethnic group?"
-msgid "Includes Arab or any other ethnic group"
-msgstr ""
-
-#. Answer option description
-#. For answer option: White
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid ""
-"Includes Welsh, British, Northern Irish, Irish, Gypsy, Irish Traveller, "
-"Roma or any other White background"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Mixed or Multiple ethnic groups
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid ""
-"Includes White and Black Caribbean, White and Black African, White and "
-"Asian or any other Mixed or Multiple background"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Asian, Asian Welsh or Asian British
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid ""
-"Includes Indian, Pakistani, Bangladeshi, Chinese or any other Asian "
-"background"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Black, Black Welsh, Black British, Caribbean or African
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "Includes Black British, Caribbean, African or any other Black background"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Other ethnic group
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "Includes Arab or any other ethnic group"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Any other White background
-msgctxt "Which one best describes your White ethnic group or background?"
-msgid "You can enter your ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Any other White background
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid "You can enter their ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Any other Mixed or Multiple background
-msgctxt ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
-msgid "You can enter your ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Any other Mixed or Multiple background
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
-msgid "You can enter their ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Any other Asian background
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid "You can enter your ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Any other Asian background
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid "You can enter their ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
-#. For answer option: African
-#. For answer option: Any other Black, Black British or Caribbean background
-msgctxt ""
-"Which one best describes your Black, Black Welsh, Black British, "
-"Caribbean or African ethnic group or background?"
-msgid "You can enter your ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
-#. For answer option: African
-#. For answer option: Any other Black, Black British or Caribbean background
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Black,"
-" Black Welsh, Black British, Caribbean or African ethnic group or "
-"background?"
-msgid "You can enter their ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Any other ethnic group
-msgctxt "Which one best describes your other ethnic group or background?"
-msgid "You can enter your ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
-#. For answer option: Any other ethnic group
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> other "
-"ethnic group or background?"
-msgid "You can enter their ethnic group or background on the next question"
-msgstr ""
-
-#. Answer option description
 #. For answer option: Christian
 msgctxt "What is your religion?"
 msgid "All denominations"
@@ -8402,90 +8011,17 @@ msgstr ""
 
 #. Answer guidance show link
 #. Answer guidance hide link
-msgctxt "What is your ethnic group?"
-msgid "Why your answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "Why their answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt "Which one best describes your White ethnic group or background?"
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
 msgid "Why your answer is important"
 msgstr ""
 
 #. Answer guidance show link
 #. Answer guidance hide link
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid "Why their answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
-msgid "Why your answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
-msgid "Why their answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid "Why your answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid "Why their answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt ""
-"Which one best describes your Black, Black Welsh, Black British, "
-"Caribbean or African ethnic group or background?"
-msgid "Why your answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Black,"
-" Black Welsh, Black British, Caribbean or African ethnic group or "
-"background?"
-msgid "Why their answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt "Which one best describes your other ethnic group or background?"
-msgid "Why your answer is important"
-msgstr ""
-
-#. Answer guidance show link
-#. Answer guidance hide link
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> other "
-"ethnic group or background?"
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
 msgid "Why their answer is important"
 msgstr ""
 
@@ -8671,23 +8207,9 @@ msgid ""
 msgstr ""
 
 #. Answer guidance description
-msgctxt "What is your ethnic group?"
-msgid ""
-"Your answer will provide a better understanding of your community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid ""
-"Their answer will provide a better understanding of their community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt "Which one best describes your White ethnic group or background?"
+msgctxt ""
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
 msgid ""
 "Your answer will provide a better understanding of your community and "
 "help to support equality and fairness. For example, councils and "
@@ -8696,87 +8218,8 @@ msgstr ""
 
 #. Answer guidance description
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid ""
-"Their answer will provide a better understanding of their community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
-msgid ""
-"Your answer will provide a better understanding of your community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
-msgid ""
-"Their answer will provide a better understanding of their community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid ""
-"Your answer will provide a better understanding of your community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid ""
-"Their answer will provide a better understanding of their community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt ""
-"Which one best describes your Black, Black Welsh, Black British, "
-"Caribbean or African ethnic group or background?"
-msgid ""
-"Your answer will provide a better understanding of your community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Black,"
-" Black Welsh, Black British, Caribbean or African ethnic group or "
-"background?"
-msgid ""
-"Their answer will provide a better understanding of their community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt "Which one best describes your other ethnic group or background?"
-msgid ""
-"Your answer will provide a better understanding of your community and "
-"help to support equality and fairness. For example, councils and "
-"government use information on ethnic group to make sure they"
-msgstr ""
-
-#. Answer guidance description
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> other "
-"ethnic group or background?"
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
 msgid ""
 "Their answer will provide a better understanding of their community and "
 "help to support equality and fairness. For example, councils and "
@@ -9075,77 +8518,9 @@ msgstr ""
 #. For description: Your answer will provide a better understanding of your
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
-msgctxt "What is your ethnic group?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt "What is your ethnic group?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt "What is <strong>{person_name_possessive}</strong> ethnic group?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt "Which one best describes your White ethnic group or background?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt "Which one best describes your White ethnic group or background?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> White "
-"ethnic group or background?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
 msgid "provide services and share funding fairly"
 msgstr ""
 
@@ -9154,8 +8529,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes your Mixed or Multiple ethnic group or "
-"background?"
+"Selecting all that apply, how would you describe your ethnic group? "
+"Question 2 of 2"
 msgid "understand and represent everyone’s interests"
 msgstr ""
 
@@ -9164,8 +8539,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
 msgid "provide services and share funding fairly"
 msgstr ""
 
@@ -9174,126 +8549,8 @@ msgstr ""
 #. community and help to support equality and fairness. For example, councils
 #. and government use information on ethnic group to make sure they
 msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Mixed "
-"or Multiple ethnic group or background?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes your Asian, Asian Welsh or Asian British ethnic "
-"group or background?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Asian,"
-" Asian Welsh or Asian British ethnic group or background?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes your Black, Black Welsh, Black British, "
-"Caribbean or African ethnic group or background?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes your Black, Black Welsh, Black British, "
-"Caribbean or African ethnic group or background?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Black,"
-" Black Welsh, Black British, Caribbean or African ethnic group or "
-"background?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> Black,"
-" Black Welsh, Black British, Caribbean or African ethnic group or "
-"background?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt "Which one best describes your other ethnic group or background?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Your answer will provide a better understanding of your
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt "Which one best describes your other ethnic group or background?"
-msgid "understand and represent everyone’s interests"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> other "
-"ethnic group or background?"
-msgid "provide services and share funding fairly"
-msgstr ""
-
-#. Answer guidance list item
-#. For description: Their answer will provide a better understanding of their
-#. community and help to support equality and fairness. For example, councils
-#. and government use information on ethnic group to make sure they
-msgctxt ""
-"Which one best describes <strong>{person_name_possessive}</strong> other "
-"ethnic group or background?"
+"Selecting all that apply, how would <strong>{person_name}</strong> "
+"describe their ethnic group? Question 2 of 2"
 msgid "understand and represent everyone’s interests"
 msgstr ""
 

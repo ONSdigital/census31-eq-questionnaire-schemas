@@ -29,17 +29,9 @@ local arrive_in_uk = import 'individual/blocks/identity-and-health/arrive_in_uk.
 local country_of_birth = import 'individual/blocks/identity-and-health/country_of_birth.jsonnet';
 local country_of_birth_elsewhere = import 'individual/blocks/identity-and-health/country_of_birth_elsewhere.jsonnet';
 local ethnic_group = import 'individual/blocks/identity-and-health/ethnic_group.jsonnet';
-local ethnic_group_asian = import 'individual/blocks/identity-and-health/ethnic_group_asian.jsonnet';
-local ethnic_group_asian_other = import 'individual/blocks/identity-and-health/ethnic_group_asian_other.jsonnet';
-local ethnic_group_black = import 'individual/blocks/identity-and-health/ethnic_group_black.jsonnet';
-local ethnic_group_black_african = import 'individual/blocks/identity-and-health/ethnic_group_black_african.jsonnet';
-local ethnic_group_black_other = import 'individual/blocks/identity-and-health/ethnic_group_black_other.jsonnet';
-local ethnic_group_mixed = import 'individual/blocks/identity-and-health/ethnic_group_mixed.jsonnet';
-local ethnic_group_mixed_other = import 'individual/blocks/identity-and-health/ethnic_group_mixed_other.jsonnet';
+local ethnic_group_african = import 'individual/blocks/identity-and-health/ethnic_group_african.jsonnet';
+local ethnic_group_detail = import 'individual/blocks/identity-and-health/ethnic_group_detail.jsonnet';
 local ethnic_group_other = import 'individual/blocks/identity-and-health/ethnic_group_other.jsonnet';
-local ethnic_group_other_other = import 'individual/blocks/identity-and-health/ethnic_group_other_other.jsonnet';
-local ethnic_group_white = import 'individual/blocks/identity-and-health/ethnic_group_white.jsonnet';
-local ethnic_group_white_other = import 'individual/blocks/identity-and-health/ethnic_group_white_other.jsonnet';
 local gender_identity = import 'individual/blocks/identity-and-health/gender_identity.jsonnet';
 local health = import 'individual/blocks/identity-and-health/health.jsonnet';
 local health_conditions_or_illnesses = import 'individual/blocks/identity-and-health/health_conditions_or_illnesses.jsonnet';
@@ -201,18 +193,10 @@ function(region_code, census_month_year_date, schemas_version=null)
               national_identity(region_code),
               other_national_identity,
               other_national_identities,
-              ethnic_group(region_code),
-              ethnic_group_white(region_code),
-              ethnic_group_white_other,
-              ethnic_group_mixed,
-              ethnic_group_mixed_other,
-              ethnic_group_asian(region_code),
-              ethnic_group_asian_other,
-              ethnic_group_black(region_code),
-              ethnic_group_black_african,
-              ethnic_group_black_other(region_code),
+              ethnic_group,
+              ethnic_group_detail,
+              ethnic_group_african,
               ethnic_group_other,
-              ethnic_group_other_other,
               religion(region_code),
               religion_other(region_code),
             ] + understandWelshBlock(region_code) + [
