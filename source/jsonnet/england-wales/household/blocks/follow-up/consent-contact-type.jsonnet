@@ -5,7 +5,6 @@ local rules = import 'rules.libsonnet';
   type: 'Question',
   id: 'consent-contact-type',
   page_title: 'Consent contact details',
-  mandatory: true,
   question: {
     type: 'General',
     id: 'consent-contact-type-question',
@@ -54,7 +53,7 @@ local rules = import 'rules.libsonnet';
             },
           },
         ],
-      }
+      },
     ],
   },
   routing_rules: [
