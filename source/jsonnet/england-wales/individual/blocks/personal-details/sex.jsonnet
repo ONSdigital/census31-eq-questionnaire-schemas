@@ -31,31 +31,12 @@ local proxyTitle = {
     placeholders.personNamePossessive,
   ],
 };
-local guidance = {
-  contents: [
-    {
-      description: 'A question about gender identity will follow later on in the questionnaire',
-    },
-  ],
-};
 
 {
   type: 'Question',
   id: 'sex',
   page_title: 'Sex',
   question_variants: [
-    {
-      question: question(nonProxyTitle) + {
-        guidance: guidance,
-      },
-      when: { and: [rules.isNotProxy, rules.over16] },
-    },
-    {
-      question: question(proxyTitle) + {
-        guidance: guidance,
-      },
-      when: { and: [rules.isProxy, rules.over16] },
-    },
     {
       question: question(nonProxyTitle),
       when: rules.isNotProxy,
