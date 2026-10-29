@@ -1,22 +1,18 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: eq-census\n"
+"Project-Id-Version:  eq-census\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-04 07:12+0000\n"
-"PO-Revision-Date: 2021-01-19 10:39\n"
+"POT-Creation-Date: 2026-05-29 14:40+0100\n"
+"PO-Revision-Date: 2021-01-19 10:39+0000\n"
 "Last-Translator: \n"
-"Language-Team: Welsh\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
-"Plural-Forms: nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))));\n"
-"X-Crowdin-Project: eq-census\n"
-"X-Crowdin-Project-ID: 345379\n"
-"X-Crowdin-Language: cy\n"
-"X-Crowdin-File: census_individual.pot\n"
-"X-Crowdin-File-ID: 18\n"
 "Language: cy_GB\n"
+"Language-Team: Welsh\n"
+"Plural-Forms: nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))));\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
 
 #. Questionnaire title
 msgid "Census 2021"
@@ -42,11 +38,6 @@ msgstr "Mae'n rhaid i chi gyflwyno'r cyfrifiad hwn er mwyn ei gwblhau"
 #. Section title
 msgid "Individual Section"
 msgstr "Adran Unigol"
-
-#. Section title
-#. Group title
-msgid "Submit answers"
-msgstr "Cyflwyno atebion"
 
 #. Page title
 msgid "Circumstances due to coronavirus"
@@ -488,6 +479,24 @@ msgstr "Mae’r gyfres nesaf o gwestiynau yn ymwneud â phrif swydd ddiwethaf <s
 msgctxt "Last main job"
 msgid "If they had more than one job at the same time, answer for the job in which they usually worked the most hours."
 msgstr "Os oedd gan yr unigolyn fwy nag un swydd ar yr un pryd, atebwch ar gyfer y swydd roedd fel arfer yn gweithio’r nifer fwyaf o oriau ynddi."
+
+#. Content page heading
+#, fuzzy
+msgctxt "Qualifications"
+msgid "Qualifications"
+msgstr "Cymwysterau"
+
+#. Content page heading
+#, fuzzy
+msgctxt "Main job"
+msgid "Main job"
+msgstr "Prif swydd"
+
+#. Content page heading
+#, fuzzy
+msgctxt "Last main job"
+msgid "Last main job"
+msgstr "Prif swydd ddiwethaf"
 
 #. Question text
 msgid "What type of accommodation is <strong>{household_address}</strong>?"
@@ -1238,16 +1247,6 @@ msgid "This should be a single address and could be more than 30 days in a row o
 msgstr "Dylai hwn fod yn gyfeiriad unigol a gallai fod yn fwy na 30 diwrnod un ar ôl y llall neu wedi’u rhannu ar hyd y flwyddyn"
 
 #. Question description
-msgctxt "During term time, where do you usually live?"
-msgid "If the <strong>coronavirus</strong> pandemic affected your usual term-time address, answer based on your situation as it is now"
-msgstr "Os gwnaeth pandemig y <strong>coronafeirws</strong> effeithio ar eich cyfeiriad arferol yn ystod y tymor, atebwch ar sail eich sefyllfa fel y mae ar hyn o bryd"
-
-#. Question description
-msgctxt "During term time, where does <strong>{person_name}</strong> usually live?"
-msgid "If the <strong>coronavirus</strong> pandemic affected their usual term-time address, answer based on their situation as it is now"
-msgstr "Os gwnaeth pandemig y <strong>coronafeirws</strong> effeithio ar gyfeiriad arferol yr unigolyn yn ystod y tymor, atebwch ar sail ei sefyllfa fel y mae ar hyn o bryd"
-
-#. Question description
 msgctxt "When did you most recently arrive to live in the United Kingdom?"
 msgid "Do not count short visits away from the UK"
 msgstr "Peidiwch â chyfrif ymweliadau byr i ffwrdd o'r Deyrnas Unedig"
@@ -1740,7 +1739,8 @@ msgstr "Os yw’r unigolyn wedi ennill cymwysterau tebyg, fel Cymwysterau Galwed
 #. Question definition description
 msgctxt "Have you achieved an AS, A level or equivalent qualification?"
 msgid "These are advanced-level, subject-based qualifications that are often needed to get a place at university. Students in Wales and England usually complete AS levels by the age of 17 years and A levels by the age of 18 years."
-msgstr "Cymwysterau lefel uwch sy’n seiliedig ar bynciau yw’r rhain ac mae eu hangen nhw yn aml er mwyn cael lle mewn prifysgol. \n"
+msgstr ""
+"Cymwysterau lefel uwch sy’n seiliedig ar bynciau yw’r rhain ac mae eu hangen nhw yn aml er mwyn cael lle mewn prifysgol. \n"
 "Bydd myfyrwyr yng Nghymru a Lloegr fel arfer yn cwblhau Lefel AS (Safon UG) erbyn eu bod yn 17 oed a Lefel A (Safon Uwch) erbyn eu bod yn 18 oed."
 
 #. Question definition description
