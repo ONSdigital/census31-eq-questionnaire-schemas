@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-05-29 14:40+0100\n"
+"POT-Creation-Date: 2026-10-28 08:08-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -531,6 +531,14 @@ msgid "Mainly work outside the UK"
 msgstr ""
 
 #. Page title
+msgid "Consent to follow up"
+msgstr ""
+
+#. Page title
+msgid "Consent contact details"
+msgstr ""
+
+#. Page title
 #. Section page title suffix (repeating section)
 msgid "Person {list_item_position}"
 msgstr ""
@@ -621,6 +629,10 @@ msgstr ""
 
 #. Group title
 msgid "Employment"
+msgstr ""
+
+#. Group title
+msgid "Further contact"
 msgstr ""
 
 #. Block title
@@ -1973,6 +1985,16 @@ msgid ""
 msgstr ""
 
 #. Question text
+msgid ""
+"Thank you for taking part in the Census Test, your section is now "
+"complete."
+msgstr ""
+
+#. Question text
+msgid "How would you prefer to be contacted to take part in future research?"
+msgstr ""
+
+#. Question text
 msgid "What is <strong>{person_name_possessive}</strong> usual address?"
 msgstr ""
 
@@ -2436,6 +2458,28 @@ msgid ""
 "If the <strong>coronavirus</strong> pandemic has affected where they "
 "mainly work, select the answer that best describes their <strong>current "
 "circumstances</strong>"
+msgstr ""
+
+#. Question description
+msgctxt ""
+"Thank you for taking part in the Census Test, your section is now "
+"complete."
+msgid ""
+"To improve the future design of the Census, the Office for National "
+"Statistics may contact you within the next four months to take part in "
+"research about your experience of completing this survey."
+msgstr ""
+
+#. Question description
+msgctxt ""
+"Thank you for taking part in the Census Test, your section is now "
+"complete."
+msgid "Are you willing to be contacted for this purpose?"
+msgstr ""
+
+#. Question description
+msgctxt "How would you prefer to be contacted to take part in future research?"
+msgid "Your contact details will not be used for any other purposes."
 msgstr ""
 
 #. Question warning
@@ -3276,6 +3320,15 @@ msgctxt ""
 "In <strong>{person_name_possessive}</strong> main job, how many hours a "
 "week do they usually work?"
 msgid "Include paid and unpaid overtime"
+msgstr ""
+
+#. Question guidance description
+msgctxt ""
+"Thank you for taking part in the Census Test, your section is now "
+"complete."
+msgid ""
+"Providing your contact details and your participation in future research "
+"is voluntary."
 msgstr ""
 
 #. Question guidance list item
@@ -7361,6 +7414,35 @@ msgid "No"
 msgstr ""
 
 #. Answer option
+msgctxt ""
+"Thank you for taking part in the Census Test, your section is now "
+"complete."
+msgid "Yes, I am willing to be contacted"
+msgstr ""
+
+#. Answer option
+msgctxt ""
+"Thank you for taking part in the Census Test, your section is now "
+"complete."
+msgid "No"
+msgstr ""
+
+#. Answer option
+msgctxt "How would you prefer to be contacted to take part in future research?"
+msgid "Email"
+msgstr ""
+
+#. Answer option
+msgctxt "How would you prefer to be contacted to take part in future research?"
+msgid "Telephone"
+msgstr ""
+
+#. Answer option
+msgctxt "How would you prefer to be contacted to take part in future research?"
+msgid "SMS text"
+msgstr ""
+
+#. Answer option
 msgctxt "What is <strong>{person_name_possessive}</strong> usual address?"
 msgid "An address in the UK"
 msgstr ""
@@ -8044,6 +8126,19 @@ msgctxt ""
 msgid "Enter gender identity"
 msgstr ""
 
+#. Detail answer label
+#. For answer option: Email
+msgctxt "How would you prefer to be contacted to take part in future research?"
+msgid "Email address"
+msgstr ""
+
+#. Detail answer label
+#. For answer option: Telephone
+#. For answer option: SMS text
+msgctxt "How would you prefer to be contacted to take part in future research?"
+msgid "Telephone number"
+msgstr ""
+
 #. Relationships answer option question text
 #. Relationships answer option playback text
 msgctxt "{second_person_name} is your <strong>…</strong>"
@@ -8587,6 +8682,14 @@ msgstr ""
 
 #. Answer guidance show link
 #. Answer guidance hide link
+msgctxt ""
+"Thank you for taking part in the Census Test, your section is now "
+"complete."
+msgid "How long will my data be kept?"
+msgstr ""
+
+#. Answer guidance show link
+#. Answer guidance hide link
 msgctxt "What is <strong>{person_name_possessive}</strong> date of birth?"
 msgid "Why we ask for visitor details"
 msgstr ""
@@ -9045,6 +9148,21 @@ msgid ""
 "Information about their workplace address and how they travel to work are"
 " used together to work out local public transport needs, develop "
 "transport policies and plan services."
+msgstr ""
+
+#. Answer guidance description
+msgctxt ""
+"Thank you for taking part in the Census Test, your section is now "
+"complete."
+msgid ""
+"The contact details you provide here will only be used to contact you "
+"about future research on the development of the 2031 Census. These "
+"details will be kept until the end of the research period, which will end"
+" in December 2027. There is no guarantee you will be chosen for future "
+"research.<br>As with all data collected by the ONS, your details will be "
+"held securely and in confidence. Further information about how we collect"
+" and use your data can be found in the Census Test privacy notice or on "
+"the main ONS website."
 msgstr ""
 
 #. Answer guidance description

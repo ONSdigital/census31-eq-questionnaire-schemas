@@ -47,6 +47,7 @@ venv
 
 .vim/
 /scripts/__pycache__/
+/eq_translations/__pycache__/
 
 megalinter-reports/
 /schemas/
