@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-28 08:08-0700\n"
+"POT-Creation-Date: 2026-11-03 14:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #. Questionnaire title
-msgid "Census 2021"
+msgid "Census 2027"
 msgstr ""
 
 #. Questionnaire legal basis
@@ -145,7 +145,7 @@ msgid "Arrived to live in the UK"
 msgstr ""
 
 #. Page title
-msgid "Arrived in the UK on or after 21 March 2020"
+msgid "Arrived in the UK on or after 14 March 2026"
 msgstr ""
 
 #. Page title
@@ -280,10 +280,6 @@ msgstr ""
 
 #. Page title
 msgid "Sexual orientation"
-msgstr ""
-
-#. Page title
-msgid "Gender identity"
 msgstr ""
 
 #. Page title
@@ -428,7 +424,7 @@ msgid "Further contact"
 msgstr ""
 
 #. Content page main heading
-msgid "Coronavirus (COVID-19) and Census 2021"
+msgid "Coronavirus (COVID-19) and Census 2027"
 msgstr ""
 
 #. Content page main heading
@@ -445,7 +441,7 @@ msgid "Coronavirus (COVID-19)"
 msgstr ""
 
 #. Content page description
-msgctxt "Coronavirus (COVID-19) and Census 2021"
+msgctxt "Coronavirus (COVID-19) and Census 2027"
 msgid ""
 "Circumstances may have changed during the coronavirus pandemic. Answer "
 "all questions based on the situation as it is now."
@@ -1116,16 +1112,6 @@ msgstr ""
 msgid ""
 "Which of the following best describes "
 "<strong>{person_name_possessive}</strong> sexual orientation?"
-msgstr ""
-
-#. Question text
-msgid "Is the gender you identify with the same as your sex registered at birth?"
-msgstr ""
-
-#. Question text
-msgid ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
 msgstr ""
 
 #. Question text
@@ -2356,16 +2342,6 @@ msgid "Include"
 msgstr ""
 
 #. Question guidance description
-msgctxt "What is your sex?"
-msgid "A question about gender identity will follow later on in the questionnaire"
-msgstr ""
-
-#. Question guidance description
-msgctxt "What is <strong>{person_name_possessive}</strong> sex?"
-msgid "A question about gender identity will follow later on in the questionnaire"
-msgstr ""
-
-#. Question guidance description
 msgctxt "You selected “Other”. How would you describe your national identity?"
 msgid ""
 "Include all national identities. If you have more than one, enter them "
@@ -2476,18 +2452,6 @@ msgstr ""
 msgctxt ""
 "Which of the following best describes "
 "<strong>{person_name_possessive}</strong> sexual orientation?"
-msgid "This question is <strong>voluntary</strong>"
-msgstr ""
-
-#. Question guidance description
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "This question is <strong>voluntary</strong>"
-msgstr ""
-
-#. Question guidance description
-msgctxt ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
 msgid "This question is <strong>voluntary</strong>"
 msgstr ""
 
@@ -4875,30 +4839,6 @@ msgid "Other sexual orientation"
 msgstr ""
 
 #. Answer option
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "Yes"
-msgstr ""
-
-#. Answer option
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "No"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
-msgid "Yes"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
-msgid "No"
-msgstr ""
-
-#. Answer option
 msgctxt "Have you completed an apprenticeship?"
 msgid "Yes"
 msgstr ""
@@ -6356,20 +6296,6 @@ msgctxt ""
 "Which of the following best describes "
 "<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Enter sexual orientation"
-msgstr ""
-
-#. Detail answer label
-#. For answer option: No
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "Enter gender identity"
-msgstr ""
-
-#. Detail answer label
-#. For answer option: No
-msgctxt ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
-msgid "Enter gender identity"
 msgstr ""
 
 #. Detail answer label
