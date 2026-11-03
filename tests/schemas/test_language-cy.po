@@ -1,0 +1,239 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eq-language-testing\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-10-28 08:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Welsh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))));\n"
+"X-Crowdin-Project: eq-language-testing\n"
+"X-Crowdin-Language: cy\n"
+"X-Crowdin-File: test_language.pot\n"
+"Language: cy_GB\n"
+
+#. Questionnaire title
+msgid "Test Language Survey"
+msgstr "Arolwg Iaith Prawf"
+
+#. Submission button
+msgid "Submission button"
+msgstr "Botwm cyflwyno"
+
+#. Submission guidance
+msgid "Submission guidance"
+msgstr "Canllawiau cyflwyno"
+
+#. Submission title
+msgid "Submission title"
+msgstr "Teitl cyflwyno"
+
+#. Submission warning
+msgid "Submission warning"
+msgstr "Rhybudd cyflwyno"
+
+#. Post submission guidance heading
+msgid "Post submission guidance title"
+msgstr "Teitl y canllawiau ar ôl cyflwyno"
+
+#. Post submission guidance description
+msgid "Post submission guidance description."
+msgstr "Disgrifiad canllaw ar ôl cyflwyno."
+
+#. Post submission guidance list item
+#. For heading: Post submission guidance title
+#. For description: Post submission guidance description.
+msgid "Post submission guidance list item"
+msgstr "Eitem rhestr canllawiau ôl-gyflwyno"
+
+#. Section title
+msgid "Household details"
+msgstr "Manylion y cartref"
+
+#. Page title
+msgid "Custom section page title"
+msgstr "Teitl tudalen adran custom"
+
+#. Page title
+msgid "Custom question page title"
+msgstr "Teitl tudalen cwestiwn wedi'i deilwra"
+
+#. Content page main heading
+msgid "Interstitial Definition"
+msgstr "Diffiniad rhyngserol"
+
+#. Content page description
+msgctxt "Interstitial Definition"
+msgid "This questionnaire is going to ask you personal data"
+msgstr "Mae'r holiadur hwn yn mynd i ofyn data personol i chi"
+
+#. Definition title
+msgctxt "Interstitial Definition"
+msgid "Personal data"
+msgstr "Data personol"
+
+#. Definition description
+msgctxt "Interstitial Definition"
+msgid ""
+"Personal data means any information relating to an identified or "
+"identifiable individual"
+msgstr ""
+"Mae data personol yn golygu unrhyw wybodaeth syn ymwneud â gwybodaeth a nodwyd neu "
+"unigolyn adnabyddadwy"
+
+#. Question text
+msgid "Please enter a name"
+msgstr "Rhowch enw"
+
+#. Question text
+msgid "What is {person_name_possessive} date of birth?"
+msgstr "Beth yw dyddiad geni {person_name_possessive}?"
+
+#. Question text
+msgid "How many people live at your household?"
+msgstr "Faint o bobl sy'n byw ar eich cartref?"
+
+#. Question text
+msgid "{number_of_people} person lives here, is this correct?"
+msgid_plural "{number_of_people} people live here, is this correct?"
+msgstr[0] "Mae {number_of_people} person yn byw yma, ydy hyn yn gywir? (zero)"
+msgstr[1] "Mae {number_of_people} person yn byw yma, ydy hyn yn gywir? (one)"
+msgstr[2] "Mae {number_of_people} person yn byw yma, ydy hyn yn gywir? (two)"
+msgstr[3] "Mae {number_of_people} pherson yn byw yma, ydy hyn yn gywir? (few)"
+msgstr[4] "Mae {number_of_people} pherson yn byw yma, ydy hyn yn gywir? (many)"
+msgstr[5] "Mae {number_of_people} pherson yn byw yma, ydy hyn yn gywir? (other)"
+
+#. Question text
+msgid "Which football team do you support?"
+msgstr "Pa dîm pêl-droed ydych chi'n ei gefnogi?"
+
+#. Question text
+msgid "What is your favorite day of the week?"
+msgstr "Beth yw eich hoff diwrnod yr wythnos?"
+
+#. Question description
+msgctxt "Please enter a name"
+msgid "The full name of the person"
+msgstr "Enw llawn y person"
+
+#. Question description
+msgctxt "What is {person_name_possessive} date of birth?"
+msgid "{person_name_possessive} date of birth"
+msgstr "dyddiad geni {person_name_possessive}"
+
+#. Question description
+msgctxt "How many people live at your household?"
+msgid "The total number of people in the household"
+msgstr "Cyfanswm y bobl ar yr aelwyd"
+
+#. Question instruction
+msgctxt "Please enter a name"
+msgid "Enter the name of a person"
+msgstr "Rhowch enw person"
+
+#. Question warning
+msgctxt "How many people live at your household?"
+msgid "This is a very important question"
+msgstr "Mae hwn yn gwestiwn pwysig iawn"
+
+#. Answer
+msgctxt "Please enter a name"
+msgid "First Name"
+msgstr "Enw cyntaf"
+
+#. Answer
+msgctxt "Please enter a name"
+msgid "Last Name"
+msgstr "Enw olaf"
+
+#. Answer
+msgctxt "What is {person_name_possessive} date of birth?"
+msgid "Date of Birth"
+msgstr "Dyddiad Geni"
+
+#. Answer
+msgctxt "How many people live at your household?"
+msgid "Number of household residents"
+msgstr "Nifer o breswylwyr yn y cartref"
+
+#. Answer
+msgctxt "Which football team do you support?"
+msgid "Football team"
+msgstr "Tîm pêl-droed"
+
+#. Answer
+msgctxt "What is your favorite day of the week?"
+msgid "Days of the Week"
+msgstr "Diwrnod yr wythnos"
+
+#. Checkbox answer instruction
+msgctxt "What is your favorite day of the week?"
+msgid "Select your answer"
+msgstr "Dewisiwch eich ateb"
+
+#. Dropdown field placeholder text
+msgctxt "Which football team do you support?"
+msgid "Select an option"
+msgstr "Dewis opsiwn"
+
+#. Answer description
+#. For answer: Date of Birth
+msgctxt "What is {person_name_possessive} date of birth?"
+msgid "Enter your date of birth"
+msgstr "Rhowch eich dyddiad geni"
+
+#. Answer description
+#. For answer: Football team
+msgctxt "Which football team do you support?"
+msgid "Your favourite team from the Premier League."
+msgstr "Eich hoff dîm o'r Uwch Gynghrair."
+
+#. Answer option
+msgctxt "{number_of_people} people live here, is this correct?"
+msgid "Yes, {number_of_people} person lives here"
+msgid_plural "Yes, {number_of_people} people live here"
+msgstr[0] "Ydy, mae {number_of_people} person yn byw yma (zero)"
+msgstr[1] "Ydy, mae {number_of_people} person yn byw yma (one)"
+msgstr[2] "Ydy, mae {number_of_people} person yn byw yma (two)"
+msgstr[3] "Ydy, mae {number_of_people} pherson yn byw yma (few)"
+msgstr[4] "Ydy, mae {number_of_people} pherson yn byw yma (many)"
+msgstr[5] "Ydy, mae {number_of_people} pherson yn byw yma (other)"
+
+#. Answer option
+msgctxt "{number_of_people} people live here, is this correct?"
+msgid "No"
+msgstr "Na"
+
+#. Answer option
+msgctxt "Which football team do you support?"
+msgid "Liverpool"
+msgstr "Lerpwl"
+
+#. Answer option
+msgctxt "Which football team do you support?"
+msgid "Chelsea"
+msgstr "Chelsea"
+
+#. Answer option
+msgctxt "Which football team do you support?"
+msgid "Rugby is better!"
+msgstr "Mae rygbi'n well!"
+
+#. Answer option
+msgctxt "What is your favorite day of the week?"
+msgid "Monday"
+msgstr "Dydd Llun"
+
+#. Answer option
+msgctxt "What is your favorite day of the week?"
+msgid "Saturday"
+msgstr "Dydd Sadwrn"
+
+#. Answer option
+msgctxt "What is your favorite day of the week?"
+msgid "Sunday"
+msgstr "Dydd Sul"

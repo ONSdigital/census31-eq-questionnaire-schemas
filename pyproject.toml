@@ -7,8 +7,13 @@ authors = ["ONSDigital"]
 [tool.poetry.dependencies]
 python = "^3.13"
 coloredlogs = "^15.0.1"
-eq-translations = {git = "https://github.com/ONSDigital/census31-eq-translations.git", rev = "v5.0.0"}
 idna = ">=3.20"
+babel = "==2.14.0"  # Temporarily pinned - problem for translations found in v2.15.0, see: https://github.com/ONSdigital/eq-questionnaire-runner/pull/1
+jsonpointer = "^3.4"
+tqdm = "^4.70.1"
+requests = "^2.34.2"
+termcolor = "^3.3.0"
+jsonpath-ng = "1.10.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^26.10.1"
@@ -19,6 +24,11 @@ jsonpointer = "^3.4"
 click = ">=8.5.0"
 setuptools = ">=84.2.1"
 jsonpath-rw = "^1.4.0"
+pytest = "^9.1.1"
+pytest-cov = "^7.1.0"
+
+[tool.isort]
+profile = "black"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

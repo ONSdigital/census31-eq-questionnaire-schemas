@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-23 03:01-0700\n"
+"POT-Creation-Date: 2026-11-03 16:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,10 +42,6 @@ msgstr ""
 
 #. Section title
 msgid "Individual Section"
-msgstr ""
-
-#. Page title
-msgid "Circumstances due to coronavirus"
 msgstr ""
 
 #. Page title
@@ -283,10 +279,6 @@ msgid "Sexual orientation"
 msgstr ""
 
 #. Page title
-msgid "Gender identity"
-msgstr ""
-
-#. Page title
 msgid "Introduction to qualifications questions"
 msgstr ""
 
@@ -416,27 +408,11 @@ msgid "Employment"
 msgstr ""
 
 #. Content page main heading
-msgid "Coronavirus (COVID-19) and Census 2027"
-msgstr ""
-
-#. Content page main heading
 msgid "Main job"
 msgstr ""
 
 #. Content page main heading
 msgid "Last main job"
-msgstr ""
-
-#. Content page heading
-msgctxt "Main job"
-msgid "Coronavirus (COVID-19)"
-msgstr ""
-
-#. Content page description
-msgctxt "Coronavirus (COVID-19) and Census 2027"
-msgid ""
-"Circumstances may have changed during the coronavirus pandemic. Answer "
-"all questions based on the situation as it is now."
 msgstr ""
 
 #. Content page description
@@ -465,23 +441,9 @@ msgstr ""
 #. Content page description
 msgctxt "Main job"
 msgid ""
-"Your circumstances may have changed during the coronavirus pandemic. "
-"Answer all questions based on your situation as it is now."
-msgstr ""
-
-#. Content page description
-msgctxt "Main job"
-msgid ""
 "The next set of questions is about "
 "<strong>{person_name_possessive}</strong> main job. Their main job is the"
 " job in which they work the most hours."
-msgstr ""
-
-#. Content page description
-msgctxt "Main job"
-msgid ""
-"Their circumstances may have changed during the coronavirus pandemic. "
-"Answer all questions based on their situation as it is now."
 msgstr ""
 
 #. Content page description
@@ -1107,16 +1069,6 @@ msgid ""
 msgstr ""
 
 #. Question text
-msgid "Is the gender you identify with the same as your sex registered at birth?"
-msgstr ""
-
-#. Question text
-msgid ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
-msgstr ""
-
-#. Question text
 msgid "Have you completed an apprenticeship?"
 msgstr ""
 
@@ -1467,40 +1419,6 @@ msgid "Do not count short visits away from the UK"
 msgstr ""
 
 #. Question description
-msgctxt "One year ago, what was your usual address?"
-msgid ""
-"If you had no usual address one year ago, select the address where you "
-"were staying."
-msgstr ""
-
-#. Question description
-msgctxt "One year ago, what was your usual address?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic affected your usual address "
-"one year ago, select where you were living <strong>before your "
-"circumstances changed</strong>."
-msgstr ""
-
-#. Question description
-msgctxt ""
-"One year ago, what was <strong>{person_name_possessive}</strong> usual "
-"address?"
-msgid ""
-"If they had no usual address one year ago, select the address where they "
-"were staying."
-msgstr ""
-
-#. Question description
-msgctxt ""
-"One year ago, what was <strong>{person_name_possessive}</strong> usual "
-"address?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic affected their usual address"
-" one year ago, select where they were living <strong>before their "
-"circumstances changed</strong>."
-msgstr ""
-
-#. Question description
 msgctxt "How would you describe your national identity?"
 msgid ""
 "This relates to where you feel you belong, such as the country or "
@@ -1606,34 +1524,6 @@ msgctxt "Has <strong>{person_name}</strong> achieved any other qualifications?"
 msgid ""
 "This could be any qualifications they have ever achieved, even if they "
 "are not using them now"
-msgstr ""
-
-#. Question description
-msgctxt "In the last seven days, were you doing any of the following?"
-msgid ""
-"If you have a job but have been off work on <strong>furlough</strong>, in"
-" <strong>quarantine</strong> or <strong>self-isolating</strong>, select "
-"“Temporarily away from work ill, on holiday or temporarily laid off”"
-msgstr ""
-
-#. Question description
-msgctxt ""
-"In the last seven days, was <strong>{person_name}</strong> doing any of "
-"the following?"
-msgid ""
-"If they have a job but have been off work on <strong>furlough</strong>, "
-"in <strong>quarantine</strong> or <strong>self-isolating</strong>, select"
-" “Temporarily away from work ill, on holiday or temporarily laid off”"
-msgstr ""
-
-#. Question description
-msgctxt "Have you ever done any paid work?"
-msgid "<strong>Furlough</strong> is considered paid work"
-msgstr ""
-
-#. Question description
-msgctxt "Has <strong>{person_name}</strong> ever done any paid work?"
-msgid "<strong>Furlough</strong> is considered paid work"
 msgstr ""
 
 #. Question description
@@ -1782,24 +1672,6 @@ msgid "This could be remotely or in person"
 msgstr ""
 
 #. Question description
-msgctxt "In your main job, how many hours a week do you usually work?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic has affected your working "
-"hours, select the answer that best describes your <strong>current "
-"circumstances</strong>"
-msgstr ""
-
-#. Question description
-msgctxt ""
-"In <strong>{person_name_possessive}</strong> main job, how many hours a "
-"week do they usually work?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic has affected their working "
-"hours, select the answer that best describes their <strong>current "
-"circumstances</strong>"
-msgstr ""
-
-#. Question description
 msgctxt "How do you usually travel to work?"
 msgid ""
 "Answer for the longest part, <strong>by distance</strong>, of your "
@@ -1807,58 +1679,10 @@ msgid ""
 msgstr ""
 
 #. Question description
-msgctxt "How do you usually travel to work?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic has affected how you travel "
-"to work, select the answer that best describes your <strong>current "
-"circumstances</strong>."
-msgstr ""
-
-#. Question description
 msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid ""
 "Answer for the longest part, <strong>by distance</strong>, of their "
 "current journey to work."
-msgstr ""
-
-#. Question description
-msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic has affected how they travel"
-" to work, select the answer that best describes their <strong>current "
-"circumstances</strong>."
-msgstr ""
-
-#. Question description
-msgctxt "Where do you mainly work?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic has affected where you "
-"mainly work, select the answer that best describes your <strong>current "
-"circumstances</strong>"
-msgstr ""
-
-#. Question description
-msgctxt "Where does <strong>{person_name}</strong> mainly work?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic has affected where they "
-"mainly work, select the answer that best describes their <strong>current "
-"circumstances</strong>"
-msgstr ""
-
-#. Question description
-msgctxt "Do you mainly work in the UK?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic has affected where you "
-"mainly work, select the answer that best describes your <strong>current "
-"circumstances</strong>"
-msgstr ""
-
-#. Question description
-msgctxt "Does <strong>{person_name}</strong> mainly work in the UK?"
-msgid ""
-"If the <strong>coronavirus</strong> pandemic has affected where they "
-"mainly work, select the answer that best describes their <strong>current "
-"circumstances</strong>"
 msgstr ""
 
 #. Question definition link
@@ -2312,16 +2136,6 @@ msgid "Include"
 msgstr ""
 
 #. Question guidance description
-msgctxt "What is your sex?"
-msgid "A question about gender identity will follow later on in the questionnaire"
-msgstr ""
-
-#. Question guidance description
-msgctxt "What is <strong>{person_name_possessive}</strong> sex?"
-msgid "A question about gender identity will follow later on in the questionnaire"
-msgstr ""
-
-#. Question guidance description
 msgctxt "You selected “Other”. How would you describe your national identity?"
 msgid ""
 "Include all national identities. If you have more than one, enter them "
@@ -2432,18 +2246,6 @@ msgstr ""
 msgctxt ""
 "Which of the following best describes "
 "<strong>{person_name_possessive}</strong> sexual orientation?"
-msgid "This question is <strong>voluntary</strong>"
-msgstr ""
-
-#. Question guidance description
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "This question is <strong>voluntary</strong>"
-msgstr ""
-
-#. Question guidance description
-msgctxt ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
 msgid "This question is <strong>voluntary</strong>"
 msgstr ""
 
@@ -4822,30 +4624,6 @@ msgid "Other sexual orientation"
 msgstr ""
 
 #. Answer option
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "Yes"
-msgstr ""
-
-#. Answer option
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "No"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
-msgid "Yes"
-msgstr ""
-
-#. Answer option
-msgctxt ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
-msgid "No"
-msgstr ""
-
-#. Answer option
 msgctxt "Have you completed an apprenticeship?"
 msgid "Yes"
 msgstr ""
@@ -6274,20 +6052,6 @@ msgctxt ""
 "Which of the following best describes "
 "<strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Enter sexual orientation"
-msgstr ""
-
-#. Detail answer label
-#. For answer option: No
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "Enter gender identity"
-msgstr ""
-
-#. Detail answer label
-#. For answer option: No
-msgctxt ""
-"Is the gender <strong>{person_name}</strong> identifies with the same as "
-"their sex registered at birth?"
-msgid "Enter gender identity"
 msgstr ""
 
 #. Answer guidance show link
