@@ -19,8 +19,8 @@ msgstr ""
 "Language: cy_GB\n"
 
 #. Questionnaire title
-msgid "Census 2021"
-msgstr "Cyfrifiad 2021"
+msgid "Census 2027"
+msgstr "Cyfrifiad 2027"
 
 #. Questionnaire legal basis
 msgid "Voluntary"
@@ -274,8 +274,8 @@ msgid "Arrived to live in the UK"
 msgstr "Wedi dod i fyw yn y Deyrnas Unedig"
 
 #. Page title
-msgid "Arrived in the UK on or after 21 March 2020"
-msgstr "Wedi dod i'r Deyrnas Unedig ar 21 Mawrth 2020 neu ar ôl hynny"
+msgid "Arrived in the UK on or after 14 March 2026"
+msgstr "Wedi dod i'r Deyrnas Unedig ar 14 Mawrth 2026 neu ar ôl hynny"
 
 #. Page title
 msgid "Planned length of stay in the UK"
@@ -636,8 +636,8 @@ msgid "Visitors staying overnight on {census_date}"
 msgstr "Ymwelwyr sy’n aros dros nos ar {census_date}"
 
 #. Content page main heading
-msgid "Coronavirus (COVID-19) and Census 2021"
-msgstr "Y coronafeirws (COVID-19) a Chyfrifiad 2021"
+msgid "Coronavirus (COVID-19) and Census 2027"
+msgstr "Y coronafeirws (COVID-19) a Chyfrifiad 2027"
 
 #. Content page main heading
 msgid "People who live in this household at {household_address}"
@@ -681,7 +681,7 @@ msgid "You will need to know"
 msgstr "Bydd angen i chi wybod"
 
 #. Content page description
-msgctxt "Coronavirus (COVID-19) and Census 2021"
+msgctxt "Coronavirus (COVID-19) and Census 2027"
 msgid "Circumstances may have changed during the coronavirus pandemic. Answer all questions based on the situation as it is now."
 msgstr "Gall amgylchiadau fod wedi newid yn ystod pandemig y coronafeirws. Atebwch bob cwestiwn yn seiliedig ar y sefyllfa fel y mae ar hyn o bryd."
 
