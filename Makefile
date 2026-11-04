@@ -2,7 +2,7 @@ clean:
 	rm -rf schemas
 
 build-schemas:
-	./scripts/build_schemas.sh
+	./scripts/build_schemas.sh $(if $(SCHEMAS_VERSION),--schemas-version $(SCHEMAS_VERSION))
 
 build: build-schemas translate-schemas
 
@@ -24,7 +24,7 @@ format:
 validator-check:
 	poetry run python -m scripts.eq_validator_check
 
-validate-schemas: validator-check
+validate-schemas:
 	poetry run python -m scripts.validate_schemas
 
 translations-check:
@@ -32,6 +32,17 @@ translations-check:
 
 translation-templates:
 	poetry run python -m scripts.extract_translation_templates
+
+update-translations:
+	poetry run pybabel update --ignore-obsolete --no-wrap --locale cy \
+		-i translations/census_communal_establishment_gb_wls.pot \
+		-o translations/cy/census_communal_establishment_gb_wls.po
+	poetry run pybabel update --ignore-obsolete --no-wrap --locale cy \
+		-i translations/census_household_gb_wls.pot \
+		-o translations/cy/census_household_gb_wls.po
+	poetry run pybabel update --ignore-obsolete --no-wrap --locale cy \
+		-i translations/census_individual_gb_wls.pot \
+		-o translations/cy/census_individual_gb_wls.po
 
 test-translation-templates:
 	poetry run python -m scripts.extract_translation_templates --test

@@ -377,7 +377,7 @@ Old:
                     "offset_by": {
                         "years": -5
                     },
-                    "value": "2021-03-21"
+                    "value": "2027-03-14"
                 },
                 "id": "date-of-birth-answer"
                 }
@@ -405,7 +405,7 @@ New:
                 "offset_by": {
                     "years": -5
                 },
-                "value": "2021-03-21"
+                "value": "2027-03-14"
             },
             "id": "date-of-birth-answer"
             }
@@ -700,7 +700,7 @@ Old:
     "offset_by": {
       "years": -1
     },
-    "value": "2021-03-21"
+    "value": "2027-03-14"
   },
   "id": "arrive-in-uk-answer"
 }
@@ -720,7 +720,7 @@ New:
       ]
     },
     {
-      "date": ["2021-03-21", { "years": -1 }]
+      "date": ["2027-03-14", { "years": -1 }]
     }
   ]
 }
@@ -827,7 +827,7 @@ Old:
     "offset_by": {
       "years": -5
     },
-    "value": "2021-03-21"
+    "value": "2027-03-14"
   },
   "id": "date-of-birth-answer"
 }
@@ -847,7 +847,7 @@ New:
       ]
     },
     {
-      "date": ["2021-03-21", { "years": -5 }]
+      "date": ["2027-03-14", { "years": -5 }]
     }
   ]
 }
@@ -864,7 +864,7 @@ Old:
     "offset_by": {
       "years": -15
     },
-    "value": "2021-03-21"
+    "value": "2027-03-14"
   },
   "id": "date-of-birth-answer"
 }
@@ -884,7 +884,7 @@ New:
       ]
     },
     {
-      "date": ["2021-03-21", { "years": -15 }]
+      "date": ["2027-03-14", { "years": -15 }]
     }
   ]
 }
