@@ -19,7 +19,7 @@ function(region_code, census_month_year_date, schemas_version=null)
     survey_id: 'census',
     form_type: 'C',
     region_code: region_code,
-    title: '2021 Census',
+    title: '2027 Census',
     description: 'Census Communal Establishment',
     theme: 'census',
     legal_basis: 'Voluntary',

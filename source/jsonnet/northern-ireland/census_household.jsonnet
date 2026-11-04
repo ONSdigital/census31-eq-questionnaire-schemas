@@ -127,7 +127,7 @@ function(region_code, schemas_version=null)
     survey_id: 'census',
     form_type: 'H',
     region_code: region_code,
-    title: 'Census 2021',
+    title: 'Census 2027',
     description: 'Census Northern Ireland Household Schema',
     theme: 'census-nisra',
     legal_basis: 'Voluntary',
