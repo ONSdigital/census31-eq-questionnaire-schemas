@@ -11,16 +11,11 @@ local questionTitle(isProxy) = (
   else 'In the last seven days, were you doing any of the following?'
 );
 
-local questionDescription(isProxy) =
-  if isProxy then 'If they have a job but have been off work on <strong>furlough</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”'
-  else 'If you have a job but have been off work on <strong>furlough</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”';
-
 local question(isProxy) = {
   id: 'employment-status-last-seven-days-question',
   title: questionTitle(isProxy),
   type: 'MutuallyExclusive',
   mandatory: true,
-  description: [questionDescription(isProxy)],
   guidance: {
     contents: [
       {

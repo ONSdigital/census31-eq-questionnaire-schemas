@@ -1,26 +1,22 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: eq-census\n"
+"Project-Id-Version:  eq-census\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-04 13:57+0000\n"
-"PO-Revision-Date: 2021-01-19 10:37\n"
+"POT-Creation-Date: 2026-11-04 12:05+0000\n"
+"PO-Revision-Date: 2021-01-19 10:37+0000\n"
 "Last-Translator: \n"
-"Language-Team: Welsh\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
-"Plural-Forms: nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))));\n"
-"X-Crowdin-Project: eq-census\n"
-"X-Crowdin-Project-ID: 345379\n"
-"X-Crowdin-Language: cy\n"
-"X-Crowdin-File: census_household.pot\n"
-"X-Crowdin-File-ID: 12\n"
 "Language: cy_GB\n"
+"Language-Team: Welsh\n"
+"Plural-Forms: nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n == 3) ? 3 : ((n == 6) ? 4 : 5))));\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
 
 #. Questionnaire title
-msgid "Census 2021"
-msgstr "Cyfrifiad 2021"
+msgid "Census 2027"
+msgstr "Cyfrifiad 2027"
 
 #. Questionnaire legal basis
 msgid "Voluntary"
@@ -60,10 +56,6 @@ msgstr ""
 #. Section title
 msgid "Visitors"
 msgstr "Ymwelwyr"
-
-#. Page title
-msgid "Circumstances due to coronavirus"
-msgstr "Amgylchiadau o ganlyniad i'r coronafeirws"
 
 #. Page title
 msgid "Introduction to people who live here"
@@ -186,10 +178,6 @@ msgid "Introduction to individual questions"
 msgstr "Cyflwyniad i – cwestiynau i unigolion"
 
 #. Page title
-msgid "Individual circumstances due to coronavirus"
-msgstr "Amgylchiadau unigolion o ganlyniad i'r coronafeirws"
-
-#. Page title
 msgid "Who is answering"
 msgstr "Pwy sy'n ateb"
 
@@ -274,8 +262,8 @@ msgid "Arrived to live in the UK"
 msgstr "Wedi dod i fyw yn y Deyrnas Unedig"
 
 #. Page title
-msgid "Arrived in the UK on or after 21 March 2020"
-msgstr "Wedi dod i'r Deyrnas Unedig ar 21 Mawrth 2020 neu ar ôl hynny"
+msgid "Arrived in the UK on or after 14 March 2026"
+msgstr "Wedi dod i'r Deyrnas Unedig ar 14 Mawrth 2026 neu ar ôl hynny"
 
 #. Page title
 msgid "Planned length of stay in the UK"
@@ -408,10 +396,6 @@ msgstr "Yn helpu neu'n gofalu am bobl eraill"
 #. Page title
 msgid "Sexual orientation"
 msgstr "Cyfeiriadedd rhywiol"
-
-#. Page title
-msgid "Gender identity"
-msgstr "Hunaniaeth o ran rhywedd"
 
 #. Page title
 msgid "Introduction to qualifications questions"
@@ -636,16 +620,8 @@ msgid "Visitors staying overnight on {census_date}"
 msgstr "Ymwelwyr sy’n aros dros nos ar {census_date}"
 
 #. Content page main heading
-msgid "Coronavirus (COVID-19) and Census 2021"
-msgstr "Y coronafeirws (COVID-19) a Chyfrifiad 2021"
-
-#. Content page main heading
 msgid "People who live in this household at {household_address}"
 msgstr "Pobl sy’n byw yn y cartref hwn yn {household_address}"
-
-#. Content page main heading
-msgid "Coronavirus (COVID-19)"
-msgstr "Y coronafeirws (COVID-19)"
 
 #. Content page main heading
 msgid "Main job"
@@ -671,19 +647,9 @@ msgid "You will need to know personal details such as"
 msgstr "Bydd angen i chi wybod manylion personol fel"
 
 #. Content page heading
-msgctxt "Main job"
-msgid "Coronavirus (COVID-19)"
-msgstr "Y coronafeirws (COVID-19)"
-
-#. Content page heading
 msgctxt "{person_name}"
 msgid "You will need to know"
 msgstr "Bydd angen i chi wybod"
-
-#. Content page description
-msgctxt "Coronavirus (COVID-19) and Census 2021"
-msgid "Circumstances may have changed during the coronavirus pandemic. Answer all questions based on the situation as it is now."
-msgstr "Gall amgylchiadau fod wedi newid yn ystod pandemig y coronafeirws. Atebwch bob cwestiwn yn seiliedig ar y sefyllfa fel y mae ar hyn o bryd."
 
 #. Content page description
 msgctxt "People who live in this household at {household_address}"
@@ -716,11 +682,6 @@ msgid "In this section, we are going to ask you questions about <strong>{person_
 msgstr "Yn yr adran hon, byddwn yn gofyn cwestiynau i chi am <strong>{person_name}</strong>."
 
 #. Content page description
-msgctxt "Coronavirus (COVID-19)"
-msgid "Circumstances for <strong>{person_name}</strong> may have changed during the coronavirus pandemic. Answer all questions based on the situation as it is now."
-msgstr "Gall amgylchiadau <strong>{person_name}</strong> fod wedi newid yn ystod pandemig y coronafeirws. Atebwch bob cwestiwn yn seiliedig ar y sefyllfa fel y mae ar hyn o bryd."
-
-#. Content page description
 msgctxt "Qualifications"
 msgid "The next set of questions is about any qualifications you have ever achieved in Wales, England or worldwide, including equivalents, even if you are not using them now."
 msgstr "Mae'r gyfres nesaf o gwestiynau yn ymwneud ag unrhyw gymwysterau rydych chi wedi’u hennill erioed yng Nghymru, Lloegr neu unrhyw le arall yn y byd, gan gynnwys cymwysterau cyfatebol, hyd yn oed os nad ydych yn eu defnyddio erbyn hyn."
@@ -737,18 +698,8 @@ msgstr "Mae’r gyfres nesaf o gwestiynau yn ymwneud â’ch prif swydd. Eich pr
 
 #. Content page description
 msgctxt "Main job"
-msgid "Your circumstances may have changed during the coronavirus pandemic. Answer all questions based on your situation as it is now."
-msgstr "Gall eich amgylchiadau fod wedi newid yn ystod pandemig y coronafeirws. Atebwch bob cwestiwn yn seiliedig ar eich sefyllfa fel y mae ar hyn o bryd."
-
-#. Content page description
-msgctxt "Main job"
 msgid "The next set of questions is about <strong>{person_name_possessive}</strong> main job. Their main job is the job in which they work the most hours."
 msgstr "Atebwch y gyfres nesaf o gwestiynau ar gyfer prif swydd <strong>{person_name_possessive}</strong>. Prif swydd yr unigolyn yw’r swydd mae’n gweithio’r nifer fwyaf o oriau ynddi."
-
-#. Content page description
-msgctxt "Main job"
-msgid "Their circumstances may have changed during the coronavirus pandemic. Answer all questions based on their situation as it is now."
-msgstr "Gall amgylchiadau'r unigolyn fod wedi newid yn ystod pandemig y coronafeirws. Atebwch bob cwestiwn yn seiliedig ar ei sefyllfa fel y mae ar hyn o bryd."
 
 #. Content page description
 msgctxt "Last main job"
@@ -880,6 +831,24 @@ msgstr "Un person sy'n byw ar ei ben ei hun neu grŵp o bobl, nad oes rhaid iddy
 msgctxt "People who live in this household at {household_address}"
 msgid "Any other household at this address will need to request a new household access code to start their own census."
 msgstr "Bydd angen i aelodau unrhyw gartref arall yn y cyfeiriad hwn ofyn am god mynediad newydd i ddechrau eu cyfrifiad eu hunain."
+
+#. Content page heading
+#, fuzzy
+msgctxt "Qualifications"
+msgid "Qualifications"
+msgstr "Cymwysterau"
+
+#. Content page heading
+#, fuzzy
+msgctxt "Main job"
+msgid "Main job"
+msgstr "Prif swydd"
+
+#. Content page heading
+#, fuzzy
+msgctxt "Last main job"
+msgid "Last main job"
+msgstr "Prif swydd ddiwethaf"
 
 #. Question text
 msgid "Do you usually live at {household_address}?"
@@ -1448,14 +1417,6 @@ msgid "Which of the following best describes <strong>{person_name_possessive}</s
 msgstr "Pa un o’r canlynol sy’n disgrifio orau gyfeiriadedd rhywiol <strong>{person_name_possessive}</strong>?"
 
 #. Question text
-msgid "Is the gender you identify with the same as your sex registered at birth?"
-msgstr "A yw'r rhywedd rydych chi'n uniaethu ag ef yr un peth â'ch rhyw a gofrestrwyd pan gawsoch chi eich geni?"
-
-#. Question text
-msgid "Is the gender <strong>{person_name}</strong> identifies with the same as their sex registered at birth?"
-msgstr "A yw'r rhywedd y mae <strong>{person_name}</strong> yn uniaethu ag ef yr un peth â’r rhyw a gofrestrwyd pan y’i ganwyd?"
-
-#. Question text
 msgid "Have you completed an apprenticeship?"
 msgstr "Ydych chi wedi cwblhau prentisiaeth?"
 
@@ -1759,16 +1720,6 @@ msgid "This should be a single address and could be more than 30 days in a row o
 msgstr "Dylai hwn fod yn gyfeiriad unigol a gallai fod yn fwy na 30 diwrnod un ar ôl y llall neu wedi’u rhannu ar hyd y flwyddyn"
 
 #. Question description
-msgctxt "During term time, where do you usually live?"
-msgid "If the <strong>coronavirus</strong> pandemic affected your usual term-time address, answer based on your situation as it is now"
-msgstr "Os gwnaeth pandemig y <strong>coronafeirws</strong> effeithio ar eich cyfeiriad arferol yn ystod y tymor, atebwch ar sail eich sefyllfa fel y mae ar hyn o bryd"
-
-#. Question description
-msgctxt "During term time, where does <strong>{person_name}</strong> usually live?"
-msgid "If the <strong>coronavirus</strong> pandemic affected their usual term-time address, answer based on their situation as it is now"
-msgstr "Os gwnaeth pandemig y <strong>coronafeirws</strong> effeithio ar gyfeiriad arferol yr unigolyn yn ystod y tymor, atebwch ar sail ei sefyllfa fel y mae ar hyn o bryd"
-
-#. Question description
 msgctxt "When did you most recently arrive to live in the United Kingdom?"
 msgid "Do not count short visits away from the UK"
 msgstr "Peidiwch â chyfrif ymweliadau byr i ffwrdd o'r Deyrnas Unedig"
@@ -1784,19 +1735,9 @@ msgid "If you had no usual address one year ago, select the address where you we
 msgstr "Os nad oedd gennych gyfeiriad arferol flwyddyn yn ôl, dewiswch y cyfeiriad lle roeddech chi’n aros."
 
 #. Question description
-msgctxt "One year ago, what was your usual address?"
-msgid "If the <strong>coronavirus</strong> pandemic affected your usual address one year ago, select where you were living <strong>before your circumstances changed</strong>."
-msgstr "Os gwnaeth pandemig y <strong>coronafeirws</strong> effeithio ar eich cyfeiriad arferol flwyddyn yn ôl, dewiswch y cyfeiriad lle roeddech chi'n byw <strong>cyn i'ch amgylchiadau newid</strong>."
-
-#. Question description
 msgctxt "One year ago, what was <strong>{person_name_possessive}</strong> usual address?"
 msgid "If they had no usual address one year ago, select the address where they were staying."
 msgstr "Os nad oedd gan yr unigolyn gyfeiriad arferol flwyddyn yn ôl, dewiswch y cyfeiriad lle roedd yn aros."
-
-#. Question description
-msgctxt "One year ago, what was <strong>{person_name_possessive}</strong> usual address?"
-msgid "If the <strong>coronavirus</strong> pandemic affected their usual address one year ago, select where they were living <strong>before their circumstances changed</strong>."
-msgstr "Os gwnaeth pandemig y <strong>coronafeirws</strong> effeithio ar gyfeiriad arferol yr unigolyn flwyddyn yn ôl, dewiswch y cyfeiriad lle roedd yn byw <strong>cyn i amgylchiadau newid</strong>."
 
 #. Question description
 msgctxt "How would you describe your national identity?"
@@ -1867,26 +1808,6 @@ msgstr "Gallai hyn fod yn unrhyw gymwysterau rydych chi wedi’u hennill, hyd yn
 msgctxt "Has <strong>{person_name}</strong> achieved any other qualifications?"
 msgid "This could be any qualifications they have ever achieved, even if they are not using them now"
 msgstr "Gallai hyn fod yn unrhyw gymwysterau mae wedi’u hennill, hyd yn oed os nad yw’n eu defnyddio nhw nawr"
-
-#. Question description
-msgctxt "In the last seven days, were you doing any of the following?"
-msgid "If you have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”"
-msgstr "Os oes gennych chi swydd ond rydych wedi bod i ffwrdd o'r gwaith ar <strong>ffyrlo</strong>, dan <strong>gwarantin</strong> neu'n <strong>hunanynysu</strong>, dewiswch “I ffwrdd o’ch gwaith dros dro yn sâl, ar wyliau, neu wedi’ch cadw dros dro o’ch gwaith am na all eich cyflogwr gynnig gwaith ar hyn o bryd\""
-
-#. Question description
-msgctxt "In the last seven days, was <strong>{person_name}</strong> doing any of the following?"
-msgid "If they have a job but have been off work on <strong>furlough</strong>, in <strong>quarantine</strong> or <strong>self-isolating</strong>, select “Temporarily away from work ill, on holiday or temporarily laid off”"
-msgstr "Os oes gan yr unigolyn swydd ond os yw wedi bod i ffwrdd o'r gwaith ar <strong>ffyrlo</strong>, dan <strong>gwarantin</strong> neu'n <strong>hunanynysu</strong>, atebwch “I ffwrdd o’r gwaith dros dro yn sâl, ar wyliau, neu mae'r unigolyn wedi’i gadw dros dro o’r gwaith am na all y cyflogwr gynnig gwaith ar hyn o bryd”"
-
-#. Question description
-msgctxt "Have you ever done any paid work?"
-msgid "<strong>Furlough</strong> is considered paid work"
-msgstr "Caiff <strong>ffyrlo</strong> ei ystyried yn waith am dâl"
-
-#. Question description
-msgctxt "Has <strong>{person_name}</strong> ever done any paid work?"
-msgid "<strong>Furlough</strong> is considered paid work"
-msgstr "Caiff <strong>ffyrlo</strong> ei ystyried yn waith am dâl"
 
 #. Question description
 msgctxt "In your main job, what is your employment status?"
@@ -1989,54 +1910,14 @@ msgid "This could be remotely or in person"
 msgstr "Gallai hyn fod o bell neu yn yr un lle"
 
 #. Question description
-msgctxt "In your main job, how many hours a week do you usually work?"
-msgid "If the <strong>coronavirus</strong> pandemic has affected your working hours, select the answer that best describes your <strong>current circumstances</strong>"
-msgstr "Os yw pandemig y <strong>coronafeirws </strong> wedi effeithio ar eich oriau gwaith, dewiswch yr ateb sy'n disgrifio orau eich <strong>amgylchiadau ar hyn o bryd</strong>"
-
-#. Question description
-msgctxt "In <strong>{person_name_possessive}</strong> main job, how many hours a week do they usually work?"
-msgid "If the <strong>coronavirus</strong> pandemic has affected their working hours, select the answer that best describes their <strong>current circumstances</strong>"
-msgstr "Os yw pandemig y <strong>coronafeirws</strong> wedi effeithio ar oriau gwaith yr unigolyn, dewiswch yr ateb sy'n disgrifio orau yr <strong>amgylchiadau ar hyn o bryd</strong>"
-
-#. Question description
 msgctxt "How do you usually travel to work?"
 msgid "Answer for the longest part, <strong>by distance</strong>, of your current journey to work."
 msgstr "Atebwch ar gyfer y rhan hiraf, <strong>o ran pellter</strong>, o’ch taith i’r gwaith ar hyn o bryd."
 
 #. Question description
-msgctxt "How do you usually travel to work?"
-msgid "If the <strong>coronavirus</strong> pandemic has affected how you travel to work, select the answer that best describes your <strong>current circumstances</strong>."
-msgstr "Os yw pandemig y <strong>coronafeirws</strong> wedi effeithio ar y ffordd rydych chi'n teithio i'r gwaith, dewiswch yr ateb sy'n disgrifio orau eich <strong>amgylchiadau ar hyn o bryd</strong>."
-
-#. Question description
 msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
 msgid "Answer for the longest part, <strong>by distance</strong>, of their current journey to work."
 msgstr "Atebwch ar gyfer y rhan hiraf, <strong>o ran pellter</strong>, o daith yr unigolyn i'r gwaith ar hyn o bryd."
-
-#. Question description
-msgctxt "How does <strong>{person_name}</strong> usually travel to work?"
-msgid "If the <strong>coronavirus</strong> pandemic has affected how they travel to work, select the answer that best describes their <strong>current circumstances</strong>."
-msgstr "Os yw pandemig y <strong>coronafeirws</strong> wedi effeithio ar y ffordd mae'n teithio i'r gwaith, dewiswch yr ateb sy'n disgrifio orau yr <strong>amgylchiadau ar hyn o bryd</strong>."
-
-#. Question description
-msgctxt "Where do you mainly work?"
-msgid "If the <strong>coronavirus</strong> pandemic has affected where you mainly work, select the answer that best describes your <strong>current circumstances</strong>"
-msgstr "Os yw pandemig y <strong>coronafeirws</strong> wedi effeithio ar ble rydych chi'n gweithio'n bennaf, dewiswch yr ateb sy'n disgrifio orau eich <strong>amgylchiadau ar hyn o bryd</strong>"
-
-#. Question description
-msgctxt "Where does <strong>{person_name}</strong> mainly work?"
-msgid "If the <strong>coronavirus</strong> pandemic has affected where they mainly work, select the answer that best describes their <strong>current circumstances</strong>"
-msgstr "Os yw pandemig y <strong>coronafeirws</strong> wedi effeithio ar ble mae'n gweithio'n bennaf, dewiswch yr ateb sy'n disgrifio orau yr <strong>amgylchiadau ar hyn o bryd</strong>"
-
-#. Question description
-msgctxt "Do you mainly work in the UK?"
-msgid "If the <strong>coronavirus</strong> pandemic has affected where you mainly work, select the answer that best describes your <strong>current circumstances</strong>"
-msgstr "Os yw pandemig y <strong>coronafeirws</strong> wedi effeithio ar ble rydych chi'n gweithio'n bennaf, dewiswch yr ateb sy'n disgrifio orau eich <strong>amgylchiadau ar hyn o bryd</strong>"
-
-#. Question description
-msgctxt "Does <strong>{person_name}</strong> mainly work in the UK?"
-msgid "If the <strong>coronavirus</strong> pandemic has affected where they mainly work, select the answer that best describes their <strong>current circumstances</strong>"
-msgstr "Os yw pandemig y <strong>coronafeirws</strong> wedi effeithio ar ble rydych chi'n gweithio'n bennaf, dewiswch yr ateb sy'n disgrifio orau yr <strong>amgylchiadau ar hyn o bryd</strong>"
 
 #. Question warning
 msgctxt "Are you sure you want to remove <strong>{person_name}</strong>?"
@@ -2161,7 +2042,8 @@ msgstr "Hwn fydd eich cartref parhaol neu gartref y teulu fel arfer."
 #. Question definition description
 msgctxt "Do you usually live at {household_address}?"
 msgid "If you have more than one address, include yourself at the home address where you generally spend most of your time. If you split your time equally then use the home address where you are staying overnight on Sunday {census_date}."
-msgstr "Os oes gennych chi fwy nag un cyfeiriad, dylech gynnwys eich hun yn y cyfeiriad cartref lle rydych\n"
+msgstr ""
+"Os oes gennych chi fwy nag un cyfeiriad, dylech gynnwys eich hun yn y cyfeiriad cartref lle rydych\n"
 "chi’n treulio’r rhan fwyaf o’ch amser ar y cyfan. Os ydych chi’n rhannu eich amser yn gyfartal,\n"
 "defnyddiwch y cyfeiriad cartref lle rydych chi’n aros dros nos ddydd Sul {census_date}."
 
@@ -2188,7 +2070,8 @@ msgstr "Hwn fydd eu cartref parhaol neu gartref y teulu fel arfer."
 #. Question definition description
 msgctxt "Do any of the following people also live at {household_address} on Sunday {census_date}?"
 msgid "If someone has more than one home address, include them at this address if they generally spend most of their time here. For example, children whose parents live apart. If they split their time equally then include them at this address if they are staying overnight on Sunday {census_date}."
-msgstr "Os oes gan rywun fwy nag un cyfeiriad cartref, dylech gynnwys yr unigolyn yn y cyfeiriad hwn os bydd yn treulio’r rhan fwyaf o’i amser yma ar y cyfan. Er enghraifft, plant sydd â rhieni sy’n byw ar wahân.\n"
+msgstr ""
+"Os oes gan rywun fwy nag un cyfeiriad cartref, dylech gynnwys yr unigolyn yn y cyfeiriad hwn os bydd yn treulio’r rhan fwyaf o’i amser yma ar y cyfan. Er enghraifft, plant sydd â rhieni sy’n byw ar wahân.\n"
 "Os yw’r unigolyn yn rhannu ei amser yn gyfartal yna dylech ei gynnwys yn y cyfeiriad hwn os yw’n aros dros nos ddydd Sul {census_date}."
 
 #. Question definition description
@@ -2204,7 +2087,8 @@ msgstr "Hwn fydd eu cartref parhaol neu gartref y teulu fel arfer."
 #. Question definition description
 msgctxt "Do any of the following people live at {household_address} on Sunday {census_date}?"
 msgid "If someone has more than one home address, include them at this address if they generally spend most of their time here. For example, children whose parents live apart. If they split their time equally then include them at this address if they are staying overnight on Sunday {census_date}."
-msgstr "Os oes gan rywun fwy nag un cyfeiriad cartref, dylech gynnwys yr unigolyn yn y cyfeiriad hwn os bydd yn treulio’r rhan fwyaf o’i amser yma ar y cyfan. Er enghraifft, plant sydd â rhieni sy’n byw ar wahân.\n"
+msgstr ""
+"Os oes gan rywun fwy nag un cyfeiriad cartref, dylech gynnwys yr unigolyn yn y cyfeiriad hwn os bydd yn treulio’r rhan fwyaf o’i amser yma ar y cyfan. Er enghraifft, plant sydd â rhieni sy’n byw ar wahân.\n"
 "Os yw’r unigolyn yn rhannu ei amser yn gyfartal yna dylech ei gynnwys yn y cyfeiriad hwn os yw’n aros dros nos ddydd Sul {census_date}."
 
 #. Question definition description
@@ -2355,7 +2239,8 @@ msgstr "Mae diploma Bagloriaeth Ryngwladol yn cyfateb i dair Lefel A (Safon Uwch
 #. Question definition description
 msgctxt "Has <strong>{person_name}</strong> achieved an AS, A level or equivalent qualification?"
 msgid "These are advanced-level, subject-based qualifications that are often needed to get a place at university. Students in Wales and England usually complete AS levels by the age of 17 years and A levels by the age of 18 years."
-msgstr "Cymwysterau lefel uwch sy’n seiliedig ar bynciau yw’r rhain ac mae eu hangen nhw yn aml er mwyn cael lle mewn prifysgol. \n"
+msgstr ""
+"Cymwysterau lefel uwch sy’n seiliedig ar bynciau yw’r rhain ac mae eu hangen nhw yn aml er mwyn cael lle mewn prifysgol. \n"
 "Bydd myfyrwyr yng Nghymru a Lloegr fel arfer yn cwblhau Lefel AS (Safon UG) erbyn eu bod yn 17 oed a Lefel A (Safon Uwch) erbyn eu bod yn 18 oed."
 
 #. Question definition description
@@ -2489,16 +2374,6 @@ msgid "Include any company cars or vans available for private use"
 msgstr "Dylech gynnwys unrhyw geir neu faniau cwmni sydd ar gael at ddefnydd preifat"
 
 #. Question guidance description
-msgctxt "What is your sex?"
-msgid "A question about gender identity will follow later on in the questionnaire"
-msgstr "Bydd cwestiwn am hunaniaeth o ran rhywedd yn dilyn yn nes ymlaen yn yr holiadur"
-
-#. Question guidance description
-msgctxt "What is <strong>{person_name_possessive}</strong> sex?"
-msgid "A question about gender identity will follow later on in the questionnaire"
-msgstr "Bydd cwestiwn am hunaniaeth o ran rhywedd yn dilyn yn nes ymlaen yn yr holiadur"
-
-#. Question guidance description
 msgctxt "You selected “Other”. How would you describe your national identity?"
 msgid "Include all national identities. If you have more than one, enter them all separated by commas."
 msgstr "Dylech gynnwys pob hunaniaeth genedlaethol. Os oes gennych chi fwy nag un, nodwch bob un, a rhoi coma rhyngddyn nhw."
@@ -2575,16 +2450,6 @@ msgstr "Mae'r cwestiwn hwn yn <strong>wirfoddol</strong>"
 
 #. Question guidance description
 msgctxt "Which of the following best describes <strong>{person_name_possessive}</strong> sexual orientation?"
-msgid "This question is <strong>voluntary</strong>"
-msgstr "Mae'r cwestiwn hwn yn <strong>wirfoddol</strong>"
-
-#. Question guidance description
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "This question is <strong>voluntary</strong>"
-msgstr "Mae'r cwestiwn hwn yn <strong>wirfoddol</strong>"
-
-#. Question guidance description
-msgctxt "Is the gender <strong>{person_name}</strong> identifies with the same as their sex registered at birth?"
 msgid "This question is <strong>voluntary</strong>"
 msgstr "Mae'r cwestiwn hwn yn <strong>wirfoddol</strong>"
 
@@ -5241,26 +5106,6 @@ msgid "Other sexual orientation"
 msgstr "Cyfeiriadedd rhywiol arall"
 
 #. Answer option
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "Yes"
-msgstr "Ydy"
-
-#. Answer option
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "No"
-msgstr "Nac ydy"
-
-#. Answer option
-msgctxt "Is the gender <strong>{person_name}</strong> identifies with the same as their sex registered at birth?"
-msgid "Yes"
-msgstr "Ydy"
-
-#. Answer option
-msgctxt "Is the gender <strong>{person_name}</strong> identifies with the same as their sex registered at birth?"
-msgid "No"
-msgstr "Nac ydy"
-
-#. Answer option
 msgctxt "Have you completed an apprenticeship?"
 msgid "Yes"
 msgstr "Ydw"
@@ -6602,18 +6447,6 @@ msgstr "Nodwch gyfeiriadedd rhywiol"
 msgctxt "Which of the following best describes <strong>{person_name_possessive}</strong> sexual orientation?"
 msgid "Enter sexual orientation"
 msgstr "Nodwch gyfeiriadedd rhywiol"
-
-#. Detail answer label
-#. For answer option: No
-msgctxt "Is the gender you identify with the same as your sex registered at birth?"
-msgid "Enter gender identity"
-msgstr "Nodwch hunaniaeth o ran rhywedd"
-
-#. Detail answer label
-#. For answer option: No
-msgctxt "Is the gender <strong>{person_name}</strong> identifies with the same as their sex registered at birth?"
-msgid "Enter gender identity"
-msgstr "Nodwch hunaniaeth o ran rhywedd"
 
 #. Relationships answer option question text
 #. Relationships answer option playback text

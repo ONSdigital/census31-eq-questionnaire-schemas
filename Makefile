@@ -33,6 +33,17 @@ translations-check:
 translation-templates:
 	poetry run python -m scripts.extract_translation_templates
 
+update-translations:
+	poetry run pybabel update --ignore-obsolete --no-wrap --locale cy \
+		-i translations/census_communal_establishment_gb_wls.pot \
+		-o translations/cy/census_communal_establishment_gb_wls.po
+	poetry run pybabel update --ignore-obsolete --no-wrap --locale cy \
+		-i translations/census_household_gb_wls.pot \
+		-o translations/cy/census_household_gb_wls.po
+	poetry run pybabel update --ignore-obsolete --no-wrap --locale cy \
+		-i translations/census_individual_gb_wls.pot \
+		-o translations/cy/census_individual_gb_wls.po
+
 test-translation-templates:
 	poetry run python -m scripts.extract_translation_templates --test
 

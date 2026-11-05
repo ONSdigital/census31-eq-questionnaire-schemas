@@ -1,5 +1,4 @@
 // personal details
-local coronavirus_circumstances = import 'household/blocks/who-lives-here/coronavirus_circumstances.jsonnet';
 local accommodation_type = import 'individual/blocks/personal-details/accommodation_type.jsonnet';
 local address_type = import 'individual/blocks/personal-details/address_type.jsonnet';
 local another_address = import 'individual/blocks/personal-details/another_address.jsonnet';
@@ -32,7 +31,6 @@ local ethnic_group = import 'individual/blocks/identity-and-health/ethnic_group.
 local ethnic_group_african = import 'individual/blocks/identity-and-health/ethnic_group_african.jsonnet';
 local ethnic_group_detail = import 'individual/blocks/identity-and-health/ethnic_group_detail.jsonnet';
 local ethnic_group_other = import 'individual/blocks/identity-and-health/ethnic_group_other.jsonnet';
-local gender_identity = import 'individual/blocks/identity-and-health/gender_identity.jsonnet';
 local health = import 'individual/blocks/identity-and-health/health.jsonnet';
 local health_conditions_or_illnesses = import 'individual/blocks/identity-and-health/health_conditions_or_illnesses.jsonnet';
 local health_conditions_or_illnesses_limitations = import 'individual/blocks/identity-and-health/health_conditions_or_illnesses_limitations.jsonnet';
@@ -97,7 +95,7 @@ function(region_code, census_month_year_date, schemas_version=null)
     survey_id: 'census',
     form_type: 'I',
     region_code: region_code,
-    title: 'Census 2021',
+    title: 'Census 2027',
     description: 'Census Individual Schema',
     theme: 'census',
     legal_basis: 'Voluntary',
@@ -154,7 +152,6 @@ function(region_code, census_month_year_date, schemas_version=null)
             id: 'personal-details-group',
             title: 'Personal details',
             blocks: [
-              coronavirus_circumstances,
               accommodation_type,
               proxy,
               name,
@@ -211,7 +208,6 @@ function(region_code, census_month_year_date, schemas_version=null)
               health_conditions_or_illnesses_limitations,
               look_after_or_support_others,
               sexual_orientation,
-              gender_identity,
             ],
           },
           {
