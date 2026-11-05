@@ -95,8 +95,8 @@ local workplace_type = import 'individual/blocks/employment/workplace_type.jsonn
 
 
 //Follow up
-local consent_contact_type = import 'household/blocks/follow-up/consent-contact-type.jsonnet';
-local consent_to_follow_up = import 'household/blocks/follow-up/consent-to-follow-up.jsonnet';
+local consent_contact_type = import 'household/blocks/further-contact/consent_contact_type.jsonnet';
+local consent_to_follow_up = import 'household/blocks/further-contact/consent_to_follow_up.jsonnet';
 
 local understandWelshBlock(region_code) = if region_code == 'GB-WLS' then [understand_welsh] else [];
 
@@ -274,7 +274,7 @@ function(region_code, census_month_year_date, schemas_version=null)
             ],
           },
           {
-            id: 'follow-up-group',
+            id: 'further-contact-group',
             hide_in_navigation: true,
             title: 'Further contact',
             blocks: [

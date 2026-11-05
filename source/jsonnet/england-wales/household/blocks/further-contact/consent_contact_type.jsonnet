@@ -20,7 +20,7 @@ local rules = import 'rules.libsonnet';
             label: 'Email',
             value: 'Email',
             detail_answer: {
-              id: 'consent-contact-type-answer-email-input',
+              id: 'consent-contact-type-answer-email',
               label: 'Email address',
               mandatory: false,
               visible: false,
@@ -32,7 +32,7 @@ local rules = import 'rules.libsonnet';
             label: 'Telephone',
             value: 'Telephone',
             detail_answer: {
-              id: 'consent-contact-type-answer-telephone-input',
+              id: 'consent-contact-type-answer-telephone',
               label: 'Telephone number',
               mandatory: false,
               visible: false,
@@ -41,10 +41,10 @@ local rules = import 'rules.libsonnet';
             },
           },
           {
-            label: 'SMS text',
-            value: 'SMS text',
+            label: 'SMS Text',
+            value: 'SMS Text',
             detail_answer: {
-              id: 'consent-contact-type-answer-sms-input',
+              id: 'consent-contact-type-answer-sms',
               label: 'Telephone number',
               mandatory: false,
               visible: false,
