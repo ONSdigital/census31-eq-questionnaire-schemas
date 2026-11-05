@@ -93,7 +93,7 @@ local workplace_address = import 'individual/blocks/employment/workplace_address
 local workplace_type = import 'individual/blocks/employment/workplace_type.jsonnet';
 
 
-//Follow up
+//Further contact
 local consent_contact_type = import 'household/blocks/further-contact/consent_contact_type.jsonnet';
 local consent_to_follow_up = import 'household/blocks/further-contact/consent_to_follow_up.jsonnet';
 
