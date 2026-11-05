@@ -42,8 +42,8 @@ local rules = import 'rules.libsonnet';
             value: 'Yes, I am willing to be contacted',
           },
           {
-            label: 'No',
-            value: 'No',
+            label: 'No, I do not wish to be contacted',
+            value: 'No, I do not wish to be contacted',
           },
         ],
         type: 'Radio',
