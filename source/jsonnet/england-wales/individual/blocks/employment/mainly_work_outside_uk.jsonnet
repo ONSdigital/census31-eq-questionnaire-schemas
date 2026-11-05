@@ -42,7 +42,7 @@ local proxyTitle = {
   ],
   routing_rules: [
     {
-      group: 'follow-up-group',
+      group: 'further-contact-group',
       when: rules.isNotProxy,
     },
     {

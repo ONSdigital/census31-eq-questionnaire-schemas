@@ -5,7 +5,6 @@ local question(title, label) = {
   id: 'ever-worked-question',
   title: title,
   type: 'General',
-  description: ['<strong>Furlough</strong> is considered paid work'],
   answers: [
     {
       id: 'ever-worked-answer',
