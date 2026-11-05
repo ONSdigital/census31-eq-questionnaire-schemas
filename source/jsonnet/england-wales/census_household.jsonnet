@@ -472,7 +472,7 @@ function(region_code, census_month_year_date, schemas_version=null)
                         },
                         {
                           source: 'answers',
-                          identifier: 'last-name',
+                          identifier: 'visitor-last-name',
                         },
                       ],
                       delimiter: ' ',
