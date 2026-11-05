@@ -40,4 +40,13 @@ local proxyTitle = {
       when: rules.isProxy,
     },
   ],
+  routing_rules: [
+    {
+      group: 'further-contact-group',
+      when: rules.isNotProxy,
+    },
+    {
+      section: 'End',
+    },
+  ],
 }

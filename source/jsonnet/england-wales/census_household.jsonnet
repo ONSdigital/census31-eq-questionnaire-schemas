@@ -110,6 +110,10 @@ local travel_to_work = import 'individual/blocks/employment/travel_to_work.jsonn
 local workplace_address = import 'individual/blocks/employment/workplace_address.jsonnet';
 local workplace_type = import 'individual/blocks/employment/workplace_type.jsonnet';
 
+//Further contact
+local consent_contact_type = import 'household/blocks/further-contact/consent_contact_type.jsonnet';
+local consent_to_follow_up = import 'household/blocks/further-contact/consent_to_follow_up.jsonnet';
+
 // Visitor
 local visitor_dob = import 'household/blocks/visitor/date_of_birth.jsonnet';
 local visitor_sex = import 'household/blocks/visitor/sex.jsonnet';
@@ -428,6 +432,15 @@ function(region_code, census_month_year_date, schemas_version=null)
               workplace_address,
               depot_address,
               mainly_work_outside_uk,
+            ],
+          },
+          {
+            id: 'further-contact-group',
+            hide_in_navigation: true,
+            title: 'Further contact',
+            blocks: [
+              consent_to_follow_up,
+              consent_contact_type,
             ],
           },
         ],

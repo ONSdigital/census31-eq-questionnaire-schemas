@@ -84,6 +84,11 @@ local travel_to_work = import 'individual/blocks/employment/travel_to_work.jsonn
 local workplace_address = import 'individual/blocks/employment/workplace_address.jsonnet';
 local workplace_type = import 'individual/blocks/employment/workplace_type.jsonnet';
 
+
+//Further contact
+local consent_contact_type = import 'household/blocks/further-contact/consent_contact_type.jsonnet';
+local consent_to_follow_up = import 'household/blocks/further-contact/consent_to_follow_up.jsonnet';
+
 local understandWelshBlock(region_code) = if region_code == 'GB-WLS' then [understand_welsh] else [];
 
 function(region_code, census_month_year_date, schemas_version=null)
@@ -248,6 +253,15 @@ function(region_code, census_month_year_date, schemas_version=null)
               workplace_address,
               depot_address,
               mainly_work_outside_uk,
+            ],
+          },
+          {
+            id: 'further-contact-group',
+            hide_in_navigation: true,
+            title: 'Further contact',
+            blocks: [
+              consent_to_follow_up,
+              consent_contact_type,
             ],
           },
         ],
