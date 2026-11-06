@@ -124,7 +124,7 @@ local question(isProxy) = {
       },
     },
     {
-      block: 'consent-to-follow-up',
+      group: 'further-contact-group',
       when: rules.isEligibleForFurtherContact,
     },
     {

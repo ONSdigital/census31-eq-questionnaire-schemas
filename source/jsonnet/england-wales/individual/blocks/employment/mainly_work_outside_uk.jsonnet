@@ -42,7 +42,7 @@ local proxyTitle = {
   ],
   routing_rules: [
     {
-      block: 'consent-to-follow-up',
+      group: 'further-contact-group',
       when: rules.isEligibleForFurtherContact,
     },
     {
