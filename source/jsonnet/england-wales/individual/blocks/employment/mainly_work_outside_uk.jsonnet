@@ -43,7 +43,7 @@ local proxyTitle = {
   routing_rules: [
     {
       group: 'further-contact-group',
-      when: rules.isNotProxy,
+      when: rules.isEligibleForFurtherContact,
     },
     {
       section: 'End',

@@ -66,6 +66,10 @@ local proxyGuidanceContent = [
   ],
   routing_rules: [
     {
+      group: 'further-contact-group',
+      when: rules.isEligibleForFurtherContact,
+    },
+    {
       section: 'End',
     },
   ],

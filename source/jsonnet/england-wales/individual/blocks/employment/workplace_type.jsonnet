@@ -124,6 +124,10 @@ local question(isProxy) = {
       },
     },
     {
+      group: 'further-contact-group',
+      when: rules.isEligibleForFurtherContact,
+    },
+    {
       section: 'End',
     },
   ],

@@ -56,27 +56,37 @@ local isNotFirstPersonInList(listName) = {
   ],
 };
 
+local isProxy = {
+  '==': [
+    {
+      source: 'answers',
+      identifier: 'confirm-who-is-answering-answer',
+    },
+    'No, I am answering on their behalf',
+  ],
+};
+
+local isNotProxy = {
+  '==': [
+    {
+      source: 'answers',
+      identifier: 'confirm-who-is-answering-answer',
+    },
+    'Yes, I am',
+  ],
+};
+
 {
-  isNotProxy: {
-    '==': [
-      {
-        source: 'answers',
-        identifier: 'confirm-who-is-answering-answer',
-      },
-      'Yes, I am',
-    ],
-  },
-  isProxy: {
-    '==': [
-      {
-        source: 'answers',
-        identifier: 'confirm-who-is-answering-answer',
-      },
-      'No, I am answering on their behalf',
-    ],
-  },
+  isProxy: isProxy,
+  isNotProxy: isNotProxy,
   listIsEmpty: listIsEmpty,
   listIsNotEmpty: listIsNotEmpty,
   isFirstPersonInList: isFirstPersonInList,
   isNotFirstPersonInList: isNotFirstPersonInList,
+  isEligibleForFurtherContact: {
+    and: [
+      isNotProxy,
+      common_rules.isAdult,
+    ],
+  },
 } + common_rules

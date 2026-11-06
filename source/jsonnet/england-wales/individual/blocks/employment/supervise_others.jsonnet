@@ -67,6 +67,15 @@ local pastProxyTitle = {
   ],
   routing_rules: [
     {
+      group: 'further-contact-group',
+      when: {
+        and: [
+          rules.isEligibleForFurtherContact,
+          rules.lastMainJob,
+        ],
+      },
+    },
+    {
       section: 'End',
       when: rules.lastMainJob,
     },

@@ -61,6 +61,23 @@ local question(isProxy) = {
   ],
   routing_rules: [
     {
+      group: 'further-contact-group',
+      when: {
+        and: [
+          rules.isEligibleForFurtherContact,
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'ever-worked-answer',
+              },
+              'No, have never worked',
+            ],
+          },
+        ],
+      },
+    },
+    {
       section: 'End',
       when: {
         '==': [
