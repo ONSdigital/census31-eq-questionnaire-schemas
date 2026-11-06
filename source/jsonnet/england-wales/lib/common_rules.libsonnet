@@ -14,6 +14,21 @@
       },
     ],
   },
+  isAdult: {
+    '<=': [
+      {
+        date: [
+          {
+            source: 'answers',
+            identifier: 'date-of-birth-answer',
+          },
+        ],
+      },
+      {
+        date: [std.extVar('census_date'), { years: -18 }],
+      },
+    ],
+  },
   over16: {
     '<=': [
       {

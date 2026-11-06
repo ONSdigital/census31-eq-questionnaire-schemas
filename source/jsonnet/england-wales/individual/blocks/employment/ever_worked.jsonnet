@@ -61,6 +61,23 @@ local question(isProxy) = {
   ],
   routing_rules: [
     {
+      block: 'consent-to-follow-up',
+      when: {
+        and: [
+          rules.isEligibleForFurtherContact,
+          {
+            '==': [
+              {
+                source: 'answers',
+                identifier: 'ever-worked-answer',
+              },
+              'No, have never worked',
+            ],
+          },
+        ],
+      },
+    },
+    {
       section: 'End',
       when: {
         '==': [

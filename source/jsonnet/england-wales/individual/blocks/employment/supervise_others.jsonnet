@@ -67,6 +67,15 @@ local pastProxyTitle = {
   ],
   routing_rules: [
     {
+      block: 'consent-to-follow-up',
+      when: {
+        and: [
+          rules.isEligibleForFurtherContact,
+          rules.lastMainJob,
+        ],
+      },
+    },
+    {
       section: 'End',
       when: rules.lastMainJob,
     },

@@ -42,8 +42,8 @@ local proxyTitle = {
   ],
   routing_rules: [
     {
-      group: 'further-contact-group',
-      when: rules.isNotProxy,
+      block: 'consent-to-follow-up',
+      when: rules.isEligibleForFurtherContact,
     },
     {
       section: 'End',

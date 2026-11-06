@@ -66,6 +66,10 @@ local proxyGuidanceContent = [
   ],
   routing_rules: [
     {
+      block: 'consent-to-follow-up',
+      when: rules.isEligibleForFurtherContact,
+    },
+    {
       section: 'End',
     },
   ],
